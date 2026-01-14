@@ -514,24 +514,82 @@ input:checked + .toggle-slider:before {
 
 /* 반응형 */
 @media (max-width: 768px) {
+    /* 네비게이션 버튼 */
     .nav-btn {
-        width: 36px;
-        height: 36px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
     }
     
+    /* 아이콘 크기 */
     .icon-circle {
-        width: 48px;
-        height: 48px;
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
     }
     
+    /* 선택지 버튼 */
     .option-btn {
-        padding: 14px 16px;
+        padding: 16px 18px;
+        font-size: 16px;
     }
     
     .option-number {
-        width: 28px;
-        height: 28px;
-        font-size: 14px;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+    
+    /* 카드 패딩 */
+    .quiz-card, .dashboard-stat-card {
+        padding: 1.25rem;
+    }
+    
+    /* 제목 크기 */
+    h1 {
+        font-size: 1.75rem !important;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    h3 {
+        font-size: 1.25rem !important;
+    }
+    
+    /* 버튼 간격 */
+    .flex.justify-between {
+        gap: 0.75rem;
+    }
+    
+    /* 컨테이너 여백 */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* 작은 모바일 (iPhone SE 등) */
+@media (max-width: 375px) {
+    .text-2xl {
+        font-size: 1.25rem !important;
+    }
+    
+    .text-3xl {
+        font-size: 1.5rem !important;
+    }
+    
+    .option-btn {
+        padding: 12px 14px;
+        font-size: 15px;
+    }
+    
+    .nav-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
     }
 }
 

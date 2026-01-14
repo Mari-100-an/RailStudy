@@ -1413,50 +1413,126 @@ a:hover {
    반응형 디자인 개선 (게임 모드)
    ======================================== */
 
-/* 모바일 XP 바 */
+/* 모바일 최적화 */
 @media (max-width: 768px) {
+    /* XP 바 */
     #xp-bar-container {
-        max-width: 200px;
+        max-width: 240px;
     }
     
     #level-badge {
-        font-size: 0.75rem;
-        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        padding: 0.375rem 0.625rem;
     }
     
     #xp-text {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
+    }
+    
+    /* 모드 선택 카드 */
+    .mode-card {
+        min-height: 200px !important;
+        padding: 1.25rem !important;
+    }
+    
+    /* 홈 화면 카드 */
+    .action-card {
+        padding: 1.5rem !important;
+    }
+    
+    /* 대시보드 카드 */
+    .dashboard-stat-card {
+        padding: 1.25rem !important;
+    }
+    
+    /* 배지 그리드 */
+    .badge-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.75rem !important;
+    }
+    
+    .badge-item {
+        font-size: 2rem !important;
     }
 }
 
 /* 작은 화면 텍스트 크기 조정 */
 @media (max-width: 640px) {
-    .text-2xl {
-        font-size: 1.25rem;
+    /* 텍스트 크기 */
+    body.game-mode .text-2xl {
+        font-size: 1.375rem !important;
     }
     
-    .text-3xl {
-        font-size: 1.5rem;
+    body.game-mode .text-3xl {
+        font-size: 1.625rem !important;
     }
     
-    .text-4xl {
-        font-size: 1.75rem;
+    body.game-mode .text-4xl {
+        font-size: 1.875rem !important;
     }
     
-    .text-6xl {
-        font-size: 2.5rem;
+    body.game-mode .text-6xl {
+        font-size: 2.75rem !important;
     }
     
     /* 팝업 크기 조정 */
     .bonus-popup, .level-up-popup, .badge-unlock-popup {
-        padding: 1rem;
-        max-width: 90vw;
+        padding: 1.25rem !important;
+        max-width: 90vw !important;
     }
     
     .bonus-popup .text-4xl,
     .level-up-popup .text-6xl,
     .badge-unlock-popup .text-4xl {
-        font-size: 2rem;
+        font-size: 2.25rem !important;
+    }
+    
+    /* 모드 선택 카드 작은 화면 */
+    .mode-card h3 {
+        font-size: 1.375rem !important;
+    }
+    
+    .mode-card p {
+        font-size: 0.875rem !important;
+    }
+    
+    .mode-card ul {
+        font-size: 0.8125rem !important;
+    }
+    
+    /* XP 바 더 작게 */
+    #xp-bar-container {
+        max-width: 180px !important;
+    }
+    
+    /* 배지 그리드 더 작게 */
+    .badge-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* 아주 작은 화면 (iPhone SE) */
+@media (max-width: 375px) {
+    body.game-mode .text-xl {
+        font-size: 1.125rem !important;
+    }
+    
+    body.game-mode .text-2xl {
+        font-size: 1.25rem !important;
+    }
+    
+    .mode-card {
+        min-height: 180px !important;
+        padding: 1rem !important;
+    }
+    
+    #xp-bar-container {
+        max-width: 150px !important;
+    }
+    
+    #level-badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
     }
 }
 
@@ -1471,7 +1547,11 @@ a:hover {
     }
     
     .dashboard-stat-card {
-        padding: 1rem;
+        padding: 1.25rem;
+    }
+    
+    .badge-grid {
+        grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 
@@ -1483,6 +1563,10 @@ a:hover {
     
     .level-particle {
         font-size: 32px;
+    }
+    
+    .badge-grid {
+        grid-template-columns: repeat(6, 1fr) !important;
     }
 }
 
