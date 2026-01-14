@@ -416,6 +416,12 @@ h3.text-lg.font-bold, h3.text-xl.font-bold {
     color: white !important;
 }
 
+/* XP 바 컨테이너 */
+#xp-bar-container {
+    background-color: var(--game-bg-secondary);
+    border-color: var(--game-border) !important;
+}
+
 /* XP 바 */
 .xp-bar-bg {
     background-color: var(--game-bg-card);

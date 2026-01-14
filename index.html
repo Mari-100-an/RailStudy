@@ -57,20 +57,9 @@
             <div class="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div class="flex items-center gap-3">
                     <i class="fas fa-train text-2xl text-primary"></i>
-                    <h1 class="text-xl font-bold cursor-pointer" onclick="App.navigateTo('home')">철도기관사 학습</h1>
+                    <h1 class="text-xl font-bold cursor-pointer" onclick="App.navigateTo('home')">철도면허</h1>
                 </div>
                 
-                <!-- 게임 모드 XP 바 (게임 모드에서만 표시) -->
-                <div id="xp-bar-container" class="hidden flex-1 max-w-md mx-4">
-                    <div class="flex items-center gap-2">
-                        <span id="level-badge" class="level-badge">Lv.1</span>
-                        <div class="xp-bar-bg flex-1">
-                            <div id="xp-bar-fill" class="xp-bar-fill" style="width: 0%"></div>
-                        </div>
-                        <span id="xp-text" class="text-sm font-medium">0 / 100 XP</span>
-                    </div>
-                </div>
-
                 <nav class="flex items-center gap-2">
                     <button id="nav-home" class="nav-btn active" title="홈">
                         <i class="fas fa-home"></i>
@@ -94,6 +83,19 @@
                 </nav>
             </div>
         </header>
+
+        <!-- 게임 모드 XP 바 (탭바 아래) -->
+        <div id="xp-bar-container" class="hidden border-b">
+            <div class="container mx-auto px-4 py-2">
+                <div class="flex items-center gap-2">
+                    <span id="level-badge" class="level-badge">Lv.1</span>
+                    <div class="xp-bar-bg flex-1">
+                        <div id="xp-bar-fill" class="xp-bar-fill" style="width: 0%"></div>
+                    </div>
+                    <span id="xp-text" class="text-sm font-medium">0 / 100 XP</span>
+                </div>
+            </div>
+        </div>
 
         <!-- 메인 콘텐츠 영역 -->
         <main id="main-content" class="container mx-auto px-4 py-6">
