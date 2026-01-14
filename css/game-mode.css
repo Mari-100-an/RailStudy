@@ -663,7 +663,7 @@ body.game-mode #page-quiz .quiz-start-option p {
 }
 
 #question-number {
-    color: var(--game-xp) !important;
+    color: var(--game-text-secondary) !important;
     font-weight: bold;
 }
 
