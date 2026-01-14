@@ -273,12 +273,6 @@ const App = {
 
     // 설정 페이지 설정
     setupSettings() {
-        // 뒤로가기 버튼
-        const backBtn = document.getElementById('settings-back-btn');
-        if (backBtn) {
-            backBtn.addEventListener('click', () => this.navigateTo('home'));
-        }
-
         // 문제 수 설정
         const questionCountSelect = document.getElementById('setting-question-count');
         if (questionCountSelect) {
@@ -370,12 +364,6 @@ const App = {
 
     // 오답 노트 페이지 설정
     setupReviewPage() {
-        // 뒤로가기 버튼
-        const backBtn = document.getElementById('review-back-btn');
-        if (backBtn) {
-            backBtn.addEventListener('click', () => this.navigateTo('home'));
-        }
-
         // 필터
         const filter = document.getElementById('review-filter');
         if (filter) {

@@ -355,23 +355,18 @@
             <!-- 오답 노트 페이지 -->
             <section id="page-review" class="page hidden">
                 <div class="max-w-4xl mx-auto">
-                    <div class="flex justify-between items-center mb-6">
-                        <div class="flex items-center gap-3">
-                            <button id="review-back-btn" class="p-2 hover:bg-gray-100 rounded-lg transition">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <h2 class="text-2xl font-bold">📝 오답 노트</h2>
-                        </div>
-                        <div class="flex gap-2">
-                            <select id="review-filter" class="filter-select px-4 py-2 rounded-lg">
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-bold mb-4">📝 오답</h2>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <select id="review-filter" class="filter-select px-3 py-2 rounded-lg text-sm flex-1">
                                 <option value="all">전체 과목</option>
                                 <option value="law">철도관련법</option>
                                 <option value="urban">도시철도시스템</option>
                                 <option value="emu">전기동차 구조</option>
                                 <option value="theory">운전이론</option>
                             </select>
-                            <button id="btn-clear-review" class="btn-secondary px-4 py-2 rounded-lg">
-                                <i class="fas fa-trash mr-2"></i>전체 삭제
+                            <button id="btn-clear-review" class="btn-secondary px-3 py-2 rounded-lg text-sm whitespace-nowrap">
+                                <i class="fas fa-trash mr-1"></i>전체 삭제
                             </button>
                         </div>
                     </div>
@@ -387,8 +382,8 @@
                     </div>
 
                     <div id="review-actions" class="hidden mt-6 flex justify-center">
-                        <button id="btn-practice-wrong" class="btn-primary px-8 py-3 rounded-lg font-bold">
-                            <i class="fas fa-redo mr-2"></i>오답 다시 풀기
+                        <button id="btn-practice-wrong" class="btn-primary px-6 py-2 rounded-lg text-sm font-bold">
+                            <i class="fas fa-redo mr-1"></i>오답 다시 풀기
                         </button>
                     </div>
                 </div>
@@ -397,12 +392,7 @@
             <!-- 대시보드 페이지 -->
             <section id="page-dashboard" class="page hidden">
                 <div class="max-w-6xl mx-auto">
-                    <div class="flex items-center gap-3 mb-6">
-                        <button id="dashboard-back-btn" class="p-2 hover:bg-gray-100 rounded-lg transition">
-                            <i class="fas fa-arrow-left"></i>
-                        </button>
-                        <h2 class="text-2xl font-bold">📊 학습 대시보드</h2>
-                    </div>
+                    <h2 class="text-2xl font-bold mb-6">📊 대시보드</h2>
 
                     <!-- 전체 통계 카드 -->
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -480,12 +470,7 @@
             <!-- 설정 페이지 -->
             <section id="page-settings" class="page hidden">
                 <div class="max-w-2xl mx-auto">
-                    <div class="flex items-center gap-3 mb-6">
-                        <button id="settings-back-btn" class="p-2 hover:bg-gray-100 rounded-lg transition">
-                            <i class="fas fa-arrow-left"></i>
-                        </button>
-                        <h2 class="text-2xl font-bold">⚙️ 설정</h2>
-                    </div>
+                    <h2 class="text-2xl font-bold mb-6">⚙️ 설정</h2>
 
                     <!-- UI 모드 선택 -->
                     <div class="settings-card p-6 rounded-xl mb-6">
