@@ -55,10 +55,9 @@
         <!-- 헤더 -->
         <header id="main-header" class="sticky top-0 z-40 border-b">
             <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-                <div class="flex items-center gap-3">
+                <button onclick="App.navigateTo('home')" class="p-2 hover:bg-gray-100 rounded-lg transition">
                     <i class="fas fa-train text-2xl text-primary"></i>
-                    <h1 class="text-xl font-bold cursor-pointer" onclick="App.navigateTo('home')">철도면허</h1>
-                </div>
+                </button>
                 
                 <nav class="flex items-center gap-2">
                     <button id="nav-home" class="nav-btn active" title="홈">
@@ -87,7 +86,7 @@
         <!-- 게임 모드 XP 바 (탭바 아래) -->
         <div id="xp-bar-container" class="hidden border-b">
             <div class="container mx-auto px-4 py-2">
-                <div class="flex items-center gap-2">
+                <div class="flex items-center gap-3">
                     <span id="level-badge" class="level-badge">Lv.1</span>
                     <div class="xp-bar-bg flex-1">
                         <div id="xp-bar-fill" class="xp-bar-fill" style="width: 0%"></div>
@@ -201,9 +200,11 @@
                 <div class="max-w-3xl mx-auto">
                     <!-- 퀴즈 시작 선택 화면 -->
                     <div id="quiz-start-selection" class="max-w-2xl mx-auto">
-                        <div class="text-center mb-8">
-                            <h2 class="text-3xl font-bold mb-3">📝 문제 풀이</h2>
-                            <p class="text-lg opacity-70">학습할 문제 유형을 선택하세요</p>
+                        <div class="flex items-center gap-3 mb-6">
+                            <button onclick="App.navigateTo('home')" class="p-2 hover:bg-gray-100 rounded-lg transition">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <h2 class="text-2xl font-bold">📝 문제 풀이</h2>
                         </div>
 
                         <div class="grid gap-4 mb-6">
