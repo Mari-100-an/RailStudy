@@ -383,19 +383,37 @@ h3.text-lg.font-bold, h3.text-xl.font-bold {
 /* 네비게이션 */
 .nav-btn {
     background-color: transparent;
-    color: var(--game-text-secondary);
+    color: var(--game-text) !important;
+}
+
+.nav-btn i {
+    color: var(--game-text) !important;
+}
+
+.nav-label {
+    color: var(--game-text) !important;
 }
 
 .nav-btn:hover {
     background-color: var(--game-primary-light);
-    color: var(--game-primary);
+    color: var(--game-primary) !important;
     box-shadow: var(--game-glow);
+}
+
+.nav-btn:hover i,
+.nav-btn:hover .nav-label {
+    color: var(--game-primary) !important;
 }
 
 .nav-btn.active {
     background: linear-gradient(135deg, var(--game-primary) 0%, #2563EB 100%);
-    color: white;
+    color: white !important;
     box-shadow: var(--game-glow);
+}
+
+.nav-btn.active i,
+.nav-btn.active .nav-label {
+    color: white !important;
 }
 
 /* XP 바 */

@@ -512,13 +512,34 @@ input:checked + .toggle-slider:before {
     color: #ef4444;
 }
 
+/* 가로 스크롤 방지 */
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+#app, #main-content {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* 네비게이션 라벨 기본 숨김 */
+.nav-label {
+    display: none;
+}
+
 /* 반응형 */
 @media (max-width: 768px) {
-    /* 네비게이션 버튼 */
+    /* 네비게이션 버튼 축소 */
     .nav-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        padding: 0;
+    }
+    
+    header nav {
+        gap: 0.25rem;
     }
     
     /* 아이콘 크기 */
@@ -587,9 +608,17 @@ input:checked + .toggle-slider:before {
     }
     
     .nav-btn {
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    
+    header nav {
+        gap: 0.125rem;
+    }
+    
+    h1 {
+        font-size: 1rem !important;
     }
 }
 
