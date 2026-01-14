@@ -617,6 +617,10 @@ h3.text-lg.font-bold, h3.text-xl.font-bold {
     border: 1px solid var(--game-border);
 }
 
+.stats-preview h3 {
+    color: var(--game-text) !important;
+}
+
 .stat-item {
     background-color: var(--game-bg-card);
 }
