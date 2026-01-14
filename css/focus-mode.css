@@ -1,0 +1,354 @@
+/* ========================================
+   Focus Mode (집중 모드) 테마
+   - 미니멀리즘 디자인
+   - 학습 방해 요소 최소화
+   - 가독성 최우선
+   ======================================== */
+
+/* Focus Mode 색상 팔레트 */
+:root {
+    --focus-bg: #FAFAFA;
+    --focus-bg-secondary: #FFFFFF;
+    --focus-text: #1A1A1A;
+    --focus-text-secondary: #4B5563;
+    --focus-primary: #2563EB;
+    --focus-primary-light: #DBEAFE;
+    --focus-success: #059669;
+    --focus-success-light: #D1FAE5;
+    --focus-error: #DC2626;
+    --focus-error-light: #FEE2E2;
+    --focus-warning: #D97706;
+    --focus-border: #E5E7EB;
+    --focus-card: #FFFFFF;
+}
+
+/* 기본 배경 */
+body {
+    background-color: var(--focus-bg);
+    color: var(--focus-text);
+}
+
+/* 헤더 */
+#main-header {
+    background-color: var(--focus-bg-secondary);
+    border-color: var(--focus-border);
+}
+
+#main-header h1 {
+    color: var(--focus-text);
+}
+
+.text-primary {
+    color: var(--focus-primary) !important;
+}
+
+/* 네비게이션 */
+.nav-btn {
+    background-color: transparent;
+    color: var(--focus-text-secondary);
+}
+
+.nav-btn:hover {
+    background-color: var(--focus-primary-light);
+    color: var(--focus-primary);
+}
+
+.nav-btn.active {
+    background-color: var(--focus-primary);
+    color: white;
+}
+
+/* 환영 카드 */
+.welcome-card {
+    background: linear-gradient(135deg, var(--focus-primary) 0%, #1D4ED8 100%);
+    color: white;
+}
+
+/* 빠른 액션 카드 */
+.quick-action-card {
+    background-color: var(--focus-card);
+    border: 1px solid var(--focus-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.quick-action-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--focus-primary);
+}
+
+.icon-circle {
+    background-color: var(--focus-primary);
+    color: white;
+}
+
+.icon-circle.secondary {
+    background-color: var(--focus-success);
+}
+
+/* 과목 카드 */
+.subject-card {
+    background-color: var(--focus-card);
+    border: 1px solid var(--focus-border);
+}
+
+.subject-card:hover {
+    border-color: var(--focus-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.subject-card h4 {
+    color: var(--focus-text);
+}
+
+.subject-card p {
+    color: var(--focus-text-secondary);
+}
+
+.subject-card .progress-text {
+    color: var(--focus-primary);
+}
+
+/* 통계 미리보기 */
+.stats-preview {
+    background-color: var(--focus-card);
+    border: 1px solid var(--focus-border);
+}
+
+.stat-item {
+    background-color: var(--focus-bg);
+}
+
+/* 프로그레스 바 */
+.progress-bar-bg {
+    background-color: var(--focus-border);
+}
+
+.progress-bar-fill {
+    background-color: var(--focus-primary);
+}
+
+/* 과목 뱃지 */
+.subject-badge {
+    background-color: var(--focus-primary-light);
+    color: var(--focus-primary);
+}
+
+/* 퀴즈 카드 */
+.quiz-card {
+    background-color: var(--focus-card);
+    border: 1px solid var(--focus-border);
+    box-shadow: var(--shadow-md);
+}
+
+#question-number {
+    color: var(--focus-text-secondary);
+}
+
+#question-text {
+    color: var(--focus-text);
+    font-size: 1.25rem;
+    line-height: 1.8;
+}
+
+/* 선택지 버튼 - Focus 모드는 더 단순한 디자인 */
+.option-btn {
+    background-color: var(--focus-bg);
+    color: var(--focus-text);
+    border-color: var(--focus-border);
+    font-size: 1rem;
+}
+
+.option-btn:hover:not(:disabled) {
+    background-color: var(--focus-primary-light);
+    border-color: var(--focus-primary);
+}
+
+.option-btn.selected {
+    background-color: var(--focus-primary-light);
+    border-color: var(--focus-primary);
+}
+
+.option-btn.correct {
+    background-color: var(--focus-success-light);
+    border-color: var(--focus-success);
+}
+
+.option-btn.wrong {
+    background-color: var(--focus-error-light);
+    border-color: var(--focus-error);
+}
+
+.option-number {
+    background-color: var(--focus-border);
+    color: var(--focus-text-secondary);
+}
+
+.option-btn.selected .option-number {
+    background-color: var(--focus-primary);
+    color: white;
+}
+
+.option-btn.correct .option-number {
+    background-color: var(--focus-success);
+    color: white;
+}
+
+.option-btn.wrong .option-number {
+    background-color: var(--focus-error);
+    color: white;
+}
+
+/* 해설 카드 */
+.explanation-card {
+    background-color: var(--focus-bg);
+    border: 1px solid var(--focus-border);
+}
+
+.explanation-card.correct {
+    background-color: var(--focus-success-light);
+    border-color: var(--focus-success);
+}
+
+.explanation-card.wrong {
+    background-color: var(--focus-error-light);
+    border-color: var(--focus-error);
+}
+
+/* 버튼 */
+.btn-primary {
+    background-color: var(--focus-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1D4ED8;
+}
+
+.btn-secondary {
+    background-color: var(--focus-bg);
+    color: var(--focus-text);
+    border: 1px solid var(--focus-border);
+}
+
+.btn-secondary:hover {
+    background-color: var(--focus-border);
+}
+
+.btn-danger {
+    background-color: var(--focus-error);
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #B91C1C;
+}
+
+/* 결과 카드 */
+.result-card {
+    background-color: var(--focus-card);
+    border: 1px solid var(--focus-border);
+    box-shadow: var(--shadow-lg);
+}
+
+.result-stat {
+    background-color: var(--focus-bg);
+}
+
+/* 오답 노트 */
+.review-item {
+    background-color: var(--focus-card);
+    border-left-color: var(--focus-error);
+}
+
+.review-item.mastered {
+    border-left-color: var(--focus-success);
+}
+
+/* 대시보드 */
+.dashboard-stat-card {
+    background-color: var(--focus-card);
+    border: 1px solid var(--focus-border);
+}
+
+.chart-card {
+    background-color: var(--focus-card);
+    border: 1px solid var(--focus-border);
+}
+
+/* 설정 */
+.settings-card {
+    background-color: var(--focus-card);
+    border: 1px solid var(--focus-border);
+}
+
+.mode-card {
+    background-color: var(--focus-bg);
+    border-color: var(--focus-border);
+}
+
+.mode-card:hover {
+    border-color: var(--focus-primary);
+}
+
+.filter-select,
+.setting-select {
+    background-color: var(--focus-bg);
+    color: var(--focus-text);
+}
+
+/* 모달 */
+.modal-content {
+    background-color: var(--focus-card);
+}
+
+/* 토스트 */
+.toast-content {
+    background-color: var(--focus-text);
+    color: white;
+}
+
+.toast-content.success {
+    background-color: var(--focus-success);
+}
+
+.toast-content.error {
+    background-color: var(--focus-error);
+}
+
+/* Focus 모드에서는 애니메이션 최소화 */
+@media (prefers-reduced-motion: no-preference) {
+    .focus-mode * {
+        animation-duration: 0.1s !important;
+        transition-duration: 0.1s !important;
+    }
+}
+
+/* Focus 모드 특별 스타일 */
+.focus-mode .quiz-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.focus-mode #question-text {
+    font-size: 1.375rem;
+    line-height: 2;
+}
+
+.focus-mode .option-btn {
+    padding: 20px 24px;
+    font-size: 1.125rem;
+}
+
+/* 학습 상세 네비게이션 버튼 */
+.focus-mode .bg-primary {
+    background-color: var(--focus-primary) !important;
+    color: #FFFFFF !important;
+}
+
+.focus-mode .text-white {
+    color: #FFFFFF !important;
+}
+
+.focus-mode .hover\:bg-primary\/80:hover {
+    background-color: #1D4ED8 !important;
+}

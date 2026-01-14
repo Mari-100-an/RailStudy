@@ -1,0 +1,26 @@
+# 개발 환경
+node_modules/
+.vscode/
+.idea/
+
+# 빌드 파일
+dist/
+build/
+
+# 로그
+*.log
+npm-debug.log*
+
+# OS 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 임시 파일
+*.tmp
+*.swp
+*~
+
+# 환경 변수
+.env
+.env.local

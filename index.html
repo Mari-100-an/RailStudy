@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="철도면허">
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="description" content="제2종 전기차량운전면허 시험 준비를 위한 학습 앱">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- 아이콘 -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/icon-512.png">
+    
+    <title>제2종 전기차량운전면허 학습 플랫폼</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/focus-mode.css" id="theme-focus">
+    <link rel="stylesheet" href="css/game-mode.css" id="theme-game" disabled>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans min-h-screen transition-colors duration-300">
+    <!-- 로딩 스크린 -->
+    <div id="loading-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-white">
+        <div class="text-center">
+            <div class="loading-spinner mb-4"></div>
+            <p class="text-lg font-medium">학습 플랫폼 로딩 중...</p>
+        </div>
+    </div>
+
+    <!-- 메인 앱 컨테이너 -->
+    <div id="app" class="hidden">
+        <!-- 헤더 -->
+        <header id="main-header" class="sticky top-0 z-40 border-b">
+            <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-train text-2xl text-primary"></i>
+                    <h1 class="text-xl font-bold cursor-pointer" onclick="App.navigateTo('home')">철도기관사 학습</h1>
+                </div>
+                
+                <!-- 게임 모드 XP 바 (게임 모드에서만 표시) -->
+                <div id="xp-bar-container" class="hidden flex-1 max-w-md mx-4">
+                    <div class="flex items-center gap-2">
+                        <span id="level-badge" class="level-badge">Lv.1</span>
+                        <div class="xp-bar-bg flex-1">
+                            <div id="xp-bar-fill" class="xp-bar-fill" style="width: 0%"></div>
+                        </div>
+                        <span id="xp-text" class="text-sm font-medium">0 / 100 XP</span>
+                    </div>
+                </div>
+
+                <nav class="flex items-center gap-2">
+                    <button id="nav-home" class="nav-btn active" title="홈">
+                        <i class="fas fa-home"></i>
+                    </button>
+                    <button id="nav-study" class="nav-btn" title="학습하기">
+                        <i class="fas fa-book-open"></i>
+                    </button>
+                    <button id="nav-quiz" class="nav-btn" title="문제 풀이">
+                        <i class="fas fa-question-circle"></i>
+                    </button>
+                    <button id="nav-review" class="nav-btn" title="오답 노트">
+                        <i class="fas fa-book"></i>
+                    </button>
+                    <button id="nav-dashboard" class="nav-btn" title="대시보드">
+                        <i class="fas fa-chart-bar"></i>
+                    </button>
+                    <button id="nav-settings" class="nav-btn" title="설정">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <main id="main-content" class="container mx-auto px-4 py-6">
+            <!-- 홈 페이지 -->
+            <section id="page-home" class="page active">
+                <div class="max-w-4xl mx-auto">
+                    <!-- 환영 메시지 -->
+                    <div class="welcome-card mb-8 p-6 rounded-2xl">
+                        <h2 class="text-2xl font-bold mb-2">안녕하세요, 예비 기관사님! 🚄</h2>
+                        <p class="text-lg opacity-80">제2종 전기차량운전면허 시험 준비를 도와드릴게요.</p>
+                    </div>
+
+                    <!-- 이론 학습 (메인 기능) -->
+                    <div class="mb-8 p-6 rounded-xl bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20">
+                        <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                            <i class="fas fa-book-open text-blue-500"></i>
+                            이론 학습하기
+                        </h3>
+                        <p class="text-sm opacity-70 mb-4">기본 개념부터 차근차근 학습하며 실력을 쌓아보세요!</p>
+                        <button onclick="App.navigateTo('study')" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition font-medium">
+                            <i class="fas fa-arrow-right mr-2"></i>학습 시작하기
+                        </button>
+                    </div>
+
+                    <!-- 문제 연습 (보조 기능) -->
+                    <div class="mb-8 p-6 rounded-xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
+                        <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+                            <i class="fas fa-brain text-green-500"></i>
+                            문제 연습하기
+                        </h3>
+                        <p class="text-sm opacity-70 mb-4">다양한 문제로 실전 감각을 익히고 약점을 보완하세요!</p>
+                        <div class="flex gap-3">
+                            <button onclick="Quiz.startRandomQuiz(); App.navigateTo('quiz');" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition text-sm">
+                                <i class="fas fa-play mr-1"></i>랜덤 문제
+                            </button>
+                            <button onclick="if(Quiz.startWrongQuiz()) App.navigateTo('quiz');" class="px-4 py-2 border border-green-500 text-green-600 rounded-lg hover:bg-green-50 transition text-sm">
+                                <i class="fas fa-book mr-1"></i>오답 복습
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 과목별 문제 -->
+                    <h3 class="text-xl font-bold mb-4">📚 과목별 문제</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8" id="subject-cards">
+                        <!-- JavaScript에서 동적 생성 -->
+                    </div>
+
+                    <!-- 학습 통계 미리보기 -->
+                    <div class="stats-preview p-6 rounded-xl">
+                        <h3 class="text-lg font-bold mb-4">📊 오늘의 학습 현황</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            <div class="stat-item text-center p-4 rounded-lg">
+                                <div id="stat-solved" class="text-3xl font-bold text-primary">0</div>
+                                <div class="text-sm opacity-70">푼 문제</div>
+                            </div>
+                            <div class="stat-item text-center p-4 rounded-lg">
+                                <div id="stat-correct" class="text-3xl font-bold text-green-500">0</div>
+                                <div class="text-sm opacity-70">정답</div>
+                            </div>
+                            <div class="stat-item text-center p-4 rounded-lg">
+                                <div id="stat-accuracy" class="text-3xl font-bold text-blue-500">0%</div>
+                                <div class="text-sm opacity-70">정답률</div>
+                            </div>
+                            <div class="stat-item text-center p-4 rounded-lg">
+                                <div id="stat-streak" class="text-3xl font-bold text-orange-500">0</div>
+                                <div class="text-sm opacity-70">연속 정답</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 학습하기 페이지 -->
+            <section id="page-study" class="page hidden">
+                <div class="max-w-4xl mx-auto">
+                    <!-- 헤더 -->
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-3">
+                            <button id="study-back-btn" class="p-2 hover:bg-gray-100 rounded-lg transition">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <h2 class="text-2xl font-bold">📖 학습하기</h2>
+                        </div>
+                        <button id="study-practice-btn" class="hidden px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">
+                            <i class="fas fa-pencil-alt mr-2"></i>문제풀기
+                        </button>
+                    </div>
+
+                    <!-- 브레드크럼 -->
+                    <div id="study-breadcrumb" class="mb-6 text-sm">
+                        <span class="text-gray-500">과목을 선택하세요</span>
+                    </div>
+
+                    <!-- 컨텐츠 영역 -->
+                    <div id="study-content" class="study-container">
+                        <!-- 동적으로 생성 -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 퀴즈 페이지 -->
+            <section id="page-quiz" class="page hidden">
+                <div class="max-w-3xl mx-auto">
+                    <!-- 퀴즈 시작 선택 화면 -->
+                    <div id="quiz-start-selection" class="max-w-2xl mx-auto">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl font-bold mb-3">📝 문제 풀이</h2>
+                            <p class="text-lg opacity-70">학습할 문제 유형을 선택하세요</p>
+                        </div>
+
+                        <div class="grid gap-4 mb-6">
+                            <!-- 랜덤 문제 풀이 -->
+                            <button onclick="Quiz.startRandomQuiz()" class="quiz-start-option p-6 rounded-2xl text-left transition-all hover:scale-105">
+                                <div class="flex items-center gap-4">
+                                    <div class="text-4xl">🎲</div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-bold mb-1">랜덤 문제 풀이</h3>
+                                        <p class="text-sm opacity-70">전체 과목에서 랜덤으로 문제를 선택합니다</p>
+                                    </div>
+                                    <i class="fas fa-arrow-right text-2xl"></i>
+                                </div>
+                            </button>
+
+                            <!-- 오답 문제 풀이 -->
+                            <button onclick="Quiz.startWrongQuiz()" class="quiz-start-option p-6 rounded-2xl text-left transition-all hover:scale-105">
+                                <div class="flex items-center gap-4">
+                                    <div class="text-4xl">❌</div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-bold mb-1">오답 문제 풀이</h3>
+                                        <p class="text-sm opacity-70">틀렸던 문제를 다시 풀어봅니다</p>
+                                        <span id="wrong-count-badge" class="text-xs px-2 py-1 rounded-full bg-red-500/20 text-red-500 font-medium">0개</span>
+                                    </div>
+                                    <i class="fas fa-arrow-right text-2xl"></i>
+                                </div>
+                            </button>
+
+                            <!-- 과목별 풀이 -->
+                            <button onclick="App.showSubjectModal('quiz')" class="quiz-start-option p-6 rounded-2xl text-left transition-all hover:scale-105">
+                                <div class="flex items-center gap-4">
+                                    <div class="text-4xl">📚</div>
+                                    <div class="flex-1">
+                                        <h3 class="text-xl font-bold mb-1">과목별 문제 풀이</h3>
+                                        <p class="text-sm opacity-70">원하는 과목을 선택하여 학습합니다</p>
+                                    </div>
+                                    <i class="fas fa-arrow-right text-2xl"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 퀴즈 진행 상황 -->
+                    <div id="quiz-progress" class="hidden mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span id="quiz-progress-text" class="font-medium">문제 1 / 10</span>
+                            <span id="quiz-subject-badge" class="subject-badge">전기동차</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div id="quiz-progress-bar" class="progress-bar-fill" style="width: 10%"></div>
+                        </div>
+                    </div>
+
+                    <!-- 문제 카드 -->
+                    <div id="quiz-card" class="quiz-card p-6 rounded-2xl mb-6">
+                        <div id="question-number" class="text-sm font-medium mb-2 opacity-70">Q.1</div>
+                        <h2 id="question-text" class="text-xl font-bold mb-6 leading-relaxed">
+                            문제가 여기에 표시됩니다.
+                        </h2>
+                        
+                        <!-- 선택지 -->
+                        <div id="options-container" class="space-y-3">
+                            <!-- JavaScript에서 동적 생성 -->
+                        </div>
+                    </div>
+
+                    <!-- 정답 해설 (채점 후 표시) -->
+                    <div id="answer-explanation" class="hidden explanation-card p-6 rounded-xl mb-6">
+                        <div id="answer-result" class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                            <span class="text-xl font-bold">정답입니다!</span>
+                        </div>
+                        <div id="explanation-text" class="leading-relaxed">
+                            해설이 여기에 표시됩니다.
+                        </div>
+                        <div id="source-reference" class="mt-4 text-sm opacity-70 border-t pt-4">
+                            <i class="fas fa-book-open mr-2"></i>
+                            <span>출처: 표준교재</span>
+                        </div>
+                    </div>
+
+                    <!-- 버튼 영역 (우측 하단 고정) -->
+                    <div class="flex justify-end items-center gap-3">
+                        <button id="btn-submit" class="btn-primary px-8 py-3 rounded-lg font-bold">
+                            정답 확인
+                        </button>
+                        <button id="btn-next" class="hidden btn-primary px-8 py-3 rounded-lg font-bold">
+                            다음 문제 <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+
+                    <!-- 게임 모드 보너스 표시 -->
+                    <div id="game-bonus" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50">
+                        <div class="bonus-popup text-center p-6 rounded-2xl">
+                            <div class="text-4xl mb-2">🎉</div>
+                            <div class="text-2xl font-bold">+<span id="bonus-xp">10</span> XP</div>
+                            <div id="combo-text" class="text-lg">연속 정답!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 퀴즈 결과 화면 -->
+                <div id="quiz-result" class="hidden max-w-2xl mx-auto">
+                    <div class="result-card p-8 rounded-2xl text-center">
+                        <div id="result-icon" class="text-6xl mb-4">🎊</div>
+                        <h2 class="text-3xl font-bold mb-2">학습 완료!</h2>
+                        <p id="result-message" class="text-lg opacity-80 mb-6">수고하셨습니다!</p>
+                        
+                        <div class="grid grid-cols-3 gap-4 mb-8">
+                            <div class="result-stat p-4 rounded-xl">
+                                <div id="result-total" class="text-3xl font-bold">10</div>
+                                <div class="text-sm opacity-70">전체 문제</div>
+                            </div>
+                            <div class="result-stat p-4 rounded-xl">
+                                <div id="result-correct" class="text-3xl font-bold text-green-500">8</div>
+                                <div class="text-sm opacity-70">정답</div>
+                            </div>
+                            <div class="result-stat p-4 rounded-xl">
+                                <div id="result-accuracy" class="text-3xl font-bold text-blue-500">80%</div>
+                                <div class="text-sm opacity-70">정답률</div>
+                            </div>
+                        </div>
+
+                        <!-- 게임 모드 보상 -->
+                        <div id="result-rewards" class="hidden mb-8 p-4 rounded-xl bg-gradient-to-r from-yellow-500/20 to-orange-500/20">
+                            <h3 class="font-bold mb-2">🏆 획득한 보상</h3>
+                            <div class="flex justify-center gap-6">
+                                <div><span id="earned-xp" class="text-xl font-bold">+100</span> XP</div>
+                                <div id="earned-badge" class="hidden"><span class="text-xl">🎖️</span> 새 배지!</div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center gap-4">
+                            <button id="btn-retry" class="btn-secondary px-6 py-3 rounded-lg">
+                                <i class="fas fa-redo mr-2"></i>다시 풀기
+                            </button>
+                            <button id="btn-review-wrong" class="btn-primary px-6 py-3 rounded-lg">
+                                <i class="fas fa-book mr-2"></i>오답 복습
+                            </button>
+                            <button id="btn-home" class="btn-secondary px-6 py-3 rounded-lg">
+                                <i class="fas fa-home mr-2"></i>홈으로
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 오답 노트 페이지 -->
+            <section id="page-review" class="page hidden">
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex justify-between items-center mb-6">
+                        <div class="flex items-center gap-3">
+                            <button id="review-back-btn" class="p-2 hover:bg-gray-100 rounded-lg transition">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <h2 class="text-2xl font-bold">📝 오답 노트</h2>
+                        </div>
+                        <div class="flex gap-2">
+                            <select id="review-filter" class="filter-select px-4 py-2 rounded-lg">
+                                <option value="all">전체 과목</option>
+                                <option value="law">철도관련법</option>
+                                <option value="urban">도시철도시스템</option>
+                                <option value="emu">전기동차 구조</option>
+                                <option value="theory">운전이론</option>
+                            </select>
+                            <button id="btn-clear-review" class="btn-secondary px-4 py-2 rounded-lg">
+                                <i class="fas fa-trash mr-2"></i>전체 삭제
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="review-empty" class="text-center py-16">
+                        <i class="fas fa-check-circle text-6xl text-green-500 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">오답이 없습니다!</h3>
+                        <p class="opacity-70">틀린 문제가 없거나, 모두 복습을 완료했습니다.</p>
+                    </div>
+
+                    <div id="review-list" class="space-y-4">
+                        <!-- JavaScript에서 동적 생성 -->
+                    </div>
+
+                    <div id="review-actions" class="hidden mt-6 flex justify-center">
+                        <button id="btn-practice-wrong" class="btn-primary px-8 py-3 rounded-lg font-bold">
+                            <i class="fas fa-redo mr-2"></i>오답 다시 풀기
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 대시보드 페이지 -->
+            <section id="page-dashboard" class="page hidden">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex items-center gap-3 mb-6">
+                        <button id="dashboard-back-btn" class="p-2 hover:bg-gray-100 rounded-lg transition">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <h2 class="text-2xl font-bold">📊 학습 대시보드</h2>
+                    </div>
+
+                    <!-- 전체 통계 카드 -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        <div class="dashboard-stat-card p-4 rounded-xl">
+                            <div class="text-sm opacity-70 mb-1">총 학습 문제</div>
+                            <div id="dash-total-solved" class="text-2xl font-bold">0</div>
+                        </div>
+                        <div class="dashboard-stat-card p-4 rounded-xl">
+                            <div class="text-sm opacity-70 mb-1">평균 정답률</div>
+                            <div id="dash-avg-accuracy" class="text-2xl font-bold">0%</div>
+                        </div>
+                        <div class="dashboard-stat-card p-4 rounded-xl">
+                            <div class="text-sm opacity-70 mb-1">학습 일수</div>
+                            <div id="dash-study-days" class="text-2xl font-bold">0일</div>
+                        </div>
+                        <div class="dashboard-stat-card p-4 rounded-xl">
+                            <div class="text-sm opacity-70 mb-1">최장 연속 정답</div>
+                            <div id="dash-best-streak" class="text-2xl font-bold">0</div>
+                        </div>
+                    </div>
+
+                    <!-- 차트 영역 -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                        <div class="chart-card p-6 rounded-xl">
+                            <h3 class="font-bold mb-4">과목별 성취도</h3>
+                            <div style="height: 300px;">
+                                <canvas id="subject-chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-card p-6 rounded-xl">
+                            <h3 class="font-bold mb-4">주간 학습량</h3>
+                            <div style="height: 300px;">
+                                <canvas id="weekly-chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 게임 모드 통계 -->
+                    <div id="game-stats" class="hidden">
+                        <h3 class="text-xl font-bold mb-4">🎮 게임 통계</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="game-stat-card p-4 rounded-xl text-center">
+                                <div class="text-3xl mb-2">🏆</div>
+                                <div id="game-level" class="text-xl font-bold">Level 1</div>
+                                <div class="text-sm opacity-70">현재 레벨</div>
+                            </div>
+                            <div class="game-stat-card p-4 rounded-xl text-center">
+                                <div class="text-3xl mb-2">⭐</div>
+                                <div id="game-total-xp" class="text-xl font-bold">0</div>
+                                <div class="text-sm opacity-70">총 XP</div>
+                            </div>
+                            <div class="game-stat-card p-4 rounded-xl text-center">
+                                <div class="text-3xl mb-2">🔥</div>
+                                <div id="game-max-combo" class="text-xl font-bold">0</div>
+                                <div class="text-sm opacity-70">최대 콤보</div>
+                            </div>
+                            <div class="game-stat-card p-4 rounded-xl text-center">
+                                <div class="text-3xl mb-2">🎖️</div>
+                                <div id="game-badges" class="text-xl font-bold">0</div>
+                                <div class="text-sm opacity-70">획듍 배지</div>
+                            </div>
+                        </div>
+
+                        <!-- 배지 컨렉션 -->
+                        <div class="badge-collection p-6 rounded-xl">
+                            <h4 class="font-bold mb-4">배지 컨렉션</h4>
+                            <div id="badge-grid" class="grid grid-cols-4 md:grid-cols-8 gap-4">
+                                <!-- JavaScript에서 동적 생성 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 설정 페이지 -->
+            <section id="page-settings" class="page hidden">
+                <div class="max-w-2xl mx-auto">
+                    <div class="flex items-center gap-3 mb-6">
+                        <button id="settings-back-btn" class="p-2 hover:bg-gray-100 rounded-lg transition">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <h2 class="text-2xl font-bold">⚙️ 설정</h2>
+                    </div>
+
+                    <!-- UI 모드 선택 -->
+                    <div class="settings-card p-6 rounded-xl mb-6">
+                        <h3 class="text-lg font-bold mb-4">🎨 학습 모드</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button id="mode-focus" class="mode-card p-6 rounded-xl border-2 transition-all">
+                                <div class="text-4xl mb-3">📖</div>
+                                <h4 class="font-bold mb-2">Focus Mode</h4>
+                                <p class="text-sm opacity-70">집중 학습에 최적화된 깔끔한 디자인</p>
+                                <ul class="text-xs mt-3 opacity-60 text-left">
+                                    <li>• 미니멀 디자인</li>
+                                    <li>• 큰 글씨</li>
+                                    <li>• 애니메이션 최소화</li>
+                                </ul>
+                            </button>
+                            <button id="mode-game" class="mode-card p-6 rounded-xl border-2 transition-all">
+                                <div class="text-4xl mb-3">🎮</div>
+                                <h4 class="font-bold mb-2">Game Mode</h4>
+                                <p class="text-sm opacity-70">게이미피케이션으로 재미있게 학습</p>
+                                <ul class="text-xs mt-3 opacity-60 text-left">
+                                    <li>• XP & 레벨 시스템</li>
+                                    <li>• 배지 획듍</li>
+                                    <li>• 콤보 보너스</li>
+                                </ul>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 학습 설정 -->
+                    <div class="settings-card p-6 rounded-xl mb-6">
+                        <h3 class="text-lg font-bold mb-4">📚 학습 설정</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="font-medium">문제 수</div>
+                                    <div class="text-sm opacity-70">한 세션당 문제 수</div>
+                                </div>
+                                <select id="setting-question-count" class="setting-select px-4 py-2 rounded-lg">
+                                    <option value="5">5문제</option>
+                                    <option value="10" selected>10문제</option>
+                                    <option value="20">20문제</option>
+                                    <option value="30">30문제</option>
+                                </select>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="font-medium">문제 순서</div>
+                                    <div class="text-sm opacity-70">문제 출제 방식</div>
+                                </div>
+                                <select id="setting-order" class="setting-select px-4 py-2 rounded-lg">
+                                    <option value="random" selected>랜덤</option>
+                                    <option value="sequential">순차</option>
+                                    <option value="wrong-first">오답 우선</option>
+                                </select>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="font-medium">즉시 채점</div>
+                                    <div class="text-sm opacity-70">답 선택 즉시 결과 표시</div>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="setting-instant-feedback" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 데이터 관리 -->
+                    <div class="settings-card p-6 rounded-xl">
+                        <h3 class="text-lg font-bold mb-4">💾 데이터 관리</h3>
+                        <div class="space-y-3">
+                            <button id="btn-export-data" class="w-full btn-secondary py-3 rounded-lg">
+                                <i class="fas fa-download mr-2"></i>학습 데이터 내보내기
+                            </button>
+                            <button id="btn-reset-data" class="w-full btn-danger py-3 rounded-lg">
+                                <i class="fas fa-trash mr-2"></i>모든 데이터 초기화
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 앱 정보 -->
+                    <div class="mt-8 text-center text-sm opacity-60">
+                        <p>제2종 전기차량운전면허 학습 플랫폼 v1.0</p>
+                        <p class="mt-1">PDF 자료 기반 학습 시스템</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 과목 선택 모달 -->
+        <div id="modal-subject" class="modal hidden fixed inset-0 z-50 flex items-center justify-center">
+            <div class="modal-backdrop absolute inset-0 bg-black/50" onclick="closeModal()"></div>
+            <div class="modal-content relative bg-white rounded-2xl p-6 max-w-md w-full mx-4 max-h-[80vh] overflow-y-auto">
+                <h3 class="text-xl font-bold mb-4">과목 선택</h3>
+                <div id="modal-subject-list" class="space-y-2">
+                    <!-- JavaScript에서 동적 생성 -->
+                </div>
+                <button onclick="closeModal()" class="mt-4 w-full btn-secondary py-3 rounded-lg">취소</button>
+            </div>
+        </div>
+
+        <!-- 배지 상세 모달 -->
+        <div id="badge-detail-modal" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black/50">
+            <div class="modal-content bg-white rounded-2xl p-8 max-w-md mx-4 text-center">
+                <div id="badge-detail-icon" class="text-8xl mb-4">🎖️</div>
+                <h3 id="badge-detail-name" class="text-2xl font-bold mb-2">배지 이름</h3>
+                <p id="badge-detail-description" class="text-gray-600 mb-6">배지 설명</p>
+                <button onclick="closeBadgeDetailModal()" class="btn-primary px-8 py-3 rounded-lg font-bold">
+                    닫기
+                </button>
+            </div>
+        </div>
+
+        <!-- 토스트 메시지 -->
+        <div id="toast" class="fixed bottom-4 right-4 z-50 hidden">
+            <div class="toast-content px-6 py-3 rounded-lg shadow-lg flex items-center gap-3">
+                <i id="toast-icon" class="fas fa-check-circle"></i>
+                <span id="toast-message">메시지</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript 파일 로드 -->
+    <!-- Questions -->
+    <script src="data/questions/subjects.js"></script>
+    <script src="data/questions/law.js"></script>
+    <script src="data/questions/urban.js"></script>
+    <script src="data/questions/emu.js"></script>
+    <script src="data/questions/theory.js"></script>
+    <script src="data/questions/emergency.js"></script>
+    <script src="data/questions/index.js"></script>
+    
+    <!-- Concepts -->
+    <script src="data/concepts/law/law_ch1.js"></script>
+    <script src="data/concepts/law/index.js"></script>
+    <script src="data/concepts/urban/urban_ch1.js"></script>
+    <script src="data/concepts/urban/urban_ch2.js"></script>
+    <script src="data/concepts/urban/urban_ch3.js"></script>
+    <script src="data/concepts/urban/urban_ch4.js"></script>
+    <script src="data/concepts/urban/urban_ch5.js"></script>
+    <script src="data/concepts/urban/urban_ch6.js"></script>
+    <script src="data/concepts/urban/urban_ch7.js"></script>
+    <script src="data/concepts/urban/urban_ch8.js"></script>
+    <script src="data/concepts/urban/urban_ch9.js"></script>
+    <script src="data/concepts/urban/urban_ch10.js"></script>
+    <script src="data/concepts/urban/urban_ch11.js"></script>
+    <script src="data/concepts/urban/index.js"></script>
+    <script src="data/concepts/emu/emu_ch2.js"></script>
+    <script src="data/concepts/emu/emu_ch3.js"></script>
+    <script src="data/concepts/emu/emu_ch4.js"></script>
+    <script src="data/concepts/emu/emu_ch5.js"></script>
+    <script src="data/concepts/emu/emu_ch6.js"></script>
+    <script src="data/concepts/emu/emu_ch7.js"></script>
+    <script src="data/concepts/emu/index.js"></script>
+    <script src="data/concepts/theory/index.js"></script>
+    <script src="data/concepts/emergency/index.js"></script>
+    <script src="data/concepts/index.js"></script>
+    
+    <!-- App Scripts -->
+    <script src="js/storage.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/gamification.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/study.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/app.js"></script>
+    
+    <!-- 유틸리티 함수 -->
+    <script>
+        function closeBadgeDetailModal() {
+            const modal = document.getElementById('badge-detail-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+    </script>
+    
+    <!-- 키보드 단축키 (학습 페이지 네비게이션) -->
+    <script>
+        document.addEventListener('keydown', (e) => {
+            // Study 페이지에서만 작동
+            if (App.currentPage !== 'study' || !Study.currentSection) return;
+            
+            if (e.key === 'ArrowLeft') {
+                // 왼쪽 화살표: 이전 섹션
+                const prevSection = Study.getPrevSection(Study.currentSubject, Study.currentChapter, Study.currentSection);
+                if (prevSection) {
+                    e.preventDefault();
+                    Study.showContent(Study.currentSubject, Study.currentChapter, prevSection.id);
+                }
+            } else if (e.key === 'ArrowRight') {
+                // 오른쪽 화살표: 다음 섹션
+                const nextSection = Study.getNextSection(Study.currentSubject, Study.currentChapter, Study.currentSection);
+                if (nextSection) {
+                    e.preventDefault();
+                    Study.showContent(Study.currentSubject, Study.currentChapter, nextSection.id);
+                }
+            }
+        });
+    </script>
+    
+    <!-- Service Worker 등록 (PWA) -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((registration) => {
+                        console.log('✅ ServiceWorker registered:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('❌ ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+        
+        // PWA 설치 프롬프트
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            console.log('💾 App install available');
+            
+            // 설치 버튼 표시 (선택사항)
+            // showInstallButton();
+        });
+        
+        window.addEventListener('appinstalled', () => {
+            console.log('✅ PWA installed successfully');
+            deferredPrompt = null;
+        });
+    </script>
+    <!-- Debug Script -->
+    <script>
+        console.log('=== Checking Global Variables ===');
+        console.log('SUBJECTS:', typeof SUBJECTS !== 'undefined' ? SUBJECTS : 'NOT DEFINED');
+        console.log('QUESTIONS:', typeof QUESTIONS !== 'undefined' ? QUESTIONS.length : 'NOT DEFINED');
+        console.log('CONCEPTS:', typeof CONCEPTS !== 'undefined' ? CONCEPTS : 'NOT DEFINED');
+        console.log('App:', typeof App !== 'undefined' ? 'DEFINED' : 'NOT DEFINED');
+        console.log('=================================');
+    </script>
+</body>
+</html>

@@ -1,0 +1,1554 @@
+/* ========================================
+   Game Mode (게임 모드) 테마
+   - 게이미피케이션 요소
+   - 다크 네이비 배경
+   - 동적 애니메이션
+   ======================================== */
+
+/* Game Mode 색상 팔레트 */
+:root {
+    --game-bg: #0A0F1C;  /* 더 어두운 배경 */
+    --game-bg-secondary: #1E293B;
+    --game-bg-card: #334155;
+    --game-text: #F8FAFC;  /* 더 밝게 */
+    --game-text-secondary: #CBD5E1;  /* 더 선명하게 */
+    --game-text-muted: #64748B;  /* 추가: 더 흐린 텍스트 */
+    --game-primary: #3B82F6;
+    --game-primary-light: rgba(59, 130, 246, 0.2);
+    --game-success: #10B981;
+    --game-success-light: rgba(16, 185, 129, 0.2);
+    --game-error: #EF4444;
+    --game-error-light: rgba(239, 68, 68, 0.2);
+    --game-xp: #FBBF24;
+    --game-xp-light: rgba(251, 191, 36, 0.2);
+    --game-level: #8B5CF6;
+    --game-combo: #F97316;
+    --game-border: #475569;
+    --game-glow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+    --game-xp: #FBBF24;
+    --game-xp-light: rgba(251, 191, 36, 0.2);
+    --game-level: #8B5CF6;
+    --game-combo: #F97316;
+    --game-border: #475569;
+    --game-glow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* 기본 배경 - 게임 모드 활성화시에만 적용 */
+body.game-mode {
+    background-color: var(--game-bg) !important;
+    color: var(--game-text) !important;
+    color-scheme: dark !important;
+}
+
+body.game-mode::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--game-bg) !important;
+    z-index: -1;
+}
+
+/* 게임 모드 Tailwind 클래스 오버라이드 */
+body.game-mode .bg-white,
+body.game-mode .bg-gray-50,
+body.game-mode .bg-gray-100,
+body.game-mode .bg-gray-200 {
+    background-color: var(--game-bg) !important;
+}
+
+body.game-mode .text-gray-600,
+body.game-mode .text-gray-700,
+body.game-mode .text-gray-800,
+body.game-mode .text-gray-900,
+body.game-mode .text-black {
+    color: var(--game-text-secondary) !important;
+}
+
+body.game-mode .border-gray-200,
+body.game-mode .border-gray-300 {
+    border-color: var(--game-border) !important;
+}
+
+/* 로딩 스크린 (게임 모드) */
+body:not(.focus-mode) #loading-screen {
+    background: linear-gradient(135deg, var(--game-bg) 0%, var(--game-bg-secondary) 100%) !important;
+    color: var(--game-text) !important;
+}
+
+body:not(.focus-mode) .loading-spinner {
+    border-color: var(--game-border) !important;
+    border-top-color: var(--game-primary) !important;
+}
+
+/* ========================================
+   색상 강제 오버라이드 (게임 모드)
+   ======================================== */
+
+/* Tailwind 기본 색상 클래스 오버라이드 */
+.text-black { color: var(--game-text) !important; }
+.text-white { color: var(--game-text) !important; }
+.text-gray-900 { color: var(--game-text) !important; }
+.text-gray-800 { color: var(--game-text-secondary) !important; }
+.text-gray-700 { color: var(--game-text-secondary) !important; }
+.text-gray-600 { color: var(--game-text-secondary) !important; }
+.text-gray-500 { color: var(--game-text-muted) !important; }
+.text-gray-400 { color: var(--game-text-muted) !important; }
+.text-gray-300 { color: var(--game-text-secondary) !important; }
+.text-gray-200 { color: var(--game-text-secondary) !important; }
+.text-gray-100 { color: var(--game-text) !important; }
+
+.bg-black { background-color: var(--game-bg) !important; }
+.bg-white { background-color: var(--game-bg-card) !important; }
+.bg-gray-900 { background-color: var(--game-bg-secondary) !important; }
+.bg-gray-800 { background-color: var(--game-bg-secondary) !important; }
+.bg-gray-700 { background-color: var(--game-bg-card) !important; }
+.bg-gray-600 { background-color: var(--game-bg-card) !important; }
+.bg-gray-500 { background-color: var(--game-border) !important; }
+.bg-gray-400 { background-color: var(--game-border) !important; }
+.bg-gray-300 { background-color: var(--game-bg-secondary) !important; }
+.bg-gray-200 { background-color: var(--game-bg-secondary) !important; }
+.bg-gray-100 { background-color: var(--game-bg-card) !important; }
+
+/* 테두리 색상 */
+.border-black { border-color: var(--game-border) !important; }
+.border-white { border-color: var(--game-border) !important; }
+.border-gray-900 { border-color: var(--game-border) !important; }
+.border-gray-800 { border-color: var(--game-border) !important; }
+.border-gray-700 { border-color: var(--game-border) !important; }
+.border-gray-600 { border-color: var(--game-border) !important; }
+.border-gray-500 { border-color: var(--game-border) !important; }
+.border-gray-400 { border-color: var(--game-border) !important; }
+.border-gray-300 { border-color: var(--game-border) !important; }
+.border-gray-200 { border-color: var(--game-border) !important; }
+.border-gray-100 { border-color: var(--game-border) !important; }
+
+/* 호버 상태 */
+.hover\:bg-gray-100:hover { background-color: var(--game-bg-secondary) !important; }
+.hover\:bg-gray-50:hover { background-color: var(--game-bg-secondary) !important; }
+.hover\:bg-white:hover { background-color: var(--game-bg-card) !important; }
+
+/* 기타 요소들 */
+hr { border-color: var(--game-border) !important; }
+input, textarea, select {
+    background-color: var(--game-bg-card) !important;
+    color: var(--game-text) !important;
+    border-color: var(--game-border) !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--game-text-secondary) !important;
+}
+
+/* 링크 */
+a { color: var(--game-primary) !important; }
+a:hover { color: var(--game-primary-light) !important; }
+
+/* ========================================
+   홈화면 텍스트 가독성 개선 (게임 모드)
+   ======================================== */
+
+/* 통계 카드 텍스트 */
+#stat-solved, #stat-correct, #stat-accuracy, #stat-streak {
+    color: var(--game-text) !important;
+}
+
+.stat-item .text-sm {
+    color: var(--game-text-secondary) !important;
+}
+
+/* 과목 카드 텍스트 */
+.subject-card h4 {
+    color: var(--game-text) !important;
+}
+
+.subject-card p {
+    color: var(--game-text-secondary) !important;
+}
+
+.subject-card .subject-question-count {
+    color: var(--game-text-secondary) !important;
+}
+
+.subject-card .subject-arrow {
+    color: var(--game-text-secondary) !important;
+}
+
+/* 학습 섹션 헤더 */
+h3.text-lg.font-bold, h3.text-xl.font-bold {
+    color: var(--game-text) !important;
+}
+
+/* 설명 텍스트 */
+.text-sm.opacity-70 {
+    color: var(--game-text-secondary) !important;
+}
+
+/* Tailwind 색상 클래스 오버라이드 */
+.text-primary { color: var(--game-primary) !important; }
+.text-green-500 { color: var(--game-success) !important; }
+.text-blue-500 { color: var(--game-primary) !important; }
+.text-orange-500 { color: var(--game-xp) !important; }
+.text-red-500 { color: var(--game-error) !important; }
+
+/* ========================================
+   추가 텍스트 가독성 개선 (게임 모드)
+   ======================================== */
+
+/* XP 바 텍스트 */
+#xp-text {
+    color: var(--game-text) !important;
+}
+
+/* 학습 섹션 헤더들 */
+h3.text-lg.font-bold, h3.text-xl.font-bold {
+    color: var(--game-text) !important;
+}
+
+/* 학습 섹션 설명 텍스트 */
+.text-sm.opacity-70 {
+    color: var(--game-text-secondary) !important;
+}
+
+/* 대시보드 페이지 */
+#page-dashboard h2 {
+    color: var(--game-text) !important;
+}
+
+.dashboard-stat-card {
+    background-color: var(--game-bg-card) !important;
+    border: 1px solid var(--game-border) !important;
+}
+
+.dashboard-stat-card .text-sm.opacity-70 {
+    color: var(--game-text-secondary) !important;
+}
+
+.dashboard-stat-card .text-2xl.font-bold {
+    color: var(--game-text) !important;
+}
+
+/* 설정 페이지 */
+#page-settings h2 {
+    color: var(--game-text) !important;
+}
+
+.settings-card {
+    background-color: var(--game-bg-card) !important;
+    border: 1px solid var(--game-border) !important;
+}
+
+.settings-card h3 {
+    color: var(--game-text) !important;
+}
+
+.settings-card h4 {
+    color: var(--game-text) !important;
+}
+
+.settings-card p {
+    color: var(--game-text-secondary) !important;
+}
+
+.settings-card ul li {
+    color: var(--game-text-secondary) !important;
+}
+
+.settings-card .font-medium {
+    color: var(--game-text) !important;
+}
+
+.settings-card .text-sm.opacity-70 {
+    color: var(--game-text-secondary) !important;
+}
+
+.mode-card {
+    background-color: var(--game-bg-secondary) !important;
+    border-color: var(--game-border) !important;
+    color: var(--game-text) !important;
+}
+
+.mode-card:hover {
+    background-color: var(--game-primary-light) !important;
+    border-color: var(--game-primary) !important;
+}
+
+.setting-select {
+    background-color: var(--game-bg-card) !important;
+    color: var(--game-text) !important;
+    border-color: var(--game-border) !important;
+}
+
+.setting-select option {
+    background-color: var(--game-bg-card) !important;
+    color: var(--game-text) !important;
+}
+
+/* ========================================
+   학습하기 페이지 호버 효과 (게임 모드)
+   ======================================== */
+
+/* 과목 카드 호버 */
+.study-subject-card {
+    background-color: var(--game-bg-card) !important;
+    border: 1px solid var(--game-border) !important;
+    color: var(--game-text) !important;
+}
+
+.study-subject-card:hover {
+    background-color: var(--game-primary-light) !important;
+    border-color: var(--game-primary) !important;
+    transform: scale(1.02) !important;
+}
+
+/* 챕터 카드 호버 */
+.study-chapter-card {
+    background-color: var(--game-bg-secondary) !important;
+    border: 1px solid var(--game-border) !important;
+    color: var(--game-text) !important;
+}
+
+.study-chapter-card:hover {
+    background-color: var(--game-primary-light) !important;
+    border-color: var(--game-primary) !important;
+}
+
+/* 섹션 카드 호버 */
+.study-section-card {
+    background-color: var(--game-bg-secondary) !important;
+    border: 1px solid var(--game-border) !important;
+    color: var(--game-text) !important;
+}
+
+.study-section-card:hover {
+    background-color: var(--game-primary-light) !important;
+    border-color: var(--game-primary) !important;
+}
+
+/* 브레드크럼 링크 호버 */
+.text-primary.cursor-pointer:hover {
+    color: var(--game-primary-light) !important;
+}
+
+/* 학습하기 페이지 버튼 호버 */
+#page-study button:hover {
+    background-color: var(--game-primary-light) !important;
+    border-color: var(--game-primary) !important;
+    color: var(--game-text) !important;
+}
+
+/* 학습하기 페이지 텍스트 */
+#page-study h2 {
+    color: var(--game-text) !important;
+}
+
+#page-study .text-gray-500 {
+    color: var(--game-text-secondary) !important;
+}
+
+#page-study .text-gray-600:hover {
+    color: var(--game-primary) !important;
+}
+
+/* ========================================
+   대시보드 차트 제목 (게임 모드)
+   ======================================== */
+
+#page-dashboard h3.font-bold {
+    color: var(--game-text) !important;
+}
+
+/* Chart.js 캔버스 배경 */
+#page-dashboard canvas {
+    background-color: var(--game-bg-card) !important;
+}
+
+/* 헤더 */
+#main-header {
+    background: linear-gradient(180deg, var(--game-bg-secondary) 0%, var(--game-bg) 100%);
+    border-color: var(--game-border);
+}
+
+#main-header h1 {
+    color: var(--game-text);
+}
+
+.text-primary {
+    color: var(--game-primary) !important;
+}
+
+/* 네비게이션 */
+.nav-btn {
+    background-color: transparent;
+    color: var(--game-text-secondary);
+}
+
+.nav-btn:hover {
+    background-color: var(--game-primary-light);
+    color: var(--game-primary);
+    box-shadow: var(--game-glow);
+}
+
+.nav-btn.active {
+    background: linear-gradient(135deg, var(--game-primary) 0%, #2563EB 100%);
+    color: white;
+    box-shadow: var(--game-glow);
+}
+
+/* XP 바 */
+.xp-bar-bg {
+    background-color: var(--game-bg-card);
+    border: 1px solid var(--game-border);
+}
+
+.xp-bar-fill {
+    background: linear-gradient(90deg, var(--game-xp) 0%, #F59E0B 100%);
+    box-shadow: 0 0 10px var(--game-xp);
+}
+
+.level-badge {
+    background: linear-gradient(135deg, var(--game-level) 0%, #7C3AED 100%);
+    color: white;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+    animation: levelPulse 2s ease-in-out infinite;
+}
+
+@keyframes levelPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* ========================================
+   시각적 피드백 강화 (게임 모드)
+   ======================================== */
+
+/* 버튼 호버 효과 개선 */
+.nav-btn, .btn-primary, .btn-secondary, .btn-danger {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--game-glow), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+}
+
+/* 진행 바 애니메이션 */
+.progress-bar-fill {
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 카드 호버 효과 */
+.quiz-card, .review-card, .dashboard-stat-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quiz-card:hover, .review-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-stat-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 정답/오답 애니메이션 */
+@keyframes correctAnswer {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes wrongAnswer {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.correct-animation {
+    animation: correctAnswer 0.6s ease-out;
+}
+
+.wrong-animation {
+    animation: wrongAnswer 0.5s ease-out;
+}
+
+/* 옵션 버튼 호버 */
+.quiz-card button {
+    transition: all 0.2s ease;
+}
+
+.quiz-card button:hover {
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-card button.selected {
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+/* 옵션 버튼 상태 (게임 모드) */
+.option-btn.correct {
+    background-color: var(--game-success-light) !important;
+    border: 2px solid var(--game-success) !important;
+    color: var(--game-text) !important;
+}
+
+.option-btn.wrong {
+    background-color: var(--game-error-light) !important;
+    border: 2px solid var(--game-error) !important;
+    color: var(--game-text) !important;
+}
+
+.option-btn.selected {
+    background-color: var(--game-primary-light) !important;
+    border: 2px solid var(--game-primary) !important;
+    color: var(--game-text) !important;
+}
+
+/* 환영 카드 */
+.welcome-card {
+    background: linear-gradient(135deg, var(--game-level) 0%, #6D28D9 50%, var(--game-primary) 100%);
+    color: white;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.3);
+}
+
+/* 문제 연습 섹션 (게임모드) */
+.quick-action-card {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #e2e8f0;
+}
+
+.quick-action-card:hover {
+    border-color: var(--game-primary);
+    box-shadow: var(--game-glow), 0 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: var(--game-bg-card);
+}
+
+.icon-circle {
+    background: linear-gradient(135deg, var(--game-primary) 0%, #2563EB 100%);
+    color: white;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+.icon-circle.secondary {
+    background: linear-gradient(135deg, var(--game-success) 0%, #059669 100%);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+}
+
+/* 과목 카드 */
+.subject-card {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+}
+
+.subject-card:hover {
+    border-color: var(--game-primary);
+    box-shadow: var(--game-glow);
+    transform: translateY(-4px) scale(1.02);
+}
+
+.subject-card h4 {
+    color: var(--game-text);
+}
+
+.subject-card p {
+    color: var(--game-text-secondary);
+}
+
+.subject-card .progress-text {
+    color: var(--game-xp);
+}
+
+/* 통계 미리보기 */
+.stats-preview {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+}
+
+.stat-item {
+    background-color: var(--game-bg-card);
+}
+
+/* 프로그레스 바 */
+.progress-bar-bg {
+    background-color: var(--game-bg-card);
+}
+
+.progress-bar-fill {
+    background: linear-gradient(90deg, var(--game-primary) 0%, var(--game-success) 100%);
+}
+
+/* 과목 뱃지 */
+.subject-badge {
+    background: linear-gradient(135deg, var(--game-primary) 0%, var(--game-level) 100%);
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* 퀴즈 카드 */
+.quiz-card {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+#question-number {
+    color: var(--game-xp);
+    font-weight: bold;
+}
+
+#question-text {
+    color: #f8fafc;
+    font-weight: 500;
+}
+
+/* 선택지 버튼 - Game 모드는 더 화려한 디자인 */
+.option-btn {
+    background-color: var(--game-bg-card);
+    color: #f1f5f9;
+    border-color: var(--game-border);
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.option-btn:hover:not(:disabled) {
+    background-color: var(--game-primary-light);
+    border-color: var(--game-primary);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    color: #ffffff;
+}
+
+.option-btn:hover:not(:disabled) {
+    background-color: var(--game-primary-light);
+    border-color: var(--game-primary);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    transform: translateX(8px);
+}
+
+.option-btn.selected {
+    background-color: var(--game-primary-light);
+    border-color: var(--game-primary);
+    box-shadow: var(--game-glow);
+}
+
+.option-btn.correct {
+    background-color: var(--game-success-light);
+    border-color: var(--game-success);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+    animation: correctPulse 0.5s ease;
+}
+
+@keyframes correctPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.option-btn.wrong {
+    background-color: var(--game-error-light);
+    border-color: var(--game-error);
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+    animation: wrongShake 0.5s ease;
+}
+
+@keyframes wrongShake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.option-number {
+    background-color: var(--game-border);
+    color: var(--game-text);
+}
+
+.option-btn.selected .option-number {
+    background: linear-gradient(135deg, var(--game-primary) 0%, #2563EB 100%);
+    color: white;
+}
+
+.option-btn.correct .option-number {
+    background: linear-gradient(135deg, var(--game-success) 0%, #059669 100%);
+    color: white;
+}
+
+.option-btn.wrong .option-number {
+    background: linear-gradient(135deg, var(--game-error) 0%, #DC2626 100%);
+    color: white;
+}
+
+/* 해설 카드 */
+.explanation-card {
+    background-color: var(--game-bg-card);
+    border: 1px solid var(--game-border);
+    color: var(--game-text) !important;
+}
+
+.explanation-card * {
+    color: var(--game-text) !important;
+}
+
+.explanation-card.correct {
+    background-color: var(--game-success-light);
+    border-color: var(--game-success);
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.2);
+}
+
+.explanation-card.correct * {
+    color: var(--game-text) !important;
+}
+
+.explanation-card.wrong {
+    background-color: var(--game-error-light);
+    border-color: var(--game-error);
+}
+
+.explanation-card.wrong * {
+    color: var(--game-text) !important;
+}
+
+/* 보너스 팝업 */
+.bonus-popup {
+    background: linear-gradient(135deg, var(--game-xp) 0%, var(--game-combo) 100%);
+    color: var(--game-bg);
+    box-shadow: 0 0 50px rgba(251, 191, 36, 0.5);
+}
+
+/* 버튼 */
+.btn-primary {
+    background: linear-gradient(135deg, var(--game-primary) 0%, #2563EB 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.6);
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: var(--game-bg-card);
+    color: #e2e8f0;
+    border: 1px solid var(--game-border);
+}
+
+.btn-secondary:hover {
+    background-color: var(--game-border);
+    color: #ffffff;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--game-error) 0%, #DC2626 100%);
+    color: white;
+}
+
+/* 결과 카드 */
+.result-card {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.result-stat {
+    background-color: var(--game-bg-card);
+}
+
+/* 오답 노트 */
+.review-item {
+    background-color: var(--game-bg-secondary);
+    border-left-color: var(--game-error);
+}
+
+.review-item.mastered {
+    border-left-color: var(--game-success);
+}
+
+/* 대시보드 */
+.dashboard-stat-card {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+}
+
+.chart-card {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+}
+
+/* 게임 통계 */
+.game-stat-card {
+    background: linear-gradient(135deg, var(--game-bg-secondary) 0%, var(--game-bg-card) 100%);
+    border: 1px solid var(--game-border);
+}
+
+.game-stat-card .text-xl,
+.game-stat-card .text-sm {
+    color: var(--game-text) !important;
+}
+
+.badge-collection {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+}
+
+.badge-collection h4 {
+    color: var(--game-text) !important;
+}
+
+.badge-item {
+    background-color: var(--game-bg-card);
+    border: 1px solid var(--game-border);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.badge-item:hover:not(.locked) {
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+}
+
+/* 설정 */
+.settings-card {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+}
+
+.mode-card {
+    background-color: var(--game-bg-card);
+    border-color: var(--game-border);
+}
+
+.mode-card:hover {
+    border-color: var(--game-primary);
+    box-shadow: var(--game-glow);
+}
+
+.mode-card.selected {
+    border-color: var(--game-xp) !important;
+    background: linear-gradient(135deg, var(--game-xp-light) 0%, var(--game-primary-light) 100%);
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
+}
+
+.filter-select,
+.setting-select {
+    background-color: var(--game-bg-card);
+    color: var(--game-text);
+    border-color: var(--game-border);
+}
+
+/* 모달 */
+.modal-content {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+}
+
+/* 토스트 */
+.toast-content {
+    background: linear-gradient(135deg, var(--game-bg-secondary) 0%, var(--game-bg-card) 100%);
+    color: var(--game-text);
+    border: 1px solid var(--game-border);
+}
+
+.toast-content.success {
+    background: linear-gradient(135deg, var(--game-success) 0%, #059669 100%);
+}
+
+.toast-content.error {
+    background: linear-gradient(135deg, var(--game-error) 0%, #DC2626 100%);
+}
+
+/* 파티클 효과 */
+.particle {
+    color: var(--game-xp);
+    text-shadow: 0 0 10px var(--game-xp);
+}
+
+/* 학습 페이지 */
+.study-subject-card {
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+    color: #f1f5f9;
+}
+
+.study-subject-card:hover {
+    border-color: var(--game-primary);
+    box-shadow: var(--game-glow);
+    background-color: var(--game-bg-card);
+}
+
+.study-chapter-card {
+    background-color: var(--game-bg-card);
+    border: 1px solid var(--game-border);
+    color: #e2e8f0;
+}
+
+.study-chapter-card:hover {
+    background-color: var(--game-primary-light);
+    border-color: var(--game-primary);
+}
+
+.study-section-card {
+    background-color: var(--game-bg-card);
+    border: 1px solid var(--game-border);
+    color: #e2e8f0;
+}
+
+/* 학습 상세 - 핵심 용어 */
+body.game-mode .bg-yellow-50 {
+    background-color: rgba(251, 191, 36, 0.1) !important;
+}
+
+body.game-mode .border-yellow-200 {
+    border-color: rgba(251, 191, 36, 0.3) !important;
+}
+
+body.game-mode .text-yellow-800 {
+    color: #FCD34D !important;
+}
+
+body.game-mode .bg-yellow-100 {
+    background-color: rgba(251, 191, 36, 0.2) !important;
+}
+
+/* 학습 상세 - 관련 문제 */
+body.game-mode .bg-blue-50 {
+    background-color: rgba(59, 130, 246, 0.1) !important;
+}
+
+body.game-mode .border-blue-200 {
+    border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+body.game-mode .text-blue-800 {
+    color: #60A5FA !important;
+}
+
+body.game-mode .bg-blue-500 {
+    background-color: var(--game-primary) !important;
+}
+
+body.game-mode .hover\:bg-blue-600:hover {
+    background-color: rgba(59, 130, 246, 0.8) !important;
+}
+
+.study-section-card:hover {
+    background-color: var(--game-primary-light);
+    border-color: var(--game-primary);
+}
+
+.study-article {
+    color: #f8fafc;
+    background-color: var(--game-bg-secondary);
+    border: 1px solid var(--game-border);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.study-content-body {
+    color: #e2e8f0;
+    line-height: 1.7;
+}
+
+.study-content-body h1 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--game-primary);
+}
+
+.study-content-body h2 {
+    color: #60a5fa;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.study-content-body h3 {
+    color: #93c5fd;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.study-content-body p {
+    color: #e2e8f0;
+    margin-bottom: 1rem;
+}
+
+.study-content-body strong {
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.study-content-body blockquote {
+    background-color: var(--game-primary-light);
+    border-left-color: var(--game-primary);
+    color: #dbeafe;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.study-content-body table {
+    border-color: var(--game-border);
+    background-color: var(--game-bg-card);
+    margin: 1.5rem 0;
+}
+
+.study-content-body th,
+.study-content-body td {
+    border-color: var(--game-border);
+    color: #e2e8f0;
+    padding: 0.75rem;
+}
+
+.study-content-body th {
+    background-color: var(--game-bg-secondary);
+    color: #f1f5f9;
+    font-weight: 600;
+}
+
+.study-content-body li {
+    color: #e2e8f0;
+    margin-bottom: 0.5rem;
+}
+
+.study-content-body code {
+    background-color: var(--game-bg-card);
+    color: #fbbf24;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Menlo', monospace;
+}
+
+.study-content-body pre {
+    background-color: var(--game-bg-card);
+    border: 1px solid var(--game-border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.study-content-body pre code {
+    background-color: transparent;
+    color: #e2e8f0;
+    padding: 0;
+}
+
+/* 로딩 스크린 (게임 모드) */
+body:not(.focus-mode) #loading-screen {
+    background: linear-gradient(135deg, var(--game-bg) 0%, var(--game-bg-secondary) 100%);
+    color: var(--game-text);
+}
+
+body:not(.focus-mode) .loading-spinner {
+    border-color: var(--game-border);
+    border-top-color: var(--game-primary);
+}
+
+/* 스크롤바 (게임 모드) */
+body:not(.focus-mode)::-webkit-scrollbar-track {
+    background: var(--game-bg);
+}
+
+body:not(.focus-mode)::-webkit-scrollbar-thumb {
+    background: var(--game-border);
+}
+
+body:not(.focus-mode)::-webkit-scrollbar-thumb:hover {
+    background: var(--game-primary);
+}
+
+/* ========================================
+   오답 노트 페이지 (게임 모드)
+   ======================================== */
+
+#page-review h2 {
+    color: var(--game-text);
+}
+
+#page-review h3 {
+    color: var(--game-text);
+}
+
+#page-review p {
+    color: var(--game-text-secondary);
+}
+
+#page-review select {
+    background-color: var(--game-bg-card);
+    color: var(--game-text);
+    border: 1px solid var(--game-border);
+}
+
+#page-review select option {
+    background-color: var(--game-bg-card);
+    color: var(--game-text);
+}
+
+#page-review .review-card {
+    background-color: var(--game-bg-card);
+    border: 1px solid var(--game-border);
+    color: var(--game-text);
+}
+
+#page-review .review-card h4 {
+    color: var(--game-text);
+}
+
+#page-review .review-card .opacity-70 {
+    color: var(--game-text-secondary);
+}
+
+#page-review .subject-badge {
+    background-color: var(--game-bg-secondary) !important;
+    color: var(--game-text) !important;
+}
+
+#page-review .wrong-count {
+    color: var(--game-error) !important;
+}
+
+#page-review .text-green-600 {
+    color: var(--game-success) !important;
+}
+
+/* ========================================
+   버튼 스타일 (게임 모드)
+   ======================================== */
+
+.btn-danger {
+    background-color: var(--game-error) !important;
+    color: white !important;
+}
+
+.btn-danger:hover {
+    background-color: var(--game-error-light) !important;
+}
+
+/* ========================================
+   모달 팝업 (게임 모드)
+   ======================================== */
+
+.modal-content {
+    background-color: var(--game-bg-card) !important;
+    color: var(--game-text) !important;
+    border: 1px solid var(--game-border);
+}
+
+.modal-content h3 {
+    color: var(--game-text) !important;
+}
+
+.modal-content .subject-card {
+    background-color: var(--game-bg-secondary) !important;
+    border: 1px solid var(--game-border) !important;
+    color: var(--game-text) !important;
+}
+
+.modal-content .subject-card:hover {
+    background-color: var(--game-primary-light) !important;
+}
+
+.modal-content .subject-card i {
+    color: var(--game-text-secondary) !important;
+}
+
+.modal-content .subject-card span {
+    color: var(--game-text) !important;
+}
+
+/* ========================================
+   모달 옵션 버튼 (게임 모드)
+   ======================================== */
+
+.modal-option {
+    background-color: var(--game-bg-secondary) !important;
+    color: var(--game-text) !important;
+    border: 1px solid var(--game-border) !important;
+}
+
+.modal-option:hover {
+    background-color: var(--game-primary-light) !important;
+    border-color: var(--game-primary) !important;
+}
+
+.modal-option i {
+    color: var(--game-text-secondary) !important;
+}
+
+/* ========================================
+   모달 내 텍스트 요소 (게임 모드)
+   ======================================== */
+
+.modal-content .text-center span {
+    color: var(--game-text) !important;
+}
+
+.modal-content .text-center h3 {
+    color: var(--game-text) !important;
+}
+
+.modal-content .text-center p {
+    color: var(--game-text-secondary) !important;
+}
+
+/* ========================================
+   콤보 시스템 시각화 (게임 모드)
+   ======================================== */
+
+.combo-2 {
+    color: var(--game-success) !important;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
+.combo-3 {
+    color: var(--game-xp) !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.6);
+    animation: comboGlow 1s ease-in-out infinite alternate;
+}
+
+.combo-5 {
+    color: var(--game-combo) !important;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(249, 115, 22, 0.8);
+    animation: comboGlow 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes comboGlow {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* 보너스 팝업 애니메이션 */
+@keyframes bonusPop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.bonus-popup {
+    animation: bonusPop 0.5s ease-out;
+}
+
+/* ========================================
+   레벨업 효과 (게임 모드)
+   ======================================== */
+
+@keyframes levelUpPop {
+    0% {
+        transform: scale(0) rotate(-180deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.level-up-popup {
+    background: linear-gradient(135deg, var(--game-level) 0%, #7C3AED 50%, var(--game-primary) 100%);
+    color: white;
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.6);
+    animation: levelUpPop 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border: 3px solid var(--game-xp);
+}
+
+@keyframes particleFall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.level-particle {
+    position: fixed;
+    top: -50px;
+    font-size: 24px;
+    animation: particleFall 3s linear infinite;
+    pointer-events: none;
+    z-index: 60;
+}
+
+/* ========================================
+   배지 획득 효과 (게임 모드)
+   ======================================== */
+
+@keyframes badgeUnlock {
+    0% {
+        transform: scale(0) rotate(-45deg);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.badge-unlock-popup {
+    background: linear-gradient(135deg, var(--game-success) 0%, var(--game-success-light) 100%);
+    color: white;
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.5);
+    animation: badgeUnlock 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border: 2px solid var(--game-xp);
+}
+
+/* ========================================
+   색상 대비 및 접근성 개선 (게임 모드)
+   ======================================== */
+
+/* 아이콘 색상 일관성 */
+i.fas, i.far, i.fab {
+    color: var(--game-text-secondary);
+}
+
+i.fa-check-circle, i.fa-times-circle {
+    color: var(--game-text);
+}
+
+/* 포커스 상태 개선 */
+button:focus, select:focus, input:focus {
+    outline: 2px solid var(--game-primary);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* 텍스트 대비 개선 */
+.opacity-70 {
+    color: var(--game-text-secondary) !important;
+}
+
+.opacity-80 {
+    color: var(--game-text-secondary) !important;
+}
+
+/* 링크 색상 */
+a {
+    color: var(--game-primary);
+}
+
+a:hover {
+    color: var(--game-primary-light);
+}
+
+/* 강조 텍스트 */
+.text-primary {
+    color: var(--game-primary) !important;
+}
+
+.text-green-600 {
+    color: var(--game-success) !important;
+}
+
+.text-red-500 {
+    color: var(--game-error) !important;
+}
+
+/* ========================================
+   반응형 디자인 개선 (게임 모드)
+   ======================================== */
+
+/* 모바일 XP 바 */
+@media (max-width: 768px) {
+    #xp-bar-container {
+        max-width: 200px;
+    }
+    
+    #level-badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    #xp-text {
+        font-size: 0.7rem;
+    }
+}
+
+/* 작은 화면 텍스트 크기 조정 */
+@media (max-width: 640px) {
+    .text-2xl {
+        font-size: 1.25rem;
+    }
+    
+    .text-3xl {
+        font-size: 1.5rem;
+    }
+    
+    .text-4xl {
+        font-size: 1.75rem;
+    }
+    
+    .text-6xl {
+        font-size: 2.5rem;
+    }
+    
+    /* 팝업 크기 조정 */
+    .bonus-popup, .level-up-popup, .badge-unlock-popup {
+        padding: 1rem;
+        max-width: 90vw;
+    }
+    
+    .bonus-popup .text-4xl,
+    .level-up-popup .text-6xl,
+    .badge-unlock-popup .text-4xl {
+        font-size: 2rem;
+    }
+}
+
+/* 태블릿 최적화 */
+@media (min-width: 641px) and (max-width: 1024px) {
+    #xp-bar-container {
+        max-width: 300px;
+    }
+    
+    .quiz-card {
+        padding: 1.5rem;
+    }
+    
+    .dashboard-stat-card {
+        padding: 1rem;
+    }
+}
+
+/* 큰 화면에서 더 큰 효과 */
+@media (min-width: 1280px) {
+    .bonus-popup, .level-up-popup, .badge-unlock-popup {
+        padding: 2rem;
+    }
+    
+    .level-particle {
+        font-size: 32px;
+    }
+}
+
+/* 게임 모드 퀴즈 시작 선택 스타일 */
+body.game-mode .quiz-start-option {
+    background: var(--game-bg-card) !important;
+    border-color: var(--game-border) !important;
+    color: var(--game-text) !important;
+}
+
+body.game-mode .quiz-start-option:hover {
+    border-color: var(--game-primary) !important;
+    box-shadow: var(--game-glow) !important;
+}
+
+body.game-mode .quiz-start-option h3 {
+    color: var(--game-text) !important;
+}
+
+body.game-mode .quiz-start-option p {
+    color: var(--game-text-secondary) !important;
+}
+
+body.game-mode .subject-quiz-btn {
+    background: var(--game-bg-card) !important;
+    border-color: var(--game-border) !important;
+    color: var(--game-text) !important;
+}
+
+body.game-mode .subject-quiz-btn:hover {
+    border-color: var(--game-primary) !important;
+    box-shadow: var(--game-glow) !important;
+}
+
+body.game-mode .subject-quiz-btn .font-bold {
+    color: var(--game-text) !important;
+}
+
+body.game-mode .subject-quiz-btn .text-xs {
+    color: var(--game-text-secondary) !important;
+}
+
+/* 배지 상세 모달 게임 모드 */
+body.game-mode #badge-detail-modal .modal-content {
+    background: var(--game-bg-secondary) !important;
+    border: 2px solid var(--game-border);
+}
+
+body.game-mode #badge-detail-name {
+    color: var(--game-text) !important;
+}
+
+body.game-mode #badge-detail-description {
+    color: var(--game-text-secondary) !important;
+}
+
+/* 학습 상세 네비게이션 버튼 */
+body.game-mode .bg-primary {
+    background-color: var(--game-primary) !important;
+    color: var(--game-text) !important;
+}
+
+body.game-mode .text-white {
+    color: var(--game-text) !important;
+}
+
+body.game-mode .hover\:bg-primary\/80:hover {
+    background-color: rgba(59, 130, 246, 0.8) !important;
+}
