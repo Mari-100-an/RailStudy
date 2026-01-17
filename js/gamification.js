@@ -249,22 +249,53 @@ const Gamification = {
         return newBadges;
     },
 
-    // 배지 획듍 알림
+    // 연속 학습일 체크 헬퍼
+    checkConsecutiveDays(studyDays, targetDays) {
+        if (!studyDays || studyDays.length < targetDays) return false;
+        
+        const sortedDays = studyDays.map(d => new Date(d)).sort((a, b) => b - a);
+        let consecutiveCount = 1;
+        
+        for (let i = 0; i < sortedDays.length - 1; i++) {
+            const dayDiff = Math.floor((sortedDays[i] - sortedDays[i + 1]) / (1000 * 60 * 60 * 24));
+            if (dayDiff === 1) {
+                consecutiveCount++;
+                if (consecutiveCount >= targetDays) return true;
+            } else if (dayDiff > 1) {
+                consecutiveCount = 1;
+            }
+        }
+        
+        return consecutiveCount >= targetDays;
+    },
+
+    // 배지 획득 알림
     showBadgeUnlock(badge) {
         if (!Theme.isGameMode()) {
-            showToast(`🎖️ 새 배지 획듍: ${badge.name}`, 'success');
+            showToast(`🎖️ 새 배지 획득: ${badge.name}`, 'success');
             return;
         }
+
+        // 티어 색상 가져오기
+        const tierColors = {
+            bronze: '#CD7F32',
+            silver: '#C0C0C0',
+            gold: '#FFD700',
+            platinum: '#E5E4E2',
+            diamond: '#B9F2FF'
+        };
+        const tierColor = tierColors[badge.tier] || '#FFD700';
 
         // 게임 모드에서는 화려한 팝업 표시
         const popup = document.createElement('div');
         popup.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none';
         popup.innerHTML = `
-            <div class="badge-unlock-popup text-center p-6 rounded-2xl">
+            <div class="badge-unlock-popup text-center p-6 rounded-2xl" style="border: 2px solid ${tierColor}; box-shadow: 0 0 30px ${tierColor}40;">
                 <div class="text-4xl mb-3">${badge.icon}</div>
-                <div class="text-2xl font-bold mb-2">새 배지 획듍!</div>
+                <div class="text-2xl font-bold mb-2" style="color: ${tierColor};">새 배지 획득!</div>
                 <div class="text-xl mb-1">${badge.name}</div>
                 <div class="text-sm opacity-80">${badge.description}</div>
+                <div class="text-xs mt-2 opacity-60" style="color: ${tierColor};">${badge.tier.toUpperCase()}</div>
             </div>
         `;
         
@@ -302,30 +333,89 @@ const Gamification = {
         return consecutive >= required;
     },
 
-    // 배지 그리드 렌더링
+    // 배지 그리드 렌더링 (티어별 정렬)
     renderBadgeGrid() {
         const container = document.getElementById('badge-grid');
         if (!container) return;
 
         const gameData = Storage.getGameData();
+        const tierOrder = ['diamond', 'platinum', 'gold', 'silver', 'bronze'];
+        const tierNames = {
+            diamond: '💎 다이아몬드',
+            platinum: '⭐ 플래티넘',
+            gold: '🏆 골드',
+            silver: '🥈 실버',
+            bronze: '🥉 브론즈'
+        };
+
         container.innerHTML = '';
 
+        // 티어별로 그룹화
+        const badgesByTier = {};
         for (const badge of this.BADGES) {
-            const isUnlocked = gameData.unlockedBadges.includes(badge.id);
-            const badgeEl = document.createElement('div');
-            badgeEl.className = `badge-item ${isUnlocked ? '' : 'locked'} cursor-pointer`;
-            badgeEl.innerHTML = badge.icon;
-            badgeEl.title = isUnlocked 
-                ? `${badge.name}: ${badge.description}` 
-                : `???: ${badge.description}`;
-            
-            // 클릭 이벤트 추가
-            if (isUnlocked) {
-                badgeEl.onclick = () => this.showBadgeDetail(badge);
+            if (!badgesByTier[badge.tier]) {
+                badgesByTier[badge.tier] = [];
             }
-            
-            container.appendChild(badgeEl);
+            badgesByTier[badge.tier].push(badge);
         }
+
+        // 티어별 표시
+        for (const tier of tierOrder) {
+            if (!badgesByTier[tier]) continue;
+            
+            const badges = badgesByTier[tier];
+            const unlockedCount = badges.filter(b => gameData.unlockedBadges.includes(b.id)).length;
+
+            // 티어 헤더
+            const tierHeader = document.createElement('div');
+            tierHeader.className = 'col-span-full mt-4 mb-2';
+            tierHeader.innerHTML = `
+                <div class="text-sm font-semibold opacity-70">
+                    ${tierNames[tier]} (${unlockedCount}/${badges.length})
+                </div>
+            `;
+            container.appendChild(tierHeader);
+
+            // 배지 표시
+            for (const badge of badges) {
+                const isUnlocked = gameData.unlockedBadges.includes(badge.id);
+                const badgeEl = document.createElement('div');
+                badgeEl.className = `badge-item ${isUnlocked ? '' : 'locked'} cursor-pointer tier-${tier}`;
+                badgeEl.innerHTML = `
+                    <div class="text-2xl mb-1">${badge.icon}</div>
+                    <div class="text-xs">${isUnlocked ? badge.name : '???'}</div>
+                `;
+                badgeEl.title = isUnlocked 
+                    ? `${badge.name}: ${badge.description}` 
+                    : `???: ${badge.description}`;
+                
+                // 클릭 이벤트
+                if (isUnlocked) {
+                    badgeEl.onclick = () => this.showBadgeDetail(badge);
+                }
+                
+                container.appendChild(badgeEl);
+            }
+        }
+
+        // 통계 표시
+        const totalUnlocked = gameData.unlockedBadges.length;
+        const totalBadges = this.BADGES.length;
+        const statsEl = document.createElement('div');
+        statsEl.className = 'col-span-full mt-6 p-4 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-lg';
+        statsEl.innerHTML = `
+            <div class="text-center">
+                <div class="text-2xl font-bold mb-1">${totalUnlocked} / ${totalBadges}</div>
+                <div class="text-sm opacity-70">배지 수집 진행도</div>
+                <div class="mt-2">
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-gradient-to-r from-yellow-400 to-amber-500 h-2 rounded-full" 
+                             style="width: ${(totalUnlocked / totalBadges * 100).toFixed(1)}%"></div>
+                    </div>
+                </div>
+            </div>
+        `;
+        container.appendChild(statsEl);
     },
 
     // 배지 상세 팝업 표시

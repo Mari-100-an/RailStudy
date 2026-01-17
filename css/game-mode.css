@@ -887,9 +887,48 @@ body.game-mode #page-quiz .quiz-start-option p {
     cursor: pointer;
 }
 
+.badge-item.tier-bronze {
+    border-color: #CD7F32;
+}
+
+.badge-item.tier-silver {
+    border-color: #C0C0C0;
+}
+
+.badge-item.tier-gold {
+    border-color: #FFD700;
+}
+
+.badge-item.tier-platinum {
+    border-color: #E5E4E2;
+}
+
+.badge-item.tier-diamond {
+    border-color: #B9F2FF;
+}
+
 .badge-item:hover:not(.locked) {
-    transform: scale(1.2) rotate(10deg);
-    box-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+    transform: scale(1.2);
+}
+
+.badge-item.tier-bronze:hover:not(.locked) {
+    box-shadow: 0 0 20px rgba(205, 127, 50, 0.5);
+}
+
+.badge-item.tier-silver:hover:not(.locked) {
+    box-shadow: 0 0 20px rgba(192, 192, 192, 0.5);
+}
+
+.badge-item.tier-gold:hover:not(.locked) {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.badge-item.tier-platinum:hover:not(.locked) {
+    box-shadow: 0 0 20px rgba(229, 228, 226, 0.5);
+}
+
+.badge-item.tier-diamond:hover:not(.locked) {
+    box-shadow: 0 0 20px rgba(185, 242, 255, 0.5);
 }
 
 /* 설정 */

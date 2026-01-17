@@ -46,13 +46,25 @@ const Theme = {
             this.previousLevel = gameData.level;
         }
         
+        // 티어 정보 가져오기
+        const tierInfo = Storage.getLevelTier(gameData.level);
+        
         // XP 바 업데이트
         const levelBadge = document.getElementById('level-badge');
+        const levelTierIcon = document.getElementById('level-tier-icon');
+        const levelTierName = document.getElementById('level-tier-name');
         const xpBarFill = document.getElementById('xp-bar-fill');
         const xpText = document.getElementById('xp-text');
 
         if (levelBadge) {
-            levelBadge.textContent = `Lv.${gameData.level}`;
+            levelBadge.innerHTML = `<span id="level-tier-icon">${tierInfo.icon}</span> Lv.${gameData.level}`;
+            levelBadge.style.borderColor = tierInfo.color;
+            levelBadge.style.boxShadow = `0 0 10px ${tierInfo.color}40`;
+        }
+
+        if (levelTierName) {
+            levelTierName.textContent = tierInfo.name;
+            levelTierName.style.color = tierInfo.color;
         }
 
         if (xpBarFill && xpText) {
@@ -76,15 +88,19 @@ const Theme = {
 
     // 레벨업 축하 효과
     showLevelUpEffect(newLevel) {
+        // 티어 정보 가져오기
+        const tierInfo = Storage.getLevelTier(newLevel);
+        
         // 레벨업 팝업 생성
         const popup = document.createElement('div');
         popup.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none';
         popup.innerHTML = `
-            <div class="level-up-popup text-center p-8 rounded-2xl">
-                <div class="text-6xl mb-4">🎉</div>
-                <div class="text-3xl font-bold mb-2">LEVEL UP!</div>
-                <div class="text-2xl">Level ${newLevel} 달성!</div>
-                <div class="text-lg opacity-80 mt-2">축하합니다! 🎊</div>
+            <div class="level-up-popup text-center p-8 rounded-2xl" style="border: 2px solid ${tierInfo.color}; box-shadow: 0 0 40px ${tierInfo.color}60;">
+                <div class="text-6xl mb-4">${tierInfo.icon}</div>
+                <div class="text-3xl font-bold mb-2" style="color: ${tierInfo.color};">LEVEL UP!</div>
+                <div class="text-2xl mb-2">Level ${newLevel} 달성!</div>
+                <div class="text-lg opacity-80">${tierInfo.name}</div>
+                <div class="text-sm opacity-60 mt-2">축하합니다! 🎊</div>
             </div>
         `;
         
