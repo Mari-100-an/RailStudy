@@ -362,10 +362,7 @@ const Gamification = {
     // 배지 그리드 렌더링 (티어별 정렬)
     renderBadgeGrid() {
         const container = document.getElementById('badge-grid');
-        if (!container) {
-            console.warn('badge-grid container not found');
-            return;
-        }
+        if (!container) return;
 
         const gameData = Storage.getGameData();
         const tierOrder = ['diamond', 'platinum', 'gold', 'silver', 'bronze'];

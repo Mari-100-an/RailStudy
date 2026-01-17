@@ -13,5 +13,3 @@ var QUESTIONS_LAW = [
     ...(typeof QUESTIONS_LAW_CH9 !== 'undefined' ? QUESTIONS_LAW_CH9 : []),
     ...(typeof QUESTIONS_LAW_CH10 !== 'undefined' ? QUESTIONS_LAW_CH10 : [])
 ];
-
-console.log(`[Law] 총 ${QUESTIONS_LAW.length}개 문제 로드됨`);

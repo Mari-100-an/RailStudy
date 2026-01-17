@@ -514,7 +514,21 @@ const App = {
 
     // 과목별 단원 정보 가져오기
     getSubjectChapters(subjectId) {
-        // 각 과목별 단원 수와 문제 수 계산
+        const subject = SUBJECTS[subjectId];
+        
+        // subject에 chapters 배열이 있으면 그것을 사용
+        if (subject && subject.chapters) {
+            return subject.chapters.map((ch, idx) => ({
+                number: ch.id || (idx + 1),
+                name: ch.name || `${idx + 1}단원`,
+                count: ch.questionCount || (() => {
+                    const varName = `QUESTIONS_${subjectId.toUpperCase()}_CH${ch.id || (idx + 1)}`;
+                    return typeof window[varName] !== 'undefined' ? window[varName].length : 0;
+                })()
+            }));
+        }
+        
+        // 기존 방식: 하드코딩된 단원 수
         const chapterCounts = {
             law: 10,
             urban: 11,
@@ -527,7 +541,6 @@ const App = {
         const numChapters = chapterCounts[subjectId] || 1;
         
         for (let i = 1; i <= numChapters; i++) {
-            // 해당 단원의 문제 수 계산
             const varName = `QUESTIONS_${subjectId.toUpperCase()}_CH${i}`;
             const chapterQuestions = typeof window[varName] !== 'undefined' 
                 ? window[varName] 

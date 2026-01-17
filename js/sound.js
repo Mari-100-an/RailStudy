@@ -258,9 +258,7 @@ const Sound = {
 
             oscillator.start(now);
             oscillator.stop(now + duration);
-        } catch (e) {
-            console.warn('Sound playback failed', e);
-        }
+        } catch (e) {}
     },
 
     // 정답 사운드 - 부드러운 상승음
@@ -430,10 +428,7 @@ const Sound = {
             };
 
             playLoop();
-            console.log('🎵 Synthesized BGM started');
-        } catch (e) {
-            console.warn('Synthesized BGM failed', e);
-        }
+        } catch (e) {}
     },
 
     // BGM 음표 재생 (Web Audio API)
@@ -451,27 +446,20 @@ const Sound = {
             oscillator.stop(now + duration);
 
             this.bgmOscillators.push(oscillator);
-        } catch (e) {
-            console.warn('BGM note play failed', e);
-        }
+        } catch (e) {}
     },
 
     // BGM 정지
     stopBGM() {
-        console.log('🔇 BGM 정지 중...');
-        
         // HTML5 Audio 정지 및 이벤트 리스너 제거
         if (this.bgmAudio) {
             try {
                 this.bgmAudio.pause();
                 this.bgmAudio.currentTime = 0;
-                this.bgmAudio.src = ''; // src 제거하여 완전 해제
-                this.bgmAudio.load(); // 리소스 해제
+                this.bgmAudio.src = '';
+                this.bgmAudio.load();
                 this.bgmAudio = null;
-                console.log('✅ HTML5 Audio 정지됨');
-            } catch (e) {
-                console.warn('HTML5 Audio 정지 실패:', e);
-            }
+            } catch (e) {}
         }
 
         // Web Audio API 정지
@@ -487,8 +475,6 @@ const Sound = {
             this.bgmGainNode.disconnect();
             this.bgmGainNode = null;
         }
-        
-        console.log('🔇 BGM stopped');
     },
 
     // BGM 볼륨 업데이트 (실시간)
@@ -504,7 +490,6 @@ const Sound = {
 
 // 디버깅용 - 콘솔에서 Sound.test() 실행 가능
 Sound.test = function() {
-    console.log('🎵 Testing sound...');
     this.select();
     setTimeout(() => this.correct(), 500);
     setTimeout(() => this.wrong(), 1000);
@@ -513,20 +498,14 @@ Sound.test = function() {
 // 백그라운드 전환 시 BGM 자동 정지/재개
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-        // 앱이 백그라운드로 가면 BGM 일시정지
         if (Sound.bgmAudio && !Sound.bgmAudio.paused) {
             Sound.bgmWasPlaying = true;
             Sound.bgmAudio.pause();
-            console.log('🔇 BGM paused (app in background)');
         }
     } else {
-        // 앱이 다시 포그라운드로 오면 BGM 재개
         if (Sound.bgmWasPlaying && Sound.bgmAudio && Sound.bgmEnabled) {
-            Sound.bgmAudio.play().catch(e => {
-                console.warn('BGM resume failed:', e.message);
-            });
+            Sound.bgmAudio.play().catch(() => {});
             Sound.bgmWasPlaying = false;
-            console.log('🎵 BGM resumed (app in foreground)');
         }
     }
 });

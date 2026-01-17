@@ -10,7 +10,9 @@ var SUBJECTS = {
         icon: '⚖️',
         color: '#3B82F6',
         description: '철도안전법, 도시철도운전규칙 등',
-        singleChapter: true  // 단원 1개만 있음 - 바로 ch1 시작
+        chapters: [
+            { id: 1, name: '1회차', questionCount: 100 }
+        ]
     },
     urban: {
         id: 'urban',
@@ -54,6 +56,4 @@ function getSubject(subjectId) {
 function getAllSubjects() {
     return Object.values(SUBJECTS);
 }
-
-console.log('Subjects loaded:', SUBJECT_IDS.length);
 
