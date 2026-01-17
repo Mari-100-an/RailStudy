@@ -599,38 +599,16 @@ const App = {
             });
         }
 
-        // 효과음 볼륨
-        const sfxVolumeSlider = document.getElementById('setting-sfx-volume');
-        const sfxVolumeValue = document.getElementById('sfx-volume-value');
-        if (sfxVolumeSlider && sfxVolumeValue) {
-            const handleSfxVolume = (e) => {
-                const volume = parseInt(e.target.value) / 100;
-                Sound.setVolume(volume);
-                sfxVolumeValue.textContent = `${e.target.value}%`;
-                console.log('🔊 SFX volume changed:', e.target.value + '%', 'Sound.volume:', Sound.volume);
-            };
-            sfxVolumeSlider.addEventListener('input', handleSfxVolume);
-            sfxVolumeSlider.addEventListener('change', handleSfxVolume); // iOS Safari fallback
-            sfxVolumeSlider.addEventListener('touchend', handleSfxVolume); // 모바일 터치 종료 시
-            // 터치 시 스크롤 방지
-            sfxVolumeSlider.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: true });
-        }
-
-        // BGM 볼륨
-        const bgmVolumeSlider = document.getElementById('setting-bgm-volume');
-        const bgmVolumeValue = document.getElementById('bgm-volume-value');
-        if (bgmVolumeSlider && bgmVolumeValue) {
-            const handleBgmVolume = (e) => {
-                const volume = parseInt(e.target.value) / 100;
-                Sound.setBgmVolume(volume);
-                bgmVolumeValue.textContent = `${e.target.value}%`;
-                console.log('🎵 BGM volume changed:', e.target.value + '%', 'Sound.bgmVolume:', Sound.bgmVolume);
-            };
-            bgmVolumeSlider.addEventListener('input', handleBgmVolume);
-            bgmVolumeSlider.addEventListener('change', handleBgmVolume); // iOS Safari fallback
-            bgmVolumeSlider.addEventListener('touchend', handleBgmVolume); // 모바일 터치 종료 시
-            // 터치 시 스크롤 방지
-            bgmVolumeSlider.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: true });
+        // 효과음 켜기/끄기
+        const sfxToggle = document.getElementById('setting-sfx-enabled');
+        if (sfxToggle) {
+            sfxToggle.addEventListener('change', (e) => {
+                Sound.enabled = e.target.checked;
+                const settings = Storage.load(Storage.KEYS.SETTINGS) || {};
+                settings.soundEnabled = e.target.checked;
+                Storage.save(Storage.KEYS.SETTINGS, settings);
+                showToast(e.target.checked ? '효과음이 켜졌습니다 🔊' : '효과음이 꺼졌습니다 🔇', 'success');
+            });
         }
 
         // BGM 켜기/끄기
@@ -716,25 +694,10 @@ const App = {
             instantFeedback.checked = settings.instantFeedback;
         }
 
-        // 사운드 설정 UI 업데이트 (Sound 객체에서 직접 가져옴)
-        const sfxVolumeSlider = document.getElementById('setting-sfx-volume');
-        const sfxVolumeValue = document.getElementById('sfx-volume-value');
-        if (sfxVolumeSlider && sfxVolumeValue) {
-            // Sound 객체의 현재 볼륨 사용 (저장된 설정보다 우선)
-            const sfxVolume = Math.round((Sound.volume ?? settings.soundVolume ?? 0.3) * 100);
-            sfxVolumeSlider.value = sfxVolume;
-            sfxVolumeValue.textContent = `${sfxVolume}%`;
-            console.log('🔊 SFX slider initialized:', sfxVolume + '%');
-        }
-
-        const bgmVolumeSlider = document.getElementById('setting-bgm-volume');
-        const bgmVolumeValue = document.getElementById('bgm-volume-value');
-        if (bgmVolumeSlider && bgmVolumeValue) {
-            // Sound 객체의 현재 BGM 볼륨 사용
-            const bgmVolume = Math.round((Sound.bgmVolume ?? settings.bgmVolume ?? 0.2) * 100);
-            bgmVolumeSlider.value = bgmVolume;
-            bgmVolumeValue.textContent = `${bgmVolume}%`;
-            console.log('🎵 BGM slider initialized:', bgmVolume + '%');
+        // 사운드 설정 UI 업데이트
+        const sfxToggle = document.getElementById('setting-sfx-enabled');
+        if (sfxToggle) {
+            sfxToggle.checked = settings.soundEnabled !== false; // 기본값 true
         }
 
         const bgmToggle = document.getElementById('setting-bgm-enabled');

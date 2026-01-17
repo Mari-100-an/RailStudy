@@ -477,20 +477,16 @@
                     <!-- 사운드 설정 -->
                     <div class="settings-card p-6 rounded-xl mb-6">
                         <h3 class="text-lg font-bold mb-4">🔊 사운드 설정</h3>
-                        <div class="space-y-5">
-                            <div>
-                                <div class="flex justify-between items-center mb-2">
-                                    <div class="font-medium">효과음 볼륨</div>
-                                    <span id="sfx-volume-value" class="text-sm opacity-70">30%</span>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <div class="font-medium">효과음</div>
+                                    <div class="text-sm opacity-70">정답/오답 피드백 소리</div>
                                 </div>
-                                <input type="range" id="setting-sfx-volume" min="0" max="100" value="30" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer" style="accent-color: #3b82f6;" oninput="document.getElementById('sfx-volume-value').textContent = this.value + '%'">
-                            </div>
-                            <div>
-                                <div class="flex justify-between items-center mb-2">
-                                    <div class="font-medium">배경음악 볼륨</div>
-                                    <span id="bgm-volume-value" class="text-sm opacity-70">20%</span>
-                                </div>
-                                <input type="range" id="setting-bgm-volume" min="0" max="100" value="20" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer" style="accent-color: #8b5cf6;" oninput="document.getElementById('bgm-volume-value').textContent = this.value + '%'">
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="setting-sfx-enabled" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div>
