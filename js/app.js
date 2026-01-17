@@ -690,18 +690,22 @@ const App = {
         const versionEl = document.getElementById('app-version');
         if (!versionEl) return;
 
-        fetch('/service-worker.js')
-            .then(res => res.text())
+        // 캐시 무시하고 최신 버전 가져오기
+        fetch('./service-worker.js?t=' + Date.now())
+            .then(res => {
+                if (!res.ok) throw new Error('fetch failed');
+                return res.text();
+            })
             .then(text => {
                 const match = text.match(/APP_VERSION\s*=\s*['"]([^'"]+)['"]/);
                 if (match) {
                     versionEl.textContent = `버전 ${match[1]}`;
                 } else {
-                    versionEl.textContent = '버전 정보 없음';
+                    versionEl.textContent = 'v1.5'; // 폴백
                 }
             })
             .catch(() => {
-                versionEl.textContent = '버전 확인 실패';
+                versionEl.textContent = 'v1.5'; // 폴백
             });
     },
 
