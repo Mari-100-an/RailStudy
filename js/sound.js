@@ -113,13 +113,14 @@ const Sound = {
         });
     },
 
-    // 오디오 파일 재생
+    // 오디오 파일 재생 (파일 없으면 Web Audio API fallback)
     playAudio(key, volumeMultiplier = 1) {
         if (!this.enabled) return;
 
         const path = this.audioFiles[key];
         if (!path) {
-            console.warn(`Audio file not found: ${key}`);
+            console.warn(`Audio file not found for ${key}, using fallback`);
+            this.playBeepFallback(key);
             return;
         }
 
@@ -130,6 +131,12 @@ const Sound = {
             if (!audio || audio.ended) {
                 audio = new Audio(path);
                 this.audioObjects[key] = audio;
+                
+                // 에러 핸들러 추가
+                audio.addEventListener('error', (e) => {
+                    console.warn(`Audio file load failed for ${key}, using fallback:`, e);
+                    this.playBeepFallback(key);
+                }, { once: true });
             }
 
             audio.volume = Math.min(1, this.volume * volumeMultiplier);
@@ -140,14 +147,13 @@ const Sound = {
             const playPromise = audio.play();
             if (playPromise !== undefined) {
                 playPromise.catch(e => {
-                    // 자동재생 정책으로 인한 에러는 무시
-                    if (e.name !== 'NotAllowedError') {
-                        console.warn('Audio play failed:', key, e);
-                    }
+                    console.warn(`Audio play failed for ${key}:`, e.name, e.message);
+                    // 재생 실패 시 Web Audio API fallback
+                    this.playBeepFallback(key);
                 });
             }
         } catch (e) {
-            console.warn('Audio playback failed:', key, e);
+            console.warn(`Audio playback error for ${key}:`, e);
             // 오디오 파일이 없으면 기존 비프음 사용
             this.playBeepFallback(key);
         }

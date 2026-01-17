@@ -2,8 +2,8 @@
  * Service Worker - PWA 오프라인 지원 및 캐싱
  */
 
-const CACHE_NAME = 'railway-study-v4.3';
-const APP_VERSION = 'v4.3'; // 앱 버전
+const CACHE_NAME = 'railway-study-v4.5';
+const APP_VERSION = 'v4.5'; // 앱 버전
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
@@ -63,8 +63,39 @@ self.addEventListener('activate', (event) => {
     );
 });
 
-// Fetch 이벤트 - 네트워크 우선, 실패 시 캐시 사용
+// Fetch 이벤트 - 오디오/정적 파일은 캐시 우선, 나머지는 네트워크 우선
 self.addEventListener('fetch', (event) => {
+    const url = new URL(event.request.url);
+    
+    // 오디오 파일은 캐시 우선 전략
+    if (url.pathname.includes('/audio/')) {
+        event.respondWith(
+            caches.match(event.request).then((cachedResponse) => {
+                if (cachedResponse) {
+                    console.log('[SW] Audio from cache:', url.pathname);
+                    return cachedResponse;
+                }
+                
+                console.log('[SW] Audio not in cache, fetching:', url.pathname);
+                return fetch(event.request).then((response) => {
+                    if (response && response.status === 200) {
+                        const responseClone = response.clone();
+                        caches.open(CACHE_NAME).then((cache) => {
+                            cache.put(event.request, responseClone);
+                            console.log('[SW] Audio cached:', url.pathname);
+                        });
+                    }
+                    return response;
+                }).catch((error) => {
+                    console.error('[SW] Audio fetch failed:', url.pathname, error);
+                    return new Response(null, { status: 404, statusText: 'Audio not found' });
+                });
+            })
+        );
+        return;
+    }
+    
+    // 나머지 리소스는 네트워크 우선
     event.respondWith(
         fetch(event.request)
             .then((response) => {
