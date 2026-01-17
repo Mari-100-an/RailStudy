@@ -75,7 +75,7 @@ const Theme = {
         const gameBadges = document.getElementById('game-badges');
 
         if (gameLevel) gameLevel.textContent = `Level ${gameData.level}`;
-        if (gameTotalXp) gameTotalXp.textContent = gameData.totalXp.toLocaleString();
+        if (gameTotalXp) gameTotalXp.textContent = gameData.totalXP.toLocaleString();
         if (gameMaxCombo) gameMaxCombo.textContent = gameData.maxCombo;
         if (gameBadges) gameBadges.textContent = gameData.unlockedBadges.length;
     },
