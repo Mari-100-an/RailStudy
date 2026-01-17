@@ -224,16 +224,14 @@ const App = {
 
         Object.values(SUBJECTS).forEach(subject => {
             const card = document.createElement('button');
-            card.className = 'subject-card p-4 rounded-xl text-left transition-transform hover:scale-[1.02]';
+            card.className = 'subject-card p-5 rounded-xl text-left transition-transform hover:scale-[1.02]';
             card.innerHTML = `
-                <div class="flex items-center gap-3 mb-2">
-                    <span class="text-3xl">${subject.icon}</span>
-                    <h4 class="font-bold">${subject.name}</h4>
-                </div>
-                <p class="text-sm opacity-70">${subject.description}</p>
-                <div class="mt-3 flex justify-between items-center text-sm">
-                    <span class="subject-question-count">총 ${getQuestionsBySubject(subject.id).length}문제</span>
-                    <span class="subject-arrow"><i class="fas fa-arrow-right"></i></span>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <span class="text-4xl">${subject.icon}</span>
+                        <h4 class="font-bold text-lg">${subject.name}</h4>
+                    </div>
+                    <span class="text-2xl opacity-50"><i class="fas fa-chevron-right"></i></span>
                 </div>
             `;
             card.style.borderLeft = `4px solid ${subject.color}`;
