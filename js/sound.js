@@ -11,7 +11,7 @@ const Sound = {
     enabled: true,
     volume: 0.3, // 적당한 볼륨으로 설정
     bgmVolume: 0.2, // BGM 볼륨
-    bgmEnabled: true, // BGM 기본 켜짐
+    bgmEnabled: false, // BGM 기본 꺼짐 (사용자가 직접 켜야 함)
     
     // 조건부 로깅
     log(...args) {
@@ -61,7 +61,7 @@ const Sound = {
                     // 볼륨은 고정값 사용 (슬라이더 제거됨)
                     this.volume = 0.3;
                     this.bgmVolume = 0.2;
-                    this.bgmEnabled = settings?.bgmEnabled ?? true;
+                    this.bgmEnabled = settings?.bgmEnabled ?? false;
                 } catch (e) {
                     this.enabled = true;
                 }
@@ -75,7 +75,7 @@ const Sound = {
             }
             
             // AudioContext는 사용자 제스처 후에 resume 필요 (브라우저 자동재생 정책)
-            // 첫 클릭/터치 시 활성화 및 BGM 자동 재생
+            // 첨 클릭/터치 시 오디오 컨텍스트 활성화
             const activateAudio = async () => {
                 if (this.audioContext && this.audioContext.state === 'suspended') {
                     try {
@@ -85,10 +85,6 @@ const Sound = {
                 // 모바일: HTML5 Audio unlock (iOS/Android 모두)
                 if (this.isIOS || this.isAndroid) {
                     this.unlockAudioForMobile();
-                }
-                // BGM 설정이 ON이고 아직 재생 중이 아니면 자동 시작
-                if (this.bgmEnabled && !this.bgmIsPlaying) {
-                    setTimeout(() => this.startBGM(), 300);
                 }
             };
             document.addEventListener('click', activateAudio, { once: true });
