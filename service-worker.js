@@ -3,7 +3,7 @@
  */
 
 const CACHE_NAME = 'railway-study-v1.6';
-const APP_VERSION = 'v1.6.1'; // 앱 버전
+const APP_VERSION = 'v1.6.2'; // 앱 버전
 
 // 필수 리소스 (실패 시 설치 중단)
 const CORE_ASSETS = [

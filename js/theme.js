@@ -56,7 +56,7 @@ const Theme = {
         const xpText = document.getElementById('new-xp-text');
 
         if (levelBadge) {
-            levelBadge.innerHTML = `<span id="new-level-icon">${tierInfo.icon}</span> Lv.${gameData.level}`;
+            levelBadge.innerHTML = `<span id="new-level-icon">${tierInfo.icon}</span> Lv.${gameData.level} <span class="text-xs opacity-80">${tierInfo.name}</span>`;
             levelBadge.style.background = `linear-gradient(135deg, ${tierInfo.color} 0%, #7C3AED 100%)`;
             levelBadge.style.boxShadow = `0 0 15px ${tierInfo.color}80`;
         }
