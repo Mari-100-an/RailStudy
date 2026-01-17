@@ -270,7 +270,12 @@ const App = {
             if (!isDisabled) {
                 card.addEventListener('click', () => {
                     if (typeof Sound !== 'undefined') Sound.select();
-                    this.showChapterModal(subject);
+                    // 단원이 1개만 있는 과목은 바로 ch1 퀴즈 시작
+                    if (subject.singleChapter) {
+                        Quiz.startChapterQuiz(subject.id, 1, true);
+                    } else {
+                        this.showChapterModal(subject);
+                    }
                 });
             } else {
                 card.addEventListener('click', () => {

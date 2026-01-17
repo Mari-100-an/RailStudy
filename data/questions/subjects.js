@@ -10,8 +10,7 @@ var SUBJECTS = {
         icon: '⚖️',
         color: '#3B82F6',
         description: '철도안전법, 도시철도운전규칙 등',
-        disabled: true,
-        disabledMessage: '문제 준비 중입니다'
+        singleChapter: true  // 단원 1개만 있음 - 바로 ch1 시작
     },
     urban: {
         id: 'urban',
