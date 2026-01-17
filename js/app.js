@@ -685,28 +685,17 @@ const App = {
         this.loadAppVersion();
     },
 
-    // Service Worker에서 버전 정보 가져오기
+    // 앱 버전 표시 (index.html의 APP_VERSION 사용)
     loadAppVersion() {
         const versionEl = document.getElementById('app-version');
         if (!versionEl) return;
-
-        // 캐시 무시하고 최신 버전 가져오기
-        fetch('./service-worker.js?t=' + Date.now())
-            .then(res => {
-                if (!res.ok) throw new Error('fetch failed');
-                return res.text();
-            })
-            .then(text => {
-                const match = text.match(/APP_VERSION\s*=\s*['"]([^'"]+)['"]/);
-                if (match) {
-                    versionEl.textContent = `버전 ${match[1]}`;
-                } else {
-                    versionEl.textContent = 'v1.5'; // 폴백
-                }
-            })
-            .catch(() => {
-                versionEl.textContent = 'v1.5'; // 폴백
-            });
+        
+        // index.html에서 정의된 전역 APP_VERSION 사용
+        if (typeof APP_VERSION !== 'undefined') {
+            versionEl.textContent = `버전 ${APP_VERSION}`;
+        } else {
+            versionEl.textContent = '버전 v1.5';
+        }
     },
 
     // 설정 UI 업데이트
