@@ -62,7 +62,11 @@ const Quiz = {
 
         // 키보드 단축키 (좌우 화살표)
         document.addEventListener('keydown', (e) => {
-            if (!document.getElementById('page-quiz')?.classList.contains('hidden')) {
+            // 퀴즈 페이지가 활성화되어 있고 모달이 열려있지 않을 때만
+            const quizPage = document.getElementById('page-quiz');
+            const modalOpen = document.querySelector('.modal:not(.hidden)');
+            
+            if (quizPage && !quizPage.classList.contains('hidden') && !modalOpen) {
                 if (e.key === 'ArrowLeft' && this.state.currentIndex > 0) {
                     this.goToQuestion(this.state.currentIndex - 1);
                 } else if (e.key === 'ArrowRight' && this.state.currentIndex < this.state.questions.length - 1) {

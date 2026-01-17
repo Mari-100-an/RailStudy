@@ -20,7 +20,7 @@ const CORE_ASSETS = [
     '/js/sound.js'
 ];
 
-// 오디오 파일 (실패해도 설치 계속) - 절대 경로와 상대 경로 둘 다 캐시
+// 오디오 파일 (실패해도 설치 계속)
 const AUDIO_ASSETS = [
     '/audio/sfx/correct.mp3',
     '/audio/sfx/wrong.mp3',
@@ -28,15 +28,7 @@ const AUDIO_ASSETS = [
     '/audio/sfx/badge.mp3',
     '/audio/sfx/combo.mp3',
     '/audio/sfx/select.mp3',
-    '/audio/bgm/lofi-study.mp3',
-    // 상대 경로 버전도 캐시
-    './audio/sfx/correct.mp3',
-    './audio/sfx/wrong.mp3',
-    './audio/sfx/levelup.mp3',
-    './audio/sfx/badge.mp3',
-    './audio/sfx/combo.mp3',
-    './audio/sfx/select.mp3',
-    './audio/bgm/lofi-study.mp3'
+    '/audio/bgm/lofi-study.mp3'
 ];
 
 // 메시지 이벤트 - SKIP_WAITING 처리

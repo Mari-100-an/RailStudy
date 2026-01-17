@@ -73,15 +73,15 @@ const Gamification = {
         { id: 'accuracy_98', name: '완벽주의자', icon: '🥈', description: '정답률 98% 이상 (500문제 이상)', condition: (data) => data.totalSolved >= 500 && (data.totalCorrect / data.totalSolved) >= 0.98, tier: 'platinum' },
         { id: 'perfect_10', name: '백발백중', icon: '💯', description: '10문제 연속 100% 정답', condition: (data) => data.bestStreak >= 10, tier: 'gold' },
         
-        // ===== 레벨 배지 =====
-        { id: 'level_5', name: '루키 졸업', icon: '🌱', description: '레벨 5 달성', condition: () => Storage.getGameData().level >= 5, tier: 'bronze' },
-        { id: 'level_10', name: '초급 기관사', icon: '🔧', description: '레벨 10 달성', condition: () => Storage.getGameData().level >= 10, tier: 'bronze' },
-        { id: 'level_20', name: '중급 기관사', icon: '⚙️', description: '레벨 20 달성', condition: () => Storage.getGameData().level >= 20, tier: 'silver' },
-        { id: 'level_35', name: '상급 기관사', icon: '🚆', description: '레벨 35 달성', condition: () => Storage.getGameData().level >= 35, tier: 'silver' },
-        { id: 'level_50', name: '전문 기관사', icon: '🚄', description: '레벨 50 달성', condition: () => Storage.getGameData().level >= 50, tier: 'gold' },
-        { id: 'level_70', name: '마스터 기관사', icon: '🎖️', description: '레벨 70 달성', condition: () => Storage.getGameData().level >= 70, tier: 'gold' },
-        { id: 'level_85', name: '그랜드 마스터', icon: '🏅', description: '레벨 85 달성', condition: () => Storage.getGameData().level >= 85, tier: 'platinum' },
-        { id: 'level_100', name: '레전드 기관사', icon: '🌠', description: '레벨 100 달성', condition: () => Storage.getGameData().level >= 100, tier: 'diamond' },
+        // ===== 레벨 배지 ===== (gameData를 위에서 전달받음)
+        { id: 'level_5', name: '루키 졸업', icon: '🌱', description: '레벨 5 달성', condition: (data, gameData) => gameData?.level >= 5, tier: 'bronze' },
+        { id: 'level_10', name: '초급 기관사', icon: '🔧', description: '레벨 10 달성', condition: (data, gameData) => gameData?.level >= 10, tier: 'bronze' },
+        { id: 'level_20', name: '중급 기관사', icon: '⚙️', description: '레벨 20 달성', condition: (data, gameData) => gameData?.level >= 20, tier: 'silver' },
+        { id: 'level_35', name: '상급 기관사', icon: '🚆', description: '레벨 35 달성', condition: (data, gameData) => gameData?.level >= 35, tier: 'silver' },
+        { id: 'level_50', name: '전문 기관사', icon: '🚄', description: '레벨 50 달성', condition: (data, gameData) => gameData?.level >= 50, tier: 'gold' },
+        { id: 'level_70', name: '마스터 기관사', icon: '🎖️', description: '레벨 70 달성', condition: (data, gameData) => gameData?.level >= 70, tier: 'gold' },
+        { id: 'level_85', name: '그랜드 마스터', icon: '🏅', description: '레벨 85 달성', condition: (data, gameData) => gameData?.level >= 85, tier: 'platinum' },
+        { id: 'level_100', name: '레전드 기관사', icon: '🌠', description: '레벨 100 달성', condition: (data, gameData) => gameData?.level >= 100, tier: 'diamond' },
         
         // ===== 학습 지속성 배지 =====
         { id: 'day_3', name: '3일 챌린저', icon: '📅', description: '3일 연속 학습', condition: (data) => Gamification.checkConsecutiveDays(data.studyDays, 3), tier: 'bronze' },
@@ -235,7 +235,8 @@ const Gamification = {
         for (const badge of this.BADGES) {
             if (!gameData.unlockedBadges.includes(badge.id)) {
                 try {
-                    if (badge.condition(userData)) {
+                    // gameData도 함께 전달 (레벨 배지용)
+                    if (badge.condition(userData, gameData)) {
                         if (Storage.unlockBadge(badge.id)) {
                             newBadges.push(badge);
                         }

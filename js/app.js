@@ -43,7 +43,12 @@ const App = {
             console.error('❌ App initialization failed:', error);
             // 에러 발생해도 로딩 화면은 숨김
             this.hideLoadingScreen();
-            alert('앱 초기화 중 오류가 발생했습니다. 페이지를 새로고침해주세요.');
+            // showToast가 아직 정의되지 않았을 수 있으므로 안전하게 처리
+            if (typeof showToast === 'function') {
+                showToast('앱 초기화 중 오류가 발생했습니다. 페이지를 새로고침해주세요.', 'error');
+            } else {
+                alert('앱 초기화 중 오류가 발생했습니다. 페이지를 새로고침해주세요.');
+            }
         }
     },
 

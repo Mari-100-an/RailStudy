@@ -114,7 +114,15 @@ const Theme = {
     },
 
     // 레벨업 파티클 효과
+    isCreatingParticles: false, // 중복 방지 플래그
     createLevelUpParticles() {
+        // 이미 파티클 생성 중이면 무시
+        if (this.isCreatingParticles) return;
+        this.isCreatingParticles = true;
+        
+        // 기존 파티클 제거
+        document.querySelectorAll('.level-particle').forEach(p => p.remove());
+        
         for (let i = 0; i < 20; i++) {
             const particle = document.createElement('div');
             particle.className = 'level-particle';
@@ -125,6 +133,11 @@ const Theme = {
             
             setTimeout(() => particle.remove(), 3000);
         }
+        
+        // 3초 후 플래그 해제
+        setTimeout(() => {
+            this.isCreatingParticles = false;
+        }, 3000);
     },
 
     // 게임 모드 여부 확인 (항상 true)
