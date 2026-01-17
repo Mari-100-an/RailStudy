@@ -3,6 +3,7 @@
  */
 
 const CACHE_NAME = 'railway-study-v4.2';
+const APP_VERSION = 'v4.2'; // 앱 버전
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
