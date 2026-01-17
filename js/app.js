@@ -598,22 +598,30 @@ const App = {
         const sfxVolumeSlider = document.getElementById('setting-sfx-volume');
         const sfxVolumeValue = document.getElementById('sfx-volume-value');
         if (sfxVolumeSlider && sfxVolumeValue) {
-            sfxVolumeSlider.addEventListener('input', (e) => {
+            const handleSfxVolume = (e) => {
                 const volume = parseInt(e.target.value) / 100;
                 Sound.setVolume(volume);
                 sfxVolumeValue.textContent = `${e.target.value}%`;
-            });
+            };
+            sfxVolumeSlider.addEventListener('input', handleSfxVolume);
+            sfxVolumeSlider.addEventListener('change', handleSfxVolume); // iOS Safari fallback
+            // 터치 시 스크롤 방지
+            sfxVolumeSlider.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: true });
         }
 
         // BGM 볼륨
         const bgmVolumeSlider = document.getElementById('setting-bgm-volume');
         const bgmVolumeValue = document.getElementById('bgm-volume-value');
         if (bgmVolumeSlider && bgmVolumeValue) {
-            bgmVolumeSlider.addEventListener('input', (e) => {
+            const handleBgmVolume = (e) => {
                 const volume = parseInt(e.target.value) / 100;
                 Sound.setBgmVolume(volume);
                 bgmVolumeValue.textContent = `${e.target.value}%`;
-            });
+            };
+            bgmVolumeSlider.addEventListener('input', handleBgmVolume);
+            bgmVolumeSlider.addEventListener('change', handleBgmVolume); // iOS Safari fallback
+            // 터치 시 스크롤 방지
+            bgmVolumeSlider.addEventListener('touchstart', (e) => e.stopPropagation(), { passive: true });
         }
 
         // BGM 켜기/끄기

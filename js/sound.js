@@ -71,7 +71,9 @@ const Sound = {
                 enabled: this.enabled,
                 contextState: this.audioContext?.state,
                 volume: this.volume,
-                audioFilesMode: true
+                audioFilesMode: true,
+                platform: this.isIOS ? 'iOS' : this.isAndroid ? 'Android' : 'Desktop',
+                isSafari: this.isSafari
             });
             
             // AudioContext는 사용자 제스처 후에 resume 필요 (브라우저 자동재생 정책)
@@ -85,8 +87,10 @@ const Sound = {
                             console.warn('AudioContext resume failed:', e);
                         });
                     }
-                    // iOS Safari: HTML5 Audio도 unlock
-                    this.unlockAudioForIOS();
+                    // 모바일: HTML5 Audio unlock (iOS/Android 모두)
+                    if (this.isIOS || this.isAndroid) {
+                        this.unlockAudioForMobile();
+                    }
                 };
                 document.addEventListener('click', activateAudio, { once: true });
                 document.addEventListener('touchstart', activateAudio, { once: true });
@@ -97,15 +101,29 @@ const Sound = {
         }
     },
 
-    // iOS Safari 오디오 unlock (첫 터치 시 호출)
-    iosAudioUnlocked: false,
-    unlockAudioForIOS() {
-        if (this.iosAudioUnlocked) return;
+    // 플랫폼 감지
+    isIOS: /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream,
+    isAndroid: /Android/.test(navigator.userAgent),
+    isSafari: /^((?!chrome|android).)*safari/i.test(navigator.userAgent),
+    
+    // 모바일 오디오 unlock (첫 터치 시 호출)
+    mobileAudioUnlocked: false,
+    unlockAudioForMobile() {
+        if (this.mobileAudioUnlocked) return;
         
-        console.log('🔓 Unlocking audio for iOS...');
+        const platform = this.isIOS ? 'iOS' : this.isAndroid ? 'Android' : 'Desktop';
+        console.log(`🔓 Unlocking audio for ${platform}...`);
         
-        // 각 오디오 파일을 짧게 재생했다가 멈춤 (iOS unlock 트릭)
-        Object.keys(this.audioFiles).forEach(key => {
+        // SFX만 unlock (BGM 제외!) - BGM은 사용자가 켤 때만 재생
+        const sfxKeys = ['correct', 'wrong', 'levelup', 'badge', 'combo', 'select'];
+        
+        // iOS Safari: 모든 SFX 파일을 개별적으로 unlock 필요
+        // Android: 하나만 unlock해도 대부분 OK
+        const keysToUnlock = this.isIOS 
+            ? sfxKeys 
+            : ['correct', 'select']; // Android는 최소한만
+        
+        keysToUnlock.forEach(key => {
             try {
                 const audio = new Audio(this.audioFiles[key]);
                 audio.volume = 0.01; // 거의 들리지 않게
@@ -113,16 +131,16 @@ const Sound = {
                     audio.pause();
                     audio.currentTime = 0;
                     this.audioObjects[key] = audio; // unlock된 객체 저장
-                    console.log(`✅ iOS unlocked: ${key}`);
+                    console.log(`✅ ${platform} unlocked: ${key}`);
                 }).catch(e => {
-                    console.warn(`iOS unlock failed for ${key}:`, e.message);
+                    console.warn(`${platform} unlock failed for ${key}:`, e.message);
                 });
             } catch (e) {
-                console.warn(`iOS unlock error for ${key}:`, e);
+                console.warn(`${platform} unlock error for ${key}:`, e);
             }
         });
         
-        this.iosAudioUnlocked = true;
+        this.mobileAudioUnlocked = true;
     },
 
     // 오디오 파일 미리 로드 (선택적 - 더 빠른 재생을 위해)
@@ -213,6 +231,15 @@ const Sound = {
         const settings = Storage.load(Storage.KEYS.SETTINGS) || {};
         settings.soundVolume = this.volume;
         Storage.save(Storage.KEYS.SETTINGS, settings);
+        
+        // 캐시된 오디오 객체들에 볼륨 즉시 적용
+        Object.values(this.audioObjects).forEach(audio => {
+            if (audio && audio !== this.bgmAudio) {
+                audio.volume = this.volume;
+            }
+        });
+        
+        console.log(`🔊 SFX Volume: ${Math.round(this.volume * 100)}%`);
     },
 
     // BGM 볼륨 설정
@@ -224,6 +251,8 @@ const Sound = {
         
         // 실시간 볼륨 업데이트
         this.updateBGMVolume();
+        
+        console.log(`🎵 BGM Volume: ${Math.round(this.bgmVolume * 100)}%`);
     },
 
     // 햅틱 피드백 토글
