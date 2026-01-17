@@ -428,6 +428,8 @@ h3.text-lg.font-bold, h3.text-xl.font-bold {
     border: 1px solid var(--game-border);
     height: 16px !important;  /* 기본보다 더 두껍게 */
     border-radius: 8px !important;
+    width: 100% !important;
+    min-width: 0 !important;
 }
 
 .xp-bar-fill {
