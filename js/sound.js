@@ -410,7 +410,25 @@ const Sound = {
                 if (playPromise !== undefined) {
                     playPromise
                         .then(() => {
-                            console.log('✅ BGM 재생 성공');
+                            console.log('✅ BGM play() 호출 성공');
+                            console.log('🎵 BGM 상태:', {
+                                paused: this.bgmAudio.paused,
+                                volume: this.bgmAudio.volume,
+                                currentTime: this.bgmAudio.currentTime,
+                                duration: this.bgmAudio.duration,
+                                readyState: this.bgmAudio.readyState,
+                                muted: this.bgmAudio.muted
+                            });
+                            
+                            // 실제 재생 중인지 확인
+                            if (this.bgmAudio.paused) {
+                                console.warn('⚠️ play() 성공했지만 paused 상태입니다');
+                                if (typeof showToast === 'function') {
+                                    showToast('배경음악이 일시정지 상태입니다', 'warning');
+                                }
+                            } else {
+                                console.log('✅ BGM 재생 중');
+                            }
                         })
                         .catch(e => {
                             console.warn('⚠️ BGM autoplay blocked:', e.message);
