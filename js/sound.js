@@ -60,8 +60,9 @@ const Sound = {
                 try {
                     const settings = Storage.load(Storage.KEYS.SETTINGS);
                     this.enabled = settings?.soundEnabled !== false;
-                    this.volume = settings?.soundVolume ?? 0.3;
-                    this.bgmVolume = settings?.bgmVolume ?? 0.2;
+                    // 볼륨은 고정값 사용 (슬라이더 제거됨)
+                    this.volume = 0.3;
+                    this.bgmVolume = 0.2;
                     this.bgmEnabled = settings?.bgmEnabled ?? false;
                     
                     console.log('🔊 Sound settings loaded:', {
@@ -173,7 +174,12 @@ const Sound = {
 
     // 오디오 파일 재생 (파일 없으면 Web Audio API fallback)
     playAudio(key, volumeMultiplier = 1) {
-        if (!this.enabled) return;
+        console.log(`🔊 playAudio called: ${key}, enabled: ${this.enabled}, volume: ${this.volume}`);
+        
+        if (!this.enabled) {
+            console.log('🔇 Sound disabled, skipping');
+            return;
+        }
 
         const path = this.audioFiles[key];
         if (!path) {
