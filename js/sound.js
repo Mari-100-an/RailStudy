@@ -338,7 +338,7 @@ const Sound = {
         if (this.audioContext && this.audioContext.state === 'suspended') {
             try {
                 await this.audioContext.resume();
-                console.log('AudioContext resumed');
+                console.log('✅ AudioContext resumed');
             } catch (e) {
                 console.warn('AudioContext resume failed:', e);
             }
@@ -347,20 +347,30 @@ const Sound = {
         try {
             // 오디오 파일 사용
             if (this.audioFiles.bgmLofi) {
-                console.log('Loading BGM file:', this.audioFiles.bgmLofi);
+                console.log('🎵 Loading BGM file:', this.audioFiles.bgmLofi);
                 this.bgmAudio = new Audio(this.audioFiles.bgmLofi);
                 this.bgmAudio.volume = this.bgmVolume;
                 this.bgmAudio.loop = true; // 무한 반복
+                
+                // 로딩 이벤트 리스너
+                this.bgmAudio.addEventListener('canplay', () => {
+                    console.log('✅ BGM file loaded and ready');
+                });
+                
+                this.bgmAudio.addEventListener('error', (e) => {
+                    console.error('❌ BGM file load error:', e);
+                    this.startBGMSynthesized();
+                });
                 
                 const playPromise = this.bgmAudio.play();
                 if (playPromise !== undefined) {
                     playPromise
                         .then(() => {
-                            console.log('🎵 BGM started successfully');
+                            console.log('✅ BGM playing successfully');
                         })
                         .catch(e => {
                             console.warn('⚠️ BGM autoplay blocked:', e.message);
-                            console.log('Trying synthesized BGM fallback...');
+                            console.log('User gesture required for BGM. Trying synthesized fallback...');
                             // 폴백: Web Audio API로 생성
                             this.startBGMSynthesized();
                         });

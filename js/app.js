@@ -619,16 +619,18 @@ const App = {
         // BGM 켜기/끄기
         const bgmToggle = document.getElementById('setting-bgm-enabled');
         if (bgmToggle) {
-            bgmToggle.addEventListener('change', (e) => {
+            bgmToggle.addEventListener('change', async (e) => {
                 Sound.bgmEnabled = e.target.checked;
-                const settings = Storage.get(Storage.KEYS.SETTINGS) || {};
+                const settings = Storage.load(Storage.KEYS.SETTINGS) || {};
                 settings.bgmEnabled = e.target.checked;
-                Storage.set(Storage.KEYS.SETTINGS, settings);
+                Storage.save(Storage.KEYS.SETTINGS, settings);
                 
                 if (e.target.checked) {
-                    Sound.startBGM();
-                    showToast('배경음악이 켜졌습니다', 'info');
+                    console.log('🎵 User toggled BGM ON');
+                    await Sound.startBGM();
+                    showToast('배경음악이 켜졌습니다 🎵', 'success');
                 } else {
+                    console.log('🔇 User toggled BGM OFF');
                     Sound.stopBGM();
                     showToast('배경음악이 꺼졌습니다', 'info');
                 }
