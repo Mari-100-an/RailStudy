@@ -59,7 +59,6 @@ const App = {
     setupNavigation() {
         const navButtons = {
             'nav-home': 'home',
-            'nav-quiz': 'quiz',
             'nav-review': 'review',
             'nav-dashboard': 'dashboard',
             'nav-settings': 'settings'
@@ -762,11 +761,6 @@ function showToast(message, type = 'info') {
 // 앱 시작
 document.addEventListener('DOMContentLoaded', () => {
     App.init();
-});
-
-// 윈도우 리사이즈 시 차트 리사이즈
-window.addEventListener('resize', () => {
-    Dashboard.resizeCharts();
 });
 
 console.log('App module loaded');

@@ -309,7 +309,35 @@ const Storage = {
     },
 
     getXPForLevel(level) {
-        return Math.floor(100 * Math.pow(1.5, level - 1));
+        // 레벨 1-100까지 지원, 단계별 난이도 조정
+        if (level <= 10) {
+            // 초반: 빠른 성장 (동기부여)
+            return Math.floor(50 * Math.pow(1.3, level - 1));
+        } else if (level <= 30) {
+            // 초중반: 중간 속도
+            return Math.floor(200 * Math.pow(1.25, level - 10));
+        } else if (level <= 60) {
+            // 중반: 안정적 성장
+            return Math.floor(800 * Math.pow(1.2, level - 30));
+        } else if (level <= 85) {
+            // 후반: 느린 성장
+            return Math.floor(3000 * Math.pow(1.15, level - 60));
+        } else {
+            // 최후반: 매우 느린 성장 (Lv 86-100)
+            return Math.floor(10000 * Math.pow(1.1, level - 85));
+        }
+    },
+
+    // 레벨에 따른 등급 계산
+    getLevelTier(level) {
+        if (level <= 10) return { tier: 'trainee', name: '견습생', icon: '🌱', color: '#10B981' };
+        if (level <= 20) return { tier: 'junior', name: '초급 기관사', icon: '🔧', color: '#3B82F6' };
+        if (level <= 35) return { tier: 'intermediate', name: '중급 기관사', icon: '⚙️', color: '#8B5CF6' };
+        if (level <= 50) return { tier: 'senior', name: '상급 기관사', icon: '🚃', color: '#F59E0B' };
+        if (level <= 70) return { tier: 'expert', name: '전문 기관사', icon: '🚄', color: '#EF4444' };
+        if (level <= 85) return { tier: 'master', name: '마스터 기관사', icon: '🌟', color: '#EC4899' };
+        if (level <= 99) return { tier: 'grandmaster', name: '그랜드 마스터', icon: '👑', color: '#F97316' };
+        return { tier: 'legend', name: '레전드 기관사', icon: '💎', color: '#A855F7' };
     },
 
     updateMaxCombo(combo) {

@@ -7,24 +7,95 @@ const Gamification = {
     currentCombo: 0,
     sessionXP: 0,
 
-    // 배지 정의
+    // 배지 정의 (50개 이상)
     BADGES: [
-        { id: 'first_quiz', name: '첫 발걸음', icon: '👣', description: '첫 번째 퀴즈 완료', condition: (data) => data.totalSolved >= 1 },
-        { id: 'ten_correct', name: '열정의 시작', icon: '🔥', description: '10문제 정답', condition: (data) => data.totalCorrect >= 10 },
-        { id: 'fifty_correct', name: '지식 탐험가', icon: '🧭', description: '50문제 정답', condition: (data) => data.totalCorrect >= 50 },
-        { id: 'hundred_correct', name: '학습 마스터', icon: '🎓', description: '100문제 정답', condition: (data) => data.totalCorrect >= 100 },
-        { id: 'combo_5', name: '연속 킬러', icon: '⚡', description: '5연속 정답', condition: (data) => data.bestStreak >= 5 },
-        { id: 'combo_10', name: '콤보 마스터', icon: '💥', description: '10연속 정답', condition: (data) => data.bestStreak >= 10 },
-        { id: 'combo_20', name: '무적 기관사', icon: '🚀', description: '20연속 정답', condition: (data) => data.bestStreak >= 20 },
-        { id: 'law_master', name: '법규 전문가', icon: '⚖️', description: '법규 과목 50문제 정답', condition: (data) => data.subjectStats.law.correct >= 50 },
-        { id: 'emu_master', name: '전동차 전문가', icon: '🚃', description: '전기동차 과목 50문제 정답', condition: (data) => data.subjectStats.emu.correct >= 50 },
-        { id: 'theory_master', name: '이론 전문가', icon: '📐', description: '운전이론 과목 50문제 정답', condition: (data) => data.subjectStats.theory.correct >= 50 },
-        { id: 'urban_master', name: '도시철도 전문가', icon: '🚇', description: '도시철도 과목 50문제 정답', condition: (data) => data.subjectStats.urban.correct >= 50 },
-        { id: 'week_warrior', name: '일주일 전사', icon: '📅', description: '7일 연속 학습', condition: (data) => Gamification.checkConsecutiveDays(data.studyDays, 7) },
-        { id: 'accuracy_90', name: '정밀 사수', icon: '🎯', description: '정답률 90% 이상 (최소 50문제)', condition: (data) => data.totalSolved >= 50 && (data.totalCorrect / data.totalSolved) >= 0.9 },
-        { id: 'level_5', name: '루키 졸업', icon: '🌟', description: '레벨 5 달성', condition: () => Storage.getGameData().level >= 5 },
-        { id: 'level_10', name: '중급 기관사', icon: '⭐', description: '레벨 10 달성', condition: () => Storage.getGameData().level >= 10 },
-        { id: 'level_20', name: '고급 기관사', icon: '🏆', description: '레벨 20 달성', condition: () => Storage.getGameData().level >= 20 }
+        // ===== 진행도 배지 =====
+        { id: 'first_step', name: '첫 걸음', icon: '👣', description: '첫 번째 문제 풀이', condition: (data) => data.totalSolved >= 1, tier: 'bronze' },
+        { id: 'beginner', name: '초보 학습자', icon: '📚', description: '10문제 풀이', condition: (data) => data.totalSolved >= 10, tier: 'bronze' },
+        { id: 'enthusiast', name: '열정적인 학습자', icon: '🔥', description: '50문제 풀이', condition: (data) => data.totalSolved >= 50, tier: 'silver' },
+        { id: 'hundred_club', name: '백 문제 정복', icon: '💯', description: '100문제 풀이', condition: (data) => data.totalSolved >= 100, tier: 'silver' },
+        { id: 'tri_centurion', name: '삼백 문제 마스터', icon: '🎯', description: '300문제 풀이', condition: (data) => data.totalSolved >= 300, tier: 'gold' },
+        { id: 'penta_centurion', name: '오백 문제 챔피언', icon: '🏆', description: '500문제 풀이', condition: (data) => data.totalSolved >= 500, tier: 'gold' },
+        { id: 'millennium', name: '천 문제 전설', icon: '⭐', description: '1000문제 풀이', condition: (data) => data.totalSolved >= 1000, tier: 'platinum' },
+        { id: 'bi_millennium', name: '이천 문제 신화', icon: '🌟', description: '2000문제 풀이', condition: (data) => data.totalSolved >= 2000, tier: 'diamond' },
+        
+        // ===== 정답 배지 =====
+        { id: 'ten_correct', name: '첫 번째 성공', icon: '✅', description: '10문제 정답', condition: (data) => data.totalCorrect >= 10, tier: 'bronze' },
+        { id: 'fifty_correct', name: '지식 탐험가', icon: '🧭', description: '50문제 정답', condition: (data) => data.totalCorrect >= 50, tier: 'silver' },
+        { id: 'hundred_correct', name: '학습 마스터', icon: '🎓', description: '100문제 정답', condition: (data) => data.totalCorrect >= 100, tier: 'silver' },
+        { id: 'tri_hundred_correct', name: '삼백 정답 달성', icon: '🎖️', description: '300문제 정답', condition: (data) => data.totalCorrect >= 300, tier: 'gold' },
+        { id: 'penta_hundred_correct', name: '오백 정답 달성', icon: '👑', description: '500문제 정답', condition: (data) => data.totalCorrect >= 500, tier: 'gold' },
+        { id: 'thousand_correct', name: '천문제 정복자', icon: '💎', description: '1000문제 정답', condition: (data) => data.totalCorrect >= 1000, tier: 'platinum' },
+        
+        // ===== 연속 정답 배지 =====
+        { id: 'combo_3', name: '연속 시작', icon: '🔗', description: '3연속 정답', condition: (data) => data.bestStreak >= 3, tier: 'bronze' },
+        { id: 'combo_5', name: '연속 킬러', icon: '⚡', description: '5연속 정답', condition: (data) => data.bestStreak >= 5, tier: 'bronze' },
+        { id: 'combo_10', name: '콤보 마스터', icon: '💥', description: '10연속 정답', condition: (data) => data.bestStreak >= 10, tier: 'silver' },
+        { id: 'combo_15', name: '완벽한 집중', icon: '🎯', description: '15연속 정답', condition: (data) => data.bestStreak >= 15, tier: 'silver' },
+        { id: 'combo_20', name: '무적 기관사', icon: '🚀', description: '20연속 정답', condition: (data) => data.bestStreak >= 20, tier: 'gold' },
+        { id: 'combo_30', name: '완벽한 흐름', icon: '🌊', description: '30연속 정답', condition: (data) => data.bestStreak >= 30, tier: 'gold' },
+        { id: 'combo_50', name: '초월자', icon: '✨', description: '50연속 정답', condition: (data) => data.bestStreak >= 50, tier: 'platinum' },
+        { id: 'combo_100', name: '신의 경지', icon: '🔮', description: '100연속 정답', condition: (data) => data.bestStreak >= 100, tier: 'diamond' },
+        
+        // ===== 과목별 배지 - 철도관련법 =====
+        { id: 'law_novice', name: '법규 입문자', icon: '⚖️', description: '법규 20문제 정답', condition: (data) => data.subjectStats.law?.correct >= 20, tier: 'bronze' },
+        { id: 'law_adept', name: '법규 숙련자', icon: '📜', description: '법규 50문제 정답', condition: (data) => data.subjectStats.law?.correct >= 50, tier: 'silver' },
+        { id: 'law_master', name: '법규 전문가', icon: '⚖️', description: '법규 100문제 정답', condition: (data) => data.subjectStats.law?.correct >= 100, tier: 'gold' },
+        { id: 'law_grandmaster', name: '법규 그랜드 마스터', icon: '👨‍⚖️', description: '법규 200문제 정답', condition: (data) => data.subjectStats.law?.correct >= 200, tier: 'platinum' },
+        
+        // ===== 과목별 배지 - 도시철도시스템 =====
+        { id: 'urban_novice', name: '도시철도 입문자', icon: '🚇', description: '도시철도 20문제 정답', condition: (data) => data.subjectStats.urban?.correct >= 20, tier: 'bronze' },
+        { id: 'urban_adept', name: '도시철도 숙련자', icon: '🚊', description: '도시철도 50문제 정답', condition: (data) => data.subjectStats.urban?.correct >= 50, tier: 'silver' },
+        { id: 'urban_master', name: '도시철도 전문가', icon: '🚇', description: '도시철도 100문제 정답', condition: (data) => data.subjectStats.urban?.correct >= 100, tier: 'gold' },
+        { id: 'urban_grandmaster', name: '도시철도 그랜드 마스터', icon: '🚄', description: '도시철도 200문제 정답', condition: (data) => data.subjectStats.urban?.correct >= 200, tier: 'platinum' },
+        
+        // ===== 과목별 배지 - 전기동차 =====
+        { id: 'emu_novice', name: '전동차 입문자', icon: '🚃', description: '전기동차 20문제 정답', condition: (data) => data.subjectStats.emu?.correct >= 20, tier: 'bronze' },
+        { id: 'emu_adept', name: '전동차 숙련자', icon: '🔌', description: '전기동차 50문제 정답', condition: (data) => data.subjectStats.emu?.correct >= 50, tier: 'silver' },
+        { id: 'emu_master', name: '전동차 전문가', icon: '🚃', description: '전기동차 100문제 정답', condition: (data) => data.subjectStats.emu?.correct >= 100, tier: 'gold' },
+        { id: 'emu_grandmaster', name: '전동차 그랜드 마스터', icon: '⚡', description: '전기동차 200문제 정답', condition: (data) => data.subjectStats.emu?.correct >= 200, tier: 'platinum' },
+        
+        // ===== 과목별 배지 - 운전이론 =====
+        { id: 'theory_novice', name: '이론 입문자', icon: '📐', description: '운전이론 20문제 정답', condition: (data) => data.subjectStats.theory?.correct >= 20, tier: 'bronze' },
+        { id: 'theory_adept', name: '이론 숙련자', icon: '📏', description: '운전이론 50문제 정답', condition: (data) => data.subjectStats.theory?.correct >= 50, tier: 'silver' },
+        { id: 'theory_master', name: '이론 전문가', icon: '📐', description: '운전이론 100문제 정답', condition: (data) => data.subjectStats.theory?.correct >= 100, tier: 'gold' },
+        { id: 'theory_grandmaster', name: '이론 그랜드 마스터', icon: '🧮', description: '운전이론 200문제 정답', condition: (data) => data.subjectStats.theory?.correct >= 200, tier: 'platinum' },
+        
+        // ===== 과목별 배지 - 비상시 조치 =====
+        { id: 'emergency_novice', name: '비상조치 입문자', icon: '🚨', description: '비상시조치 20문제 정답', condition: (data) => data.subjectStats.emergency?.correct >= 20, tier: 'bronze' },
+        { id: 'emergency_adept', name: '비상조치 숙련자', icon: '🆘', description: '비상시조치 50문제 정답', condition: (data) => data.subjectStats.emergency?.correct >= 50, tier: 'silver' },
+        { id: 'emergency_master', name: '비상조치 전문가', icon: '🚨', description: '비상시조치 100문제 정답', condition: (data) => data.subjectStats.emergency?.correct >= 100, tier: 'gold' },
+        
+        // ===== 정확도 배지 =====
+        { id: 'accuracy_80', name: '정확한 학습', icon: '🎯', description: '정답률 80% 이상 (50문제 이상)', condition: (data) => data.totalSolved >= 50 && (data.totalCorrect / data.totalSolved) >= 0.8, tier: 'bronze' },
+        { id: 'accuracy_90', name: '정밀 사수', icon: '🏹', description: '정답률 90% 이상 (100문제 이상)', condition: (data) => data.totalSolved >= 100 && (data.totalCorrect / data.totalSolved) >= 0.9, tier: 'silver' },
+        { id: 'accuracy_95', name: '명사수', icon: '🎖️', description: '정답률 95% 이상 (200문제 이상)', condition: (data) => data.totalSolved >= 200 && (data.totalCorrect / data.totalSolved) >= 0.95, tier: 'gold' },
+        { id: 'accuracy_98', name: '완벽주의자', icon: '💎', description: '정답률 98% 이상 (500문제 이상)', condition: (data) => data.totalSolved >= 500 && (data.totalCorrect / data.totalSolved) >= 0.98, tier: 'platinum' },
+        { id: 'perfect_10', name: '백발백중', icon: '🎯', description: '10문제 연속 100% 정답', condition: (data) => data.bestStreak >= 10, tier: 'gold' },
+        
+        // ===== 레벨 배지 =====
+        { id: 'level_5', name: '루키 졸업', icon: '🌱', description: '레벨 5 달성', condition: () => Storage.getGameData().level >= 5, tier: 'bronze' },
+        { id: 'level_10', name: '초급 기관사', icon: '🔧', description: '레벨 10 달성', condition: () => Storage.getGameData().level >= 10, tier: 'bronze' },
+        { id: 'level_20', name: '중급 기관사', icon: '⚙️', description: '레벨 20 달성', condition: () => Storage.getGameData().level >= 20, tier: 'silver' },
+        { id: 'level_35', name: '상급 기관사', icon: '🚃', description: '레벨 35 달성', condition: () => Storage.getGameData().level >= 35, tier: 'silver' },
+        { id: 'level_50', name: '전문 기관사', icon: '🚄', description: '레벨 50 달성', condition: () => Storage.getGameData().level >= 50, tier: 'gold' },
+        { id: 'level_70', name: '마스터 기관사', icon: '🌟', description: '레벨 70 달성', condition: () => Storage.getGameData().level >= 70, tier: 'gold' },
+        { id: 'level_85', name: '그랜드 마스터', icon: '👑', description: '레벨 85 달성', condition: () => Storage.getGameData().level >= 85, tier: 'platinum' },
+        { id: 'level_100', name: '레전드 기관사', icon: '💎', description: '레벨 100 달성', condition: () => Storage.getGameData().level >= 100, tier: 'diamond' },
+        
+        // ===== 학습 지속성 배지 =====
+        { id: 'day_3', name: '3일 챌린저', icon: '📅', description: '3일 연속 학습', condition: (data) => Gamification.checkConsecutiveDays(data.studyDays, 3), tier: 'bronze' },
+        { id: 'week_warrior', name: '일주일 전사', icon: '🗓️', description: '7일 연속 학습', condition: (data) => Gamification.checkConsecutiveDays(data.studyDays, 7), tier: 'silver' },
+        { id: 'fortnight_champion', name: '2주 챔피언', icon: '📆', description: '14일 연속 학습', condition: (data) => Gamification.checkConsecutiveDays(data.studyDays, 14), tier: 'gold' },
+        { id: 'month_marathoner', name: '한 달 마라토너', icon: '🏃', description: '30일 연속 학습', condition: (data) => Gamification.checkConsecutiveDays(data.studyDays, 30), tier: 'platinum' },
+        
+        // ===== 특별 배지 =====
+        { id: 'all_subjects', name: '철도 박사', icon: '🎓', description: '모든 과목 마스터 달성', 
+          condition: (data) => Object.values(data.subjectStats).every(s => s?.correct >= 100), tier: 'diamond' },
+        { id: 'wrong_conqueror', name: '오답 정복자', icon: '🗡️', description: '오답 100개 복습 완료', 
+          condition: () => Storage.getWrongAnswers().length >= 100, tier: 'gold' },
+        { id: 'speed_learner', name: '빠른 학습자', icon: '⚡', description: '1시간에 50문제 풀기', 
+          condition: () => false, tier: 'gold' }, // TODO: 세션 기록 추가 필요
     ],
 
     // XP 보상 계산

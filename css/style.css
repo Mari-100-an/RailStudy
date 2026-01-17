@@ -77,37 +77,45 @@ body {
     transition: all var(--transition-fast);
 }
 
-/* 프로그레스 바 */
+/* 프로그레스 바 (문제 풀이 진행도) */
 .progress-bar-bg {
     height: 8px;
     border-radius: 4px;
     overflow: hidden;
+    background-color: #e5e7eb;
 }
 
 .progress-bar-fill {
     height: 100%;
     border-radius: 4px;
     transition: width var(--transition-normal) ease-out;
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
 }
 
-/* XP 바 (게임 모드) */
+/* XP 바 (게임 모드 경험치) - 진행도 바와 구분 */
 .xp-bar-bg {
-    height: 12px;
-    border-radius: 6px;
+    height: 16px;
+    border-radius: 8px;
     overflow: hidden;
+    background-color: rgba(251, 191, 36, 0.15);
+    border: 2px solid rgba(251, 191, 36, 0.3);
 }
 
 .xp-bar-fill {
     height: 100%;
     border-radius: 6px;
     transition: width var(--transition-normal) ease-out;
+    background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
 }
 
 .level-badge {
-    padding: 4px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
+    background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%);
+    color: white;
 }
 
 /* 아이콘 서클 */

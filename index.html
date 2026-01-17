@@ -27,8 +27,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/focus-mode.css" id="theme-focus">
-    <link rel="stylesheet" href="css/game-mode.css" id="theme-game" disabled>
+    <link rel="stylesheet" href="css/game-mode.css">
     <script>
         tailwind.config = {
             theme: {
@@ -41,9 +40,9 @@
         }
     </script>
 </head>
-<body class="font-sans min-h-screen transition-colors duration-300">
+<body class="game-mode font-sans min-h-screen transition-colors duration-300">
     <!-- 로딩 스크린 -->
-    <div id="loading-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-white">
+    <div id="loading-screen" class="fixed inset-0 z-50 flex items-center justify-center">
         <div class="text-center">
             <div class="loading-spinner mb-4"></div>
             <p class="text-lg font-medium">학습 플랫폼 로딩 중...</p>
@@ -62,9 +61,6 @@
                 <nav class="flex items-center gap-2">
                     <button id="nav-home" class="nav-btn active" title="홈">
                         <i class="fas fa-home"></i>
-                    </button>
-                    <button id="nav-quiz" class="nav-btn" title="문제 풀이">
-                        <i class="fas fa-question-circle"></i>
                     </button>
                     <button id="nav-review" class="nav-btn" title="오답 노트">
                         <i class="fas fa-book"></i>
@@ -483,33 +479,6 @@
             <section id="page-settings" class="page hidden">
                 <div class="max-w-2xl mx-auto">
                     <h2 class="text-2xl font-bold mb-6">⚙️ 설정</h2>
-
-                    <!-- UI 모드 선택 -->
-                    <div class="settings-card p-6 rounded-xl mb-6">
-                        <h3 class="text-lg font-bold mb-4">🎨 학습 모드</h3>
-                        <div class="grid grid-cols-2 gap-4">
-                            <button id="mode-focus" class="mode-card p-6 rounded-xl border-2 transition-all">
-                                <div class="text-4xl mb-3">📖</div>
-                                <h4 class="font-bold mb-2">Focus Mode</h4>
-                                <p class="text-sm opacity-70">집중 학습에 최적화된 깔끔한 디자인</p>
-                                <ul class="text-xs mt-3 opacity-60 text-left">
-                                    <li>• 미니멀 디자인</li>
-                                    <li>• 큰 글씨</li>
-                                    <li>• 애니메이션 최소화</li>
-                                </ul>
-                            </button>
-                            <button id="mode-game" class="mode-card p-6 rounded-xl border-2 transition-all">
-                                <div class="text-4xl mb-3">🎮</div>
-                                <h4 class="font-bold mb-2">Game Mode</h4>
-                                <p class="text-sm opacity-70">게이미피케이션으로 재미있게 학습</p>
-                                <ul class="text-xs mt-3 opacity-60 text-left">
-                                    <li>• XP & 레벨 시스템</li>
-                                    <li>• 배지 획듍</li>
-                                    <li>• 콤보 보너스</li>
-                                </ul>
-                            </button>
-                        </div>
-                    </div>
 
                     <!-- 학습 설정 -->
                     <div class="settings-card p-6 rounded-xl mb-6">

@@ -1,115 +1,43 @@
 /**
  * 테마 관리 모듈
- * Focus Mode / Game Mode 전환
+ * Game Mode 전용 (Focus Mode 제거됨)
  */
 
 const Theme = {
-    current: 'focus',
+    current: 'game',
     previousLevel: 1,
 
     init() {
-        const settings = Storage.getSettings();
-        this.current = settings.mode || 'focus';
+        // 항상 게임 모드 사용
+        this.current = 'game';
         this.previousLevel = Storage.getGameData().level;
-        this.apply(this.current);
-        this.setupModeButtons();
+        this.apply();
     },
 
-    apply(mode) {
-        this.current = mode;
-        const focusLink = document.getElementById('theme-focus');
-        const gameLink = document.getElementById('theme-game');
+    apply() {
         const body = document.body;
         const xpBar = document.getElementById('xp-bar-container');
         const gameStats = document.getElementById('game-stats');
         const resultRewards = document.getElementById('result-rewards');
 
-        if (mode === 'focus') {
-            // Focus Mode 적용
-            focusLink.disabled = false;
-            gameLink.disabled = true;
-            body.classList.add('focus-mode');
-            body.classList.remove('game-mode');
-            
-            // 배경색 초기화
-            document.documentElement.style.backgroundColor = '';
-            document.body.style.backgroundColor = '';
-            
-            // 게임 요소 숨기기
-            if (xpBar) xpBar.classList.add('hidden');
-            if (gameStats) gameStats.classList.add('hidden');
-            if (resultRewards) resultRewards.classList.add('hidden');
-        } else {
-            // Game Mode 적용
-            focusLink.disabled = true;
-            gameLink.disabled = false;
-            body.classList.remove('focus-mode');
-            body.classList.add('game-mode');
-            
-            // 강제로 배경색 설정 (시스템 테마 무시)
-            document.documentElement.style.backgroundColor = '#0A0F1C';
-            document.body.style.backgroundColor = '#0A0F1C';
-            
-            // 게임 요소 표시
-            if (xpBar) xpBar.classList.remove('hidden');
-            if (gameStats) gameStats.classList.remove('hidden');
-            if (resultRewards) resultRewards.classList.remove('hidden');
+        // Game Mode 강제 적용
+        body.classList.add('game-mode');
+        body.classList.remove('focus-mode');
+        
+        // 강제로 배경색 설정 (시스템 테마 무시)
+        document.documentElement.style.backgroundColor = '#0A0F1C';
+        document.body.style.backgroundColor = '#0A0F1C';
+        
+        // 게임 요소 표시
+        if (xpBar) xpBar.classList.remove('hidden');
+        if (gameStats) gameStats.classList.remove('hidden');
+        if (resultRewards) resultRewards.classList.remove('hidden');
 
-            // 게임 데이터 표시 업데이트
-            this.updateGameDisplay();
-        }
-
-        // 설정 저장
-        Storage.updateSetting('mode', mode);
-
-        // 모드 선택 버튼 업데이트
-        this.updateModeButtons();
-    },
-
-    toggle() {
-        const newMode = this.current === 'focus' ? 'game' : 'focus';
-        this.apply(newMode);
-    },
-
-    setupModeButtons() {
-        const focusBtn = document.getElementById('mode-focus');
-        const gameBtn = document.getElementById('mode-game');
-
-        if (focusBtn) {
-            focusBtn.addEventListener('click', () => {
-                this.apply('focus');
-                showToast('Focus Mode 활성화', 'success');
-            });
-        }
-
-        if (gameBtn) {
-            gameBtn.addEventListener('click', () => {
-                this.apply('game');
-                showToast('Game Mode 활성화', 'success');
-            });
-        }
-
-        this.updateModeButtons();
-    },
-
-    updateModeButtons() {
-        const focusBtn = document.getElementById('mode-focus');
-        const gameBtn = document.getElementById('mode-game');
-
-        if (focusBtn && gameBtn) {
-            if (this.current === 'focus') {
-                focusBtn.classList.add('selected');
-                gameBtn.classList.remove('selected');
-            } else {
-                focusBtn.classList.remove('selected');
-                gameBtn.classList.add('selected');
-            }
-        }
+        // 게임 데이터 표시 업데이트
+        this.updateGameDisplay();
     },
 
     updateGameDisplay() {
-        if (this.current !== 'game') return;
-
         const gameData = Storage.getGameData();
         
         // 레벨업 체크 및 축하 효과
@@ -144,10 +72,6 @@ const Theme = {
         if (gameTotalXp) gameTotalXp.textContent = gameData.totalXp.toLocaleString();
         if (gameMaxCombo) gameMaxCombo.textContent = gameData.maxCombo;
         if (gameBadges) gameBadges.textContent = gameData.unlockedBadges.length;
-    },
-
-    isGameMode() {
-        return this.current === 'game';
     },
 
     // 레벨업 축하 효과
@@ -193,9 +117,15 @@ const Theme = {
         }
     },
 
+    // 게임 모드 여부 확인 (항상 true)
+    isGameMode() {
+        return true;
+    },
+
+    // 하위 호환성을 위한 메서드
     isFocusMode() {
-        return this.current === 'focus';
+        return false;
     }
 };
 
-console.log('Theme module loaded');
+console.log('Theme module loaded (Game Mode Only)');
