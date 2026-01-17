@@ -2,9 +2,11 @@
  * Service Worker - PWA 오프라인 지원 및 캐싱
  */
 
-const CACHE_NAME = 'railway-study-v4.5';
-const APP_VERSION = 'v4.5'; // 앱 버전
-const ASSETS_TO_CACHE = [
+const CACHE_NAME = 'railway-study-v4.6';
+const APP_VERSION = 'v4.6'; // 앱 버전
+
+// 필수 리소스 (실패 시 설치 중단)
+const CORE_ASSETS = [
     '/',
     '/index.html',
     '/css/style.css',
@@ -15,16 +17,18 @@ const ASSETS_TO_CACHE = [
     '/js/gamification.js',
     '/js/storage.js',
     '/js/theme.js',
-    '/js/sound.js',
-    '/js/heatmap.js',
-    // 오디오 파일 (존재하는 경우만 캐시)
+    '/js/sound.js'
+];
+
+// 오디오 파일 (실패해도 설치 계속)
+const AUDIO_ASSETS = [
     '/audio/sfx/correct.mp3',
     '/audio/sfx/wrong.mp3',
     '/audio/sfx/levelup.mp3',
     '/audio/sfx/badge.mp3',
     '/audio/sfx/combo.mp3',
     '/audio/sfx/select.mp3',
-    '/audio/bgm/lofi-study.mp3'  // BGM 추가
+    '/audio/bgm/lofi-study.mp3'
 ];
 
 // 메시지 이벤트 - SKIP_WAITING 처리
@@ -36,12 +40,31 @@ self.addEventListener('message', (event) => {
 
 // 설치 이벤트 - 캐시에 리소스 저장
 self.addEventListener('install', (event) => {
-    console.log('[SW] Installing service worker...');
+    console.log('[SW] Installing service worker v' + APP_VERSION);
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then((cache) => {
-                console.log('[SW] Caching app shell');
-                return cache.addAll(ASSETS_TO_CACHE);
+            .then(async (cache) => {
+                // 필수 리소스 먼저 캐시
+                console.log('[SW] Caching core assets...');
+                await cache.addAll(CORE_ASSETS);
+                console.log('[SW] Core assets cached');
+                
+                // 오디오 파일 개별 캐시 (실패해도 계속)
+                console.log('[SW] Caching audio assets...');
+                for (const audioUrl of AUDIO_ASSETS) {
+                    try {
+                        const response = await fetch(audioUrl);
+                        if (response.ok) {
+                            await cache.put(audioUrl, response);
+                            console.log('[SW] Audio cached:', audioUrl);
+                        } else {
+                            console.warn('[SW] Audio fetch failed:', audioUrl, response.status);
+                        }
+                    } catch (e) {
+                        console.warn('[SW] Audio cache error:', audioUrl, e.message);
+                    }
+                }
+                console.log('[SW] Installation complete');
             })
     );
 });
