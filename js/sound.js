@@ -109,7 +109,7 @@ const Sound = {
                     }
                 };
                 document.addEventListener('click', activateAudio, { once: true });
-                document.addEventListener('touchstart', activateAudio, { once: true });
+                document.addEventListener('touchstart', activateAudio, { once: true, passive: true });
             }
         } catch (e) {
             console.error('❌ Sound module initialization failed (non-critical):', e);
