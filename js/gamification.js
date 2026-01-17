@@ -241,10 +241,12 @@ const Gamification = {
             }
         }
 
-        // 새 뱃지 획득 알림
-        for (const badge of newBadges) {
-            this.showBadgeUnlock(badge);
-        }
+        // 새 뱃지 획득 알림 (시간차를 두고 순차 표시)
+        newBadges.forEach((badge, index) => {
+            setTimeout(() => {
+                this.showBadgeUnlock(badge);
+            }, index * 800 + 1200); // 정답 확인 후 1.2초 후부터, 각 배지마다 0.8초 간격
+        });
 
         return newBadges;
     },
@@ -286,27 +288,42 @@ const Gamification = {
         };
         const tierColor = tierColors[badge.tier] || '#FFD700';
 
-        // 게임 모드에서는 화려한 팝업 표시
+        // 게임 모드에서는 화려한 팝업 표시 (상단에 배치하여 해설과 겹치지 않도록)
         const popup = document.createElement('div');
-        popup.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none';
+        popup.className = 'fixed top-20 left-1/2 transform -translate-x-1/2 z-50';
+        popup.style.cursor = 'pointer';
         popup.innerHTML = `
-            <div class="badge-unlock-popup text-center p-6 rounded-2xl" style="border: 2px solid ${tierColor}; box-shadow: 0 0 30px ${tierColor}40;">
+            <div class="badge-unlock-popup text-center p-6 rounded-2xl" style="border: 2px solid ${tierColor}; box-shadow: 0 0 30px ${tierColor}40; background: rgba(10, 15, 28, 0.98); backdrop-filter: blur(12px);">
                 <div class="text-4xl mb-3">${badge.icon}</div>
                 <div class="text-2xl font-bold mb-2" style="color: ${tierColor};">새 배지 획득!</div>
                 <div class="text-xl mb-1">${badge.name}</div>
                 <div class="text-sm opacity-80">${badge.description}</div>
                 <div class="text-xs mt-2 opacity-60" style="color: ${tierColor};">${badge.tier.toUpperCase()}</div>
+                <div class="text-xs mt-3 opacity-50">탭하여 닫기</div>
             </div>
         `;
         
         document.body.appendChild(popup);
         
+        // 터치/클릭으로 즉시 닫기
+        const closePopup = () => {
+            popup.style.opacity = '0';
+            popup.style.transform = 'translate(-50%, -20px)';
+            popup.style.transition = 'all 0.3s ease';
+            setTimeout(() => popup.remove(), 300);
+        };
+        popup.addEventListener('click', closePopup);
+        popup.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            closePopup();
+        });
+        
         // 애니메이션
         const popupElement = popup.querySelector('.badge-unlock-popup');
         popupElement.style.animation = 'badgeUnlock 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
         
-        // 2.5초 후 제거
-        setTimeout(() => {
+        // 2.5초 후 자동 제거
+        const autoCloseTimeout = setTimeout(() => {
             popup.remove();
         }, 2500);
     },
