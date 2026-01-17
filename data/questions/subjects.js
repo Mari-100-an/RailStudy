@@ -25,18 +25,14 @@ var SUBJECTS = {
         name: '전기동차 구조',
         icon: '🚃',
         color: '#10B981',
-        description: '전기동차 일반, 특고압회로, 제동장치 등',
-        disabled: true,
-        disabledMessage: '문제 준비 중입니다'
+        description: '전기동차 일반, 특고압회로, 제동장치 등'
     },
     theory: {
         id: 'theory',
         name: '운전이론',
         icon: '📐',
         color: '#F59E0B',
-        description: '기초공학, 열차저항, 선로공학 등',
-        disabled: true,
-        disabledMessage: '문제 준비 중입니다'
+        description: '기초공학, 열차저항, 선로공학 등'
     },
     emergency: {
         id: 'emergency',
