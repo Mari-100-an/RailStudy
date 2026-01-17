@@ -11,7 +11,7 @@ const Sound = {
     enabled: true,
     volume: 0.3, // 적당한 볼륨으로 설정
     bgmVolume: 0.2, // BGM 볼륨
-    bgmEnabled: false, // BGM 기본 꺼짐
+    bgmEnabled: true, // BGM 기본 켜짐
     
     // 조건부 로깅
     log(...args) {
@@ -58,7 +58,7 @@ const Sound = {
                     // 볼륨은 고정값 사용 (슬라이더 제거됨)
                     this.volume = 0.3;
                     this.bgmVolume = 0.2;
-                    this.bgmEnabled = settings?.bgmEnabled ?? false;
+                    this.bgmEnabled = settings?.bgmEnabled ?? true;
                 } catch (e) {
                     this.enabled = true;
                 }
