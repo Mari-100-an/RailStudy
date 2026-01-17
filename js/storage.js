@@ -556,27 +556,8 @@ const Storage = {
     },
 
     // ==========================================
-    // Table API 연동 (서버 저장)
+    // 사용자 ID (향후 서버 연동용)
     // ==========================================
-
-    async syncToServer() {
-        try {
-            const data = this.exportData();
-            const response = await fetch('tables/user_progress', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    user_id: this.getUserId(),
-                    data: JSON.stringify(data),
-                    updated_at: new Date().toISOString()
-                })
-            });
-            return response.ok;
-        } catch (e) {
-            console.error('Sync to server failed:', e);
-            return false;
-        }
-    },
 
     getUserId() {
         let userId = localStorage.getItem('railway_user_id');

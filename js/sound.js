@@ -2,14 +2,24 @@
  * 사운드 모듈 - 깔끔하고 절제된 피드백 사운드
  * Web Audio API를 사용한 간단한 비프음 생성
  */
+
+// 디버그 모드 (프로덕션에서는 false로 설정)
+const SOUND_DEBUG = false;
+
 const Sound = {
     audioContext: null,
     enabled: true,
     volume: 0.3, // 적당한 볼륨으로 설정
     bgmVolume: 0.2, // BGM 볼륨
     bgmEnabled: false, // BGM 기본 꺼짐
-
     
+    // 조건부 로깅
+    log(...args) {
+        if (SOUND_DEBUG) console.log(...args);
+    },
+    warn(...args) {
+        if (SOUND_DEBUG) console.warn(...args);
+    },    
     // 오디오 파일 경로 (상대 경로로 변경 - PWA 호환성)
     audioFiles: {
         correct: './audio/sfx/correct.mp3',
