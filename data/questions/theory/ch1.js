@@ -4,7 +4,7 @@
 var QUESTIONS_THEORY_CH1 = [
       {
     "id": "driving_theory_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "철도의 사명을 합리적이고 경제적으로 완수하기 위한 운전 기술의 기본이 되는 것은 무엇인가?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "운전 이론 용어 중 '견인정수'에 대한 설명으로 옳은 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "운전 이론에서 정의하는 '고압(High Voltage)'의 기준으로 옳은 것은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "승객과 화물이 없는 차량의 중량으로서 주행에 필요한 추가 중량(물, 모래 등)이 제외된 중량은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "레일을 전기회로의 일부로 사용하여 열차를 검지하거나 정보를 전달하는 회로는?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "차륜 답면에 설치되는 원추 모양의 경사로, 열차의 곡선 통과 시 좌우 차륜의 회전 반경 차이를 발생시키는 것은?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "동력에 의하여 선로를 이동하는 것을 목적으로 제작된 기관차 및 동차(제어차 포함)를 무엇이라 하는가?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "선로를 운행할 목적으로 열차번호를 부여받은 철도차량을 무엇이라 하는가?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "운전 선도의 종류에 포함되지 않는 것은?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "선로에 열차 또는 차량을 수용함에 있어서 그 선로의 수용 가능 최대 길이를 무엇이라 하는가?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "철도차량이 수평 상태에 있는 경우 1개의 차륜이 수직으로 궤도를 누르는 중량은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "'일반 철도차량'의 정의에 따른 최고 운행 속도 기준은?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "운전 이론 용어 중 '저크'에 대한 설명으로 옳은 것은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "운전 이론에서 '저압'의 기준으로 옳은 것은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "차륜이 레일에서 미끄러지지 않고 회전을 계속할 수 있는 마찰력을 무엇이라 하는가?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "'정비 중량(W1)'에 포함되지 않는 것은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "열차가 직선 평탄 구간을 달릴 때의 '주행저항'에 해당하지 않는 것은?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "차량의 안전을 확보하기 위하여 궤도 위에 정지된 상태에서 측정한 차량의 길이·너비 및 높이의 한계는?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "철도차량이 수평 상태에 있는 경우 1개의 차축에 연결된 모든 차륜의 윤중을 합한 것은?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "탈선의 안전 척도로 사용되며, 차륜의 횡압과 윤중과의 비율을 의미하는 것은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "2대 이상의 열차를 동시에 운전시키지 않기 위하여 정한 구간을 무엇이라 하는가?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "제동 시 제동력이 점착력보다 클 때 발생하는 차륜과 레일 사이의 미끄럼 현상은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "주 전동기를 발전기로 변환하여 제동력을 얻고, 발생 전력을 전차선으로 반송하는 제동 방식은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "열차가 지상에 설치된 신호기의 현시 속도를 초과하면 열차를 자동으로 정지시키는 장치는?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "선행 열차의 위치와 선로 조건에 의한 운행 속도를 차상으로 전송하여 신호 현시창에 표시하며, 초과 시 자동 감속시키는 장치는?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "시속 151km 이상 200km 미만으로 주행하며 위생 설비 등의 편의 설비를 갖춘 전기동차는?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "운전 이론(기술)의 기본 3요소에 해당하지 않는 것은?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "견인력에 영향을 주는 요소로 명시되지 않은 것은?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "운전 계획 수립 절차에서 가장 기초가 되는 단계는?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "열차 운행 도표 작성에 필요한 운전 계획 중 '열차 계획'의 범위에 포함되지 않는 것은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
    {
     "id": "theory_1_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.1 운전 이론의 정의",
     "question": "철도의 사명에 대한 설명으로 가장 적절한 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.1 운전 이론의 정의",
     "question": "철도의 사명을 합리적이고 경제적으로 완수하기 위한 '운전 기술의 기본'이 되는 것은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "운전 이론에서 정의하는 '고압'의 범위 중 교류(AC) 전압의 기준은?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "운전 이론상 '고압'의 상한선 전압은 얼마인가?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "그 전선로를 대표하는 선간전압을 의미하는 용어는?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "주 전동기의 회전력을 차륜에 전달하는 장치는?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "철도차량의 마찰 제동으로 제동 실린더에서 발생한 힘을 제륜자 및 디스크에 전달하는 기구는?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "차체를 지지하고 선로 방향으로 주행 또는 제동할 수 있게 하는 주행 장치는?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "'만차 중량(W2)'의 정의로 옳은 것은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "원동기를 가지지 않은 차량을 지칭하는 용어와 약호는?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "운전 선도(Diagram)의 종류에 해당하지 않는 것은?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "운전 간격의 최솟값을 무엇이라 하는가?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "철도차량의 정차 상태 윤중과 주행 중 윤중치를 뺀 후 정지 윤중으로 나눈 값은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "운전 이론에서 '저압'인 직류(DC) 전압의 기준은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "도시교통 처리를 주목적으로 하며 디젤 기관 등의 운행에는 적합하지 않게 건설된 선로는?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "전기 사용 기계·기구 등에서 사용상 기준이 되는 전압을 무엇이라 하는가?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "집전 방식 중 급전용 궤도인 제3궤조에서 전기를 공급받는 장치는?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "주행 장치(Bogie)에 의하여 지지되며 승객 및 운전자가 탑승하는 철도차량 부분의 총칭은?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "보통의 사용 상태에서 그 회로에 가하여지는 선간전압의 최대치를 무엇이라 하는가?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "동력차의 특성곡선에서 산출하여 운전 계획 수립 시에 적용하는 견인력은?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "제1호의 견인정수를 연결하고 운전하는 경우 정거장 간을 운행하는 데 소요되는 최소 시간은?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "정상적인 운행속도와 선로의 수직적 불규칙성 하에서 철도차량이 레일에 미치는 '가로 방향의 힘'은?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "열차의 측면에 부는 바람을 무엇이라 하는가?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "ATP(열차 자동 방호 장치)의 기능에 대한 설명으로 옳은 것은?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "일반형 전기동차 중 제어 방식에 따른 분류에 해당하지 않는 것은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "간선형 전기동차의 최고 주행 속도 기준은?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "준고속형 전기동차의 속도 범위로 옳은 것은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_3_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.3 운전 이론의 기본 3요소",
     "question": "견인력(Traction)에 영향을 주는 요소가 아닌 것은?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_3_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.3 운전 이론의 기본 3요소",
     "question": "동력차가 견인력을 발휘하여 주행 시 진행 반대 방향으로 발생하는 힘은?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_3_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.3 운전 이론의 기본 3요소",
     "question": "열차 운전 속도를 제어하여 목표 지점에 정확하게 정지시킬 수 있는 힘은?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_4_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.4 운전 이론의 응용",
     "question": "운전 계획 수립의 첫 단계로 가장 적절한 것은?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_4_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.4 운전 이론의 응용",
     "question": "열차 계획(Train Plan)의 범위에 포함되는 항목이 아닌 것은?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_4_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.4 운전 이론의 응용",
     "question": "차량 계획(Vehicle Plan)의 범위에 해당하는 것은?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_4_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.4 운전 이론의 응용",
     "question": "인원 계획의 범위에 포함되는 것은?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_4_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.4 운전 이론의 응용",
     "question": "설비 계획에 포함되지 않는 것은?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_4_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.4 운전 이론의 응용",
     "question": "운전 이론의 업무 영역 도표에서 '소프트적인 요소(가로축)'에 해당하지 않는 것은?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_4_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.4 운전 이론의 응용",
     "question": "최근 도시철도에서 무인 운전 및 1인 운전이 가능한 주된 이유는?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_4_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.4 운전 이론의 응용",
     "question": "운전 이론의 업무 영역 교차 부분이 의미하는 것은?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "운전 계획 수립 시 '특성 견인력'을 산출하는 기준이 되는 것은?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "특수 사용을 목적으로 제작된 사고 복구용 차, 작업 차, 시험 차 등을 통칭하는 용어는?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "화물의 적재 중량 또는 여객 탑승 중량이 일정 기준을 초과한 최대 열차 중량은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "theory_1_2_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1.2 용어정리",
     "question": "폐색구간의 정의로 옳은 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
    {
     "id": "driving_theory_exam_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "다음 운전이론에서 사용하는 용어로 틀린 것은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_exam_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "다음 운전이론에서 사용하는 용어로 틀린 것은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_exam_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "다음 중 운전이론의 기본 3요소로 적합하지 않은 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_exam_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "열차운행도표 작성에 필요한 운전계획의 범위로 틀린 것은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_THEORY_CH1 = [
   },
   {
     "id": "driving_theory_exam_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "1장 개요",
     "question": "다음 운전이론의 응용 과정에서 빈칸에 들어갈 말로 적절한 것은? (수송수요 조사 및 측정 → 열차설정 [   ] → 열차운행도표 → [   ])",
     "options": [

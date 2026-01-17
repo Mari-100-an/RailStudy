@@ -5,7 +5,7 @@ var QUESTIONS_THEORY_CH9 = [
     // 여기에 9단원 문제 추가
     {
     "id": "theory_9_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "실린더 내에서 연료가 연소하여 실제 발생한 마력으로, 지압계로 측정하여 계산하는 마력은?",
     "options": [
@@ -20,7 +20,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "지시마력(iHP)을 구하는 공식으로 옳은 것은? (Pmi: 지시평균유효압력, Vs: 배기량, N: 회전수, Z: 실린더 수)",
     "options": [
@@ -35,7 +35,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "지시마력에서 기계 손실을 뺀 마력으로, 축마력 또는 정미마력이라고도 하는 것은?",
     "options": [
@@ -50,7 +50,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "제동마력(bHP)과 회전력(T), 회전수(N)의 관계식으로 옳은 것은?",
     "options": [
@@ -65,7 +65,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "기계효율(ηm)을 구하는 식으로 옳은 것은?",
     "options": [
@@ -80,7 +80,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "실린더 내로 들어갈 수 있는 공기량과 실제 실린더 내로 들어간 공기량의 비를 무엇이라 하는가?",
     "options": [
@@ -95,7 +95,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "정미 열효율(ηe)을 계산할 때 사용하는 열의 일당량(J) 값은?",
     "options": [
@@ -110,7 +110,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "기관의 출력 1마력(PS)을 1시간 발생시키기 위해 소비되는 연료의 중량(g)을 무엇이라 하는가?",
     "options": [
@@ -125,7 +125,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "645계 기관(미국 G.M.C 및 현대차 제작)의 1실린더당 배기 용량은?",
     "options": [
@@ -140,7 +140,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "압축비(e)를 구하는 식으로 옳은 것은? (Vs: 행정체적, Vc: 연소실체적)",
     "options": [
@@ -155,7 +155,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "기관차 제동통 압력(Cp) 산출 식은? (Bp: 감압량)",
     "options": [
@@ -170,7 +170,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "객·화차 제동통 압력(Cp) 산출 식은? (Bp: 감압량)",
     "options": [
@@ -185,7 +185,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "객·화차 제동통 압력 계산 시 대기 압력(1kgf/cm²)을 고려하여 계기 압력을 구하는 식은?",
     "options": [
@@ -200,7 +200,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "제동통에 공급된 압력이 리턴 스프링의 탄성력과 피스톤 로드의 마찰력을 이기고 제동 작용을 하기 위한 최소 유효 제동통 압력은?",
     "options": [
@@ -215,7 +215,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "기관차의 최소 유효 감압량은 얼마인가?",
     "options": [
@@ -230,7 +230,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "객·화차의 최소 유효 감압량은 얼마인가?",
     "options": [
@@ -245,7 +245,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "제동관 압력이 5kgf/cm²일 때, 기관차의 최대 유효 감압량은?",
     "options": [
@@ -260,7 +260,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "제동관 압력이 5kgf/cm²일 때, 객·화차의 최대 유효 감압량은?",
     "options": [
@@ -275,7 +275,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "특성 견인력 산출 시, 여객열차가 평탄 선로에서 기동할 때 1시간 정격전류의 몇 % 이내로 하는가?",
     "options": [
@@ -290,7 +290,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "화물열차가 평탄 선로에서 기동할 때 특성 견인력 기준은 1시간 정격전류의 몇 % 이내인가?",
     "options": [
@@ -305,7 +305,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "기울기가 있는 선로에서 기동 시 특성 견인력 기준은 1시간 정격전류의 몇 % 이내인가?",
     "options": [
@@ -320,7 +320,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "디젤동차가 기울기가 없는 평탄 선로에서 기동 시 특성 견인력 기준은?",
     "options": [
@@ -335,7 +335,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "차륜 공전(Wheel Slip)이 발생하는 역학적 조건은?",
     "options": [
@@ -350,7 +350,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "차륜 공전의 역학적 원인에 해당하지 않는 것은?",
     "options": [
@@ -365,7 +365,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "차륜 공전 발생 최소화 방법으로 곡선 선로 및 기울기가 심한 선로에서 가·감 간을 어떻게 조절해야 하는가?",
     "options": [
@@ -380,7 +380,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "점착 견인력 향상을 위해 살사(撒沙)를 할 때 주의할 점은?",
     "options": [
@@ -395,7 +395,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "오르막 선로 위 정차 시 '자연 인출 방법'의 순서로 옳은 것은?",
     "options": [
@@ -410,7 +410,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "가장 많이 사용하는 인출 방법으로, 열차의 출발 저항을 이용하여 기동하는 방식은?",
     "options": [
@@ -425,7 +425,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "압축 인출 방법의 절차 중 옳은 것은?",
     "options": [
@@ -440,7 +440,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9장 디젤기관",
     "question": "압축 인출 시 주의사항으로, 자동 제동변을 완해 위치로 하여 후부 객·화차의 제동이 완전히 완해된 후 가·감 간을 취급하면 발생하는 문제는?",
     "options": [
@@ -455,7 +455,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
    {
     "id": "theory_9_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.1 마력",
     "question": "지시마력(iHP)을 산출하는 공식에 포함되지 않는 요소는?",
     "options": [
@@ -470,7 +470,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.1 마력",
     "question": "지시마력 산출 공식에서 분모에 들어가는 상수 값 4,500은 어떻게 도출되었는가?",
     "options": [
@@ -485,7 +485,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.1 마력",
     "question": "제동마력(bHP)을 회전력(T)과 회전수(N)의 관계로 나타낼 때 사용하는 상수 값은?",
     "options": [
@@ -500,7 +500,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.1 마력",
     "question": "회전력(T)을 구하는 식으로 올바르게 변형된 것은? (N: 회전수, bHP: 제동마력)",
     "options": [
@@ -515,7 +515,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.1 마력",
     "question": "제동마력(bHP), 지시마력(iHP), 마찰마력(fHP)의 관계식으로 옳은 것은?",
     "options": [
@@ -530,7 +530,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.2 효율",
     "question": "기계효율(ηm)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -545,7 +545,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.2 효율",
     "question": "실린더 내로 들어갈 수 있는 이론적 공기량 대비 실제 흡입한 공기량의 비를 의미하는 것은?",
     "options": [
@@ -560,7 +560,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.2 효율",
     "question": "정미 열효율(ηe) 공식에서 분자에 위치하는 상수 값은? (단, 분모는 연료소비량×발열량)",
     "options": [
@@ -575,7 +575,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.2 효율",
     "question": "정미 열효율 산출 시 사용하는 '열의 일당량(J)'의 수치는?",
     "options": [
@@ -590,7 +590,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.3 연료 소비율",
     "question": "연료 소비율의 단위로 옳은 것은?",
     "options": [
@@ -605,7 +605,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.3 연료 소비율",
     "question": "연료 소비율(eB)을 구하는 식 9-7로 옳은 것은? (ηe: 정미열효율, eH: 저위발열량)",
     "options": [
@@ -620,7 +620,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.4 배기량",
     "question": "645계 기관의 제원으로 옳은 것은?",
     "options": [
@@ -635,7 +635,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.4 배기량",
     "question": "645계 기관의 '645'라는 숫자가 의미하는 것은?",
     "options": [
@@ -650,7 +650,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.4 배기량",
     "question": "1실린더당 배기량(V)을 구하는 공식은? (A: 단면적, L: 행정, d: 지름)",
     "options": [
@@ -665,7 +665,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.4 배기량",
     "question": "총 배기량(Vt)을 구하는 공식은? (V: 1실린더 배기량, N: 실린더 수)",
     "options": [
@@ -680,7 +680,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.5 압축비",
     "question": "피스톤이 하사점에 있을 때의 체적을 무엇이라 하는가?",
     "options": [
@@ -695,7 +695,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.5 압축비",
     "question": "피스톤이 상사점에 있을 때의 체적을 무엇이라 하는가?",
     "options": [
@@ -710,7 +710,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.5 압축비",
     "question": "압축비(e)를 행정체적(Vs)과 연소실체적(Vc)으로 표현한 식으로 옳은 것은?",
     "options": [
@@ -725,7 +725,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.5 압축비",
     "question": "압축비 공식에서 '실린더 총 체적'을 '연소실 체적'으로 나눈 값과 동일한 의미를 갖는 식은?",
     "options": [
@@ -740,7 +740,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_1_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.1 마력",
     "question": "기관 회전수가 1000rpm이고 회전력이 716kgf·m일 때, 이 기관의 제동마력(bHP)은?",
     "options": [
@@ -755,7 +755,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "기관차 제동통 압력(Cp)을 산출할 때 사용하는 비례 상수 값은?",
     "options": [
@@ -770,7 +770,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "객·화차 제동통 압력(Cp)을 산출할 때, 보조 공기통 체적은 제동통 체적의 몇 배로 보는가?",
     "options": [
@@ -785,7 +785,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "객·화차의 '계기 압력'을 구하는 공식으로 옳은 것은? (Bp: 감압량)",
     "options": [
@@ -800,7 +800,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "최소 유효 제동통 압력을 산정할 때 고려하는 '제동통 리턴 스프링의 탄성력'은 압력 단위로 얼마인가?",
     "options": [
@@ -815,7 +815,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "제동통에 공급된 압력이 얼마 이상이어야 유효한 제동 작용을 하는가?",
     "options": [
@@ -830,7 +830,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "기관차의 최소 유효 감압량(Bp)의 기준값은?",
     "options": [
@@ -845,7 +845,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "객·화차의 최소 유효 감압량(Bp)의 기준값은?",
     "options": [
@@ -860,7 +860,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "제동관 압력이 5kgf/cm²일 때, 기관차의 최대 유효 감압량(r)은?",
     "options": [
@@ -875,7 +875,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "제동관 압력이 6kgf/cm²일 때, 기관차의 최대 유효 감압량(r)은?",
     "options": [
@@ -890,7 +890,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.6 제동 압력",
     "question": "제동관 압력이 5kgf/cm²일 때, 객·화차의 최대 유효 감압량(r)은?",
     "options": [
@@ -905,7 +905,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.7 특성 견인력",
     "question": "기울기가 없는 평탄 선로에서 여객열차가 기동할 때의 특성 견인력 제한은?",
     "options": [
@@ -920,7 +920,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.7 특성 견인력",
     "question": "기울기가 있는 선로에서 기동 시 특성 견인력 제한은?",
     "options": [
@@ -935,7 +935,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.7 특성 견인력",
     "question": "디젤동차가 평탄 선로에서 기동할 때의 견인력 기준은?",
     "options": [
@@ -950,7 +950,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.8 차륜공전",
     "question": "차륜 공전(Wheel Slip)이 발생하는 조건으로 옳은 것은?",
     "options": [
@@ -965,7 +965,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.8 차륜공전",
     "question": "긴 오르막 선로에서 살사(Sanding)를 지양해야 하는 이유는?",
     "options": [
@@ -980,7 +980,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.8 차륜공전",
     "question": "곡선 선로 및 기울기가 심한 선로에서 공전 발생을 최소화하기 위한 운전 취급 요령은?",
     "options": [
@@ -995,7 +995,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.9 특수 운전 취급법",
     "question": "열차의 출발 저항을 이용하여 기동하는 방법으로 가장 많이 사용하는 인출법은?",
     "options": [
@@ -1010,7 +1010,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.9 특수 운전 취급법",
     "question": "압축 인출 시 가·감 간을 상승시키는 올바른 시점은?",
     "options": [
@@ -1025,7 +1025,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.9 특수 운전 취급법",
     "question": "압축 인출 시 후부 객·화차 제동이 완전히 완해된 후 가·감 간을 취급하면 발생하는 위험은?",
     "options": [
@@ -1040,7 +1040,7 @@ var QUESTIONS_THEORY_CH9 = [
   },
   {
     "id": "theory_9_2_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "9.9 특수 운전 취급법",
     "question": "압축 인출 시 순간적인 공전을 예방하는 데 효과적인 조작은?",
     "options": [

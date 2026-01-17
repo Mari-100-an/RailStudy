@@ -5,7 +5,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
      // 1. 인적 오류의 이해 및 연구 흐름
   {
     "id": "human_error_001",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적 오류(Human Error)에 대한 일반적인 정의로 가장 적절한 것은?",
     "options": [
@@ -20,7 +20,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_002",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적 오류를 해결하기 위한 '시스템적 접근 방법'에 대한 설명으로 옳은 것은?",
     "options": [
@@ -35,7 +35,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_003",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적 오류 연구의 발전 과정 중 '초기 인적 오류 연구' 단계의 특징으로 옳은 것은?",
     "options": [
@@ -50,7 +50,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_004",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적 오류 연구 중 '설계 중심의 인간공학(Design-Oriented Ergonomics)' 시대를 열게 된 계기가 된 분야는?",
     "options": [
@@ -65,7 +65,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_005",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인간-기계 인터페이스(MMIS) 개념이 반영되는 결정적 계기가 된 사고는?",
     "options": [
@@ -82,7 +82,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   // 2. 인적 오류의 유형
   {
     "id": "human_error_006",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "제임스 리즌(James Reason)의 분류 중 '계획 자체는 적절한데 행위가 계획대로 이루어지지 못한 경우'에 해당하는 오류 유형은?",
     "options": [
@@ -97,7 +97,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_007",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적 오류 유형 중 '기억 실패에 의한 것으로 계획한 것을 까먹거나 규정이 기억나지 않는 경우'는?",
     "options": [
@@ -112,7 +112,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_008",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적 오류 유형 중 '적절한 계획의 선택에 실패하거나, 적절치 못한 계획을 실행함'으로써 발생하는 오류는?",
     "options": [
@@ -127,7 +127,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_009",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "다음 중 의도하지 않은 행동(Unintended Actions)에 해당하지 않는 것은?",
     "options": [
@@ -144,7 +144,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   // 3. 철도 인적 오류와 인간의 특성
   {
     "id": "human_error_010",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "과거 산업혁명 이후 1960년대와 비교하여 현대(2000년대)의 사고 원인 변화 추세로 옳은 것은?",
     "options": [
@@ -159,7 +159,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_011",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인간의 시각적 요소 중 철도 신호기의 내용과 색깔을 구분할 수 있는 '정밀 시야(Acute Vision)'의 범위는?",
     "options": [
@@ -174,7 +174,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_012",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인간의 가청 주파수 범위로 일반적으로 알려진 것은?",
     "options": [
@@ -189,7 +189,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_013",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인간의 정보처리 절차에서 약 7개의 정보를 20초간 저장할 수 있는 기억 단계는?",
     "options": [
@@ -204,7 +204,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_014",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인간의 주의력 특성 중 '위험한 자극에 대해 우선적으로 인지하고 선택하여 이에 대한 위험 저감 계획을 수립할 수 있는 기능'은?",
     "options": [
@@ -219,7 +219,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_015",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적 오류를 유발하는 9가지 오류 유발 상황(EPC) 요소에 해당하지 않는 것은?",
     "options": [
@@ -236,7 +236,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   // 4. 오류 예방 및 지적확인 환호응답
   {
     "id": "human_error_016",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "사고 인과 모형(Reason Model)에서 인적 오류가 발생하지 않도록 시스템적으로 보완하기 위해 설치하는 것을 무엇이라 하는가?",
     "options": [
@@ -251,7 +251,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_017",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인간의 행동 수준 분류 중 '작업 빈도가 높고 무의식적으로 행동할 수 있는 수준'으로 위험 수준이 매우 낮은 것은?",
     "options": [
@@ -266,7 +266,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_018",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "지적확인 환호응답에 관한 실험 결과, '지적과 환호'를 동시에 시행했을 때의 오류율은?",
     "options": [
@@ -281,7 +281,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_019",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "지적확인 환호응답의 기본 동작 요령으로 틀린 것은?",
     "options": [
@@ -296,7 +296,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_020",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "지적확인 환호응답이 도입된 배경으로 옳은 것은?",
     "options": [
@@ -313,7 +313,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   // 5. 철도 사고 사례 (상세)
   {
     "id": "human_error_021",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "2014년 서울메트로 2호선 상왕십리역 열차 추돌 사고의 직접적인 원인은?",
     "options": [
@@ -328,7 +328,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_022",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "2016년 전라선 율촌역 무궁화호 탈선 사고의 원인으로 옳은 것은?",
     "options": [
@@ -343,7 +343,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_023",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인천국제공항역 KTX 탈선 사고(2016년)에서 기관사가 임의로 수행한 행동은?",
     "options": [
@@ -358,7 +358,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_024",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "2017년 부산교통공사 2호선 호포 차량 기지 사고의 주요 원인은?",
     "options": [
@@ -373,7 +373,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_025",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "2015년 중앙선 도담역 성신양회 화차 충돌 사고의 원인은?",
     "options": [
@@ -388,7 +388,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_026",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "2014년 태백선 문곡역~태백역 간 열차 충돌 사고에서 기관사의 부적절한 행동은?",
     "options": [
@@ -403,7 +403,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_027",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "울산항선 매암 건널목 사고(2013년)의 기여 요인은?",
     "options": [
@@ -418,7 +418,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_028",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "공항철도 계양역~검암역 사이 전동 열차 사상 사고(2011년)의 직접 원인은?",
     "options": [
@@ -433,7 +433,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_029",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "서울시메트로9호선 신논현역 탈선 사고(2010년)에서 기관사의 잘못된 판단은?",
     "options": [
@@ -448,7 +448,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_030",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "서울교통공사 5호선 고덕역 사고(2021년)에서 기관사가 고덕역을 무정차 통과한 이유는?",
     "options": [
@@ -463,7 +463,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_031",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "수인선 오목천역 정차역 운전취급 불량 사고(2021년)의 원인은?",
     "options": [
@@ -478,7 +478,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_032",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "경원선 옥수역 지적확인 및 제동취급 소홀 사고(2021년)에서 기관사가 소홀히 한 장치는?",
     "options": [
@@ -493,7 +493,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_033",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "서울교통공사 8호선 복정역 사고(2022년)의 원인은?",
     "options": [
@@ -508,7 +508,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_034",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "안산선 정왕역 정차역 운전취급 불량 사고(2022년)의 직접 원인은?",
     "options": [
@@ -523,7 +523,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_035",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "부산교통공사 1호선 사하역 기관사 졸음 운전 사고(2022년) 당시 운전 방식은?",
     "options": [
@@ -538,7 +538,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_036",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "수인선 인하대역 사고(2022년)에서 기관사가 정차역 통과방지 장치(PPN)를 어떻게 조작했는가?",
     "options": [
@@ -553,7 +553,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_037",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "경인선 구일역 상1선 승강장 사고(2022년)에서 전철 차장의 과실은?",
     "options": [
@@ -568,7 +568,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_038",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "경인선 강매역 사고(2023년)에서 기관사가 정지 위치를 지나쳐 정차한 거리는?",
     "options": [
@@ -583,7 +583,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_039",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "서울교통공사 3호선 오금역 사고(2023년)에서 기관사가 순간 졸음 후 착각한 내용은?",
     "options": [
@@ -598,7 +598,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_040",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "대구지하철 중앙로역 화재 사고(2003년)의 발생 시각은?",
     "options": [
@@ -613,7 +613,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_041",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "대구지하철 화재 사고 피해 확산의 주된 원인 중 하나로, 1080호 열차 기관사가 대피하면서 취한 치명적인 행동은?",
     "options": [
@@ -628,7 +628,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_042",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "대구지하철 화재 사고 이후 안전 권고 사항으로 적절하지 않은 것은?",
     "options": [
@@ -645,7 +645,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   // 6. 종합 및 기타 개념
   {
     "id": "human_error_043",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인간의 정보처리 모델에서 '지각(Perception)' 다음에 이어지는 과정은?",
     "options": [
@@ -660,7 +660,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_044",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "운전 업무 중 발생하는 인적 오류를 예방하기 위해 기관사가 준수해야 할 사항이 아닌 것은?",
     "options": [
@@ -675,7 +675,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_045",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "대구지하철 화재 사고 당시 전동차 내장재의 문제점은?",
     "options": [
@@ -690,7 +690,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_046",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "다음 중 '고의성'을 가진 인간의 행동으로 분류되는 것은?",
     "options": [
@@ -705,7 +705,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_047",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "4차 산업혁명 시대 인적 오류 연구에서 최근 각광받고 있는 문제는?",
     "options": [
@@ -720,7 +720,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_048",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "상왕십리역 사고의 기여 요인 중 하나로, 신호 변경 작업 중 무엇이 없었는가?",
     "options": [
@@ -735,7 +735,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_049",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "상왕십리역 사고 관련 안전 권고 사항으로 'Fail-Safe' 원칙에 따라 신호 시스템 고장 발생 시 어떤 신호를 현시해야 하는가?",
     "options": [
@@ -750,7 +750,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "human_error_050",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적 오류를 줄이기 위한 방안 중 'Fool Proof'의 의미는?",
     "options": [
@@ -765,7 +765,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_001",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적오류를 예방하기 위해 준수해야할 내용으로 틀린 것은?",
     "options": [
@@ -780,7 +780,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_002",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "계획자체는 적절한데 행위가 계획대로 이루어지지 못한 경우는?",
     "options": [
@@ -795,7 +795,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_003",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "적절한 계획의 선택에 실패한 경우나, 적절치 못한 계획을 제대로 실행함으로써 발생한 오류는?",
     "options": [
@@ -810,7 +810,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_004",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "다음 중 기본오류 유형(Basic Error Types)에 해당하지 않은 것은?",
     "options": [
@@ -825,7 +825,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_005",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인적오류의 불안전한 행위 중 고의적 행위(Intended Actions)로만 구성된 것은?",
     "options": [
@@ -840,7 +840,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_006",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "다음 중 위반(Violation)의 유형으로 보기 힘든 것은?",
     "options": [
@@ -855,7 +855,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_007",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "다음 그림은 길브레스의 서블리그 분석 기호로 틀린 것은?",
     "options": [
@@ -870,7 +870,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_008",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "최근 인적오류를 배제하기 위한 가장 큰 노력으로 맞는 분야는?",
     "options": [
@@ -885,7 +885,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_009",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "다음은 인적오류 관련 용어로 틀린 설명은?",
     "options": [
@@ -900,7 +900,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_010",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "산업 분야별 인적오류 발생 비율로 틀린 것은?",
     "options": [
@@ -915,7 +915,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_011",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "철도신호기의 내용과 색깔 등을 구분할 수 있는 정밀 시야 구간으로 맞는 것은?",
     "options": [
@@ -930,7 +930,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_012",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "다음 중 인간의 가청주파수(Hz)로 옳은 것은?",
     "options": [
@@ -945,7 +945,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_013",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "정보처리 모형에 의한 “인간의 기억”의 구성요소로 적합하지 않은 것은?",
     "options": [
@@ -960,7 +960,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_014",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "철도 분야에서의 인적오류를 저감하기 위한 가장 대표적인 전략으로 적절한 것은?",
     "options": [
@@ -975,7 +975,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_015",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "위험 상황을 유발하는 인적오류 측면의 EPC(Error Producing Condition)로 적절하지 않은 것은?",
     "options": [
@@ -990,7 +990,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_016",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인간의 행동 수준과 안전도 향상 모형 중에서 작업 빈도가 가장 큰 행동으로 맞는 것은?",
     "options": [
@@ -1005,7 +1005,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_017",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "서울메트로(서울교통공사) 2호선 상왕십리역 전동열차 충돌사고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1020,7 +1020,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_018",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "전라선 율촌역 무궁화호 탈선사고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1035,7 +1035,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_019",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "인천국제공항역 구내 KTX 복합열차 탈선사고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1050,7 +1050,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_020",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "부산교통공사 2호선 호포차량기지 탈선사고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1065,7 +1065,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_021",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "코레일 중앙선 도담역 성신양회 전용선 차량 충돌 및 탈선사고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1080,7 +1080,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_022",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "코레일 태백선 문곡역~태백역 열차충돌 후 탈선사고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1095,7 +1095,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_023",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "코레일 울산항선 매암 건널목 사상사고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1110,7 +1110,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_024",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "공항철도 계양역~검암역 전동열차 사상사고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1125,7 +1125,7 @@ var QUESTIONS_EMERGENCY_CH1 = [
   },
   {
     "id": "emergency_core_025",
-    "subject": "emergency_ch1",
+    "subject": "emergency",
     "chapter": "1장 인적 오류",
     "question": "서울시메트로 9호선 신논현역 구내 탈선사고에 대한 설명으로 틀린 것은?",
     "options": [

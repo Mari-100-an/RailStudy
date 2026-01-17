@@ -4,7 +4,7 @@
 var QUESTIONS_EMU_CH3 = [
      {
     "id": "train_3_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "철도차량용 유도전동기(Induction Motor)의 특징으로 표준교재에 기술된 내용과 다른 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "전력 변환 소자 중 'IGBT'에 대한 설명으로 옳은 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "다음 중 'VVVF' 제어 방식의 의미로 옳은 것은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "전동기의 원리를 설명하는 법칙으로, 전류와 자기장의 상호작용으로 발생하는 힘의 방향을 나타내는 것은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "직류(DC) 구간에서 동력 운전 시 전류의 흐름 순서로 옳은 것은?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "교류(AC) 구간에서 동력 운전 시 전류의 흐름 순서로 옳은 것은?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "교류 구간에서 '주 변환장치(Main Converter)'의 컨버터(Converter)가 수행하는 역할은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "유도전동기의 회전속도(Ns)를 구하는 식으로 옳은 것은? (F: 주파수, P: 극수)",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "유도전동기에서 '슬립(Slip)'을 구하는 공식은? (Ns: 동기속도, N: 회전자 속도)",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "유도전동기의 회전력을 제어하기 위해 인버터가 제어하는 요소가 아닌 것은?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "주 변환장치의 인버터가 출력하는 전압의 크기를 제어하는 방식은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "직류 구간에서만 사용되며, 전차선의 고조파 성분과 이상 충격 전압을 흡수하는 장치는?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "고속도차단기(L1)가 트립(Trip)되는 조건으로 교재에 명시된 것은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "차단기 L2와 L3의 투입 순서와 충전 저항기(CHR)의 역할에 대한 설명으로 옳은 것은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "주 변환장치에 내장되어 전력변환과 각종 제어 및 보호 기능을 수행하는 장치는?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "주간제어기의 '기관사 안전장치(DSD)'가 작동하는 조건은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "전기제동(회생제동) 시 필요한 제동력을 연산하여 제동패턴을 만드는 장치는?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "과전압 방전 사이리스터(OVCRf)가 작동하는 주된 이유는?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "교류 구간에서 주변압기 2차 측 과부하 등 중고장 발생 시 동작하여 MCB를 차단시키는 계전기는?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "고장 차량을 전기적으로 분리(Cut-out)할 때 사용하는 스위치와 복귀 스위치의 약어는?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "교류 구간 M'차에서 컨버터가 기동 된 후 SIV가 전원을 공급받는 경로는?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "송풍전동기 고장계전기(BMFR)가 작동했을 때 TCU의 보호 동작은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "주 변환장치 고장계전기(CIFR)가 여자 되었을 때 운전실에 나타나는 현상은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "리셋 스위치(RS) 취급 요령으로 옳은 것은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "아라고의 원판(Arago's disk) 실험은 어떤 전동기의 원리를 설명하는가?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "교류 구간에서 전동차 기동 순서(접촉기 투입 순서)로 옳은 것은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "필터커패시터(FC)에 남아 있는 잔류 전하를 방전시키는 장치는?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "교류 구간에서 사용하는 컨버터의 정격 출력 전압(직류)은?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "전기동차의 유도전동기 냉각 방식은?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인 장치",
     "question": "인버터가 유도전동기를 제어할 때 저속 영역에서 사용하는 제어 방식은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "직류전동기와 비교할 때 철도차량용 유도전동기의 특징으로 표준교재에 명시된 내용은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "오른나사의 진행 방향과 엄지손가락이 전류의 방향이면 나사의 회전 방향이 자기장의 방향임을 나타내는 법칙은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "플레밍의 왼손 법칙에서 엄지손가락이 가리키는 방향은?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "교류 구간에서 동력 운전 시 전기의 흐름 순서로 옳은 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "직류 구간에서 동력 운전 시 전기의 흐름 순서로 옳은 것은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "3상 교류의 주파수가 60Hz이고 4극 유도전동기일 때 동기속도(Ns)는 얼마인가?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "유도전동기에서 회전자의 속도가 동기속도보다 느리기 때문에 발생하는 차이를 비율로 나타낸 것은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "회생제동 시 전력 변환의 흐름으로 옳은 것은?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "회전자계가 2극일 때 3상 교류 1주기 동안 회전자계의 회전수는?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "VVVF 인버터 제어에서 전동기의 속도를 제어하는 주된 방법은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "유도전동기 속도 제어 영역 중, 전압과 주파수를 같은 비율로 제어하여 일정한 토크를 얻는 영역은?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "유도전동기의 회전 방향을 바꾸기 위해 인버터가 수행하는 동작은?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "다음 중 아라고의 원판(Arago's disk) 실험이 설명하는 전동기는?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "전력 변환 소자인 IGBT의 특징으로 옳은 것은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "PWM(Pulse Width Modulation) 제어 방식의 설명으로 옳은 것은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "다음 약어 중 '견인제어장치'를 의미하는 것은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "다음 중 교류 전기동차의 '주 변환장치(C/I)'를 구성하는 요소가 아닌 것은?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "직류 구간에서 인버터가 제어하는 항목이 아닌 것은?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "유도전동기 구동 시스템이 도입됨에 따라 얻게 된 장점이 아닌 것은?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_1_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.1 개요",
     "question": "플레밍의 오른손 법칙은 무엇의 원리를 설명하는가?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "교류 구간에서 컨버터(Converter)가 수행하는 기능으로 옳은 것은?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "주 변환장치 보호 기기 중 'OVCRf(과전압 방전 사이리스터)'의 동작 원인은?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "필터 리액터(FL)의 주된 역할은?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "고속도차단기(L1)가 트립(Trip)되는 조건에 해당하는 전류 값은?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "견인 회로 구성 시 L2와 L3 접촉기의 투입 순서와 충전 저항기(CHR)의 역할로 옳은 것은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "교류 구간 기동 시 주 변환장치용 교류 접촉기(AK, K)의 동작 순서는?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "방전 저항기(DCHRe)의 기능은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "TCU(견인제어장치)가 수행하는 기능이 아닌 것은?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "주 변환장치 고장계전기(CIFR)가 동작했을 때 운전실의 현상은?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "송풍 전동기 고장계전기(BMFR) 동작 시 TCU의 보호 조치는?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "교류 구간에서 M'차의 주 변환장치(C/I)가 고장 나서 정지할 경우 발생하는 연쇄 반응으로 옳은 것은?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "VCOS(차량 차단 스위치)를 취급했을 때 여자 되는 계전기는?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "L1 차단기 투입 시 기계적 동작을 돕는 코일은?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "인버터가 3상 교류를 발생시키기 위해 사용하는 스위칭 소자의 개수는?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "교류 구간에서 동력 운전 시 인버터가 출력하는 전압과 주파수의 범위는?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "RS(Reset Switch) 취급 시 주의 사항으로 옳은 것은?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "C/I에 중고장이 발생하여 MCBOR이 무여자 될 때 동시에 여자 되는 계전기는?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "교류 구간에서 M차의 C/I가 고장 났을 때의 현상은?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "주변압기 2차 측의 정격 전압은?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "train_3_2_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3.2 주회로 및 기기",
     "question": "동력 핸들 1~4단 투입 시 동력 운전 신호(P)를 TCU에 전달하기 위해 거치는 선 번호는?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_073",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "철도차량 교류유도전동기의 특징으로 틀린 것은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_074",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 용어의 설명으로 틀린 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_075",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 전기제동 회로차단기로 맞는 것은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_076",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "도선에 전류가 흐르는 방향이 오른나사의 진행방향일 때 오른나사의 회전방향으로 자기장이 유도된다. 또 나사의 회전방향으로 전류가 흐르면 자기장은 나사의 진행방향으로 유도된다는 법칙으로 맞는 것은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_077",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 플레밍의 오른손 법칙으로 맞는 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_078",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "전기동차가 동력운전 시 회전력의 전달순서로 맞는 것은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_079",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 유도전동기의 회전자계에 대한 설명이다. 빈칸에 들어갈 말로 맞는 것은?\n회전자계가 2극일 때는 3상 교류의 1주기에서 원주를 [ A ]을 하고 4극일 때는 [ B ]하므로, 회전자계의 회전수는 주파수에 비례하고 극수에 반비례하는 것을 알 수 있다.",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_080",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 유도전동기의 속도제어로 보기 힘든 것은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_081",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 주변환장치의 특징으로 틀린 것은?",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_082",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 견인제어장치의 제어회로에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_083",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 PWM 컨버터에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_084",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 VVVF 인버터의 주요 기능으로 틀린 것은?",
     "options": [
@@ -1234,7 +1234,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_085",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 전후진제어기를 전진위치로 하면 유도전동기의 회전방향 순서로 맞는 것은?",
     "options": [
@@ -1249,7 +1249,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_086",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 OVCRf에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1264,7 +1264,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_087",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 필터리액터(FL)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1279,7 +1279,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_088",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 L1 차단기(고속도차단기)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1294,7 +1294,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_089",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 주간제어기의 구성으로 틀린 것은?",
     "options": [
@@ -1309,7 +1309,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_090",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 제동핸들의 위치로 틀린 것은?",
     "options": [
@@ -1324,7 +1324,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_091",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 견인제어장치의 주요기능으로 적절하지 않은 것은?",
     "options": [
@@ -1339,7 +1339,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_092",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "교류구간에서 전기동차를 기동할 때 M'차에 한하여 L3 투입 후 몇 초뒤에 L2가 투입되는가?",
     "options": [
@@ -1354,7 +1354,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_093",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 상용제동 지령선으로 적절하지 않은 것은?",
     "options": [
@@ -1369,7 +1369,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_094",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "제동핸들을 OFF위치로 하면 몇 번선이 무가압이 되는가?",
     "options": [
@@ -1384,7 +1384,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_095",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "운전실 표시등 중에서 HSCB등이 점등되는 조건으로 맞는 것은?",
     "options": [
@@ -1399,7 +1399,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_096",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "주변환장치 인버터의 출력 측에 과전류나 제어이상 등이 발생하면 직류구간에서의 현상으로 적절하지 않은 것은?",
     "options": [
@@ -1414,7 +1414,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_097",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "C/I에 중고장이 발생되어 MCBOR이 무여자로 인해 MCB가 차단될 경우 중고장과 관련없는 것은?",
     "options": [
@@ -1429,7 +1429,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_098",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 TCU에 송풍전동기 고장신호가 입력되는 경우로 틀린 것은?",
     "options": [
@@ -1444,7 +1444,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_099",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 고장차량 차단취급을 할 수 있는 고장으로 틀린 것은?",
     "options": [
@@ -1459,7 +1459,7 @@ var QUESTIONS_EMU_CH3 = [
   },
   {
     "id": "license_core_3_3_100",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "3장 견인장치",
     "question": "다음 중 MTAR이 여자될 수 있는 조건으로 틀린 것은?",
     "options": [

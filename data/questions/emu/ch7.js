@@ -4,7 +4,7 @@
 var QUESTIONS_EMU_CH7 = [
     {
     "id": "train_7_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "RF-CBTC 신호 방식의 특징으로 옳은 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 장치의 용어 중 신호의 지시속도가 높을 때 여자 되어 정상 운행하게 하고, 열차 속도가 높을 때 무여자 되어 비상제동을 지시하는 계전기는?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATO 시스템에서 정차 위치에 정밀 정차를 수행하기 위해 선로 위의 정지 코드를 검지하는 장치는?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATO 시스템의 정차 목표 정밀도는?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "무절연 궤도회로(AF)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "신호장치에 고장이 발생할 경우 가장 안전한 측(정지신호 등)으로 작동하도록 하는 기능을 무엇이라 하는가?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 지상자의 공진주파수와 지시속도의 연결이 틀린 것은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 수신기부의 발진기(OSC)가 상시 발진하는 주파수는?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 초기설정 시(제동핸들 투입 시) 설정되는 속도는?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 주의(Y)신호 구간에서 지시속도 초과 시 비상제동이 동작하지 않도록 하기 위한 조치 시간은?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 정지신호(R1) 구간을 넘어서 운행해야 할 때 취급하는 스위치는?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 절대정지(R0) 구간을 위반 진입했을 때의 현상으로 옳은 것은?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 장치에서 ASOS(특수운전 스위치)를 취급해야 하는 경우가 아닌 것은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATS 장치 고장 등으로 ATSCOS를 차단 취급했을 때의 현상은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 장치의 지시속도 수신 주파수는?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 장치에서 실제속도 1km/h당 발생하는 주파수는?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 코드 주파수와 지시속도의 연결이 옳은 것은?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 장치에서 YCR(YARD Cancel Relay)에 해당하는 코드 주파수는?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 차상장치 중 레일에 공급되는 지시속도 주파수를 검지하는 안테나 역할을 하는 것은?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 주요 계전기 중 지시속도가 실제속도보다 높을 때 여자 되어 동력운전 조건을 형성하는 계전기는?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 비상제동 계전기(ATCEBR)가 무여자 되어 비상제동이 체결되는 조건이 아닌 것은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 구내운전(YARD2) 계전기에 대한 설명으로 옳은 것은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 정지 후 진행(SS) 계전기가 여자 되기 위한 조건은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 구간에서 지시속도 초과(Overspeed) 시 발생하는 현상이 아닌 것은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 정지신호인 '정지 후 진행' 모드에서 ADU에 현시되는 지시속도와 경보음은?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "운전취급역 Y선이나 인상선에서 ADU에 15km/h가 현시되고 8초 Alarm이 울린다면 이는 어떤 신호인가?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATC 장치 보호를 위해 설치된 차단기 중 DC 100V를 공급하는 차단기는?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATCCOS(ATC 차단 스위치)를 차단 취급해야 하는 경우가 아닌 것은?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATCCOS를 차단했을 때의 ADU 현시 상태와 운전 속도 제한은?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전 보안장치",
     "question": "ATCCOS 차단 시 비상제동이 걸리지 않도록 구성되는 회로는?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_EMU_CH7 = [
   },
    {
     "id": "train_7_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "RF-CBTC(무선통신 기반 열차제어) 시스템의 특징으로 교재에 명시된 내용은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATO 시스템에서 정거장 정차 위치에 정밀 정차(±35cm 이내)를 수행하기 위해 지상의 정지 코드를 검지하는 장치는?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATS 장치의 용어 중 '신호 지시가 높을 때는 여자 되어 정상 운행하고, 열차 속도가 높을 때는 무여자 하여 비상제동을 지시하는' 계전기는?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "무절연 궤도회로(AF) 방식의 특징으로 옳은 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "신호 장치에 고장이 발생할 경우, 진행 신호 대신 정지 신호를 현시하는 등 가장 안전한 측으로 작동하도록 하는 기능은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATS 장치의 용어 중 'ATS에 의한 비상제동을 기억하는 계전기'는?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATC 장치의 2중계 구성에 대한 설명으로 옳은 것은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATS 용어 중 신호 현시가 없거나 절대 정지신호(R0) 수신 시 무여자 되어 비상제동을 동작시키는 계전기는?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATC/ATO 장치에서 지상 설비와 차상 설비 간의 정보 전송(양방향 통신)을 담당하는 장치는?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATS 용어 중 'FDR(고장 검지 계전기)'의 역할은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATC 장치의 용어 중 '신호 지시속도가 높을 때 여자 되어 정상 운행하고, 실제 속도가 높을 때 7단 제동을 동작시키는' 계전기는?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "궤도회로의 종류 중 '유절연 궤도회로(PF)'가 주로 사용되는 곳은?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATS 장치의 용어 중 'SDR(정지 검지 계전기)'이 검지하는 열차 속도 기준은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "ATC 장치의 용어 중 'ATCEBR'의 상태에 대한 설명으로 옳은 것은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_1_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.1 운전 보안장치 개요",
     "question": "HMI(Human Machine Interface)의 역할로 가장 적절한 것은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 지상자의 공진주파수 중 '절대정지(R0)' 신호의 주파수는?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 수신기부의 발진기(OSC)가 상시 발진하는 주파수는?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 초기설정(제동핸들 투입) 시 설정되는 속도는?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 운전 논리부에서 파형 정형회로(Wave Sharping Circuit)의 역할은?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 주의(Y) 신호 구간에서 속도 초과 시 비상제동이 체결되지 않도록 하기 위한 조치(확인제동) 제한 시간은?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 허용정지(R1) 구간을 넘어서 운행해야 할 때 취급하는 스위치는?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 절대정지(R0) 구간을 ASOS 취급 없이 위반 진입했을 때의 현상은?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATSN2(차단기)를 차단했을 때의 현상으로 옳은 것은?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATSCOS(ATS 차단 스위치)를 차단 취급해야 하는 경우가 아닌 것은?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ASOS(특수운전 스위치)를 취급했을 때 설정되는 속도 패턴은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 수신기부의 'MBR(기억차단 계전기)'의 역할은?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 비상제동 체결 후 이를 완해(복귀)하기 위한 제동핸들 취급 방법은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 15km/h 스위치를 취급하면 점등되는 표시등과 울리는 경보음은?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 장치의 대역여과기(BPF)의 역할은?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 장치에서 'AESR(초과속도 계전기)'이 무여자 되는 조건은?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 수신기부의 'STR(출발계전기)'의 기능은?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 지상자와 차상자의 설치 허용 오차 범위(상하 편차)는?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 신호 현시 중 '경계(YY)' 신호의 지시속도는?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 차상장치의 동작 보증 온도 범위는?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 수신기부의 '3TR(3초 시한계전기)'의 역할은?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 'ATSN1' 차단기가 차단되었을 때의 현상은?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 45PR이 여자 되어 초기설정(45km/h)이 완료된 후, STR(출발계전기)이 무여자 되어도 45PR이 계속 여자 상태를 유지하는 이유는?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 진행(G) 신호 수신 시의 동작 과정으로 옳은 것은?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATS 장치에서 'AEmR'이 무여자 될 때 발생하는 결과는?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "train_7_2_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7.2 ATS 장치",
     "question": "ATSCOS를 차단 취급했을 때의 회로 동작으로 옳은 것은?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_EMU_CH7 = [
   },
    {
     "id": "license_core_3_7_195",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATS 장치고장을 검지하는 계전기로 맞는 것은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_196",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "ATC함 내의 비상제동 계전기로 운행 중 항상 여자되어 있는 기기는?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_197",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATP/ATO 장치의 특징으로 틀린 설명은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_198",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATO 시스템의 정차 목표로 가장 맞는 것은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_199",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 분기기가 설치된 선로이거나 운행량이 적은 선로에 설치하는 궤도회로로 맞는 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_200",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "“절대 안전” 또는 “장애 또는 고장 시에도 안전”이 보장되는 기능, 즉 제반 운전보안장치에 고장 이 발생할 경우 가장 안전한 측으로 작동하도록 하는 기능을 말하는 것은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_201",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATS 차상장치의 구성요소로 틀린 것은?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_202",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATS 동작 시스템에 대한 내용이다. 빈칸에 들어갈 말로 맞는 것은? (신호지시에 의한 지시속도 주파수가 실제속도 주파수보다 클 때는 ... 실제속도 주파수가 클 경우에는 속도비교기의 출력이 [ ] 되어 AESR이 [ ] 하므로 ... 이때 [ ] 내에 확인제동 취급을 하지 않을 때는 비상제동을 체결하고...)",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_203",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATS장치의 정격으로 틀린 것은?",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_204",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATS장치의 동작보증온도로 맞는 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_205",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 신호현시에 따라 공진주파수(KHz)로 틀린 것은?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_206",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATS 차상장치 수신기부에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1234,7 +1234,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_207",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "차축 속도발전기와 ATC 장치의 단선 및 고장을 검지하는 기기로 맞는 것은?",
     "options": [
@@ -1249,7 +1249,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_208",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 속도발전기의 설치위치로 맞는 것은?",
     "options": [
@@ -1264,7 +1264,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_209",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATS 전원공급회로에 대한 설명으로 맞는 것은?",
     "options": [
@@ -1279,7 +1279,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_210",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "ATS 속도계 표시등 회로에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1294,7 +1294,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_211",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "ATS 속도계 표시등 및 경보회로에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1309,7 +1309,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_212",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "ATS 초기설정 회로에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1324,7 +1324,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_213",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 주의신호 현시구간 운전에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1339,7 +1339,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_214",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "속도초과 시 ATS 회로의 구성에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1354,7 +1354,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_215",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "허용정지 구간 위반 진입 시 회로 구성에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1369,7 +1369,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_216",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "절대정지 구간 위반 진입 시 회로구성에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1384,7 +1384,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_217",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ASOS를 취급해야하는 경우로 적절하지 않은 것은?",
     "options": [
@@ -1399,7 +1399,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_218",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "관제의 승인을 받지 않은 상태에서 ASOS를 취급 후 운전방법으로 가장 적합한 것은?",
     "options": [
@@ -1414,7 +1414,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_219",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATS 차단기에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1429,7 +1429,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_220",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATC 주요제원으로 틀린 것은?",
     "options": [
@@ -1444,7 +1444,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_221",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATC 지시속도 별 코드주파수로 틀린 것은?",
     "options": [
@@ -1459,7 +1459,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_222",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 궤도회로 주파수로 틀린 것은?",
     "options": [
@@ -1474,7 +1474,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_223",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATC 전원공급 회로차단기로 맞는 것은?",
     "options": [
@@ -1489,7 +1489,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_224",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATC 차상장치 구성요소로 틀린 것은?",
     "options": [
@@ -1504,7 +1504,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_225",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "ATC 차상장치 구성요소 중 Pick Up Coil이 AF 궤도회로 및 루프코일로부터 코드화된 일정한 주파수의 지시속도를 수신하여 ATC 장치의 수신기로 보내준다. 이때 주파수 값은?",
     "options": [
@@ -1519,7 +1519,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_226",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "ATC 전원공급장치는 직류 인통선인 103선에서 몇 V의 전압을 입력받는가?",
     "options": [
@@ -1534,7 +1534,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_227",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATC장치의 기능으로 볼 수 없는 것은?",
     "options": [
@@ -1549,7 +1549,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_228",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "ATC 장치의 기능 중 실제속도 검지 기능에 관하여 열차가 시속 1km/h로 진행하면 발생하는 주 파수 값은?",
     "options": [
@@ -1564,7 +1564,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_229",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "ATC 장치에서 열차가 지시된 속도를 초과하였을 경우 3초 이내 감속도가 최소 몇 km/h/s 이상 확보되어야 하는가?",
     "options": [
@@ -1579,7 +1579,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_230",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 차내신호기(ADU) 표시기능에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1594,7 +1594,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_231",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "열차의 정지 상태를 검지하는 계전기로, 실제속도가 5km/h 이하 시 여자하며, 기동 시 ATCEBR 을 여자시켜 주고 “0”모드, 즉 정지신호 시 확인운전 회로를 구성하는 기기는?",
     "options": [
@@ -1609,7 +1609,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_232",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "열차가 지시속도를 초과하여 ATC 상용 7단 제동이 동작하였을 때 초당 감속도를 측정하여 2.4km/h/s 이상 확보되면 감속측정기에 의해 여자되는 것은?",
     "options": [
@@ -1624,7 +1624,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_233",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "본선에서 운행 중 정지신호(지시속도 없음)인 경우는 속도초과로 ATC 상용 7단 제동이 작용하여 열차가 정차할 때 동작되는 기기는?",
     "options": [
@@ -1639,7 +1639,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_234",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "본선운전 시 속도코드 25, 40, 60, 70, 80, 100KPH Relay의 주파수에 따라 여자 시 틀린 것은?",
     "options": [
@@ -1654,7 +1654,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_235",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "운전취급역(정거장) Y선, 인상선의 운전취급 시 제한속도로 맞는 것은?",
     "options": [
@@ -1669,7 +1669,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_236",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATCN, ATCPSN에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1684,7 +1684,7 @@ var QUESTIONS_EMU_CH7 = [
   },
   {
     "id": "license_core_3_7_237",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "7장 운전보안장치",
     "question": "다음 중 ATCCOS 차단하는 경우로 틀린 것은?",
     "options": [

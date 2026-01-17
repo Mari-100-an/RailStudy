@@ -5,7 +5,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
     // 3.1 개요 및 용어 (5문제)
   {
     "id": "fault_ch3_001",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "다음 중 '차량 고장 발생 등으로 MCB를 투입 불능 상태가 되도록 하여, 해당 Unit(M'차+M차)의 동력이 발휘하지 못하게 하는 등의 조치'를 뜻하는 용어는?",
     "options": [
@@ -20,7 +20,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_002",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "과천선 전기동차(10량 편성)에서 SIV, CM, Battery가 설치된 차량(T차 계열)의 호차 구성으로 옳은 것은?",
     "options": [
@@ -35,7 +35,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_003",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "운전실 제어대 오른쪽 하단에 위치한 스위치 중 '차량 고장 발생 시 보호계전기 복귀 및 TCU 초기 설정을 위해 취급'하는 것은?",
     "options": [
@@ -50,7 +50,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_004",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "제동 핸들을 '완해' 위치에서 '비상' 위치까지 조작할 때, 비상제동이 체결되는 위치는?",
     "options": [
@@ -65,7 +65,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_005",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "다음 중 M'차에 설치되어 전원을 공급받는 주요 기기가 아닌 것은?",
     "options": [
@@ -82,7 +82,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 3.2 기본 조치 (5문제)
   {
     "id": "fault_ch3_006",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "차량 고장 발생 시 기본 취급 순서 중 MCB 관련 조작 순서로 옳은 것은?",
     "options": [
@@ -97,7 +97,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_007",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "RS(Reset Switch) 취급 후 3초 후에 MCBCS를 취급하는 이유는 무엇인가?",
     "options": [
@@ -112,7 +112,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_008",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "다음 중 연장 급전(Extension Feed)이 필요한 상황이 아닌 것은?",
     "options": [
@@ -127,7 +127,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_009",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "장시간 단전으로 EOCN(비상 제어 전원 NFB)을 ON 취급했을 때 사용 가능한 기능이 아닌 것은?",
     "options": [
@@ -142,7 +142,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_010",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "완전 부동 취급 시 조치 순서로 옳은 것은?",
     "options": [
@@ -159,7 +159,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 3.3.1 기동 관련 고장 (5문제)
   {
     "id": "fault_ch3_011",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "103선(직류 모선) 가압 불능 시 확인해야 할 차단기가 아닌 것은?",
     "options": [
@@ -174,7 +174,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_012",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "ACM(보조 공기 압축기) 구동 불능의 원인으로 옳은 것은?",
     "options": [
@@ -189,7 +189,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_013",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "축전지 전압이 낮아(74V 이하) ACM 구동이 불가능할 때 조치 방법은?",
     "options": [
@@ -204,7 +204,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_014",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "전체 Pan 상승 불능 시 조치 사항으로 틀린 것은?",
     "options": [
@@ -219,7 +219,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_015",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "1개 Unit Pan 상승 불능 시 해당 M'차량에서 확인해야 할 콕(Cock)은?",
     "options": [
@@ -236,7 +236,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 3.3.2 특고압 및 견인 회로 고장 (6문제)
   {
     "id": "fault_ch3_016",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "ACArr(교류 피뢰기) 동작 시 현상으로 옳은 것은?",
     "options": [
@@ -251,7 +251,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_017",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "AC 구간에서 EGS(비상 접지 스위치) 동작 시 조치로 옳은 것은?",
     "options": [
@@ -266,7 +266,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_018",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "주 변압기 1차 측 120A 이상 과전류로 ACOCR이 동작했을 때, 모니터에 현시되는 문구는?",
     "options": [
@@ -281,7 +281,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_019",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "주 변압기 냉각 계통 고장(MTAR 여자) 시 현상으로 틀린 것은?",
     "options": [
@@ -296,7 +296,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_020",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "주 변환 장치(C/I) 고장 시 계전기 동작과 현상으로 옳은 것은?",
     "options": [
@@ -311,7 +311,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_021",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "AC 구간에서 송풍기 고장 시 보호 동작 시퀀스로 옳은 것은?",
     "options": [
@@ -328,7 +328,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 3.3.3 교-직 절연 및 절연 구간 고장 (4문제)
   {
     "id": "fault_ch3_022",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "교직 절환 직후 MCB 양 소등(기계적 고착) 시 조치 속도는?",
     "options": [
@@ -343,7 +343,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_023",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "교직 절환(AC→DC) 순간 전차선 단전 발생 시 원인은?",
     "options": [
@@ -358,7 +358,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_024",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "절연 구간 통과 시 L1이 계속 차단되어 복귀 불능일 때, 예상되는 고장 원인은?",
     "options": [
@@ -373,7 +373,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_025",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "전부 Pan이 교-직 절연 구간 내에 정차했을 때 조치 사항으로 틀린 것은?",
     "options": [
@@ -390,7 +390,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 3.3.4 동력 운전 및 주요 장치 고장 (4문제)
   {
     "id": "fault_ch3_026",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "기관사 안전장치(DSD) 불량으로 비상제동이 체결될 때, 이를 무효화하기 위해 취급하는 스위치는?",
     "options": [
@@ -405,7 +405,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_027",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "동력 운전 불능 시 확인해야 할 사항으로 틀린 것은?",
     "options": [
@@ -420,7 +420,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_028",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "자동열차정지장치(ATS) 고장 시 관제사의 승인을 받고 취급해야 하는 스위치는?",
     "options": [
@@ -435,7 +435,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_029",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "보조 전원 장치(SIV) 고장 시 AC 구간에서의 동작 시퀀스는?",
     "options": [
@@ -452,7 +452,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 3.3.5 출입문 및 객실 관련 고장 (4문제)
   {
     "id": "fault_ch3_030",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "출입문등(DILP) 점등 불능 시, 관제사의 승인을 받고 취급하여 동력 운전을 가능하게 하는 스위치는?",
     "options": [
@@ -467,7 +467,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_031",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "전체 출입문이 열리지 않을 때 취급해 볼 수 있는 스위치는?",
     "options": [
@@ -482,7 +482,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_032",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "현재 DROS 취급 시 가압되는 선은?",
     "options": [
@@ -497,7 +497,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_033",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "객실 비상 통화 장치 동작 시 복귀 불능일 때, 해당 차량 배전반 내에서 차단해야 하는 NFB는?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 3.3.6 제동장치 및 주 공기압력 관련 고장 (4문제)
   {
     "id": "fault_ch3_034",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "비상제동 완해 불능 시 확인해야 할 차단기가 아닌 것은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_035",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "제동 불완해 발생 시 강제로 완해하기 위해 취급하는 스위치는?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_036",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "보안제동 완해 불능 시 조치로 옳은 것은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_037",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "TC차량 전면 2지변 이후 주 공기(MR) 누설 시 조치로 옳은 것은?",
     "options": [
@@ -576,7 +576,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 3.4 구원 운전 및 기타 조치 (5문제)
   {
     "id": "fault_ch3_038",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "구원 열차 연결 시 12Jumper선으로 연결되지 않는 기능은?",
     "options": [
@@ -591,7 +591,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_039",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "구원 운전 시 고장 열차 기계 제동 불능으로 공기 제동만 사용할 때, 제동 핸들은 어느 위치에 유지해야 하는가?",
     "options": [
@@ -606,7 +606,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_040",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "합병 운전(구원 운전) 시 관제 보고 후 운전 속도는?",
     "options": [
@@ -621,7 +621,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_041",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "구원 운전 스위치(RSOS)의 위치 중 '과천선(분당선)' 위치는?",
     "options": [
@@ -636,7 +636,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_042",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "MCB-ON, MCB-OFF, Power등 점등 불능 시 조치는?",
     "options": [
@@ -653,7 +653,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   // 추가 보완 문제 (8문제)
   {
     "id": "fault_ch3_043",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "다음 중 '전기동차가 전체 출입문이 모두 닫히고 제어대 출입문등(DILP)이 점등된 상태에서 정상적인 동력 운전이 가능하나, 일부 출입문이 닫히지 않거나 출입문 장치 고장 등으로 출입문등이 점등되지 않아 관제사 승인 후 DIRS를 취급하고 운전하는 것'을 뜻하는 용어는?",
     "options": [
@@ -668,7 +668,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_044",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "전체 Pan을 하강하지 않는 완전 부동 취급 방법으로 옳은 것은?",
     "options": [
@@ -683,7 +683,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_045",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "주 공기압력 9.7kg/cm² 이상 상승 시 조치로 CM이 계속 구동될 때 취급해야 할 차단기는?",
     "options": [
@@ -698,7 +698,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_046",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "ATS 구간에서 ADU 무(無)현시 시 확인해야 할 차단기는?",
     "options": [
@@ -713,7 +713,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_047",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "운행 중 축전지 전압 강하 시 TC차량 및 T1차 배전반 내에서 확인 및 복귀해야 할 차단기는?",
     "options": [
@@ -728,7 +728,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_048",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "제동 비율에 따른 속도 제한 중 100% 미만 ~ 80% 이상일 때의 제한 속도는?",
     "options": [
@@ -743,7 +743,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_049",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "주 변압기(MT) 과열 시 현상으로 옳은 것은?",
     "options": [
@@ -758,7 +758,7 @@ var QUESTIONS_EMERGENCY_CH3 = [
   },
   {
     "id": "fault_ch3_050",
-    "subject": "emergency_ch3",
+    "subject": "emergency",
     "chapter": "3장 고장조치",
     "question": "2호선 M'차량(2호차)에서 ADAN, ADDN, PanVN을 차단하는 이유는?",
     "options": [

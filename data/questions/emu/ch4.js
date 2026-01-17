@@ -4,7 +4,7 @@
 var QUESTIONS_EMU_CH4 = [
      {
     "id": "train_4_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "고압보조 장치에 대한 설명으로 옳은 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "보조전원장치(SIV)의 주요 역할로 옳은 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "다음 중 SIV의 출력 전원(AC 440V)으로 구동되는 기기가 아닌 것은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "보조전원장치(SIV)의 정격 용량(AC 출력)은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "SIV 주회로 방식과 제어 방식으로 옳은 조합은?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "SIV 구성 기기 중 'HK(방전 Contactor)'의 동작 설명으로 옳은 것은?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "AC 구간에서 SIV에 전원이 공급되는 경로는?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "SIV 경고장(Minor Fault) 발생 시의 동작 특성은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "SIV 중고장(Major Fault)이 발생하는 경우가 아닌 것은?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "SIV 출력 회로 단락(ASOC) 발생 시 연장 급전 회로가 구성되지 않도록 하는 이유는?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "연장 급전 취급을 위해 사용하는 'ESPS'는 무엇의 약자인가?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "연장 급전이 구성되기 위해 반드시 차단되어야 하는 차단기는?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "중간 Unit(T1차) SIV 고장 시 ESS(연장급전 선택 스위치)를 '①' 위치로 설정하는 이유는?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "연장 급전(IVCN 차단) 취급 후 나타나는 현상으로 틀린 것은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "전동 공기압축기(CM)의 구동 전동기 사양으로 옳은 것은?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "CM의 안전밸브가 동작하는 설정 압력은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "공기압축기 조정 스위치(CM-G)의 작동 범위(ON/OFF)는?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "CM 인버터 고장 시 BY-PASS 구동의 순서는?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "CM 동기구동 회로를 구성하는 점퍼선 번호와 차단기 명칭은?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "CM-G가 용착되어 CM이 계속 구동할 때의 조치 방법은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "CM 보호장치인 EOCR(과전류계전기)이 동작하는 경우는?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "주변환기 송풍기(CIBM)의 보호 동작 설명으로 옳은 것은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "고압보조 장치 확인계전기(APR)가 무여자 될 때의 현상은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "주변압기(MT) 냉각 계통 고장으로 MTAR이 여자 되면 발생하는 현상은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "객실 난방 350W 취급 시 연장 급전 상태라면 어떻게 동작하는가?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "객실 냉방 장치 제어에서 '반 냉방(HALF)' 위치 시 가동되는 기기는?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "냉방 장치에 사용되는 냉매제의 종류는?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "연장 급전 시 객실 냉방 'FULL' 위치 취급 시의 동작 상태는?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "SIV 정지 시 FC(필터 커패시터)의 잔류 전하를 방전시키는 장치는?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조 장치",
     "question": "교-교 절연 구간 통과 시 SIV가 정지하지 않도록 돕는 전류 평형용 저항기의 약어는?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.1 고압보조 장치 개요",
     "question": "다음 중 고압보조 장치의 정의에 부합하지 않는 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.1 고압보조 장치 개요",
     "question": "10량 편성 전기동차의 고압보조 장치(SIV) 배치 및 전원 공급 구성으로 옳은 것은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_2_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.2 보조전원 장치(SIV)",
     "question": "SIV의 주요 구성 요소 중 입력 전원(DC 1,500V)의 Ripple 전류를 평활하게 하고 L-C 공진회로를 이용해 고조파를 제거하는 기기는?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_2_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.2 보조전원 장치(SIV)",
     "question": "SIV 구성 중 '충전장치'의 변환 과정으로 옳은 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_2_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.2 보조전원 장치(SIV)",
     "question": "SIV 기동 제어 회로에서 SIV 기동 명령 신호를 제어장치에 입력하기 위해 거치는 접점은? (직류 구간 기준)",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_2_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.2 보조전원 장치(SIV)",
     "question": "SIV 기동 시퀀스 중 IVHB 투입 후 쵸퍼 장치가 동작하기 위해 필요한 초기 조건은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_2_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.2 보조전원 장치(SIV)",
     "question": "SIV 보호 동작 중 '경고장' 발생 시 자동 재기동(Reset) 시퀀스로 옳은 것은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_2_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.2 보조전원 장치(SIV)",
     "question": "SIV 중고장 발생 시 운전실 모니터 현시 및 표시등 상태는?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_2_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.2 보조전원 장치(SIV)",
     "question": "SIV 중고장 발생 후 고장 복귀(Reset)를 위한 운전실 조작 순서는?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_2_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.2 보조전원 장치(SIV)",
     "question": "교-교 절연 구간 통과 시 SIV가 정지하지 않도록 정상 Unit에서 전원을 공급하여 평형을 맞추는 장치는?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "운전실 ESPS 취급으로 연장급전이 가능한 조건(고장 유형)은?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "연장급전 시 T차(3호차, 6호차)에 설치된 ESK(연장급전 접촉기)를 투입시키는 선 번호는?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "연장급전 시 전체 차량의 부하를 감소시키기 위해 여자 되는 계전기는?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "전부 Unit SIV 고장 시 연장급전 회로 구성에서, 고장차량의 IVCN이 자동 차단되게 하는 계전기 동작 순서는?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "중간 Unit(T1) SIV 고장 시 ESS를 '②' 위치로 선택했을 때 발생하는 문제점은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "AMCS(자동 연장급전 스위치)가 '자동' 위치일 때의 동작은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "연장급전 취급 후 TGIS 모니터의 표시 상태로 옳은 것은?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "연장급전이 불가능하여 수동으로 조치해야 할 때 확인해야 할 스위치 위치가 아닌 것은?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "연장급전 시 SIV 보호를 위해 가동이 제한되는 난방 부하는?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_3_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.3 AC440V 연장급전",
     "question": "SIV AC 출력 회로 단락(ASOC) 고장 시 연장급전 회로 구성을 차단하는 계전기는?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "VVVF 전기동차의 전동 공기압축기(CM)에 사용되는 전동기의 종류는?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "스크루형(Screw Type) 공기압축기의 특징으로 옳은 것은?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "트윈 타워 공기건조기의 동작 주기는?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "CM 정상 구동 회로에서 CMAR이 여자 되기 위한 조건이 아닌 것은?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "CM 인버터 고장 시 BY-PASS 1단 구동(저속)을 위해 투입되는 접촉기는?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "CM BY-PASS 2단 구동 시 회로의 변화는?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "CM 동기구동 회로를 구성하는 핵심 부품(차단기)은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "CM-G가 용착되어 CM이 계속 구동할 때, MR 압력이 설정치(9.7kg/cm²)를 초과하면 동작하는 안전장치는?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "SIV 고장으로 연장급전 시 CM이 재기동하는 시간 지연은?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_4_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.4 전동 공기압축기(CM)",
     "question": "CM 보호장치 중 'EOCR'의 역할은?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_5_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.5 송풍전동기(BM) 장치",
     "question": "주변환기 송풍전동기(CIBM)가 설치되지 않은 차량은?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_5_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.5 송풍전동기(BM) 장치",
     "question": "M'차의 CIBMN이 차단되었을 때 발생하는 현상으로 옳은 것은?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_5_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.5 송풍전동기(BM) 장치",
     "question": "직류 구간 운행 중 M차의 FLBMN이 차단되었을 때의 현상은?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_5_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.5 송풍전동기(BM) 장치",
     "question": "주변압기(MT) 냉각 보호 회로에서 MTAR이 여자 되어 MCB가 차단되는 조건이 아닌 것은?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_5_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.5 송풍전동기(BM) 장치",
     "question": "고압보조 장치 확인계전기(APR)의 역할은?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_6_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.6 냉·난방장치",
     "question": "객실 난방 제어에서 350W 히터를 가동하기 위해 여자 되는 계전기와 접촉기는?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_6_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.6 냉·난방장치",
     "question": "객실 냉방 'HALF' 위치 선택 시 가동되는 압축기와 응축기는?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_6_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.6 냉·난방장치",
     "question": "연장급전 시 냉방을 'FULL' 위치로 해도 'HALF' 냉방만 되는 이유는?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_6_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.6 냉·난방장치",
     "question": "객실 난방 1,050W 취급 시 연장급전 상태에서의 동작은?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "train_4_6_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4.6 냉·난방장치",
     "question": "냉방 장치의 동작 순서(냉매 순환)로 옳은 것은?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_101",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 고압보조장치 기기에 관한 용어로 틀린 것은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_102",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 SIV 주요제원으로 틀린 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_103",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 SIV 특징으로 틀린 설명은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_104",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 SIV 장치의 주요 구성으로 틀린 것은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_105",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "AC 전차선 구간의 교-교절연구간 통과 시 SIV가 정지되지 않고 통과할 수 있도록 정상인 Unit의 전원공급으로 평형을 맞춰주는 기기는?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_106",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 SIV 전원공급 시 교류구간의 흐름순서로 맞는 것은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_107",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "SIV 주요기기 중 인버터부의 Chopper 작용 및 Switching 작용으로 발생할 수 있는 Ripple 전류 및 고조파를 제거하는 것은?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_108",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 SIV 기동제어에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_109",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 SIV 정지가 되는 경우로 틀린 것은?",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_110",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 SIV 중고장으로 적절하지 않은 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_111",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 SIV 중고장 발생 시 현상에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_112",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 ESK가 설치된 차량으로 맞는 것은?",
     "options": [
@@ -1234,7 +1234,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_113",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 완전부동 취급시기로 틀린 것은?",
     "options": [
@@ -1249,7 +1249,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_114",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 연장급전 취급시기로 틀린 것은?",
     "options": [
@@ -1264,7 +1264,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_115",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 연장급전 취급 후 현상으로 틀린 것은?",
     "options": [
@@ -1279,7 +1279,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_116",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 연장급전 취급 시 동작되는 기기로 틀린 것은?",
     "options": [
@@ -1294,7 +1294,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_117",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 CM 교류전동기의 제원으로 틀린 것은?",
     "options": [
@@ -1309,7 +1309,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_118",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 CM Screw형 압축기의 제원으로 틀린 것은?",
     "options": [
@@ -1324,7 +1324,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_119",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "전동 공기압축기(CM) 및 관련 기기에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1339,7 +1339,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_120",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 CM 동기구동 회로에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1354,7 +1354,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_121",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "CM 보호장치 기기에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1369,7 +1369,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_122",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 CM 2대 고장 시 조치법으로 맞는 것은?",
     "options": [
@@ -1384,7 +1384,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_123",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 송풍전동기의 기기로 보기 힘든 것은?",
     "options": [
@@ -1399,7 +1399,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_124",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 MTAR 여자로 MCB가 차단되는 경우로 틀린 것은?",
     "options": [
@@ -1414,7 +1414,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_125",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 냉난방장치의 사용전원으로 적절하지 않은 것은?",
     "options": [
@@ -1429,7 +1429,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_126",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 냉난방장치 사용전원 중 냉난방기기 제어전원에 해당되는 것은?",
     "options": [
@@ -1444,7 +1444,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_127",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 객실 난방장치에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1459,7 +1459,7 @@ var QUESTIONS_EMU_CH4 = [
   },
   {
     "id": "license_core_3_4_128",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "4장 고압보조장치",
     "question": "다음 중 객실 냉방장치에 대한 설명으로 틀린 것은?",
     "options": [

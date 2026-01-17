@@ -5,7 +5,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
  // 2.1 기관사 안전 수칙
   {
     "id": "emergency_ch2_001",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "직무 사상 사고 예방을 위한 기관사 안전 수칙으로 틀린 것은?",
     "options": [
@@ -20,7 +20,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_002",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "직무 사상 사고 발생 위험 요인 중 '입환 작업을 위하여 선로 횡단 시' 주의 사항으로 옳은 것은?",
     "options": [
@@ -35,7 +35,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_003",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "전동차 기관사 안전 수칙 중 사상 사고 등으로 상판 밑을 횡단할 필요가 있을 때의 조치로 옳은 것은?",
     "options": [
@@ -52,7 +52,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   // 2.2 철도 사고
   {
     "id": "emergency_ch2_004",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도 사고의 특성으로 옳지 않은 것은?",
     "options": [
@@ -67,7 +67,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_005",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음 중 '철도교통사고'의 범위에 해당하지 않는 것은?",
     "options": [
@@ -82,7 +82,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_006",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도 사고의 분류 중 '철도 안전에 중대한 위해를 끼쳐 철도 사고로 이어질 수 있었던 것'을 무엇이라 하는가?",
     "options": [
@@ -97,7 +97,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_007",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음 중 '운행 장애'의 기준으로, 일반여객열차의 지연 시간 기준은?",
     "options": [
@@ -112,7 +112,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_008",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도 사고 발생 시 즉시 보고해야 하는 대상으로 옳은 것은?",
     "options": [
@@ -127,7 +127,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_009",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도 사고의 즉시 보고는 사고 발생 후 얼마 이내에 하여야 하는가?",
     "options": [
@@ -142,7 +142,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_010",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "위기 경보 단계 중 '전동 열차가 운행 중 충돌·탈선·화재·폭발 사고 또는 침수되어 10명 이상의 사망자가 발생'한 경우에 해당하는 단계는?",
     "options": [
@@ -159,7 +159,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   // 2.3 사고의 조치
   {
     "id": "emergency_ch2_011",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 사고 발생 시 가장 안전하다고 인정되는 방법으로 신속하게 조치해야 하는 우선순위가 아닌 것은?",
     "options": [
@@ -174,7 +174,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_012",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "사고 등으로 고장이 발생한 차량을 응급조치하여도 계속 운전이 불가능하다고 판단될 때 기관사의 조치로 옳은 것은?",
     "options": [
@@ -189,7 +189,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_013",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차의 퇴행 운전이 가능한 경우가 아닌 것은?",
     "options": [
@@ -204,7 +204,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_014",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "차내신호 폐색식 구간에서 뒤 열차가 앞 열차에 접근할 때, 뒤 열차 기관사의 조치는?",
     "options": [
@@ -219,7 +219,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_015",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "차량 고장 발생 시 기본 취급 요령 중 '주 차단기(MCB) OS -> RS' 취급 후 몇 초 후에 주 차단기(MCB) CS를 취급하는가?",
     "options": [
@@ -234,7 +234,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_016",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "전동차의 맨 앞 운전실이 고장일 때 조치 사항으로 옳은 것은?",
     "options": [
@@ -249,7 +249,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_017",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "선로 전환기 잠금 상태를 확인하였거나 잠금 조치를 하였을 때 해당 선로 전환기 앞쪽까지의 운전 속도는?",
     "options": [
@@ -264,7 +264,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_018",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "출발신호기 고장 등으로 수신호에 의해 운전할 때, 해당 신호기 설치 지점부터의 운전 속도는?",
     "options": [
@@ -279,7 +279,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_019",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "전차선 단전 시 취급 요령으로, 정거장 밖을 운전 중일 때의 조치는?",
     "options": [
@@ -294,7 +294,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_020",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "운행 중인 열차에서 화재가 발생하여 터널 내에 정차했을 때 조치로 가장 적절한 것은?",
     "options": [
@@ -311,7 +311,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   // 2.4 열차 방호
   {
     "id": "emergency_ch2_021",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 방호의 정의로 옳은 것은?",
     "options": [
@@ -326,7 +326,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_022",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "한국철도공사(Korail)의 무선전화기 방호 시 사용하는 비상 통화 채널과 반복 횟수는?",
     "options": [
@@ -341,7 +341,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_023",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "정지 수신호 방호를 할 때 지장 지점으로부터 몇 미터 이상의 지점에 정지 수신호를 현시해야 하는가?",
     "options": [
@@ -356,7 +356,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_024",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "서울교통공사 열차 방호 중 '제1종 방호'의 조치 내용으로 옳은 것은?",
     "options": [
@@ -371,7 +371,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_025",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "인접 선로에 지장을 준 경우의 방호 조치로 옳은 것은?",
     "options": [
@@ -388,7 +388,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   // 2.5 사상 사고 처리
   {
     "id": "emergency_ch2_026",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 운행 중 사상 사고 발생 시 가장 우선순위를 두어야 할 사항은?",
     "options": [
@@ -403,7 +403,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_027",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 운행 중 발생한 사상 사고의 조치 책임자로, 정거장 밖에서 발생한 경우의 책임자는?",
     "options": [
@@ -418,7 +418,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_028",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "사상 사고 발생 등으로 인접선 방호 조치가 필요할 때, 지장 선로를 통보받은 관계 열차의 운행 속도는?",
     "options": [
@@ -433,7 +433,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_029",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "여객 사상 사고 처리 비용 중 '사고가 사상자의 귀책사유로 발생한 경우' 비용 부담은?",
     "options": [
@@ -450,7 +450,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   // 2.6 자연재해
   {
     "id": "emergency_ch2_030",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "선로 침수 시 조치로, 레일 면까지 침수된 경우 기관사의 운전 취급은?",
     "options": [
@@ -465,7 +465,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_031",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "선로 침수 시 '레일 면을 초과하여 침수되었을 때'의 조치는?",
     "options": [
@@ -480,7 +480,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_032",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "한국철도공사 내진 기준에서 지진 황색경보(40gal~65gal 미만) 시 기관사의 조치는?",
     "options": [
@@ -495,7 +495,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_033",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "서울교통공사 운행 구간에서 '진도 5(비상경보) 강진' 발생 시 현상으로 옳은 것은?",
     "options": [
@@ -510,7 +510,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_034",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "풍속에 따른 운전 취급 중 '풍속이 30m/s 이상으로 판단될 때'의 조치는?",
     "options": [
@@ -525,7 +525,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_035",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "안개 또는 눈보라 발생 시 신호의 확인 거리가 50m 이하라고 인정되더라도 관제사의 운전 중지 명령이 없는 한 유지해야 할 속도는?",
     "options": [
@@ -542,7 +542,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   // 2.7 이례 상황 발생 시 조치
   {
     "id": "emergency_ch2_036",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도 테러 경보 단계 중 '위기 징후의 활동이 매우 활발하여 국가 위기의 발생이 확실시되는 상태'는?",
     "options": [
@@ -557,7 +557,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_037",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 내 생화학(독가스) 테러 발생 시 조치 사항으로 틀린 것은?",
     "options": [
@@ -572,7 +572,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_038",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "장시간 정전 시 축전지 방전 방지 조치로 옳은 것은?",
     "options": [
@@ -587,7 +587,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_039",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "객실 비상 통화 장치 동작 시 현상으로 틀린 것은?",
     "options": [
@@ -602,7 +602,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_040",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "승강장 비상 정지 경고등이 평상시 소등되어 있다가 승강장의 비상 정지 버튼을 작동시키면 점등되는 색상은?",
     "options": [
@@ -617,7 +617,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_041",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "승강장 안전문(PSD) 제어 방식 중 '무선통신(RF)방식'의 특징은?",
     "options": [
@@ -632,7 +632,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_042",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "승무원 조작반(HMI)의 기능 중 '인터록 무시' 버튼의 역할은?",
     "options": [
@@ -647,7 +647,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_043",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "승강장 안전문(PSD) 고장 시 운전 취급 요령으로 옳은 것은?",
     "options": [
@@ -662,7 +662,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_044",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 방호 장치의 기능 중 '상황 발생 스위치를 누를 경우' 나타나는 현상이 아닌 것은?",
     "options": [
@@ -677,7 +677,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_045",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 방호 장치에서 방호 신호를 수신하여 비상제동이 체결된 경우, 이를 완해하는 스위치는?",
     "options": [
@@ -692,7 +692,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_046",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 방호 장치의 자기진단 기능은 해제 스위치를 몇 초간 눌렀을 때 수행되는가?",
     "options": [
@@ -707,7 +707,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_047",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도운영자 등은 즉시 보고 대상 가운데 사고 발생 신고를 접수한 후 얼마 이내에 사고 발생 현황을 보고하여야 하는가?",
     "options": [
@@ -722,7 +722,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_048",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "서울교통공사의 지진 경보 발령 기준 중 '진도 3(예보) 약진' 시의 운전 조치는?",
     "options": [
@@ -737,7 +737,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_049",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "풍속이 25m/s 이상으로 판단된 경우 열차 운전에 위험이 우려되는 경우의 조치는?",
     "options": [
@@ -752,7 +752,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_050",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "PSD 고장 시 승무원 조작반의 '전체 열림' 버튼을 조작하여도 열리지 않을 때의 조치는?",
     "options": [
@@ -767,7 +767,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
    {
     "id": "emergency_ch2_core_001",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도사고 등의 보고에 관한 사항 중 '즉시 보고'는 사고 발생 후 얼마 이내에 하여야 하는가?",
     "options": [
@@ -782,7 +782,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_002",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도사고의 위기 경보 단계 중 '심각(Red)' 단계의 기준으로 옳은 것은?",
     "options": [
@@ -797,7 +797,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_003",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "운행장애의 기준 중 고속열차 및 전동열차의 운행 지연 기준 시간은?",
     "options": [
@@ -812,7 +812,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_004",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 운전 중 터널 내에서 화재가 발생했을 때 기관사의 조치로 가장 적절한 것은?",
     "options": [
@@ -827,7 +827,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_005",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "서울교통공사 열차 방호 방식 중 '제1종 방호'의 시행 방법으로 옳은 것은?",
     "options": [
@@ -842,7 +842,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_006",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "한국철도공사 무선전화기 방호 시 사용하는 비상 통화 채널과 반복 횟수는?",
     "options": [
@@ -857,7 +857,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_007",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "선로 침수를 발견했을 때 레일 면까지 침수된 경우 기관사의 조치로 옳은 것은?",
     "options": [
@@ -872,7 +872,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_008",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "지진 황색경보(40gal~65gal 미만) 발령 시 기관사의 조치로 옳은 것은?",
     "options": [
@@ -887,7 +887,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_009",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "강풍 발생 시 열차 운행을 일시 중지해야 하는 풍속 기준은?",
     "options": [
@@ -902,7 +902,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_010",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "짙은 안개로 신호의 확인 거리가 50m 이하일 때 관제사의 별도 명령이 없는 한 제한 속도는?",
     "options": [
@@ -917,7 +917,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_011",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음 중 열차의 퇴행 운전이 가능한 경우가 아닌 것은?",
     "options": [
@@ -932,7 +932,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_012",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "차량 고장 시 응급조치 요령 중 주 차단기(MCB)를 재투입할 때의 순서로 옳은 것은?",
     "options": [
@@ -947,7 +947,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_013",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "승강장 안전문(PSD) 고장 시 승무원의 조치로 틀린 것은?",
     "options": [
@@ -962,7 +962,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_014",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 내 생화학(독가스) 테러 발생 시 조치 사항으로 옳은 것은?",
     "options": [
@@ -977,7 +977,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_015",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차 방호 장치의 '상황 발생 스위치'를 눌렀을 때 나타나는 현상이 아닌 것은?",
     "options": [
@@ -992,7 +992,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_016",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "장시간 정전 시 축전지 방전 방지를 위해 기관사가 취해야 할 조치는?",
     "options": [
@@ -1007,7 +1007,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_017",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "직무 사상 사고 예방을 위해 출고 점검 시 기관사가 준수해야 할 사항은?",
     "options": [
@@ -1022,7 +1022,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_018",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "선로 전환기 잠금 조치를 하였을 때 해당 선로 전환기 앞쪽까지의 운전 속도는?",
     "options": [
@@ -1037,7 +1037,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_019",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "승강장 비상 정지 경고등이 작동했을 때의 현상으로 옳은 것은?",
     "options": [
@@ -1052,7 +1052,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_ch2_core_020",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "출발신호기 고장으로 수신호에 의해 운전할 때의 제한 속도는?",
     "options": [
@@ -1067,7 +1067,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_026",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "직무사상사고 예방을 위한 안전수칙으로 틀린 것은?",
     "options": [
@@ -1082,7 +1082,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_028",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "전동차 기관사 안전수칙에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1097,7 +1097,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_030",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음 중 철도사고의 특성으로 틀린 것은?",
     "options": [
@@ -1112,7 +1112,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_036",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음 중 운행장애로 보기 힘든 것은?",
     "options": [
@@ -1127,7 +1127,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_039",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도사고등의 발생으로 국토교통부장관에게 즉시 보고하여야 하는 사항으로 틀린 것은?",
     "options": [
@@ -1142,7 +1142,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_040",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "철도사고등의 발생으로 국토교통부장관에게 즉시보고는 몇 분이내로 하여야 하는가?",
     "options": [
@@ -1157,7 +1157,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_046",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "국가 차원의 종합적인 대처가 필요한 사고에 대하여 어떤 매뉴얼을 따라야 하는가?",
     "options": [
@@ -1172,7 +1172,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_053",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음 중 위기경보의 발령단계 순서로 맞는 것은?",
     "options": [
@@ -1187,7 +1187,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_054",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "전동열차가 운행 중 충돌·탈선·화재·폭발 사고 또는 침수되어 3명 이상의 사망자가 발생하거나 5시간 이상의 열차 운행 중단이 예상될 때 발령되는 단계는?",
     "options": [
@@ -1202,7 +1202,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_060",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "차량고장 발생 시 기본취급 요령으로 적절하지 않은 것은?",
     "options": [
@@ -1217,7 +1217,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_063",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "전차선 단전이 [ ]분 이상의 단전 예상 시 구름방지 및 축전지 방전 방지 등의 안전조치를 하여야 한다. [ ]에 들어갈 옳은 것은?",
     "options": [
@@ -1232,7 +1232,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_066",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "열차화재 발생 시 조치법으로 틀린 설명은?",
     "options": [
@@ -1247,7 +1247,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_071",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "수도권 전동열차의 기관사는 지장지점으로부터 정지수신호를 현시하면서 주행하여 몇 m 이상의 지점에 정지수신호를 현시하여야 하는가?",
     "options": [
@@ -1262,7 +1262,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_074",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "아래의 내용은 서울교통공사의 열차방호 중 하나의 설명이다. 해당하는 것은? '뒤 운전실의 전조등을 점등시킨 후 정지수신호를 현시하면서 주행하여, 접근하는 열차가 확인하기 쉬운 지점에 정지수신호를 현시한다. 다만, 야간방식에 의하는 경우 또는 터널 내에서는 후부에 있는 전조등을 깜박임으로 정지 수신호를 대용할 수 있다.'",
     "options": [
@@ -1277,7 +1277,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_089",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "레일 면까지 침수된 경우에는 그 앞쪽 지점에 일단 정차 후 선로상태를 확인하고 통과가 가능하다고 인정될 때는 몇 km/h 이하의 속도로 주의운전을 하여야 하는가?",
     "options": [
@@ -1292,7 +1292,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_090",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음은 지진발생에 대한 설명이다. 빈칸에 들어갈 말로 맞는 것은? '지진은 공사(公社)의 지진감시 시스템에서 [ ] 또는 현장에서 건물이 심하게 흔들려 물건이 넘어지거나 그릇의 물이 넘치는 경우와 기상청에서 규모 [ ]의 지진기상 특보를 발령하는 경우로 한다.'",
     "options": [
@@ -1307,7 +1307,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_096",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음 중 폭풍우 발생 시 조치요령으로 틀린 것은?",
     "options": [
@@ -1322,7 +1322,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_099",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "안개 또는 눈보라 발생 시 운전 취급에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1337,7 +1337,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_105",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "운행 중 전차선 단전 시 조치법으로 틀린 것은?",
     "options": [
@@ -1352,7 +1352,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_111",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "PSD제어 방식 중 출입문 검지센서 방식에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1367,7 +1367,7 @@ var QUESTIONS_EMERGENCY_CH2 = [
   },
   {
     "id": "emergency_core_120",
-    "subject": "emergency_ch2",
+    "subject": "emergency",
     "chapter": "2장 이례상황",
     "question": "다음 중 열차방호장치의 구성으로 적절하지 않은 것은?",
     "options": [

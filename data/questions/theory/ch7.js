@@ -5,7 +5,7 @@ var QUESTIONS_THEORY_CH7 = [
     // 여기에 7단원 문제 추가
     {
     "id": "theory_7_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "철도차량의 소음 중 차륜과 레일의 마찰에 의해 발생하며 열차의 속도에 비례하는 소음은?",
     "options": [
@@ -20,7 +20,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차체 공력 소음에 대한 설명으로 틀린 것은?",
     "options": [
@@ -35,7 +35,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "집전계 소음의 종류에 해당하지 않는 것은?",
     "options": [
@@ -50,7 +50,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "하부 구조물 전달 소음의 특징으로 옳은 것은?",
     "options": [
@@ -65,7 +65,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "터널 미기압파에 의한 소음 저감 대책으로 적절한 것은?",
     "options": [
@@ -80,7 +80,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차체 운동 중 X축(전후 방향)을 중심으로 회전운동을 하는 것은?",
     "options": [
@@ -95,7 +95,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차체 운동 중 Z축(수직 방향)을 중심으로 회전운동을 하는 것은?",
     "options": [
@@ -110,7 +110,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차량의 진동 경감 방안 중 '요잉(Yawing)' 방지를 위해 최근 사용하는 장치는?",
     "options": [
@@ -125,7 +125,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차륜 통과 시 레일에 작용하는 수직력(P)을 무엇이라 하는가?",
     "options": [
@@ -140,7 +140,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "윤중(수직력)의 증감 원인이 아닌 것은?",
     "options": [
@@ -155,7 +155,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차륜으로부터 레일에 작용하는 횡 방향의 힘(Q)을 무엇이라 하는가?",
     "options": [
@@ -170,7 +170,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차륜의 전진 방향과 레일 방향과의 각도 차이를 무엇이라 하는가?",
     "options": [
@@ -185,7 +185,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "공격각이 양(+)인 경우, 차륜 플랜지가 레일 두부 정면의 견부를 굴러 올라 발생하는 가장 일반적인 탈선은?",
     "options": [
@@ -200,7 +200,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "주로 고속에서 발생하며, 윤축의 횡 방향 운동 속도가 커져 차륜이 레일에 충돌하여 튀어 오르는 탈선은?",
     "options": [
@@ -215,7 +215,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "좌굴 탈선의 주된 발생 원인은?",
     "options": [
@@ -230,7 +230,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "우리나라 철도차량의 압축 하중 규정 값은 몇 톤을 초과할 수 없는가?",
     "options": [
@@ -245,7 +245,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "탈선계수(De)를 구하는 식은? (Q: 횡압력, P: 윤중)",
     "options": [
@@ -260,7 +260,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "곡선 선로 반지름이 250m 이상인 구간에서 탈선계수(Q/P)의 허용 기준은?",
     "options": [
@@ -275,7 +275,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "탈선계수 기준 적용 시 횡압력이 작용하는 시간 기준은?",
     "options": [
@@ -290,7 +290,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "철도차량 주행 시 뱀이 이동하는 모습과 같이 좌우로 흔들리는 현상은?",
     "options": [
@@ -305,7 +305,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "일반 열차 및 화물 열차에서 주로 사용하는 차륜답면 기울기는?",
     "options": [
@@ -320,7 +320,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차륜답면 기울기가 클 때(예: 1/20)의 특징으로 옳은 것은?",
     "options": [
@@ -335,7 +335,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "전기동차의 '한 축 사행동' 파장은 약 얼마인가?",
     "options": [
@@ -350,7 +350,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "전기동차의 '대차 사행동' 파장은 약 얼마인가?",
     "options": [
@@ -365,7 +365,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "한 축 사행동 파장 크기는 차륜답면 기울기와 어떤 관계인가?",
     "options": [
@@ -380,7 +380,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "사행동 발생을 최소화하기 위한 조건으로 틀린 것은?",
     "options": [
@@ -395,7 +395,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "곡선 선로를 부드럽게 운행하기 위한 조건으로 옳은 것은?",
     "options": [
@@ -410,7 +410,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "곡선 선로 통과 시 차륜이 접선 방향으로 향하게 하기 위해 이상적인 윤축의 선회각(Angle of traverse)은?",
     "options": [
@@ -425,7 +425,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 롤링(Rolling)을 방지하기 위해 대차에 설치하는 장치는?",
     "options": [
@@ -440,7 +440,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "전동 소음 저감 대책 중 차량 측면에서의 대책은?",
     "options": [
@@ -455,7 +455,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "철도차량의 소음 중 열차의 속도에 비례하며, 차륜과 레일 표면의 거칠기나 굽힘 상태 등에 의해 영향을 받는 소음은?",
     "options": [
@@ -470,7 +470,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "다음 중 '전동 소음'을 저감하기 위한 '차량 측' 대책으로 옳은 것은?",
     "options": [
@@ -485,7 +485,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "고속 주행 시 주요 소음원이 되며, 차량의 앞·뒷부분 형상이나 외부 돌출물 등 순수한 공기역학적 요인으로 발생하는 소음은?",
     "options": [
@@ -500,7 +500,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "공력 소음을 줄이기 위한 대책으로 가장 적절하지 않은 것은?",
     "options": [
@@ -515,7 +515,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "집전계 소음 중 '이선(Contact break)' 현상 시 발생하는 소음은?",
     "options": [
@@ -530,7 +530,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "집전계 소음이 방음벽으로 차단하기 곤란한 주된 이유는?",
     "options": [
@@ -545,7 +545,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "하부 구조물 전달 소음의 주파수 특성으로 옳은 것은?",
     "options": [
@@ -560,7 +560,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "하부 구조물 전달 소음의 특징에 대한 설명으로 틀린 것은?",
     "options": [
@@ -575,7 +575,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "터널 미기압파(Micro pressure wave) 소음 저감 대책에 해당하지 않는 것은?",
     "options": [
@@ -590,7 +590,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "차체 공력 소음을 억제하기 위해 대차 부근에서 유효한 방법은?",
     "options": [
@@ -605,7 +605,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "다음 중 '궤도' 측면에서의 전동 소음 저감 대책이 아닌 것은?",
     "options": [
@@ -620,7 +620,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "차량의 차음 효과를 높여 실내 소음을 줄이는 방법으로 교재에 제시된 것은?",
     "options": [
@@ -635,7 +635,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "이선 시 아크 소음을 줄이기 위한 대책으로 옳은 것은?",
     "options": [
@@ -650,7 +650,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "차체 진동에 의한 소리를 작게 하기 위해 차량에 장착하는 스프링 종류로 효과적인 것은?",
     "options": [
@@ -665,7 +665,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "곡선 궤도 주행 시 차륜답면과 레일 사이의 미끄럼 접촉에 의해 발생하는 소음은 어디에 속하는가?",
     "options": [
@@ -680,7 +680,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "다음 중 집전 마찰음을 줄이기 위한 대책은?",
     "options": [
@@ -695,7 +695,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "추진 장치 및 보조 기기 소음을 제어하기 위한 설계 대상이 아닌 것은?",
     "options": [
@@ -710,7 +710,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "철도 소음의 구성 요소에 영향을 미치는 인자로 언급되지 않은 것은?",
     "options": [
@@ -725,7 +725,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "전동 소음의 영향 인자가 아닌 것은?",
     "options": [
@@ -740,7 +740,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_1_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.1 소음",
     "question": "콘크리트 구조물의 소음을 줄이기 위한 대책은?",
     "options": [
@@ -755,7 +755,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "차체 운동 중 X축(전후 방향)을 중심으로 회전운동을 하는 것을 무엇이라 하는가?",
     "options": [
@@ -770,7 +770,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "Z축(수직 방향)을 중심으로 회전운동을 하는 '요잉(Yawing)'을 방지하기 위해 사용하는 장치는?",
     "options": [
@@ -785,7 +785,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "대차의 피칭(Pitching)이 전이되어 발생하는 진동의 종류는?",
     "options": [
@@ -800,7 +800,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "차륜 통과 시 레일에 작용하는 수직력인 '윤중(P)'이 정지 시보다 약 50~60%까지 증가할 수 있는 원인은?",
     "options": [
@@ -815,7 +815,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "분기기 등의 충격력으로 발생하는 횡압력의 합계는 통상 윤중의 몇 % 정도인가?",
     "options": [
@@ -830,7 +830,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "레일의 길이 방향으로 작용하는 '축 방향력' 중 가장 큰 힘은?",
     "options": [
@@ -845,7 +845,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "차륜 플랜지가 레일 두부 정면의 견부(어깨)를 굴러 올라가며 발생하는 가장 일반적인 탈선 형태는?",
     "options": [
@@ -860,7 +860,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "좌굴 탈선의 발생 조건과 관련 깊은 것은?",
     "options": [
@@ -875,7 +875,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "우리나라 철도차량의 압축 하중 규정 한계값은?",
     "options": [
@@ -890,7 +890,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "곡선 선로 반지름 250m 이상인 구간에서 허용되는 탈선계수(Q/P)의 기준은?",
     "options": [
@@ -905,7 +905,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "탈선계수 기준 적용 시 횡압력이 지속되어야 하는 최소 시간은?",
     "options": [
@@ -920,7 +920,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "차륜답면 기울기가 1/20인 경우(일반 열차)의 특징으로 옳은 것은?",
     "options": [
@@ -935,7 +935,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "전기동차의 '한 축 사행동' 파장은 약 몇 m인가?",
     "options": [
@@ -950,7 +950,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "전기동차의 '대차 사행동' 파장은 약 몇 m인가?",
     "options": [
@@ -965,7 +965,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "사행동 발생을 최소화하기 위한 조건으로 틀린 것은?",
     "options": [
@@ -980,7 +980,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "곡선 선로를 부드럽게 운행하기 위한 차량 조건으로 옳은 것은?",
     "options": [
@@ -995,7 +995,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "윤축의 '한 축 사행동' 파장 크기는 차륜답면 기울기와 어떤 관계인가?",
     "options": [
@@ -1010,7 +1010,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "다음 중 횡압력 증대의 원인에 해당하지 않는 것은?",
     "options": [
@@ -1025,7 +1025,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "윤중 감소의 원인으로 볼 수 없는 것은?",
     "options": [
@@ -1040,7 +1040,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "theory_7_2_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7.2 진동",
     "question": "고속철도에서 대차 불안정 센서를 통해 검지하고 경고하는 진동은?",
     "options": [
@@ -1055,7 +1055,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
 {
     "id": "driving_theory_exam_7_171",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차륜과 레일의 마찰에 의해 발생되는 소음으로 맞는 것은?",
     "options": [
@@ -1070,7 +1070,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_172",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차체공력 소음에 대한 내용으로 틀린 것은?",
     "options": [
@@ -1085,7 +1085,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_173",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 소음에 대한 내용으로 틀린 것은?",
     "options": [
@@ -1100,7 +1100,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_174",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "소음 저감 대책에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1115,7 +1115,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_175",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 공력소음의 대책으로 틀린 것은?",
     "options": [
@@ -1130,7 +1130,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_176",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "철도차량의 차체운동에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1145,7 +1145,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_177",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 회전운동에 따른 진동으로 맞는 것은?",
     "options": [
@@ -1160,7 +1160,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_178",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 차량의 특성에 의한 진동으로 적절하지 않은 것은?",
     "options": [
@@ -1175,7 +1175,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_179",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "철도차량 진동 경감 방안에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1190,7 +1190,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_180",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 윤중의 증감 원인으로 적절하지 않은 것은?",
     "options": [
@@ -1205,7 +1205,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_181",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 횡압력이 발생하는 조건으로 틀린 것은?",
     "options": [
@@ -1220,7 +1220,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_182",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 탈선에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1235,7 +1235,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_183",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 분야별 탈선 유발 원인으로 적절하지 않은 것은?",
     "options": [
@@ -1250,7 +1250,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_184",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 윤중 감소의 원인으로 틀린 것은?",
     "options": [
@@ -1265,7 +1265,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_185",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 횡압력 증대의 원인으로 틀린 것은?",
     "options": [
@@ -1280,7 +1280,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_186",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 탈선계수의 공식으로 맞는 것은? (Q : 횡압력, P : 윤중)",
     "options": [
@@ -1295,7 +1295,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_187",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "횡압이 작용하는 시간으로 가장 맞는 것은?",
     "options": [
@@ -1310,7 +1310,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_188",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "곡선선로의 반지름이 250m 이상인 구간에서 탈선계수는 어느 수치까지 허용하는가?",
     "options": [
@@ -1325,7 +1325,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_189",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "축 당 작용하는 횡압력의 기준을 산정할 때 객차의 값은?",
     "options": [
@@ -1340,7 +1340,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_190",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "고속열차에서 사용하는 차륜답면 기울기로 맞는 것은?",
     "options": [
@@ -1355,7 +1355,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_191",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 한 축 사행동에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1370,7 +1370,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_192",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "다음 중 대차 사행동에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1385,7 +1385,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_193",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "사행동 발생의 최소화 목적으로 사행동 파장을 크게 하기 위한 기본조건으로 틀린 것은?",
     "options": [
@@ -1400,7 +1400,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_194",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차량이 곡선선로를 부드럽게 선회하기 위해서 윤축의 선회각이 몇 도로 설정하면 좋은가?",
     "options": [
@@ -1415,7 +1415,7 @@ var QUESTIONS_THEORY_CH7 = [
   },
   {
     "id": "driving_theory_exam_7_195",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "7장 소음과 진동",
     "question": "차량이 곡선선로를 부드럽게 운행하기 위한 조건으로 맞는 설명은?",
     "options": [

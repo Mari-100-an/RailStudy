@@ -4,7 +4,7 @@
 var QUESTIONS_THEORY_CH6 = [
     {
     "id": "theory_6_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "표준궤간의 표준 치수는 얼마인가?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "궤간이란 양쪽 레일 안쪽 간의 거리 중 가장 짧은 거리를 말하며, 레일의 윗면으로부터 몇 mm 아래 지점을 기준으로 하는가?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "차량이 곡선 구간을 안전하게 운행할 수 있도록 안쪽 레일을 기준으로 바깥쪽 레일을 높게 부설하는 것을 무엇이라 하는가?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "차량이 곡선 구간의 선로를 원활하게 통과하도록 바깥쪽 레일을 기준으로 안쪽 레일을 조정하여 궤간을 넓히는 것은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "인접 선로의 열차 및 차량 출입에 지장을 주지 아니하고 열차를 수용할 수 있는 해당 선로의 최대 길이를 무엇이라 하는가?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "설계속도에 따른 최소 곡선 반지름(R)을 구하는 식으로 옳은 것은? (V: 설계속도, C1: 최대 설정 캔트, C2: 최대 부족 캔트)",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "본선 선로(자갈 도상)에서 설계속도가 200km/h일 때 최소 곡선 반지름 기준은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "전기동차 전용선의 경우 설계속도와 관계없이 적용할 수 있는 최소 곡선 반지름은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "부본선, 측선 및 분기기에 연속되는 경우 축소할 수 있는 최소 곡선 반지름의 크기는?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "콘크리트 도상 궤도에서 설계속도가 200km/h 이하일 때 최대 설정 캔트의 크기는?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "자갈 도상 궤도에서 설계속도가 200km/h를 초과할 때 최대 부족 캔트의 허용량은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "설정 캔트(C1)를 구하는 공식으로 옳은 것은? (C2: 부족 캔트량, r: 곡선 반지름)",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "부족 캔트(C2)를 구하는 공식으로 옳은 것은? (C1: 설정 캔트량)",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "본선 선로에서 설계속도가 120km/h일 때 완화곡선을 두어야 하는 곡선 반지름 미만의 기준은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "완화곡선 반지름(R)을 구하는 공식은? (△C1: 부족 캔트 변화량 한계값)",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "설계속도가 70km/h 이하일 때 부족 캔트 변화량 한계값은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "전기동차 전용선 선로의 최대 기울기 기준은?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "전기동차 전용선에서 기울기가 35‰인 구간은 연속하여 몇 km를 초과할 수 없는가?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "전기동차 전용선에서 연속한 선로 10km에 대해 평균 기울기는 얼마 이하여야 하는가?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "기울기 중에 곡선이 있을 경우 최대 기울기에서 빼야 하는 값은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "차량이 선로 기울기의 변경 지점을 원활하게 운행할 수 있도록 종단면에 두는 곡선은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "종곡선 간 직선 선로의 최소 길이(L)를 구하는 식으로 옳은 것은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "종곡선을 부설해야 하는 구간으로 원칙적인 곳은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "슬랙(Slack)을 두어야 하는 곡선 구간의 반지름 기준은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "슬랙의 최대 한도는 얼마인가?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "슬랙(S)을 계산하는 식은? (r: 곡선 반지름, S': 조정값)",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "슬랙 계산식에서 조정값 S'의 범위는?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "선행 열차와 후속 열차 간의 운전을 위한 배차 시간 간격을 무엇이라 하는가?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "전기동차 전용선에 대한 설명으로 틀린 것은?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로 공학",
     "question": "설계속도 200km/h인 자갈 도상 궤도에서 최소 곡선 반지름은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
    {
     "id": "theory_6_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.1 용어의 정의",
     "question": "궤간의 측정 기준에 대한 설명으로 올바른 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.1 용어의 정의",
     "question": "다음 중 '전기동차 전용선'의 정의에 부합하지 않는 조건은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.1 용어의 정의",
     "question": "선행 열차와 후속 열차 간의 운전을 위한 시간 간격의 최솟값을 무엇이라 하는가?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.1 용어의 정의",
     "question": "다음 중 유효장의 정의로 가장 적절한 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.2 최소 곡선 반지름",
     "question": "최소 곡선 반지름(R)을 구하는 식에서 설계속도(V)와 캔트(C)의 관계는?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.2 최소 곡선 반지름",
     "question": "자갈 도상 궤도에서 설계속도가 150km/h일 때 필요한 최소 곡선 반지름은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.2 최소 곡선 반지름",
     "question": "콘크리트 도상 궤도에서 설계속도가 200km/h일 때 최소 곡선 반지름은 자갈 도상 궤도일 때보다 얼마나 작은가?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.2 최소 곡선 반지름",
     "question": "다음 중 최소 곡선 반지름 크기를 축소할 수 있는 '부득이한 경우'의 기준(자갈/콘크리트 구분 없음)으로 틀린 것은? (설계속도 120km/h 초과 150km/h 이하 구간)",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.2 최소 곡선 반지름",
     "question": "전기동차 전용선에서 설계속도와 관계없이 적용되는 최소 곡선 반지름 기준은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.2 최소 곡선 반지름",
     "question": "부본선, 측선 및 분기기에 연속되는 경우 축소할 수 있는 최소 곡선 반지름 한계는?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "캔트를 설정하는 목적으로 타당하지 않은 것은?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "자갈 도상 궤도에서 설계속도가 250km/h일 때, 최대 설정 캔트와 최대 부족 캔트의 값으로 옳은 것은?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "콘크리트 도상 궤도에서 설계속도 200km/h 이하일 때 허용되는 최대 설정 캔트값은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "자갈 도상 궤도에서 설계속도가 200km/h 이하일 때 최대 부족 캔트 허용량은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "설정 캔트(C1)를 구하는 공식 6-2식으로 옳은 것은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "부족 캔트(C2)를 구하는 공식 6-3식으로 옳은 것은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "곡선 구간에서 열차의 원심력(F)과 중력(W)의 합력(P)이 궤간 중심선에 수직으로 작용하도록 하기 위해 필요한 요소는?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "캔트 공식의 상수 11.8은 어떤 단위계를 사용할 때 적용되는가?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "곡선 반경 600m인 선로를 100km/h로 주행하려 한다. 이때 이론상 균형 캔트(C1+C2)의 값은 약 얼마인가? (소수점 첫째 반올림)",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_1_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.3 설정 캔트 및 부족 캔트",
     "question": "콘크리트 도상에서 300km/h로 주행 시 최대 부족 캔트 허용량은?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.4 완화곡선",
     "question": "완화곡선을 설치해야 하는 장소로 옳은 것은?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.4 완화곡선",
     "question": "설계속도가 200km/h일 때, 곡선 반지름이 얼마 미만이면 완화곡선을 두어야 하는가?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.4 완화곡선",
     "question": "설계속도가 100km/h일 때 완화곡선 설치 기준이 되는 곡선 반지름 미만 값은?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.4 완화곡선",
     "question": "완화곡선 반지름(R)을 구하는 공식 6-4식으로 옳은 것은? (△C1: 부족 캔트 변화량 한계값)",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.4 완화곡선",
     "question": "설계속도 120km/h일 때 부족 캔트 변화량 한계값(△C1)은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.4 완화곡선",
     "question": "설계속도가 70km/h 이하일 때 부족 캔트 변화량 한계값은?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.5 선로의 최대 기울기",
     "question": "전기동차 전용선 선로의 최대 기울기 기준은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.5 선로의 최대 기울기",
     "question": "전기동차 전용선에서 연속한 선로 10km에 대한 평균 기울기 제한은?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.5 선로의 최대 기울기",
     "question": "기울기가 35‰인 구간은 연속하여 몇 km를 초과할 수 없는가?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.5 선로의 최대 기울기",
     "question": "기울기 중에 곡선이 있을 경우, 실제 기울기를 조정하기 위해 최대 기울기에서 빼야 하는 값은?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.5 선로의 최대 기울기",
     "question": "최대 기울기 제한이 35‰인 선로에 반지름 700m인 곡선이 있다. 이 곡선 구간의 실제 시공 가능한 최대 기울기는?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.6 종곡선 간 직선 선로의 최소 길이",
     "question": "종곡선이란 어떤 지점을 원활하게 운행할 수 있도록 두는 곡선인가?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.6 종곡선 간 직선 선로의 최소 길이",
     "question": "종곡선 간 직선 선로의 최소 길이(L)를 구하는 공식은?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.6 종곡선 간 직선 선로의 최소 길이",
     "question": "설계속도가 72km/h인 구간에서 종곡선 사이에 두어야 할 직선 선로의 최소 길이는?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.6 종곡선 간 직선 선로의 최소 길이",
     "question": "종곡선을 부설해야 하는 원칙적인 구간은?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.7 슬랙",
     "question": "슬랙을 두어야 하는 곡선 구간의 반지름 기준은?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.7 슬랙",
     "question": "슬랙의 최대 한도는 몇 mm 이하인가?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.7 슬랙",
     "question": "슬랙(S)을 계산하는 공식으로 옳은 것은?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.7 슬랙",
     "question": "슬랙 계산식에서 조정값 S'의 허용 범위는?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "theory_6_2_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6.7 슬랙",
     "question": "곡선 반지름이 600m인 구간에서 규정에 따라 설치해야 할 슬랙의 양은?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
    {
     "id": "driving_theory_exam_6_158",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "다음 용어의 설명으로 적절하지 않은 것은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_159",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "다음 중 표준궤간의 치수로 가장 적절한 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_160",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "다음 중 설계속도에 따른 최소 곡선 반지름 크기를 정의할 때 올바른 것은? (V: 설계속도, C1: 설정캔트, C2: 부족캔트)",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_161",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "본선 선로의 설계속도에 따른 최소 곡선 반지름의 크기로 틀린 것은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_162",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "정거장의 전·후 구간 등 부득이한 경우 본선 선로의 설계속도에 따른 최소 곡선 반지름의 크기로 틀린 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_163",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "전기동차 전용선의 최소 곡선 반지름의 크기로 맞는 것은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_164",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "설계속도가 200<V≤350km/h일 때 궤도의 종류에 따른 캔트의 크기로 틀린 것은?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_165",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "다음 중 본선 선로의 설계속도에 따른 완화곡선의 최소 크기로 틀린 것은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_166",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "완화곡선 반지름(R)을 나타낼 때 가장 적합한 것을 고르시오. (V: 설계속도, △C1: 부족캔트 변화량 한계값)",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_167",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "본선 선로의 설계속도에 따른 부족 캔트 변화량 한계값의 크기로 틀린 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_168",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "전기동차 전용선 선로의 최대 기울기에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_169",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "설계속도가 72km/h이라면 종곡선 간 직선 선로의 최소 길이는?",
     "options": [
@@ -1234,7 +1234,7 @@ var QUESTIONS_THEORY_CH6 = [
   },
   {
     "id": "driving_theory_exam_6_170",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "6장 선로공학",
     "question": "다음은 슬랙에 대한 설명이다. 틀린 것은?",
     "options": [

@@ -4,7 +4,7 @@
 var QUESTIONS_EMU_CH2 = [
     {
     "id": "train_2_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "전기동차의 저압 제어 전원인 축전지(Battery)의 사양으로 옳은 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "전기동차 회로 구분 중 '특고압 회로'의 정의로 옳은 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 아크(Arc)에 의해 접점이 용접되어 정상적인 동작을 할 수 없는 상태를 일컫는 용어는?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "계전기(Relay)의 접점 중, 코일에 전류가 흐를 때(여자 시) 회로를 연결하는 접점은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "보조공기압축기(ACM) 구동을 제어하는 조압기(ACMG)의 작동 범위는?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "기동 준비 시 제동 핸들을 투입하면 103선에 가장 먼저 공급되는 전원은?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "운전실 선택 회로에서 제동 핸들을 투입한 쪽(전부 운전실)에서 여자 되는 계전기는?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "ACM(보조공기압축기)이 구동되지 않는 조건은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "ACM 구동으로 생성된 압축공기가 공급되는 기기가 아닌 것은?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "팬터그래프(Pan)의 표준 압상력(Contact Force)은?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "팬터그래프(Pan) 상승 시간의 표준 조정 값은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "EPanDS(비상 팬터그래프 하강 스위치)를 취급했을 때의 동작으로 옳은 것은?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "계기용 변압기(PT)의 역할로 옳은 것은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "운전실 AC등 또는 DC등이 점등되는 신호 흐름에서 시한계전기(Timer Relay)를 사용하는 이유는?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "ADCg(교직 절환기)가 절환되기 위한 필수 조건은?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "MCB(주차단기) 투입 회로에서 PanPS(팬터그래프 압력 스위치)가 동작하여 회로를 구성하는 최소 공기압력은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "MCB 투입 동작 과정에서 MCB-C(투입 코일)가 여자 된 후, 투입 상태를 유지하고 MCB-C를 무여자 시키는 계전기는?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "AC 구간에서 MCB 사고 차단 원인에 해당하지 않는 것은?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "주변압기(MT)의 1차 측 입력 전압과 2차 측 출력 전압으로 옳은 것은?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "EGCS(비상 접지 제어 스위치)를 취급했을 때 동작하는 기기와 현상으로 옳은 것은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "교류 구간에서 직류 모진(DC 1,500V 유입)이 발생했을 때 주변압기(MT)를 보호하기 위해 용단되는 것은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "교류 모진(AC 25kV가 직류 회로로 유입) 발생 시 동작하는 보호 기기는?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "축전지 방전 방지 회로는 SIV 정지 후 몇 분 뒤에 동작하는가?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "운전실 교환 시 신(新) 운전실에서 전·후진 핸들을 전진 위치로 했을 때 일어나는 현상은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "교-직 절연 구간의 길이는?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "직류 절환(AC → DC) 시 ADS를 전환하면 가장 먼저 일어나는 현상은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "절연 구간 예고 방송을 송출하기 위한 지상자의 주파수는?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "ATC 구간에서 ATS 구간으로 진입 시 차상 장치에서 수신하는 절환 신호에 의해 여자 되는 계전기는?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "주퓨즈(MFs) 용단 시 확인할 수 있는 현상은?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "AC 구간에서 C/I 고장 등으로 MCBOR이 무여자 되었을 때 MCB가 차단되는 회로 구성 요소는?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "전기동차의 제어 방식에 대한 설명으로 표준교재의 내용과 일치하는 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "전기동차 회로 구분 중 '고압 보조 회로'에 속하는 장치는?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "다음 용어 정의 중 '소호(消弧) 작용'이란?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "Li-Po(Lithium polymer) 축전지의 정격 전압 구성으로 옳은 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "다음 중 전기동차의 '부하 측'에 해당하지 않는 것은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "지하 구간에서 사용하는 '강체 가선 방식'의 구조적 특징은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "회로 차단기(NFB)가 일반 스위치와 다른 점은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "계전기(Relay)가 '여자(Excitation)' 되었다는 것의 의미는?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "계전기의 연동(접점) 중 'b접점'의 동작 특성은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "접촉기(Contactor)에서 보조 접점의 역할은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "전자밸브(Magnetic Valve)의 동작 원리로 옳은 것은?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "공기압축기 조압기(CMG)의 동작 압력 범위는?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "회로도 기호 중 다이오드(Diode)의 기능은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "다음 중 '기계적인 보조 접점'을 사용하여 회로를 구성하는 기기는?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "푸시버튼 스위치(Push Button Switch)의 특징은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "회로도에서 계전기 코일과 연동을 분리하여 표시할 때, 상호 동작 관계를 이해하기 위해 사용하는 표기법은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "전기동차의 103선은 어떤 전원이 공급되는 선인가?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "TC차 배전반의 HCRN의 명칭은?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "특고압 회로의 범위로 옳은 것은?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_1_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.1 저압 제어 일반",
     "question": "다음 중 제어 공기압력이 일정 압력 이하로 될 경우 제어회로를 차단하는 압력 스위치(PS)의 종류가 아닌 것은?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "103선 가압을 위해 제동 핸들을 투입하면 가장 먼저 여자 되는 접촉기는?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "Pan이 상승한 후 제동 핸들을 취거(Key Off)하여도 103선 가압이 유지되는 이유는?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "운전실 선택 회로에서 전부 운전실을 선택하게 하는 계전기는?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "전부 운전실 HCR 회로가 직렬로 4개의 계전기(HCR1~4)를 사용하는 주된 이유는?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "ACM(보조공기압축기)의 정격 구동 시간은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "ACM 구동 회로에서 ACMK가 MCB 투입 전까지만 여자 되도록 하는 연동 접점은?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "ACM 구동 시 ACMLp(구동지시등)가 소등되는 조건은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "ACM 안전밸브의 역할은?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "ACM에서 생성된 압축공기는 감압밸브를 거쳐 몇 kg/㎠로 변환되는가?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "기동 완료(MCB 투입) 후, M'차의 특고압 기기(Pan, MCB 등) 동작용 공기는 어디서 공급되는가?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "후부 운전실에서 제동 핸들을 투입해도 운전실 선택이 안 되는 이유는?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "기동 전 축전지 전압계가 현시하는 전압은?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "전부 운전실 HCR2 계전기가 고장 나서 여자 되지 않을 때 나타나는 현상은?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "Pan 상승, MCB 투입, ADCg 절환 등에 필요한 제어 공기 압력은?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "제동 핸들을 투입했을 때 동작하는 제동 제어기 접점(S2)의 역할은?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "103선 가압 회로에서 104선에 전원이 공급되면 여자 되는 것은?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "ACM 구동 중 운전실에서 손을 떼어도 ACMK가 계속 여자 상태를 유지하는 이유는?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "ACMCS를 눌렀을 때 ACM이 구동되지 않는 원인으로 가장 적절한 것은?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "기동 완료 후 SIV에서 출력되는 DC 100V가 공급되는 회로 차단기는?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "train_2_2_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2.2 기동 준비",
     "question": "ACMG 고장으로 공기 압력이 계속 상승할 때 기기를 보호하는 장치는?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_EMU_CH2 = [
   },
    {
     "id": "license_core_3_2_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 설명 중 틀린 것은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 설명 중 틀린 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_031",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 회로차단기 및 스위치 중 TC차에 설치된 것으로 아닌 것은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_032",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "손가락 끝으로 레버를 직선으로 왕복운동을 시켜 전기회로의 개폐조작을 하는 제어용 스위치는?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_033",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "전자력을 이용하여 제어공기를 실린더에 공급하거나 실린더에 공급한 공기를 배출시키는 작용을 하는 기기로 맞는 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_034",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "보조공기압축기의 조압기(ACM-G)는 보조공기압축기가 몇 ㎏/㎠ 이하에서 구동회로를 연결하여 압축 작용을 하는가?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_035",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "공기압축기의 조압기(CM-G)가 CM이 몇 ㎏/㎠ 이하에서 압축작용을 하는가?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_036",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "결선도 작성 기준에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_037",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 103선 가압에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_038",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 운전실 선택에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_039",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "제동핸들 투입으로 103선 가압과 운전실 선택완료 후 현상으로 틀린 것은?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_040",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 ACM에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1234,7 +1234,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_041",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "ACM구동회로에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1249,7 +1249,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_042",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "ACM 공기가 충기되면 동작되는 기기로 틀린 것은?",
     "options": [
@@ -1264,7 +1264,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_043",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 팬터그래프에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1279,7 +1279,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_044",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 팬터그래프(Pan)의 제원으로 틀린 것은?",
     "options": [
@@ -1294,7 +1294,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_045",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 Pan상승 조건으로 틀린 것은?",
     "options": [
@@ -1309,7 +1309,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_046",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 EPanDS에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1324,7 +1324,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_047",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 계기용 변압기(PT)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1339,7 +1339,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_048",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 ADCg에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1354,7 +1354,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_049",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 주차단기(MCB)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1369,7 +1369,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_050",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 주차단기(MCB) 투입 전 확인사항으로 틀린 것은?",
     "options": [
@@ -1384,7 +1384,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_051",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 MCB 투입순서로 가장 옳은 것은?",
     "options": [
@@ -1399,7 +1399,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_052",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "MCBOS 취급을 제외하고 전체 M'차량의 MCBR1, MCBR2를 무여자 시켜, 전체 MCB를 차단하는 방법으로 틀린 것은?",
     "options": [
@@ -1414,7 +1414,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_053",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 AC구간에서 MCB 사고차단의 조건으로 틀린 것은?",
     "options": [
@@ -1429,7 +1429,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_054",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "MCBTR이 0.5초 동안 차단회로를 개방하는 시기로 틀린 것은?",
     "options": [
@@ -1444,7 +1444,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_055",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 주변압기(MT)의 정격으로 틀린 설명은?",
     "options": [
@@ -1459,7 +1459,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_056",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 주변압기(MT)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1474,7 +1474,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_057",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 필터리액터(FL)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1489,7 +1489,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_058",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 보조제어함(AC Control Box)에 있는 계전기로 틀린 것은?",
     "options": [
@@ -1504,7 +1504,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_059",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 AC구간 전차선 전원 공급순서로 맞는 것은?",
     "options": [
@@ -1519,7 +1519,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_060",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음은 전차선 전원 공급 순서 이해에 대한 설명으로 적절하지 않은 것은?",
     "options": [
@@ -1534,7 +1534,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_061",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 비상접지스위치(EGS)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1549,7 +1549,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_062",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 교류피뢰기(AC Arrester)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1564,7 +1564,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_063",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 직류피뢰기(DC Arrester)와 CT2(Current Transformer)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1579,7 +1579,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_064",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 ArrOCR이 여자될 경우 현상으로 틀린 것은?",
     "options": [
@@ -1594,7 +1594,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_065",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 주퓨즈(MFs)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1609,7 +1609,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_066",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 축전지 방전 방지회로에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1624,7 +1624,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_067",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "ADS를 AC위치로 취급 시 어느 선이 가압되는가?",
     "options": [
@@ -1639,7 +1639,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_068",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 교직절연구간의 길이로 맞는 것은?",
     "options": [
@@ -1654,7 +1654,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_069",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "전기동차가 교직절연구간을 통과할 때 기본적인 운전취급으로 틀린 설명은?",
     "options": [
@@ -1669,7 +1669,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_071",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 절연구간 검지주파수로 옳은 것은?",
     "options": [
@@ -1684,7 +1684,7 @@ var QUESTIONS_EMU_CH2 = [
   },
   {
     "id": "license_core_3_2_072",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "2장 특고압 회로",
     "question": "다음 중 ATC/ATS 절환에 대한 설명으로 틀린 것은?",
     "options": [

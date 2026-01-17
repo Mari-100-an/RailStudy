@@ -5,7 +5,7 @@ var QUESTIONS_THEORY_CH8 = [
     // 여기에 8단원 문제 추가
     {
     "id": "theory_8_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "운전 계획의 범위에 포함되지 않는 것은?",
     "options": [
@@ -20,7 +20,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "수송량을 더 정확하게 표시하기 위해 사용하는 단위로, 승차 인원에 승차 km를 곱한 것은?",
     "options": [
@@ -35,7 +35,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "수송력을 표시하는 단위로 일반적으로 사용되는 것은?",
     "options": [
@@ -50,7 +50,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "수송량이 일정할 때 열차 횟수를 구하는 식은?",
     "options": [
@@ -65,7 +65,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "화물 열차의 최저 열차 횟수는?",
     "options": [
@@ -80,7 +80,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "1일당 차량 km를 구하는 식은? (분모는 365일 기준)",
     "options": [
@@ -95,7 +95,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "편성 칸 수에 대한 설명으로 틀린 것은?",
     "options": [
@@ -110,7 +110,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "운행 편성 수를 구하는 공식으로 옳은 것은?",
     "options": [
@@ -125,7 +125,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "1일의 운용 차량 수(총 보유 차량에 대한 비율)를 나타내는 운용률(출고율)의 통상적인 범위는?",
     "options": [
@@ -140,7 +140,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차 운행 도표(Diagram)의 축 구성으로 옳은 것은?",
     "options": [
@@ -155,7 +155,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "특급 이상의 열차 운전 시간 설정 시 단선 구간에서의 표준 여유 시간(탄력 시간)은?",
     "options": [
@@ -170,7 +170,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "주로 장기적인 열차 계획이나 차량 운용 계획 등에 사용되며, 각 역의 시각을 정확하게 기입하지 않는 운행 도표는?",
     "options": [
@@ -185,7 +185,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차 밀도가 높은 수도권 운행 열차의 운행 도표로 이용되며 15초, 30초, 45초 단위를 기호화하여 기입하는 것은?",
     "options": [
@@ -200,7 +200,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "복선 구간에서 여객열차와 화물열차의 속도를 동일하게 하여 평행하게 구성함으로써 선로 용량을 최대한 활용하는 운행 도표는?",
     "options": [
@@ -215,7 +215,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "선로 용량이 한계에 도달한 선구에 속도가 상이한 다수의 열차를 운전할 때, 효율적 사용을 위해 일정한 표준 규격을 정해 놓고 설정하는 운행 도표는?",
     "options": [
@@ -230,7 +230,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "자동폐색 방식 시행 구간에서 4현시 신호 방식을 사용할 때 열차 상호 간격은 최소 몇 폐색 구간 이상 확보해야 하는가?",
     "options": [
@@ -245,7 +245,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "수송력과 수송량의 관계에서 가장 이상적인 비율은?",
     "options": [
@@ -260,7 +260,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차 운행 도표 작성의 첫째 요소로 꼽히는 것은?",
     "options": [
@@ -275,7 +275,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차 운행 도표 작성의 둘째 요소로, 운행 도표에 시간적 여유를 두는 것을 무엇이라 하는가?",
     "options": [
@@ -290,7 +290,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차 운행 도표 표기 사항에 해당하지 않는 것은?",
     "options": [
@@ -305,7 +305,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "표정 시간(도달 시간)을 구하는 공식은?",
     "options": [
@@ -320,7 +320,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차의 접속(Connection)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -335,7 +335,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "동일 선로에서 동일 방향으로 시간당 수송할 수 있는 편도 최대 승객 수로 정의되는 것은?",
     "options": [
@@ -350,7 +350,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "선로 용량을 구하는 식은?",
     "options": [
@@ -365,7 +365,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "최소 운행 간격에 대한 설명으로 옳은 것은?",
     "options": [
@@ -380,7 +380,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "임의의 선로 구간의 운전 가능한 최대 열차 횟수, 즉 물리적인 한계 용량을 의미하는 것은?",
     "options": [
@@ -395,7 +395,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차의 유효 시간대, 시설 보수 시간, 운전 취급 등을 고려하여 구한 용량으로 일반적으로 말하는 선로 용량은?",
     "options": [
@@ -410,7 +410,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차 운전을 원활히 하여 최저의 수송 원가를 갖는 1일 최대 열차 횟수를 무엇이라 하는가?",
     "options": [
@@ -425,7 +425,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "통근 열차의 경우 정차 시간(dwell time)의 구성 요소가 아닌 것은?",
     "options": [
@@ -440,7 +440,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 선로 용량을 고려한 열차 설정 원칙으로 틀린 것은?",
     "options": [
@@ -455,7 +455,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "다음 중 철도 수송량 단위를 정확하게 표시한 '연인원 km'의 계산 방식으로 옳은 것은?",
     "options": [
@@ -470,7 +470,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "수송량이 일정할 때, 열차 횟수를 결정하는 요소들의 관계로 올바른 식은?",
     "options": [
@@ -485,7 +485,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "다음 조건에서 1일당 차량 km를 구하시오. (1일 여객 수송량: 730,000 연인원km, 한 차 평균 수송 인원: 100명)",
     "options": [
@@ -500,7 +500,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "열차 횟수와 편성 칸 수(수송 단위)의 상호 관계에 대한 설명으로 옳은 것은?",
     "options": [
@@ -515,7 +515,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "편성 칸 수의 상한을 결정할 때 제한 요소가 아닌 것은?",
     "options": [
@@ -530,7 +530,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "소요 차량 수(N)를 구하는 식 8-4에서 고려되지 않는 인자는?",
     "options": [
@@ -545,7 +545,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "운행 편성 수를 구하는 식 8-5로 옳은 것은?",
     "options": [
@@ -560,7 +560,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "1일의 운용 차량 수의 총 보유 차량에 대한 비율인 '운용률(출고율)'의 통상적인 범위는?",
     "options": [
@@ -575,7 +575,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "철도 수송 능력(Railway Transit Capacity)의 정의로 옳은 것은?",
     "options": [
@@ -590,7 +590,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "선로 용량(C)을 구하는 식 8-6으로 옳은 것은?",
     "options": [
@@ -605,7 +605,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "용량 계산 시간(T)을 구하는 식 8-7에 포함되지 않는 요소는?",
     "options": [
@@ -620,7 +620,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "선로 용량을 증대시키기 위해 '최소 운행 간격'을 줄일 때 반드시 지켜야 할 물리적 한계는?",
     "options": [
@@ -635,7 +635,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "통근 열차의 경우 정차 시간(Dwell Time)을 구성하는 3대 요소가 아닌 것은?",
     "options": [
@@ -650,7 +650,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "임의의 선로 구간에서 물리적으로 운전 가능한 최대 열차 횟수를 의미하는 용량은?",
     "options": [
@@ -665,7 +665,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "일반적으로 말하는 '선로 용량'으로, 열차의 유효 시간대, 시설 보수 시간, 운전 취급 등을 고려하여 구한 용량은?",
     "options": [
@@ -680,7 +680,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "자동폐색 방식 시행 구간에서 '4현시' 신호 방식을 사용할 때, 열차 상호 간격은 최소 몇 폐색 구간 이상 확보해야 하는가?",
     "options": [
@@ -695,7 +695,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.3 선로 용량의 산정",
     "question": "폐색 구간 설정 원칙에 따라 동시에 2개 이상의 열차에 대한 운전 시각을 설정할 수 있는 예외적인 경우는?",
     "options": [
@@ -710,7 +710,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "다음 중 여객열차의 최저 열차 횟수 기준은?",
     "options": [
@@ -725,7 +725,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "평균 승차 효율을 구하는 식 8-1로 옳은 것은?",
     "options": [
@@ -740,7 +740,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_1_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.1 운전 계획",
     "question": "화물 수송량을 측정하는 기준으로 적절한 것은?",
     "options": [
@@ -755,7 +755,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "열차 운행 도표(Train Operation Diagram)의 축 구성으로 옳은 것은?",
     "options": [
@@ -770,7 +770,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "열차 운행 도표 작성 시 고려해야 할 첫째 요소로, 열차의 사명을 고려하여 수송 요청에 적합한 유효 시간대를 계획하는 것은?",
     "options": [
@@ -785,7 +785,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "특급 열차 이상의 운전 시간 설정 시, 복선 구간에서의 표준 여유 시간(탄력 시간) 비율은?",
     "options": [
@@ -800,7 +800,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "특급 열차 이상의 운전 시간 설정 시, 단선 구간에서의 표준 여유 시간(탄력 시간) 비율은?",
     "options": [
@@ -815,7 +815,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "주로 장기적인 열차 계획이나 차량 운용 계획에 사용되며, 각 역의 시각을 정확하게 기입하지 않는 운행 도표는?",
     "options": [
@@ -830,7 +830,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "열차 계획의 기본이 되며, 시각 개정 작업이나 운전 정리에 통상적으로 사용되는 운행 도표는?",
     "options": [
@@ -845,7 +845,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "열차 밀도가 높은 수도권 운행 열차 등에 이용되며 15초, 30초, 45초 단위를 기호화하여 기입하는 도표는?",
     "options": [
@@ -860,7 +860,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "완전한 네트워크 눈금으로 운행 도표를 구성하여 열차를 설정한 특수 운행 도표는?",
     "options": [
@@ -875,7 +875,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "복선 구간에서 여객 열차와 화물 열차의 속도를 동일하게 하여 선로 용량을 최대한 활용하는 운행 도표는?",
     "options": [
@@ -890,7 +890,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "선로 용량이 한계에 도달한 선구에서 효율적 사용을 위해 일정한 표준 규격을 정해 놓고 설정하는 운행 도표는?",
     "options": [
@@ -905,7 +905,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "운행 도표 작성 시 고려해야 할 사항으로 '운행 도표의 탄력성'이 의미하는 것은?",
     "options": [
@@ -920,7 +920,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "운전 시간과 정차 시간을 합한 시간으로, 시발역에서 종착역까지의 총 소요 시간을 의미하는 용어는?",
     "options": [
@@ -935,7 +935,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "열차 운행 도표에 표기되어야 할 사항이 아닌 것은?",
     "options": [
@@ -950,7 +950,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "여객 서비스의 제1조건 의무로서, 도중 역에서 고려해야 할 사항은?",
     "options": [
@@ -965,7 +965,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "운행 도표상에서 정차 시간이 계획보다 초과되었을 때, 탄력성이 없으면 발생하는 현상은?",
     "options": [
@@ -980,7 +980,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "열차 운행 도표를 작성할 때 착발 시간 결정의 우선순위가 높은 열차는?",
     "options": [
@@ -995,7 +995,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "단선 구간에서 열차 운행 도표 작성 시 필수적으로 고려해야 하는 것은?",
     "options": [
@@ -1010,7 +1010,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "운행 도표 설정 시 정차 시간의 구성 요소로 볼 수 없는 것은?",
     "options": [
@@ -1025,7 +1025,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "탄력 시간(여유 시간)을 주로 배치하는 구간으로 가장 적절한 곳은?",
     "options": [
@@ -1040,7 +1040,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "theory_8_2_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8.2 열차 운행 도표",
     "question": "열차 운행 도표에서 사선의 기울기가 완만할수록(수평에 가까울수록) 의미하는 바는?",
     "options": [
@@ -1055,7 +1055,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
    {
     "id": "driving_theory_exam_8_196",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 운전계획에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1070,7 +1070,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_197",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "여객열차에 50명이 탑승하여 40km동안 이동하였다면 수송량은?",
     "options": [
@@ -1085,7 +1085,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_198",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음은 수송량과 열차횟수의 관계에 대한 내용으로 틀린 것은?",
     "options": [
@@ -1100,7 +1100,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_199",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 틀린 공식은?",
     "options": [
@@ -1115,7 +1115,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_200",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "수요 차량 수를 구할 때 차량 1회 왕복하는 시간(T)과 관련 없는 것은?",
     "options": [
@@ -1130,7 +1130,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_201",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "부산교통공사 소속 전동열차의 왕복운전 시간이 160분, 도착지 반복시간은 8분, 운전간격이 4분일 때 운행 편성 수를 구하시오.",
     "options": [
@@ -1145,7 +1145,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_202",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "공항철도 전동열차의 차량연결 수는 8량, 차량 1회 왕복하는 시간은 160분, 열차운전 간격은 10분일 때 수요 차량 수를 구하시오.",
     "options": [
@@ -1160,7 +1160,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_203",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 열차운행도표의 가로축과 세로축으로 맞는 것은?",
     "options": [
@@ -1175,7 +1175,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_204",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 열차운행도표와 관계된 것으로 적절하지 않은 것은?",
     "options": [
@@ -1190,7 +1190,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_205",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "단선구간에서 특급열차의 운전 여유시간으로 맞는 것은?",
     "options": [
@@ -1205,7 +1205,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_206",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 열차운행도표의 종류로 틀린 것은?",
     "options": [
@@ -1220,7 +1220,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_207",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "사용목적에 따라 주로 장기적인 열차계획, 시각개정, 차량운용계획 등에 사용된다. 이 운행도표에는 각 역의 시각은 정확하게 기입하지 않으므로 열차의 운행순서를 정확하게 기입하여야 하는 도표는?",
     "options": [
@@ -1235,7 +1235,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_208",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "복선구간의 선로용량을 최대한 활용할 수 있는 수단의 열차운행도표는?",
     "options": [
@@ -1250,7 +1250,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_209",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차운행도표 작성 시 고려사항으로 틀린 것은?",
     "options": [
@@ -1265,7 +1265,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_210",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "자동폐색방식 시행구간에 열차를 설정하는 경우 열차상호간격을 확보할 때 3현시 구간에는 몇 폐색 구간 이상을 확보해야 하는가?",
     "options": [
@@ -1280,7 +1280,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_211",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "수송력과 수송량의 관계로 가장 맞는 것은?",
     "options": [
@@ -1295,7 +1295,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_212",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 열차운행도표 작성의 첫째 요소로 맞는 것은?",
     "options": [
@@ -1310,7 +1310,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_213",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 열차운행도표 표기사항으로 틀린 것은?",
     "options": [
@@ -1325,7 +1325,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_214",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차운행도표 설정에 대한 내용으로 틀린 것은?",
     "options": [
@@ -1340,7 +1340,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_215",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "다음 중 철도수송능력의 구성요소로 맞는 것은?",
     "options": [
@@ -1355,7 +1355,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_216",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "용량계산 시간을 산정할 때 옳은 것은?",
     "options": [
@@ -1370,7 +1370,7 @@ var QUESTIONS_THEORY_CH8 = [
   },
   {
     "id": "driving_theory_exam_8_217",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "8장 운전계획",
     "question": "열차의 유효 시간대, 시설보수시간, 운전취급 등을 고려하여 구한 선로용량은?",
     "options": [

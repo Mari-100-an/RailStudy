@@ -4,7 +4,7 @@
 var QUESTIONS_THEORY_CH4 = [
     {
     "id": "theory_4_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "차륜답면과 레일의 접촉면과의 최대 마찰력에 대한 항력을 철도에서는 무엇이라 하는가?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "점착력(Fa)을 구하는 공식으로 옳은 것은? (μ: 점착 계수, Wa: 점착 중량)",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "다음 중 레일 위 조건에 따른 점착 계수가 가장 낮은 경우는?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "운전 속도 종별에 따라 소정의 속도 이상으로 안전하게 운행할 수 있는 동력차의 최대 견인 능력을 무엇이라 하는가?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "견인정수 산정 시 전기동차(EMU)의 승차율 계산 기준은?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "견인정수 산정 시 '화차'의 기준 중량은 얼마인가?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "전기동차의 관성 계수 값으로 옳은 것은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "감속장치의 감속비(치차비, Gr)를 구하는 식으로 옳은 것은? (ZA: 소치차 기어 수, ZB: 대치차 기어 수)",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "견인력 분류 중 '지시 견인력(F1)'에 대한 설명으로 옳은 것은?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "동륜주 견인력(F2)은 전기동차의 속도(v)와 어떤 관계인가?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "전기동차가 공전(Slip)을 하지 않고 주행하기 위한 점착력(Fa)과 동륜주견인력(Fw)의 관계식은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "전기동차의 운전 속도(v)를 구하는 식은? (D: 동륜지름, n: 전동기회전수, Gr: 감속비)",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "마찰 제동 방식 중 차축에 디스크를 설치하고 제동 패드를 압착하여 제동하는 방식은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "발전된 전기를 가공 전차선을 통해 변전소 또는 다른 차량에 회귀시키는 제동 방식은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "제동 시 차륜이 활주(Skid)하지 않기 위한 제동력(Bf)과 점착력(Af)의 관계는?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "보일의 법칙을 설명한 것으로 옳은 것은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "제륜자의 온도가 높을 때 마찰계수가 작아지는 현상과 관련이 깊은 것은?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "제동통 유효 압력(Pe)을 구하는 식은? (Ps: 공급된 압력)",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "기초 제동장치의 제동 배율(Bm) 공식으로 옳은 것은? (F1: 제동 원력, F2: 제륜자 미는 힘)",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "전차(全車) 제동률(Br)을 구하는 식은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "활주 방지 장치가 활주라고 판단하는 조건에 해당하지 않는 것은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "제동 변을 제동 위치로 이동시킨 때부터 제동력이 유효하게 작용하기 직전까지 열차가 이동한 거리는?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "전기동차의 '비상제동' 시 공주시간의 표준값은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "제동 거리(sb)의 구성 요소로 옳은 것은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "기울기가 없는 직선 선로에서 제동 거리(sb)를 구하는 식은? (v:속도, t:공주시간, a:감속도)",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "제동 거리의 특징에 대한 설명으로 틀린 것은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "제동 시간에 대한 설명으로 옳은 것은?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "제동통 피스톤 행정을 변화시키는 요소가 아닌 것은?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "전기동차의 '상용제동' 시 기울기가 없는 평탄선(0‰)에서의 제동 감속도 기준은?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전 성능",
     "question": "회생제동의 특성으로 틀린 것은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "점착 계수(μ)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "레일 위 조건에 따른 점착 계수가 가장 낮은 경우는?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "기름기가 부착된 상태의 레일 점착 계수는 맑은 날씨와 비교하여 대략 어느 정도인가?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "점착력을 향상시키기 위한 방안으로 틀린 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "견인정수 산정 시 전기동차의 표준 운전 시·분의 기본 구분 단위는?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "견인정수 산정을 위한 환산 량수법에서 '화차'의 기준 중량은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "전기동차의 견인정수 산정 시 승차율은 몇 %로 계산하는가?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "고속 열차(KTX)의 관성 계수 값은?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "디젤전기기관차(전기기관차 포함)에만 적용되며 견인전동기 단시간 정격범위 내에서 견인할 수 있는 가장 낮은 속도를 의미하는 것은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_1_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.1 점착력과 점착 계수",
     "question": "환산 량수(x)를 구하는 공식은? (Wv: 차량중량, Wb: 기준중량)",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "전동기의 회전력을 차륜에 전달하는 감속장치의 감속비(Gr) 공식은? (ZA: 소치차 기어 수, ZB: 대치차 기어 수)",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "감속장치 내 피니언 기어의 반지름(rA)과 종동 기어의 반지름(rB)을 이용한 감속비(Gr) 식은?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "전기동차의 운전 속도(v)는 감속비(Gr)와 어떤 관계인가?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "지시 견인력(F1)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "동륜주 견인력(F2)을 산출할 때 지시 견인력에서 고려하는 요소는?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "유효 견인력(F3)을 구하는 식은? (F2: 동륜주견인력, Rr: 톤당 주행저항, WE: 정비중량)",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "점착 견인력(F4)의 정의는?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "전기동차가 공전(Slip)을 하지 않고 주행하기 위한 점착력(Fa)과 동륜주견인력(Fw)의 관계는?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "동륜주 견인력(F2)은 전기동차의 속도(v)와 어떤 관계인가? (전기적 측면 산출 시)",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.2 견인력",
     "question": "운전 속도(v) 계산 식에서 상수 0.1885는 어떻게 도출되었는가?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "제동 시 전동기를 발전기로 작동시켜 발생된 전기를 가공 전차선으로 회귀시키는 제동 방식은?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "발전 제동에 대한 설명으로 옳은 것은?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "제동장치의 구비 조건으로 틀린 것은?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "보일의 법칙을 설명하는 공식은?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "지렛대의 원리 공식 F1 L1 = F2 L2 에서 작은 힘(F1)으로 큰 힘(F2)을 얻기 위한 조건은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "제동 시 제륜자의 온도가 상승하면 마찰계수는 어떻게 변하는가?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "고속 주행 시 저속 시와 비교한 마찰계수의 특성은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "제동통 유효 압력(Pe)을 구하는 공식에서 0.4kgf/cm²를 빼주는 이유는?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "인버터 제어(HRDA) 전기동차 M차의 제동 배율(Bm) 값은?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "전차(全車) 제동률(Br)을 구하는 식은?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_3_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.3 제동장치",
     "question": "활주 방지 장치의 활주 검지 조건에 해당하지 않는 것은?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_4_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.4 제동력",
     "question": "차륜이 활주하지 않고 최대의 제동력을 얻을 수 있는 조건 식은? (l:점착계수, f:마찰계수, F:제륜자힘, W:축중량)",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_4_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.4 제동력",
     "question": "디스크 제동력(Bd) 공식에서 (r / R) 항이 의미하는 것은? (r:디스크반지름, R:차륜반지름)",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_5_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.5 제동 거리",
     "question": "제동 거리는 무엇과 무엇의 합으로 나타내는가?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_5_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.5 제동 거리",
     "question": "공주 거리(s1)를 구하는 식은? (v: 제동초속도[km/h], t1: 공주시간)",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_5_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.5 제동 거리",
     "question": "전기동차의 '비상제동' 시 공주시간의 표준값은?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_5_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.5 제동 거리",
     "question": "제동 거리(sb)는 열차 중량(W)과 어떤 관계인가?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_5_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.5 제동 거리",
     "question": "제동 거리(sb)는 톤당 열차 저항(rr+cr+tr±gr)과 어떤 관계인가?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_5_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.5 제동 거리",
     "question": "평탄선(0‰)에서 전기동차의 제동 감속도 기준은?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "theory_4_5_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4.5 제동 거리",
     "question": "제동 시간(t)은 제동 초속도(v)와 어떤 관계인가?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_074",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음은 운전성능에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_075",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 점착력에 영향을 주는 요소로 틀린 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_077",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "전기동차의 점착계수 식으로 가장 올바른 것은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_078",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "레일 위 조건에 따른 점착계수의 크기로 틀린 것은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_079",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "견인정수의 운전속도 종별 중 그 선의 전구간의 적용이 불가능하나 부분적으로 적용할 수 있는 속도는?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_082",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 환산량수법의 식으로 맞는 것은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_083",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 차량중량 기준에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_084",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "철도차량별 관성계수로 가장 올바른 것은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_087",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 전기동차의 견인력(지시견인력 기준)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_088",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "감속장치의 구동기어 피치원 지름은 350mm, 기어 수는 10개일 때 원주피치를 구하시오. (단, 원주율값은 2로 한다)",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_093",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "감속장치 내의 치차의 전달 손실, 축과 베어링의 마찰손실 등을 고려하지 않은 전기동차 구조에 따른 견인력으로, 에너지 전달 효율이 100%인 이상적인 견인력은?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_094",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 동륜주견인력에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1234,7 +1234,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_096",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "견인력과 점착력 관계에 대한 설명이다. 틀린 것은?",
     "options": [
@@ -1249,7 +1249,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_097",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "동륜지름 860mm, 전동기회전수 800rpm, 감속비 4일 때 전동열차의 운전속도를 구하시오.",
     "options": [
@@ -1264,7 +1264,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_099",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "정지되어 있는 차량이 자연히 구르거나 굴려 움직이는 것을 방지하며 저속으로 주행하는 차량을 정지시킬 목적으로 사용하는 제동장치는?",
     "options": [
@@ -1279,7 +1279,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_100",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "제동 시 전동기가 폐회로 상태가 되었을 때의 관성력을 이용하여 회전자를 돌려 전동기를 발전기 기능으로 작동하게 하고, 발생된 전기에너지를 가공 전차선으로 회귀시키는 제동방식은?",
     "options": [
@@ -1294,7 +1294,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_103",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 보일의 법칙에 대한 설명으로 가장 맞는 것은?",
     "options": [
@@ -1309,7 +1309,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_108",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "제동통 유효 압력에 대한 설명이다. 빈칸에 들어갈 수치로 맞는 것은? (리턴스프링 탄성력 환산: [ ], 마찰력 환산: [ ], 공급 필요 압력: [ ])",
     "options": [
@@ -1324,7 +1324,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_110",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 제동배율의 비로 가장 알맞은 것은? (F1:제동원력, F2:제륜자 미는 힘, Lp:피스톤 이동거리, Ls:제륜자 이동거리)",
     "options": [
@@ -1339,7 +1339,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_111",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "전기동차 인버터 제어 시 M차의 제동배율이 [ 4.47 ]이라면 제륜자에 작용하는 힘은 제동원력의 [ A ]배가 되고, 제륜자 이동거리는 피스톤 이동거리의 [ B ]배 만큼 이동했다는 뜻이다.",
     "options": [
@@ -1354,7 +1354,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_119",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 활주라고 판정하는 조건으로 가장 알맞은 것은? (B: 차륜 감속도, L3: 감속도 한계값)",
     "options": [
@@ -1369,7 +1369,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_120",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "활주하지 않으며 최대의 제동력을 얻을 수 있는 식으로 가장 맞는 것은? (l:점착계수, f:마찰계수, F:제륜자힘, W:축중량)",
     "options": [
@@ -1384,7 +1384,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_123",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "동력운전 시 전동기에서 발생되는 [   ], [   ] 등은 제동력으로 작용하기 때문에 견인력과 제동력을 비교해 보면 [    ]이 15-30% 크다. 빈칸에 알맞은 말은?",
     "options": [
@@ -1399,7 +1399,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_125",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음은 회생제동에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1414,7 +1414,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_126",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "72km/h로 달리고 있는 전동열차가 제동을 취급하여 공주시간이 1.5초일 경우 공주거리는?",
     "options": [
@@ -1429,7 +1429,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_127",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "10칸의 전동열차가 비상제동 취급과 상용제동 취급 시 각 공주시간으로 맞는 것은?",
     "options": [
@@ -1444,7 +1444,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_129",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 제동거리의 특징으로 틀린 것은?",
     "options": [
@@ -1459,7 +1459,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_131",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "180km/h로 달리고 있던 전동열차가 비상제동을 체결하였다면 제동거리는? (단, 부하기준)",
     "options": [
@@ -1474,7 +1474,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_133",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "다음 중 제동시간의 특징으로 가장 올바른 설명은?",
     "options": [
@@ -1489,7 +1489,7 @@ var QUESTIONS_THEORY_CH4 = [
   },
   {
     "id": "driving_theory_exam_4_086",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "4장 운전성능",
     "question": "일반열차의 객차무게가 74ton일 때 승객이 80명 탑승하였다면 이 열차의 환산량수는? (단, 객차 기준중량은 40ton, 승객 1인당 75kg 적용)",
     "options": [

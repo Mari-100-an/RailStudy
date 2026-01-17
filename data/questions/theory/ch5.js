@@ -4,7 +4,7 @@
 var QUESTIONS_THEORY_CH5 = [
     {
     "id": "theory_5_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "열차 저항의 분류 중 '차량으로 인한 저항'에 해당하는 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "운전 이론에서 정의하는 '출발 저항'의 속도 범위는?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "롤러 축수를 가진 열차 전체에 작용하는 출발 저항의 대략적인 크기는?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "톤당 주행저항(rr) 공식에 포함되지 않는 항은? (rr = a + bv + cv²/W)",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "주행 저항의 특성에 대한 설명으로 옳은 것은?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "차축과 축수 간의 마찰저항(R)은 차륜 지름(D)과 어떤 관계인가?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "공기저항의 특성에 대한 설명으로 틀린 것은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "공기저항 크기 비교 시, 중간 차량의 공기저항을 1로 볼 때 '열차 맨 앞쪽'의 저항 크기는?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "톤당 기울기 저항(gr)을 구하는 공식으로 옳은 것은? (i: 천분율 기울기)",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "선로 기울기가 10‰인 경우 톤당 작용하는 기울기 저항의 크기는?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "곡선 저항이 발생하는 원인으로 적절하지 않은 것은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "곡선 저항(cr)을 구하는 약산식으로 옳은 것은? (R: 곡선 반지름)",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "곡선 저항의 크기를 기울기 저항으로 환산하여 실제 기울기에 합산한 것을 무엇이라 하는가?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "오르막 기울기가 30‰인 곳에 곡선 반지름 700m인 선로를 만들 경우, 정시 운전을 위해 조정해야 할 실제 기울기는?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "터널 저항에 대한 설명으로 틀린 것은?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "터널 저항에 의해 발생하는 현상으로, 터널 출구에서 충격성 소음과 진동을 일으키는 것은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "가속도 저항이 발생하는 주된 이유는?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "전기동차의 회전 부분 관성 중량 비율(관성 계수)로 인정되는 값은?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "관성 계수(0.09)를 고려한 전기동차의 가속도 저항(Fi) 공식은? (A: km/h/s)",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "뉴턴의 운동 제2법칙에 따른 힘(F), 질량(m), 가속도(a)의 관계식은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "차륜이 레일 위를 주행할 때 발생하는 저항 중 미끄럼 마찰저항보다 훨씬 작은 저항은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "주행저항 식 RR = aW + bvW + cv² 에서 a항이 의미하는 것은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "열차 중량 1ton당 작용하는 힘(Ft)을 가속도(a)로 표현한 식은? (단위: N/ton)",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "100km/h 전후에서 단선 터널 내의 터널 저항 증가량은 약 얼마인가?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "보정 기울기 저항 계산 시 내리막 기울기 구간의 경우 실제 기울기(i)의 부호는?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "열차 중량이 100톤인 열차가 10‰의 오르막을 오를 때 전체 기울기 저항(GR)은? (N 단위)",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "다음 중 주행저항이 커지는 조건이 아닌 것은?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "곡선 저항 식 cr = 700 / R 의 단위는?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "차륜과 차축 간의 마찰력(F)을 구하는 식은? (l: 마찰계수, W: 차축 작용 중량)",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차 저항",
     "question": "등가속도 A(km/h/s)에서 속도 v1에서 v2로 가속할 때의 이동 거리(s) 공식은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
    {
     "id": "theory_5_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "운전이론에서 정의하는 '출발 저항'의 속도 범위는?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "다음 중 출발 저항의 크기에 영향을 주는 요소가 아닌 것은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "정차 시 차량 사이가 '압축 상태'가 되면 출발 시 저항은 어떻게 되는가?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "롤러 축수를 가진 열차 전체에 작용하는 출발 저항의 크기는 대략 얼마인가?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "단위 중량당 출발 저항을 sr, 열차 중량을 W라 할 때 열차 전체의 출발 저항(SR) 공식은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "주행저항(Running Resistance)의 정의로 옳은 것은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "주행저항 식 rr = a + bv + cv²/W 에서 'a'항이 의미하는 것은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "차축과 축수 간의 마찰저항(R)은 차륜 지름(D)과 어떤 관계인가?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "차축과 축수 간의 마찰계수(l)에 영향을 주는 요소가 아닌 것은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "차축에 작용하는 중량(W)이 커지면 차축과 축수 간의 마찰계수(l)는 어떻게 변하는가?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "톤당 주행저항은 '공차' 상태와 '영차' 상태 중 어느 쪽이 더 큰가?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "주행저항은 계절별로 어떤 차이가 발생하는가?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "차륜이 레일 위를 주행할 때 발생하는 '구름 마찰저항'과 '미끄럼 마찰저항'의 크기 비교로 옳은 것은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "공기저항 중 속도의 제곱에 비례하지 않는 것은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "주행하는 열차의 중량은 공기저항에 어떤 영향을 미치는가?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "공기저항에 영향을 미치는 요소가 아닌 것은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "속도 영역에 따른 공기저항 크기 비율로, 중간 차량을 1로 할 때 열차 맨 앞쪽의 비율은?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "속도 영역에 따른 공기저항 크기 비율로, 중간 차량을 1로 할 때 열차 맨 뒤쪽의 비율은?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "주행저항 특성상 편성 칸 수가 많으면 주행저항(톤당 저항 기준)은 어떻게 평가되는가?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_1_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "터널 단면 형상이 단선 터널일 때와 복선 터널일 때 주행저항 비교로 옳은 것은?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "톤당 기울기 저항(gr)을 구하는 공식은? (i: 천분율 기울기)",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "기울기가 10‰인 오르막 선로를 주행할 때 톤당 작용하는 기울기 저항의 크기는?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "10‰의 내리막(하구배)을 주행할 때 톤당 기울기 저항은 어떤 힘으로 작용하는가?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "열차가 여러 가지 기울기가 있는 구간을 주행할 때 전체 기울기 저항(GRt)을 구하는 방식은?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "곡선 저항이 발생하는 원인으로 틀린 것은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "모리슨 식 등을 고려하여 산출한 톤당 곡선저항(cr) 공식은? (R: 곡선 반지름)",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "곡선 저항 식(cr = 700/R)에서 결과값의 단위는?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "곡선 선로에서 발생한 저항의 크기를 기울기 저항으로 환산하여 실제 기울기와 합한 것을 무엇이라 하는가?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "오르막 기울기(i) 구간 내 곡선 선로(r)가 있는 경우 보정 기울기 저항(eg) 공식은?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "내리막 기울기(i) 구간 내 곡선 선로(r)가 있는 경우 보정 기울기 저항(eg) 공식은?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "오르막 기울기 30‰인 곳에 곡선 반지름 700m인 선로를 만들 경우, 정시 운전을 위해 조정해야 할 실제 기울기는?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "터널 저항의 증가 요인으로 언급되지 않은 것은?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "100km/h 전후에서 단선 터널 내의 터널 저항 증가량은 약 얼마인가?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "열차가 고속으로 터널 진입 시 압축파가 형성되어 터널 출구에서 폭발음과 진동을 일으키는 현상은?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "가속도 저항이 발생하는 이유는?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "전기동차의 회전 부분 관성 중량 비율(관성 계수)은 정하중의 약 몇 %로 인정하는가?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "관성 계수(0.09)를 고려한 전기동차의 가속력(Fi) 공식은? (A: km/h/s 단위)",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "물체 A는 직선운동만, 물체 B는 직선운동과 회전운동을 함께 할 때, 같은 힘을 주면 어떤 결과가 나타나는가?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "가속력(F)과 속도(v1, v2)를 이용해 이동 거리(s)를 구하는 식은? (단위: kgf/ton 사용 시)",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "theory_5_2_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5.1 열차 저항의 분류",
     "question": "질량 1kg의 물체에 작용하는 지구의 인력(중력)은 몇 N인가?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_134",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "지상설비에 기울기 등이 있는 경우 열차가 그 구간을 주행할 때마다 일시적으로 주행을 방해받게 됨으로 발생되는 저항으로 아닌 것은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_136",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "다음 중 출발저항에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_137",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "다음 중 전체 주행저항의 식으로 가장 맞는 것은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_139",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "주행저항에 영향을 주는 요소들의 특성으로 틀린 설명은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_141",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "다음 중 차륜과 차축 간의 마찰저항에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_145",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "중간 차량의 공기저항을 1로 하면 전면저항은 약 몇 배인가?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_146",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "직선 선로의 기울기가 15‰인 경우 톤당 작용하는 기울기 저항은?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_150",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "15‰의 오르막 기울기 구간 내 350m의 곡선 선로가 있는 경우 보정기울기 값은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_154",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "다음 중 단선 터널저항의 크기로 맞는 것은? (단, 100km/h 전후 기준)",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_155",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "가속도 저항은 정하중에 대한 회전 부분의 관성중량의 비율로 표시할 때 틀린 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_156",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "60km/h로 운행하고 있는 열차가 500m를 지나서 80km/h의 속도로 올렸다면, 관성계수를 고려한 전동열차의 가속력을 구하시오.",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_THEORY_CH5 = [
   },
   {
     "id": "driving_theory_exam_5_157_2",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "5장 열차저항",
     "question": "75km/h로 달리던 열차가 10초 후 65km/h가 되었다면 관성계수를 고려한 열차의 가속력을 구하시오. (단, 이 열차의 관성계수는 9%이다.)",
     "options": [

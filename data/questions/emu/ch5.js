@@ -4,7 +4,7 @@
 var QUESTIONS_EMU_CH5 = [
     {
     "id": "train_5_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "저압보조 장치에서 사용하는 전원의 종류로 표준교재에 명시되지 않은 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "보조변압기(AT)의 입력 전압과 출력 전압의 구성으로 옳은 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "충전장치의 충전용 변압기(BCT) 2차 측 출력 전압은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "신형 전기동차에 사용되는 리튬-폴리머(Li-Po) 축전지의 정격 전압은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "출입문이 닫힐 때 기계적인 충격을 방지하기 위해 도어엔진 내부에 설치된 장치는?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "정거장에 정차 시 출입문 열림 조건이 되는 정지 속도 계전기(ZVR)의 동작 속도 기준은?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "출입문등(DILP) 점등 및 동력 운전 회로가 구성되기 위한 전체 출입문의 닫힘 조건(간격)은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "출입문 차측등(DLP)이 점등되는 출입문의 열림 간격 기준은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "출입문 반감 스위치(DHS)를 취급했을 때 열리지 않는 출입문의 개수(1량 기준)는?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "ATC 장치 고장 등으로 ZVR이 여자 되지 않아 출입문을 열 수 없을 때 취급하는 스위치는?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "전조등(HLP)의 우측 등과 좌측 등의 사용 전원으로 옳은 것은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "객실등 제어회로에서 연장급전 시 부하를 반감하기 위해 동작하여 LPK2를 차단하는 계전기는?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "방공등(ADLP)과 차내 방송장치를 비상 전원(축전지)으로 사용하기 위해 취급하는 스위치는?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "운전실 표시등 중 MCB ON등이 점등되기 위한 조건은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "AC 구간에서 전차선 전원이 공급되고 있음을 나타내는 운전실 표시등과 관련 계전기는?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "고장 표시등 중 'ACOCRR'이 여자 되었을 때 점등되는 등은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "주변압기(MT) 냉각 계통 고장으로 MTAR이 여자 되어 복귀되지 않을 때 VCOS를 취급하면 점등되는 등은?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "운전실 SqLp등(TEST 스위치등)이 점등되었다면 어떤 상태인가?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "TGIS 모니터 장치의 입력 전압 변동 범위(DC 기준)는?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "TGIS 모니터의 고장 화면 우선순위가 가장 높은 것은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "TGIS 모니터에서 '압력'을 선택했을 때 표시되는 정보가 아닌 것은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "열차무선 장치(TRCP)에서 비상 통화를 위해 사용하는 채널은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "전부 운전실 무전기 고장 시 후부 운전실 무전기를 원격으로 사용하기 위해 누르는 스위치는?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "출입문 재개폐 스위치(DROS)를 취급했을 때 재개방되는 출입문의 조건은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "출입문 기계장치(Door Engine)에서 출입문이 닫힐 때 공기가 공급되는 실린더 방향은?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "전동차 운행 중 축전지 전압이 약 74V 이하로 방전되었을 때 예상되는 문제점은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "출입문등(DILP) 점등 회로에서 동력 운전 회로를 구성하는(11선 가압) 계전기는?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "1개 이상의 출입문이 닫히지 않아 동력 운전이 불가능할 때 사용하는 비연동 스위치는?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "다음 중 TC차 배전반에 있는 출입문 제어용 차단기(NFB)는?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조 장치",
     "question": "운전실 열차 시간표등(TTLp)의 사용 전원은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_EMU_CH5 = [
   },
      {
     "id": "train_5_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.1 저압보조 장치 개요",
     "question": "각 차량에 설치된 보조변압기(AT)의 역할로 옳은 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.1 저압보조 장치 개요",
     "question": "운행 중 ATN(보조변압기 차단기)이 차단되었을 때 해당 차량에서 발생하는 현상은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_2_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.2 충전장치",
     "question": "충전장치 회로의 흐름 순서로 옳은 것은?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_2_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.2 충전장치",
     "question": "BCN(충전용 NFB)이 차단되었을 때의 현상과 조치에 대한 설명으로 옳은 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_2_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.2 충전장치",
     "question": "신형 전기동차에 적용된 리튬-폴리머(Li-Po) 축전지의 정격 전압 구성은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 도어엔진(Door Engine)에서 출입문이 닫힐 때 쿠션 작용이 일어나는 원리는?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "정상 운행 시 출입문 열림 회로를 구성하기 위한 필수 조건(계전기)은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 열림 스위치(DOS) 취급 시 자기유지 회로를 구성하여 손을 떼도 열림 상태를 유지하게 하는 계전기는?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문등(DILP)이 점등되고 동력 운전이 가능해지는 출입문 닫힘 간격 기준은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 차측등(DLP)이 점등되는 조건(출입문 간격)은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 재개폐 스위치(DROS)를 취급했을 때 모든 출입문이 아닌 특정 출입문만 다시 열리는 이유는?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 반감 스위치(DHS)를 취급했을 때 열리지 않게 되는 출입문은?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "전체 출입문 닫힘 불능 시, DOS 고장과 DCS 고장을 구분하는 방법으로 CrSN을 OFF 했을 때 닫히고 다시 ON 했을 때 열린다면 원인은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "이례 상황에서 제동핸들을 취거했을 때 출입문 열림 회로를 구성해 주는 접점은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "후부 TC차의 DILPN(출입문등 차단기)이 차단되었을 때 나타나는 현상은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "ATC 장치 고장으로 ZVR이 여자 되지 않아 출입문을 열 수 없을 때 조치 방법은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 비연동 스위치(DIRS)를 취급해야 하는 상황은?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "1량의 DMVN(출입문 전자밸브 차단기)이 차단되었을 때 해당 차량의 출입문 상태는?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문이 열려 있는 상태에서 DHS(반감 스위치)를 취급하면 반감 작용이 되지 않는 이유는?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "TC차의 DLPN(출입문 차측등 차단기)이 차단되었을 때 TGIS 모니터의 표시 상태는?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "승무원 출입문 개폐 스위치 차단기(CrSN)의 위치는?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 닫힘 회로에서 141선이 차단되면 DrR(출입문 계전기)이 소자 되어 발생하는 동작은?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "전차선 정전으로 축전지 전압이 약 74V 이하로 방전되었을 때 가장 우려되는 사항은?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 비연동 운전 시 DIR1 계전기의 상태는?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_3_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.3 출입문 장치",
     "question": "출입문 기계장치에 압축공기를 공급하는 감압밸브(PRV)의 조정 압력은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "전조등(HLP)의 우측 등과 좌측 등의 전원 구성으로 옳은 것은?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "객실등 제어회로에서 LPCS를 ON 취급했을 때 여자 되는 접촉기는?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "SIV 고장으로 연장 급전 시 객실등의 상태는?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "방공등(ADLP)을 비상 전원(축전지)으로 점등하기 위해 취급하는 스위치와 관련 계전기는?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "운전실 MCB OFF등이 점등되는 조건은?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "Power CRT등(Power등)이 점등되기 위한 조건은?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "M'차에서 ACOCRR이 여자 되어 Fault등이 점등되는 원인은?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "주변압기 냉각 고장으로 MTAR이 여자 되어 VCOS를 취급했을 때 점등되는 등은?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "운전실 SqLp등(TEST 스위치등)이 점등되었을 때 MCB가 투입되지 않는 이유는?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_4_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.4 점등 장치",
     "question": "C/I 고장(CIFR 여자)으로 VCOS를 취급했을 때 점등되는 등과 동작하는 계전기는?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_5_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.5 TGIS",
     "question": "TGIS 모니터 장치의 입력 전압 변동 허용 범위(DC)는?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_5_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.5 TGIS",
     "question": "TGIS 고장 화면 표시의 최우선 순위는?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_5_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.5 TGIS",
     "question": "TGIS '압력' 화면에서 확인할 수 있는 정보는?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_5_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.5 TGIS",
     "question": "TGIS 모니터의 데이터 전송 속도는?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_6_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.6 기타 저압장치",
     "question": "이례 상황 시 열차무선 장치(TRCP)에서 비상 통화를 위해 사용하는 채널은?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_6_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.6 기타 저압장치",
     "question": "비상 상황 시 EOCN(비상 운전 스위치)을 ON 취급했을 때 사용할 수 있는 기기는?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_6_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.6 기타 저압장치",
     "question": "전부 운전실 무전기 고장 시 후부 운전실 무전기를 원격으로 사용하기 위한 스위치는?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_6_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.6 기타 저압장치",
     "question": "행선표시 장치(TrIFLp)와 열차번호 표시 장치(TrNLp)의 사용 전원은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_6_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.6 기타 저압장치",
     "question": "운전실 제상장치(Def)의 사용 전원은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "train_5_6_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5.6 기타 저압장치",
     "question": "방송장치(PA)의 주요 구성품이 아닌 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_129",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 보조변압기(AT)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_130",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 충전장치의 기기 구성에 적합하지 않은 것은?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_131",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 신형 축전지의 사양으로 적절하지 않은 것은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_132",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 출입문 기계장치에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_133",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 출입문스위치에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_134",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 CrS(DOS)로 출입문을 개방할 수 있는 조건으로 틀린 것은?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_135",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "전체 출입문 닫힘불능 시 DOS와 DROS 고장 구분하는 방법으로 틀린 설명은?",
     "options": [
@@ -1234,7 +1234,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_136",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "전동열차가 승강장에서 장시간 정차 시 객실 내의 동절기 보온 및 냉방유지를 위해 취급하는 기기로 맞는 것은?",
     "options": [
@@ -1249,7 +1249,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_137",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "전동열차가 운행 중 출입문 고장 등으로 1개 이상의 출입문이 닫히지 않을 때 사용하는 기기는?",
     "options": [
@@ -1264,7 +1264,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_138",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 출입문 관련 차단기 및 스위치로 틀린 설명은?",
     "options": [
@@ -1279,7 +1279,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_139",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 전조등에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1294,7 +1294,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_140",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 운전실등에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1309,7 +1309,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_141",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 후부 PLPN 차단 시 현상으로 틀린 것은?",
     "options": [
@@ -1324,7 +1324,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_142",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 VCOS 취급해야 하는 경우로 틀린 것은?",
     "options": [
@@ -1339,7 +1339,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_143",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 Test 스위치 취급 후 현상으로 틀린 것은?",
     "options": [
@@ -1354,7 +1354,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_144",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 TC차 TGIS 중앙장치에 대한 설명으로 적절하지 않은 것은?",
     "options": [
@@ -1369,7 +1369,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_145",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 TGIS 모니터장치 제원에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1384,7 +1384,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_146",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "TGIS 모니터 화면별 기능으로 틀린 것은?",
     "options": [
@@ -1399,7 +1399,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_147",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 운전상태 화면에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1414,7 +1414,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_148",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 고장화면의 우선순위로 틀린 것은?",
     "options": [
@@ -1429,7 +1429,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_149",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "방송장치의 취급에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1444,7 +1444,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_150",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "열차무선장치(TRCP)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1459,7 +1459,7 @@ var QUESTIONS_EMU_CH5 = [
   },
   {
     "id": "license_core_3_5_151",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "5장 저압보조장치",
     "question": "다음 중 AC 220V전원으로 사용되는 장치로 틀린 것은?",
     "options": [

@@ -4,7 +4,7 @@
 var QUESTIONS_EMU_CH6 = [
     {
     "id": "train_6_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "철도차량 제동 장치가 갖추어야 할 조건으로 교재에 명시되지 않은 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동력이 차륜과 레일 사이의 점착력보다 클 때 차륜이 레일 위를 미끄러지는 현상을 무엇이라 하는가?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 HRDA 제동 장치의 특징이 아닌 것은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "승객의 하중 변화를 감지하여 일정한 가속도와 감속도를 유지하도록 제어하는 기능은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "자동공기 제동 장치에서 제동관의 압력 변화에 따라 제동, 완해, 유지의 3가지 작용을 하는 밸브는?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "주공기통(MR)의 용적은 얼마인가?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동제어기 핸들의 위치 구성으로 옳은 것은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "상용제동 시 EOD에서 보내는 전류 신호 값(mA)과 EPV 2차 측 공기압력(kgf/㎠)의 관계가 옳은 것은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동 중 전기제동력이 제동패턴보다 부족할 때 공기 제동으로 보충하는 제어 방식은?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "비상제동 Loop 회로를 구성하는 선 번호는?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "중계밸브(Relay Valve)의 역할로 옳은 것은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "높이조정밸브의 기능으로 옳은 것은?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "보안제동 공기통의 압력을 일정하게 조정하여 공급하는 밸브와 설정 압력은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동 불완해 발생 시 강제완해 스위치(CpRS)를 취급했을 때 작동하는 밸브는?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "공전전환기(PEC)가 감지하는 기능이 아닌 것은?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "주차제동이 체결되는 방식은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "압력제어밸브(PCV)는 어떤 장치의 제어를 받아 작동하는가?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "상용제동 시 제동패턴을 생성하는 장치는?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "D 복식역지밸브가 선택하는 압력은?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "비상제동 루프 회로가 끊어져 비상제동이 체결되는 경우가 아닌 것은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "공전전환기(PEC)가 제동 불완해를 감지하는 기준 시간은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동충격제어(Jerk Control) 기능의 한계 값은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "구원운전 시 고장 열차와 구원 열차 간에 연결하는 점퍼선의 명칭은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "비상제동 체결 후 완해를 위해 제동핸들을 어느 위치에 놓아야 하는가?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동제어기 S1 접점의 기능은?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "주차제동이 자동으로 체결되는 조건은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "응하중밸브에서 공차 시 최소한 보장하는 응하중 성능의 비율은?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동중계장치(BTU)의 역할로 옳은 것은?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동통 압력의 히스테리시스(Hysteresis) 보정이란?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "구원운전 시 12점퍼를 연결했을 때 상호 연결되지 않는 선은? (RSOS 취급 전)",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_EMU_CH6 = [
   },
    {
     "id": "train_6_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.1 개요",
     "question": "다음 중 철도차량 제동 장치의 용어 설명으로 틀린 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.1 개요",
     "question": "자동공기 제동 장치의 '삼동변(제어밸브)'이 수행하는 3가지 작용이 아닌 것은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_1_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.2 HRDA 제동 장치",
     "question": "HRDA 제동 장치의 '일괄교차(Cross Blending) 제어'에 대한 설명으로 옳은 것은?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "주공기통(MR)의 용적과 설치 위치로 옳은 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "높이조정밸브(Leveling Valve)의 작용에 대한 설명으로 틀린 것은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "제동제어기 전기접점 중 'S1' 접점의 기능은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "제동제어기 핸들 위치에 따른 상용제동 제어선(27, 28, 29선) 가압 상태 중 '상용 7단'일 때의 조합은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "응하중밸브(VLV)의 '공차보증' 기능이란?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "전공변환밸브(EPV)에 500mA의 전류 신호가 입력되었을 때 출력되는 2차 측 공기압력 기준은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "중계밸브(Relay Valve)의 작동 원리로 옳은 것은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "Y절환밸브가 강제완해 작용을 할 때 공기의 흐름은?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "D 복식역지밸브(Double Check Valve)가 선택하여 중계밸브로 보내는 압력은?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "공전전환기(PEC)가 '제동 불완해'를 감지하는 기준 시간은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "공전전환기(PEC)가 '제동력 부족'을 감지했을 때 취하는 조치는?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "EOD의 기능 중 '히스테리시스(Hysteresis) 보정'이란?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "EOD의 '인쇼트(In-Shot) 기능'의 목적은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "압력제어밸브(PCV)는 어떤 장치의 신호를 받아 작동하는가?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "제동중계장치(BTU)의 주된 역할은?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_2_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.3 기능과 작용",
     "question": "보안제동 공기통의 압력을 일정하게 조정(4kgf/㎠)하여 공급하는 밸브는?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "상용제동 시 전기제동 제어회로에서 'EBR1(a)' 접점의 역할은?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "비상제동 Loop 회로를 구성하는 배선 번호는?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "비상제동 체결 시 공기의 흐름 순서로 옳은 것은?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "비상제동이 체결되었을 때 이를 완해하기 위해 제동핸들을 놓아야 하는 위치는?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "보안제동 작용 시 압축공기의 흐름 경로는?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "주차제동이 체결되는 원리는?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "주차제동이 체결되어 완해가 불가능할 때 수동으로 완해하는 방법은?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "강제완해 스위치(CpRS)를 취급했을 때 작동하는 밸브와 동작은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_4_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.4 제동 작용",
     "question": "제동 불완해 발생 시 운전실 모니터에 현시되는 조건은?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_5_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.5 구원운전",
     "question": "구원운전 시 고장 열차와 구원 열차 간에 연결하는 점퍼선의 명칭은?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_5_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.5 구원운전",
     "question": "구원운전 시 12점퍼만 연결해도(RSOS 취급 전) 상호 연결되는 선 번호가 아닌 것은?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_5_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.5 구원운전",
     "question": "구원운전스위치(RSOS)의 위치 중 존재하지 않는 것은?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_5_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.5 구원운전",
     "question": "고장 열차의 배터리 방전 시 구원 열차의 전원을 공급받기 위해 연결하는 점퍼는?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_5_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.5 구원운전",
     "question": "구원운전 시 비상제동 연장 계전기(BEER)가 여자 되어 수행하는 역할은?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_5_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.5 구원운전",
     "question": "공기제어식 차량(저항차/디젤)이 전기제어식 차량(VVVF)을 구원할 때, 비상제동 신호 변환 방법은?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_5_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.5 구원운전",
     "question": "구원운전 시 양쪽 차량의 운전실에서 '보안제동'을 취급하면 어떻게 되는가?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "train_6_5_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6.5 구원운전",
     "question": "밀착연결기에 연결된 4개의 공기관이 아닌 것은?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_EMU_CH6 = [
   },
    {
     "id": "license_core_3_6_152",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 기본 용어에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_153",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 철도차량 제동장치의 구비조건으로 틀린 것은?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_154",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 접촉식 제동체결방식으로 틀린 것은?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_155",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "레버나 지렛대 등을 이용하여 체인이나 스프링의 탄성 등으로 제동력을 얻는 방법을 사용하는 제동으로 맞는 것은?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_156",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "전기력에 의해 작용하는 전자밸브를 각 차량에 설치하여 제동밸브의 조작에 따라 직통제어기의 전기제어 신호에 의해서 각 전자밸브를 작동시켜 제동작용을 하는 시스템은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_157",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 직통공기 제동장치의 장단점으로 틀린 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_158",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "열차 또는 차량이 정차하면 자동으로 제동이 체결되어 정지상태에서 움직이지 않도록 하는 제동방식으로 맞는 것은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_159",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 공기제동장치의 작용원리에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_160",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "중계밸브의 세가지 작용 중 초크를 통해 고무막판 상부에도 압축공기 압력이 형성되는 작용으로 적절한 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_161",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 HRDA형 제동장치의 기능으로 틀린 설명은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_162",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 상용제동선 번호로 보기 힘든 것은?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_163",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 비상제동루프 회로선 번호로 맞는 것은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_164",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 보안장치에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_165",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 주차제동의 설치위치로 맞는 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_166",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 공기통의 용적이 큰 순서로 나열된 것은?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_167",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 공기통에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1234,7 +1234,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_168",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 높이조정밸브에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1249,7 +1249,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_169",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동제어기 전기접점 중 운전실 선택회로(HCR, TCR 여자) 구성기능을 담당하는 접점으로 맞는 것은?",
     "options": [
@@ -1264,7 +1264,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_170",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 제동제어기 접점별 기능의 설명으로 틀린 것은?",
     "options": [
@@ -1279,7 +1279,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_171",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "상용제동 시 27선의 전기신호가 동작되는 제동취급단으로 맞는 것은?",
     "options": [
@@ -1294,7 +1294,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_172",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동핸들 6단 취급 시 가압되는 상용제동 가압선으로 맞는 것은?",
     "options": [
@@ -1309,7 +1309,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_173",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 제동제어장치(EOD)의 주요 기능으로 틀린 것은?",
     "options": [
@@ -1324,7 +1324,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_174",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 제동제어장치(EOD)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1339,7 +1339,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_175",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 전공변환밸브 작용 중 배기밸브가 올라가서 공급밸브와 맞닿아 배기구는 막히면서 더 올라가므로 공급밸브가 열리게 되는데 해당되는 것은?",
     "options": [
@@ -1354,7 +1354,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_176",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 응하중밸브의 구조로 틀린 것은?",
     "options": [
@@ -1369,7 +1369,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_177",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "고무밸브를 사이에 두고 상용제동 시 EPV에서 형성된 제어공기와 비상제동시 EBV에서 형성된 제어공기가 양면에 작용하도록 관련된 밸브는 무엇인가?",
     "options": [
@@ -1384,7 +1384,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_178",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 Y절환밸브에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1399,7 +1399,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_179",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음은 압력조정밸브에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1414,7 +1414,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_180",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 압력조정밸브의 구성으로 틀린 것은?",
     "options": [
@@ -1429,7 +1429,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_181",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 공전전환기(PEC)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1444,7 +1444,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_182",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "차축에서 오는 속도신호를 분석하여 활주를 감지할 때 감지요소로 틀린 것은?",
     "options": [
@@ -1459,7 +1459,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_183",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 압력제어밸브(PCV)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1474,7 +1474,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_184",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "D복식역지밸브와 같이 역지밸브의 몸체 좌우 양측으로 압축공기를 받을 수 있도록 되어 있고, 어느 쪽이든 한쪽의 통로가 열리면 다른 쪽은 닫히는 구조로 되어있는 것은?",
     "options": [
@@ -1489,7 +1489,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_185",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "제동중계장치를 구성하고 있는 주요 장치에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1504,7 +1504,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_186",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 HRDA형 제동장치의 상용제동에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1519,7 +1519,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_187",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "EOD의 전기신호값의 크기에 따라 2차 측 공기압력을 결정할 때 맞는 것은?",
     "options": [
@@ -1534,7 +1534,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_188",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 비상제동이 작동되는 경우로 틀린 것은?",
     "options": [
@@ -1549,7 +1549,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_189",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 절연구간 검지계전기로 맞는 것은?",
     "options": [
@@ -1564,7 +1564,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_190",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 EBCOS의 취급시기로 틀린 것은?",
     "options": [
@@ -1579,7 +1579,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_191",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 주차제동 압력스위치의 설정 압력으로 맞는 것은?",
     "options": [
@@ -1594,7 +1594,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_192",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 구원운전스위치(RSOS)에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1609,7 +1609,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_193",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 12점퍼선 연결 시 RSOS를 취급하지 않아도 인통되는 선이 아닌 것은?",
     "options": [
@@ -1624,7 +1624,7 @@ var QUESTIONS_EMU_CH6 = [
   },
   {
     "id": "license_core_3_6_194",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "6장 제동장치",
     "question": "다음 중 12점퍼선의 기능으로 틀린 것은?",
     "options": [

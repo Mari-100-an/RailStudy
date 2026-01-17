@@ -4,7 +4,7 @@
 var QUESTIONS_THEORY_CH2 = [
     {
     "id": "theory_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "국제단위계(SI)의 7개 기본단위에 포함되지 않는 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 크기만 있고 방향이 없는 스칼라(Scalar)량에 해당하는 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "공학 단위인 1kgf를 뉴턴(N) 단위로 환산했을 때 옳은 값은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "프랑스식 마력인 1PS는 몇 Watt(W)인가?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "열차의 이동 거리를 정차 시간을 포함한 총 걸린 시간으로 나눈 속도는?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "가속도의 단위 환산 중 1m/s/s는 몇 km/h/s에 해당하는가?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "액체에 가해진 압력은 그 크기가 변하지 않고 액체의 모든 부분에 같은 크기로 전달된다는 원리는?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "등속 원운동을 하는 물체에서 원의 중심 방향으로 작용하는 힘은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "마찰계수의 크기 비교가 올바른 것은?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "뉴턴의 운동 제2법칙(가속도의 법칙)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "운동에너지(Ek)를 구하는 공식으로 옳은 것은? (m:질량, v:속도)",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "전기 저항(R)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "전류(I), 전압(V), 저항(R)의 관계를 나타낸 옴의 법칙 공식은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "플레밍의 왼손 법칙에서 엄지손가락이 가리키는 방향은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "유도 기전력은 자기력선속의 변화를 방해하려는 방향으로 발생한다는 법칙은?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "비중(Specific Gravity)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "뉴턴의 제3법칙인 '작용 반작용의 법칙'의 특징이 아닌 것은?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "훅의 법칙에서 스프링의 탄성력(Fs)을 구하는 식은? (k:스프링상수, x:늘어난 길이)",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "물체에 힘을 가했을 때 운동량의 변화량과 같은 물리량은?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "전력이 행한 일의 총량을 의미하는 전력량의 단위는?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "줄의 법칙에서 발열량(Q)을 구하는 공식으로 옳은 것은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "저항 R1, R2, R3가 병렬로 연결되었을 때 합성저항 R을 구하는 식은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "회전하는 물체가 회전 상태를 유지하려는 성질을 나타내는 물리량은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "진동 가속도 1gb는 몇 cm/s²인가?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "힘의 모멘트 또는 토크(Torque)를 구하는 공식은? (F:힘, r:거리)",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "접촉하고 있는 두 면 사이에 상대적인 움직임이 있을 때 이를 방해하는 마찰력은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "단위 시간당 행한 일로 정의되는 일률(P)의 공식으로 틀린 것은?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "관측자가 본 물체의 속도로, 관측자의 운동 상태에 따라 달라 보이는 속도는?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "도체에 전류가 흐를 때 발생하는 자기장의 방향을 알 수 있는 법칙은?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "SI 접두어 중 10의 9승(10^9)을 나타내는 것은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "국제단위계(SI)의 기본단위 중 '물질의 양'을 나타내는 단위와 기호는?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "다음 중 MKS 단위계에 해당하는 기본단위의 조합은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "공학 단위에서 힘 1kgf를 뉴턴(N)으로 환산한 값은?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "일(에너지)의 단위 환산 중 1J(Joule)과 같은 값은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "영국식 마력인 1Hp는 몇 Watt인가?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "압력 단위 중 1bar를 kgf/cm²로 환산한 값은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "속도 단위 환산에서 1m/s는 시속 몇 km인가?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "SI 10진 접두어 중 10의 12승(10^12)을 나타내는 것은?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "다음 중 크기와 방향을 모두 갖는 벡터(Vector)량에 해당하는 것은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "속력(Speed)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "속도(Velocity)를 구하는 공식으로 옳은 것은?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "열차의 이동 거리를 '운전 시간과 도중 정차한 시간'을 합한 총 시간으로 나눈 속도는?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "각 역 정차 열차의 경우 표정속도는 최고 속도의 대략 어느 정도인가?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "속도 Va로 운동하는 관측자가 속도 Vb로 운동하는 물체 B를 보았을 때의 상대속도(Vab) 식은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "가속도의 정의로 옳은 것은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "진동 가속도(gb) 1gb는 몇 cm/s²에 해당하는가?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "어떤 물질의 질량과 같은 부피를 가진 4℃ 물의 질량과의 비율을 무엇이라 하는가?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "1기압(1atm)의 크기로 틀린 것은?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "파스칼의 원리에 대한 설명으로 옳은 것은?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_1_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.1 단위와 물리량",
     "question": "절대압력을 구하는 공식으로 옳은 것은? (단, 계기 압력 기준)",
     "options": [
@@ -755,7 +755,7 @@ var QUESTIONS_THEORY_CH2 = [
 
   {
     "id": "theory_2_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "등가속도 직선운동 방정식에서 나중 속도(v2)를 구하는 식은? (v1:처음속도, a:가속도, t:시간)",
     "options": [
@@ -770,7 +770,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "등속원운동에서 물체가 원둘레를 1회전 하는 데 걸린 시간을 무엇이라 하는가?",
     "options": [
@@ -785,7 +785,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "등속원운동에서 각속도(ω)와 주기(T)의 관계식으로 옳은 것은?",
     "options": [
@@ -800,7 +800,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "힘의 3요소에 해당하지 않는 것은?",
     "options": [
@@ -815,7 +815,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "중력가속도(g)의 평균적인 크기는?",
     "options": [
@@ -830,7 +830,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "달라질 수 없는 물체 고유의 양을 무엇이라 하는가?",
     "options": [
@@ -845,7 +845,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "등속원운동을 하는 물체에서 원의 중심 방향으로 작용하는 힘은?",
     "options": [
@@ -860,7 +860,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "구심력(Fg)을 구하는 공식으로 옳은 것은? (m:질량, v:속도, r:반지름)",
     "options": [
@@ -875,7 +875,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "가속도 운동을 하는 시스템 속의 물체가 시스템의 운동 방향과 반대 방향으로 받는 가상의 힘은?",
     "options": [
@@ -890,7 +890,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "관성력(Fi)의 공식은? (m:질량, a:시스템 가속도)",
     "options": [
@@ -905,7 +905,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "물체에 힘을 가하여도 움직이지 않고 정지하고 있는 동안 작용하는 마찰력은?",
     "options": [
@@ -920,7 +920,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "최대정지마찰력(Fm)의 특성으로 틀린 것은?",
     "options": [
@@ -935,7 +935,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "일반적으로 마찰계수의 크기가 가장 작은 것은?",
     "options": [
@@ -950,7 +950,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "스프링의 탄성력(Fs)을 구하는 훅의 법칙 공식은? (k:스프링상수, x:늘어난 길이)",
     "options": [
@@ -965,7 +965,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "어떤 힘 F에 의해 물체가 힘의 방향으로 S만큼 이동하였을 때 행한 일(W)은?",
     "options": [
@@ -980,7 +980,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "운동량(P)을 정의하는 공식은?",
     "options": [
@@ -995,7 +995,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "충격량(I)은 어떤 물리량의 변화량과 같은가?",
     "options": [
@@ -1010,7 +1010,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "힘의 모멘트 또는 토크(Torque)를 구하는 식은? (F:힘, r:거리)",
     "options": [
@@ -1025,7 +1025,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "뉴턴의 운동 제1법칙은 무엇인가?",
     "options": [
@@ -1040,7 +1040,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_2_2_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2.2 운동과 힘",
     "question": "작용 반작용의 법칙(제3법칙)의 특징이 아닌 것은?",
     "options": [
@@ -1055,7 +1055,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 국제단위계의 기본단위로 적절하지 않은 것은?",
     "options": [
@@ -1070,7 +1070,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "1kgf와 같은 단위로 틀린 것은?",
     "options": [
@@ -1085,7 +1085,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 일률의 단위로 아닌 것은?",
     "options": [
@@ -1100,7 +1100,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "SI 10진 접두어의 크기가 큰 순서대로 나열된 것은?",
     "options": [
@@ -1115,7 +1115,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "빠르기만 있는 스칼라량으로 맞는 것은?",
     "options": [
@@ -1130,7 +1130,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "동대구역에서 대전역까지의 거리가 120km이다. 이 구간을 운행하는 열차의 운전시간은 47분, 정차 시분이 3분이라면 이 때 표정속도를 구하시오.",
     "options": [
@@ -1145,7 +1145,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 표정속도 향상 방안으로 틀린 것은?",
     "options": [
@@ -1160,7 +1160,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "A~B역간 운행 중이었던 전동열차가 40km/h로 달리다가 20초 뒤에 60km/h가 되었다면 이 때 가속도를 구하시오.",
     "options": [
@@ -1175,7 +1175,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "주행하는 전동열차에 작용한 가속도가 0.2gb일 때 진동가속도의 크기는?",
     "options": [
@@ -1190,7 +1190,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 밀도에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1205,7 +1205,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "압력의 단위 중 1bar와 같은 것으로 틀린 것은?",
     "options": [
@@ -1220,7 +1220,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "밀폐된 용기 내부에 있는 단면적 100mm²의 작은 피스톤에 20N의 힘을 가했더니 단면적 300mm²의 큰 피스톤이 위로 올라갔다면 이때 들어올리는 힘은 몇 N인가?",
     "options": [
@@ -1235,7 +1235,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "등속원운동 시 주기의 표현으로 가장 알맞은 것은?",
     "options": [
@@ -1250,7 +1250,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 힘의 3요소에 해당하지 않은 것은?",
     "options": [
@@ -1265,7 +1265,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 구심력의 특징으로 틀린 것은?",
     "options": [
@@ -1280,7 +1280,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 정지마찰력의 특징으로 틀린 것은?",
     "options": [
@@ -1295,7 +1295,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_033",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "마찰계수의 크기가 높은 것부터 작은 순으로 나열한 것은?",
     "options": [
@@ -1310,7 +1310,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_036",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "뉴턴의 운동법칙 중 힘과 가속도와 관련된 법칙은?",
     "options": [
@@ -1325,7 +1325,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_038",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "무게가 1,200kg인 열차가 시속 72km/h로 운행하고 있다. 운동에너지를 구하시오.",
     "options": [
@@ -1340,7 +1340,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_043",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "다음 중 옴의 법칙에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1355,7 +1355,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_046",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "1kWh는 몇 J인가?",
     "options": [
@@ -1370,7 +1370,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_050",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "자기장의 변화에 의해 도체에 기전력이 발생하는 현상과 관련된 법칙은?",
     "options": [
@@ -1385,7 +1385,7 @@ var QUESTIONS_THEORY_CH2 = [
   },
   {
     "id": "theory_exam_2_051",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "2장 기초공학이론",
     "question": "플레밍의 왼손법칙과 관련된 도체의 전자력(F)으로 가장 올바른 것은? (B : 자속밀도, L : 도체의 길이, I : 전류, v : 회전자의 속도 R : 저항)",
     "options": [

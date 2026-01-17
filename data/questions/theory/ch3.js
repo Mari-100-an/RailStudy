@@ -4,7 +4,7 @@
 var QUESTIONS_THEORY_CH3 = [
     {
     "id": "theory_3_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "전기기기의 분류 중 '정지기'에 해당하는 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 특징에 대한 설명으로 틀린 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "자기장 속에서 전류가 흐르는 도체가 받는 힘(전자력)의 방향을 설명하는 법칙은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 회전자에서 발생되는 힘(F)을 구하는 식은? (B:자기장, I:전류, L:도체의 유효 길이)",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 역기전력(Ec)을 구하는 식으로 옳은 것은? (Vt:단자전압, Ir:회전자전류, Rr:회전자저항)",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기에서 전류의 방향을 바꾸어 한쪽 방향으로 계속 회전하게 하는 작용은?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 구조 중 계자(field magnet)의 역할은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 브러시 재질로 일반적으로 사용되며, 양호한 정류를 위해 저항이 큰 것은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "계자권선과 회전자 권선이 전원에 '직렬'로 연결된 직류전동기는?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류직권전동기의 토크(T)는 회전자 전류(Ir)가 작을 때 전류와 어떤 관계인가?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류직권전동기가 무부하 상태가 지속될 때 발생하는 현상은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류직권전동기의 속도 제어 방식 중 '정 토크' 특성을 가지나 효율이 좋지 않은 방식은?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "변압기의 원리를 설명하는 법칙으로 옳은 것은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "변압기의 변압비(V1/V2)와 같은 값을 갖는 것은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "변압기의 '정격 용량'에 대한 정의로 옳은 것은?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "유도전동기에서 도체가 자기장과 직각 방향으로 운동할 때 유도기전력(E)의 크기는? (B:자기력선속 밀도, l:도체 유효 길이, v:회전속도)",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "3상 유도전동기의 고정자에 3상 전류를 공급했을 때 발생하는 것은?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "유도전동기 동력 운전 시 회전자의 회전속도와 회전자계 속도의 차이를 나타내는 용어는?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "유도전동기의 슬립(s)이 1일 때의 상태는?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "유도전동기의 동기속도(Nn)를 구하는 공식은? (fivn: 전원 주파수, p: 극수)",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_021",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "유도전동기가 회생제동 상태가 될 때 슬립(s)의 부호는?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_022",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "유도전동기의 토크(T)는 전원 전압(Vm)과 주파수(fivn)의 비와 어떤 관계인가?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_023",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "인버터 전기동차의 '정 토크 영역(저속)' 제어 방식은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_024",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "인버터 전기동차의 '정 전력 영역(중속)'에서는 어떤 값을 조절하여 토크 감소를 억제하는가?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_025",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "유도전동기의 회전자 종류 두 가지는?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_026",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "변압기 구조 중 자기회로를 구성하며 맴돌이전류 손실을 줄이기 위해 성층하는 부분은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_027",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 회전 방향을 제어하기 쉬운 특성과 직선적인 시동 회전력을 이용하는 대표적인 전동기는?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_028",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "유도전동기에서 '슬립 주파수(frs)'를 구하는 식은?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_029",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "단상 유도전동기의 종류에 해당하지 않는 것은?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_030",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기에서 전동기의 내부 회로와 외부 회로를 전기적으로 연결해 주는 부분은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "다음 중 전기에너지를 기계에너지로 변환시키는 장치는?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류발전기에 대한 설명으로 틀린 것은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류전동기의 단자전압(Vt)과 역기전력(Ec)의 크기 관계는?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "플레밍의 왼손 법칙에서 '엄지손가락'이 가리키는 방향은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "회전자에서 발생하는 힘 F를 구하는 공식은? (B:자기장, I:전류, L:도체의 유효 길이)",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류전동기의 역기전력(Ec) 공식으로 옳은 것은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류전동기의 역기전력은 회전속도(n)와 어떤 관계인가?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "대형 직류전동기의 공극(Air gap)은 대략 어느 정도인가?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "유도된 교류 기전력을 직류로 바꾸어 주는 직류기의 핵심 부품은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류전동기 브러시의 재질로 가장 일반적으로 사용되는 것은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "계자권선과 회전자 권선이 전원에 '병렬'로 연결된 전동기는?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류직권전동기의 토크(T)는 전류(Ir)가 작을 때 전류와 어떤 관계인가?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류전동기의 회전속도(n)는 한 극당 자기력선속(Φ)과 어떤 관계인가?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류직권전동기의 부하 전류가 감소할 때 나타나는 현상은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류직권전동기의 속도 제어 방식 중 '정 토크' 특성을 가지나 효율이 좋지 않은 것은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_016",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류직권전동기 속도 제어 방식 중 '정 출력' 특성을 가지는 것은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_017",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "전압 제어 방식의 특징으로 옳은 것은?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_018",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류기에서 자극(N, S)을 만드는 부분인 계자 철심은 무엇으로 자극을 형성하는가?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_019",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "복권전동기를 분류하는 두 가지 방식은?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_1_020",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.1 직류기",
     "question": "직류직권전동기가 전기동차의 전동기로 활용되는 이유로 적절한 것은?",
     "options": [
@@ -755,7 +755,7 @@ var QUESTIONS_THEORY_CH3 = [
 
   {
     "id": "theory_3_2_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.2 변압기",
     "question": "변압기를 설명하는 기본 법칙 두 가지는?",
     "options": [
@@ -770,7 +770,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_2_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.2 변압기",
     "question": "변압기의 1차 권선 수가 2차 권선 수보다 많을 때(N1 > N2) 전압의 변화는?",
     "options": [
@@ -785,7 +785,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_2_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.2 변압기",
     "question": "변압기의 1차, 2차 권선비(N1/N2), 전압비(V1/V2), 전류비(I2/I1)의 관계로 옳은 것은?",
     "options": [
@@ -800,7 +800,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_2_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.2 변압기",
     "question": "변압기의 구조 중 맴돌이전류(Eddy Current)에 의한 철 손실이 발생하는 부분은?",
     "options": [
@@ -815,7 +815,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_2_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.2 변압기",
     "question": "변압기의 정격 용량 정의에 포함되지 않는 조건은?",
     "options": [
@@ -830,7 +830,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_001",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "유도전동기에서 유도기전력(E)의 크기를 구하는 식은? (B:자속밀도, l:유효길이, v:회전속도)",
     "options": [
@@ -845,7 +845,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_002",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "3상 유도전동기의 고정자 코일을 몇 도 간격으로 배치하여 3상 전류를 공급하는가?",
     "options": [
@@ -860,7 +860,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_003",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "유도전동기의 회전자 종류 두 가지는?",
     "options": [
@@ -875,7 +875,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_004",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "유도전동기의 동기속도(Nn)를 구하는 공식은? (f:주파수, p:극수)",
     "options": [
@@ -890,7 +890,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_005",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "유도전동기의 슬립(s)을 구하는 식은? (Nn:동기속도, Nr:회전자속도)",
     "options": [
@@ -905,7 +905,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_006",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "유도전동기가 정지 상태일 때의 슬립(s) 값은?",
     "options": [
@@ -920,7 +920,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_007",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "유도전동기가 회생제동 상태일 때 슬립(s)의 범위는?",
     "options": [
@@ -935,7 +935,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_008",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "국내 과천선이나 분당선에서 사용되는 전동기의 극 수는?",
     "options": [
@@ -950,7 +950,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_009",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "유도전동기에서 전동기의 자속(Φm)은 무엇에 비례하고 무엇에 반비례하는가?",
     "options": [
@@ -965,7 +965,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_010",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "유도전동기 토크(T)는 (전압 Vm / 주파수 fivn)의 값과 어떤 관계인가?",
     "options": [
@@ -980,7 +980,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_011",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "인버터 전기동차의 '정 토크 영역(저속)' 제어 방식은?",
     "options": [
@@ -995,7 +995,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_012",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "인버터 전기동차의 '정 전력 영역(중속)'에서의 제어 특성은?",
     "options": [
@@ -1010,7 +1010,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_013",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "인버터 전기동차의 '일정 영역(고속)'에서 토크는 주파수와 어떤 관계를 가지는가?",
     "options": [
@@ -1025,7 +1025,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_014",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "회생제동 영역에서 슬립 주파수(frs)를 음(-)으로 만들기 위한 인버터 주파수(fivn) 계산식은?",
     "options": [
@@ -1040,7 +1040,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "theory_3_3_015",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3.3 유도전동기",
     "question": "단상 유도전동기의 종류에 해당하지 않는 것은?",
     "options": [
@@ -1055,7 +1055,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_052",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 직류전동기의 특징으로 틀린 설명은?",
     "options": [
@@ -1070,7 +1070,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_053",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 직류발전기에 대한 설명으로 가장 맞는 것은?",
     "options": [
@@ -1085,7 +1085,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_054",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기와 관련된 역기전력에 대한 설명으로 적절하지 않은 것은?",
     "options": [
@@ -1100,7 +1100,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_055",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 구조로 적절하지 않은 것은?",
     "options": [
@@ -1115,7 +1115,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_056",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 브러시에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1130,7 +1130,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_057",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 자여자 전동기에 해당하지 않은 것은?",
     "options": [
@@ -1145,7 +1145,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_058",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류전동기의 토크에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1160,7 +1160,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_059",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 직류직권전동기의 회전수제어 공식으로 가장 맞는 것은?",
     "options": [
@@ -1175,7 +1175,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_060",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 직류직권전동기 속도제어로 틀린 것은?",
     "options": [
@@ -1190,7 +1190,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_061",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "직류직권전동기 속도제어 중 응답성이 좋지 않아 주로 분권 및 복권전동기에 사용되는 방식은?",
     "options": [
@@ -1205,7 +1205,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_062",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 변압기의 식으로 가장 적절한 것은?",
     "options": [
@@ -1220,7 +1220,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_063",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 변압기의 정격으로 틀린 것은?",
     "options": [
@@ -1235,7 +1235,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_064",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음은 유도전동기의 그림으로 네모칸에 들어갈 명칭은?",
     "options": [
@@ -1250,7 +1250,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_065",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 유도전동기의 슬립률 식으로 가장 맞는 것은? (fnr: 회전자계 회전주파수, frr: 회전자 회전주파수)",
     "options": [
@@ -1265,7 +1265,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_066",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 유도전동기 슬립의 범위로 맞는 것은?",
     "options": [
@@ -1280,7 +1280,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_067",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "전동열차에 장착된 유도전동기의 전원 주파수가 60Hz라면, 극수가 4일 때 동기속도는?",
     "options": [
@@ -1295,7 +1295,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_068",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "전동열차에 장착된 유도전동기의 분당 회전수가 1,368rpm이라면 슬립은 5%, 회전자계의 회전주파수는 100Hz, 슬립주파수는 40Hz인 이 유도전동기의 극수는?",
     "options": [
@@ -1310,7 +1310,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_069",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 유도전동기의 회전수 제어로 적절하지 않은 것은?",
     "options": [
@@ -1325,7 +1325,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_070",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 유도전동기의 토크에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1340,7 +1340,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_071",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "인버터 전기동차의 운전모드 중 전동기에 공급되는 전압과 슬립주파수가 최대로 된 후 인버터 주파수만 높여서 속도를 올리는 영역으로 전동기에 공급되는 전압과 슬립주파수가 일정한 영역은?",
     "options": [
@@ -1355,7 +1355,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_072",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "다음 중 단상유도전동기로만 구성된 것은?",
     "options": [
@@ -1370,7 +1370,7 @@ var QUESTIONS_THEORY_CH3 = [
   },
   {
     "id": "driving_theory_exam_3_073",
-    "subject": "운전이론",
+    "subject": "theory",
     "chapter": "3장 전기기기",
     "question": "회생제동 시 제어영역 그래프에서 점선으로 표시되어 정토크 영역에서 상승하다가 정전력 영역 이후 일정해지는 요소는?",
     "options": [

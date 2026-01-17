@@ -4,7 +4,7 @@
 var QUESTIONS_EMU_CH1 = [
       {
     "id": "train_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "궤간(Gauge)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "레일(Rail)의 기능으로 교재에 명시되지 않은 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "열차자동정지장치(ATS)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "전기동차의 전력 변환 장치 중 '컨버터(Converter)'의 역할은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 'VVVF' 제어 방식의 용어 풀이로 옳은 것은?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "전기동차 차량의 종류 중 'M차'에 대한 설명으로 옳은 것은?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "10칸 편성(5M5T) 전기동차의 차량 연결 순서로 옳은 것은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "TC차(제어차)의 차체 하부에 배치된 주요 기기가 아닌 것은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "M'차의 옥상(Roof)에 배치되는 기기가 아닌 것은?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "T차(부수차) 하부에 설치되어 인접 Unit의 SIV로부터 전원을 공급받기 위해 사용되는 기기는?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "보조전원장치(SIV)가 출력하는 전원의 종류가 아닌 것은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "전기동차에 사용되는 공기압축기(CM)의 압축 공기 압력 범위는?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "전차선 전원을 감지하여 전기동차 회로를 교류 또는 직류로 절환할 수 있도록 신호를 주는 장치는?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "주퓨즈(MFs)의 주된 설치 목적은 무엇인가?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "보조공기압축기(ACM)의 용도는?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "주간제어기(Master Controller)의 핸들 구성에 포함되지 않는 것은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 제동 핸들을 투입하지 않은 상태에서도 취급할 수 있는 스위치는?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "EPanDS(비상 팬터그래프 하강 스위치)를 취급했을 때의 현상으로 옳은 것은?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "운전실 표시등 중 'MCB 양 소등'이란 무엇을 의미하는가?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "운전실 표시등 중 'UCO'등이 점등되는 경우는?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "HCSB등(고속도차단기 고장표시등)이 점등되는 조건은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "교교 절연 구간(Dead Section)의 길이는?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "교직 절연 구간의 길이는?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "절연 구간을 통과할 때의 올바른 운전 방법은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "전기동차의 기동 준비 과정에서 제동 핸들을 투입하면 가장 먼저 공급되는 전원은?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "기동 완료 후 SIV가 정상 작동하면 축전지 전압계가 지시하는 전압은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "직류(DC) 구간에서의 동력 운전 시 작동하지 않는 기기는?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "연장 급전(Extension Supply)이 필요한 상황은?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "'반감'이란 무엇을 의미하는가?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "전차선 전압의 종류에 따라 차량을 보호하기 위해 작동하는 피뢰기에 대한 설명으로 옳은 것은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_EMU_CH1 = [
   },
    {
     "id": "train_1_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.1 철도 일반",
     "question": "궤도회로의 작동 원리에 대한 설명으로 표준교재의 내용과 일치하는 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.1 철도 일반",
     "question": "다음 중 철도 신호 제어 시스템인 ATC(열차자동제어장치)의 특징으로 옳은 것은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.1 철도 일반",
     "question": "전력 변환 장치에 사용되는 반도체 소자 중, Gate 제어가 빠르고 경량화된 특징을 가진 최신 소자는?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.1 철도 일반",
     "question": "자기부상열차의 추진 방식 중 'LIM' 방식에 대한 설명으로 옳은 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.1 철도 일반",
     "question": "다음 중 전기동차의 '인버터(Inverter)'가 제어하는 요소가 아닌 것은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.1 철도 일반",
     "question": "다음 중 대차(Bogie)의 구성 요소로 명시되지 않은 것은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.3 전차선 및 절연 구간",
     "question": "교교 절연 구간(Dead Section)을 설치하는 주된 이유는?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.3 전차선 및 절연 구간",
     "question": "교직 절연 구간(AC-DC Dead Section)의 구성 길이는?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.3 전차선 및 절연 구간",
     "question": "다음 중 한국철도공사와 서울교통공사의 교직 절연 구간 위치로 옳은 것은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_1_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.3 전차선 및 절연 구간",
     "question": "전차선 전기 방식 중 직류(DC) 방식의 특징으로 교재에서 언급된 내용은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "10칸 편성(5M5T)에서 SIV(보조전원장치)가 설치된 차량 번호끼리 짝지어진 것은? (맨 앞 TC를 0호차로 가정)",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "M'차 옥상 기기 중, 교류 구간에서 낙뢰 등 외부 서지가 유입될 때 작동하여 전차선을 단전시키는 장치는?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "주퓨즈(MFs)가 용단(끊어짐)되는 원인으로 가장 적절한 것은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "계기용변압기(PT)의 역할에 대한 설명으로 옳은 것은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "운전실 제어대 스위치 중 'PanDS'와 'EPanDS'의 작동상 차이점은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "운전실 표시등 중 'HSCB등'이 점등되었다면 어떤 상황인가?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "전기동차 기동 준비 시 제동 핸들을 투입하면 축전지 전압계가 지시하는 전압은?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "연장 급전(Extension Supply) 시 '반감' 현상이란 무엇인가?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "SIV(보조전원장치)가 출력하는 전원의 종류가 아닌 것은?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "전기동차의 공기압축기(CM)가 동작하여 생성하는 MR(Main Reservoir) 압력 범위는?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.4 제어 일반",
     "question": "기동 취급 순서로 옳은 것은?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.4 제어 일반",
     "question": "직류(DC) 구간에서 동력 운전 시 전기의 흐름으로 옳은 것은?",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.4 제어 일반",
     "question": "운전실에서 'MCB 양 소등' 현상이 발생했다면 이는 무엇을 의미하는가?",
     "options": [
@@ -800,7 +800,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "EGCS(비상접지 제어 스위치)를 취급했을 때의 현상으로 옳은 것은?",
     "options": [
@@ -815,7 +815,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "운전실의 제어대 스위치 중 'VCOS'의 기능은?",
     "options": [
@@ -830,7 +830,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "다음 중 T차(부수차) 하부에 설치되어 SIV 고장 시 전원을 공급받는 데 사용되는 기기는?",
     "options": [
@@ -845,7 +845,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "주간제어기의 '기관사 안전장치(DSD)'가 작동하여 비상제동이 체결되는 시간 기준은?",
     "options": [
@@ -860,7 +860,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.4 제어 일반",
     "question": "회생제동(Regenerative Braking)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -875,7 +875,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "CPRS(강제 완해 스위치)를 취급해야 하는 상황은?",
     "options": [
@@ -890,7 +890,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "DCArr(직류피뢰기)이 작동했을 때 운전실 표시등의 변화는?",
     "options": [
@@ -905,7 +905,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "다음 중 주차제동(Parking Brake)에 대한 설명으로 옳은 것은?",
     "options": [
@@ -920,7 +920,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "운전실 표시등 중 'Door등'이 점등되는 조건은?",
     "options": [
@@ -935,7 +935,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "SIV 입력 전원 공급 계통에서 2호 M'차는 몇 호차 SIV에 전원을 공급하는가? (10량 편성 기준)",
     "options": [
@@ -950,7 +950,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "고장 차량 차단 스위치인 VCOS 취급 시 점등되는 운전실 표시등은?",
     "options": [
@@ -965,7 +965,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.4 제어 일반",
     "question": "교류(AC) 구간에서 동력 운전 시 전기의 변환 과정 순서는?",
     "options": [
@@ -980,7 +980,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "보조공기압축기(ACM)의 전원과 용도로 옳은 것은?",
     "options": [
@@ -995,7 +995,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "비상제동 스위치(EBS)와 보안제동 스위치(ScBS)의 차이점은?",
     "options": [
@@ -1010,7 +1010,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.4 제어 일반",
     "question": "기동 완료 후 SIV가 정상 작동할 때 CM(공기압축기)은 어떤 전원으로 구동되는가?",
     "options": [
@@ -1025,7 +1025,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_029",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.1 철도 일반",
     "question": "다음 중 철도차량의 '크리프(Creep)' 현상이나 '슬립'과 관련하여 인버터가 제어하는 주파수는?",
     "options": [
@@ -1040,7 +1040,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "train_1_2_030",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1.2 차량 일반",
     "question": "제동 핸들을 취거(Key Off)했을 때 103선 회로의 상태는?",
     "options": [
@@ -1055,7 +1055,7 @@ var QUESTIONS_EMU_CH1 = [
   },
     {
     "id": "license_core_3_1_001",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 철도일반 용어의 정의로 틀린 것은?",
     "options": [
@@ -1070,7 +1070,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_002",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 차량일반 용어의 정의로 틀린 것은?",
     "options": [
@@ -1085,7 +1085,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_003",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 전기일반 용어의 정의로 틀린 것은?",
     "options": [
@@ -1100,7 +1100,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_004",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 세계 최초로 철도를 개통한 국가는?",
     "options": [
@@ -1115,7 +1115,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_005",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "우리나라의 최초로 개통된 철도의 노선은 무엇인가?",
     "options": [
@@ -1130,7 +1130,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_006",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 우리나라의 최초 지하철 개통년도로 맞는 것은?",
     "options": [
@@ -1145,7 +1145,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_007",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 자기부상열차에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1160,7 +1160,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_008",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "과천선 전기동차 차량의 종류에 대한 설명으로 맞는 것은?",
     "options": [
@@ -1175,7 +1175,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_009",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 과천선 전동열차의 10칸 편성으로 맞는 것은?",
     "options": [
@@ -1190,7 +1190,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_010",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "차량별 주요기기 배치에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1205,7 +1205,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_011",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 연장급전 접촉기가 있는 차량으로 맞는 것은?",
     "options": [
@@ -1220,7 +1220,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_012",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 주요 기기에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1235,7 +1235,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_013",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 주요 기기에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1250,7 +1250,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_014",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 주간제어기의 구성으로 틀린 것은?",
     "options": [
@@ -1265,7 +1265,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_015",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 전·후진제어기의 위치로 틀린 것은?",
     "options": [
@@ -1280,7 +1280,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_016",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 설명 중 틀린 것은?",
     "options": [
@@ -1295,7 +1295,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_017",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 설명 중 틀린 것은?",
     "options": [
@@ -1310,7 +1310,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_018",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 고장차량 복귀 스위치로 맞는 것은?",
     "options": [
@@ -1325,7 +1325,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_019",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 설명 중 틀린 것은?",
     "options": [
@@ -1340,7 +1340,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_020",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 운전실 표시등에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1355,7 +1355,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_021",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 운전실 표시등에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1370,7 +1370,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_022",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 고정 편성에 따른 특성으로 틀린 것은?",
     "options": [
@@ -1385,7 +1385,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_023",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 동력 분산에 따른 특성으로 틀린 것은?",
     "options": [
@@ -1400,7 +1400,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_024",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "전동열차의 일반적인 특성으로 틀린 것은?",
     "options": [
@@ -1415,7 +1415,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_025",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 교교절연구간의 거리로 맞는 것은?",
     "options": [
@@ -1430,7 +1430,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_026",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "다음 중 전동열차의 기동 전 현상으로 틀린 것은?",
     "options": [
@@ -1445,7 +1445,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_027",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "SIV가 기동되어 출력되는 전압으로 CM을 구동할 때 적절한 전압은?",
     "options": [
@@ -1460,7 +1460,7 @@ var QUESTIONS_EMU_CH1 = [
   },
   {
     "id": "license_core_3_1_028",
-    "subject": "전기동차 구조 및 기능",
+    "subject": "emu",
     "chapter": "1장 전기동차 일반",
     "question": "교류구간에서 전동차 기동 시 전차선에서 집전된 AC 25,000V를 MT에서 교류 몇 V로 낮추는가?",
     "options": [

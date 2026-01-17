@@ -4,7 +4,7 @@
 var QUESTIONS_LAW_CH1 = [
  {
     "id": "law_vehicle_001",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음은 철도차량운전규칙의 목적이다. 빈칸에 들어갈 말은?\n'이 규칙은 「철도안전법」 [    ]의 규정에 의하여 열차의 편성, 철도차량의 운전 및 신호방식 등 철도차량의 안전운행에 관하여 필요한 사항을 정함을 목적으로 한다.'",
     "options": [
@@ -19,7 +19,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_002",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 철도차량운전규칙에서 사용하는 용어의 정의로 틀린 것은?",
     "options": [
@@ -34,7 +34,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_003",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 완급차에 설치된 것 중에서 틀린 것은?",
     "options": [
@@ -49,7 +49,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_004",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "철도안전법 등 관계법령에 따라 필요한 교육을 받아야 하는 철도종사자로 틀린 것은?",
     "options": [
@@ -64,7 +64,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_008",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 여객열차의 연결제한에 대한 설명으로 틀린 것은?",
     "options": [
@@ -79,7 +79,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_009",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "운전방향 맨 앞 차량의 운전실 외에도 열차를 운전할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -94,7 +94,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_010",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 완급차의 연결에 대한 설명으로 틀린 것은?",
     "options": [
@@ -109,7 +109,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_011",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음은 지정된 선로의 반대선로로 열차를 운행할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -124,7 +124,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_012",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "열차가 정거장외에서 정차할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -139,7 +139,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_013",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "철도사고등의 발생으로 인해 운전정리를 행할 경우 고려해야 할 요소가 아닌 것은?",
     "options": [
@@ -154,7 +154,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_014",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 열차가 퇴행운전을 할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -169,7 +169,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_015",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "열차운전을 일시중지하거나 운전속도를 제한하여야 하는 상황(재난)으로 적절하지 않은 것은?",
     "options": [
@@ -184,7 +184,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_016",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "2 이상의 열차가 동시에 정거장에 진입하거나 진출시킬 수 있는 경우로 틀린 것은?",
     "options": [
@@ -199,7 +199,7 @@ var QUESTIONS_LAW_CH1 = [
   },
    {
     "id": "law_urban_047",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "도시철도운전규칙에서 사용하는 용어의 뜻으로 틀린 것은?",
     "options": [
@@ -214,7 +214,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_048",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "도시철도운영자는 선로·전차선로 또는 운전보안장치를 신설·이설 또는 개조한 경우 그 설치상태 또는 운전체계의 점검과 종사자의 업무 숙달을 위하여 정상운전을 하기 전에 며칠 이상 시험운전을 하여야 하는가?",
     "options": [
@@ -229,7 +229,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_049",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "선로는 열차등이 도시철도운영자가 정하는 속도(이하 “[     ]속도”라 한다)로 안전하게 운전할 수 있는 상태로 보전하여야 한다. 다음 중 빈칸에 들어갈 말은?",
     "options": [
@@ -244,7 +244,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_050",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 전차선로의 점검주기로 맞는 것은?",
     "options": [
@@ -259,7 +259,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_051",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "선로 등 검사에 관한 기록을 할 때 기록사항으로 적절하지 않은 것은?",
     "options": [
@@ -274,7 +274,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_052",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 열차의 비상제동거리는 몇 미터 이하로 하여야 하는가?",
     "options": [
@@ -289,7 +289,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_053",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "무인운전 시 운전모드를 변경하여 수동운전을 하려는 경우 제일 먼저 확인해야 하는 것은?",
     "options": [
@@ -304,7 +304,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_054",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "열차의 맨 앞 차량에서 운전하지 않아도 되는 경우로 틀린 것은?",
     "options": [
@@ -319,7 +319,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_055",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 운전진로를 달리할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -334,7 +334,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_056",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 폐색구간에서 둘 이상의 열차가 동시에 운전할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -349,7 +349,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_057",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "열차가 추진운전이나 퇴행운전을 할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -364,7 +364,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_058",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 운전속도를 제한하여야 하는 경우로 틀린 것은?",
     "options": [
@@ -379,7 +379,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_059",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 대용폐색방식 시행 시 틀린 것은?",
     "options": [
@@ -394,7 +394,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_060",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 지도통신식 시행 시 틀린 설명은?",
     "options": [
@@ -409,7 +409,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_061",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 신호의 종류에 포함되지 않는 것은?",
     "options": [
@@ -424,7 +424,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_062",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 상설신호기의 주신호기로 보기 힘든 것은?",
     "options": [
@@ -439,7 +439,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_063",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 진로표시기에 대한 설명으로 맞는 것은?",
     "options": [
@@ -454,7 +454,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_064",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 지정속도를 표시해야 하는 임시신호기로 맞는 것은?",
     "options": [
@@ -469,7 +469,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_065",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "다음 중 수신호를 시행할 때 진행신호의 현시방법으로 맞는 것은?",
     "options": [
@@ -484,7 +484,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_urban_066",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "도시철도운전규칙",
     "question": "위험을 경고할 경우 적절한 전호는?",
     "options": [
@@ -499,7 +499,7 @@ var QUESTIONS_LAW_CH1 = [
   },
    {
     "id": "law_vehicle_017",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "무인운전 시의 안전확보에 대한 내용으로 틀린 것은?",
     "options": [
@@ -514,7 +514,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_018",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 열차 또는 차량의 운전제한속도를 정하여 시행할 때 틀린 것은?",
     "options": [
@@ -529,7 +529,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_019",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 입환작업계획서 작성 시 포함된 사항으로 틀린 것은?",
     "options": [
@@ -544,7 +544,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_020",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "인력입환을 시행 시 그 작업의 감시자로 맞는 것은?",
     "options": [
@@ -559,7 +559,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_021",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "열차 간의 안전을 확보할 수 있도록 하나의 방법으로 운전해야 한다. 적절하지 않은 방법은?",
     "options": [
@@ -574,7 +574,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_022",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "하나의 폐색구간에는 둘 이상의 열차를 동시에 운행할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -589,7 +589,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_023",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 상용폐색방식으로 적절하지 않은 것은?",
     "options": [
@@ -604,7 +604,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_024",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 자동폐색장치의 기능으로 적절하지 않은 것은?",
     "options": [
@@ -619,7 +619,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_027",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 통표폐색장치에 대한 설명으로 틀린 것은?",
     "options": [
@@ -634,7 +634,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_028",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 지도통신식에 대한 설명으로 틀린 것은?",
     "options": [
@@ -649,7 +649,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_029",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 지도표의 기입사항으로 틀린 것은?",
     "options": [
@@ -664,7 +664,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_030",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 열차제어장치의 종류로 틀린 것은?",
     "options": [
@@ -679,7 +679,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_032",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "시계운전에 의한 열차운전을 할 때 적절한 방법으로 틀린 것은?",
     "options": [
@@ -694,7 +694,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_034",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "특히 방호를 요하는 지점을 통과하려는 열차에 대하여 신호를 현시하는 신호기는?",
     "options": [
@@ -709,7 +709,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_035",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 종속신호기로 보기 힘든 것은?",
     "options": [
@@ -724,7 +724,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_036",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 차내신호에 대한 설명으로 틀린 것은?",
     "options": [
@@ -739,7 +739,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_037",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "엄호신호기의 5현시 감속신호의 현시방법으로 맞는 것은?",
     "options": [
@@ -754,7 +754,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_038",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 유도신호기(등열식)의 현시방법으로 맞는 것은?",
     "options": [
@@ -769,7 +769,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_041",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 신호현시의 기본원칙으로 적절하지 않은 것은? (별도의 작동이 없는 상태)",
     "options": [
@@ -784,7 +784,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_042",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 임시신호기의 종류에 대한 설명으로 틀린 것은?",
     "options": [
@@ -799,7 +799,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_vehicle_043",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도차량운전규칙",
     "question": "다음 중 수신호를 현시할 때 적절하지 않은 것은?",
     "options": [
@@ -814,7 +814,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_edu_067",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "교육훈련 시행지침",
     "question": "철도종사자 등에 관한 교육훈련 시행지침에서 사용하는 용어의 정의로 틀린 것은?",
     "options": [
@@ -829,7 +829,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_edu_068",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "교육훈련 시행지침",
     "question": "다음 중 운전면허의 교육방법에 대한 설명으로 틀린 것은?",
     "options": [
@@ -844,7 +844,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_edu_073",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "교육훈련 시행지침",
     "question": "다음 중 운전업무수행에 필요한 실무수습을 담당할 수 있는 자의 자격기준으로 틀린 것은?",
     "options": [
@@ -859,7 +859,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_report_077",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도사고 보고지침",
     "question": "다음 지침의 보고의 절차 및 방법 등의 세부사항을 정하는 것을 목적으로 할 때 관련 없는 것은?",
     "options": [
@@ -874,7 +874,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_report_080",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도사고 보고지침",
     "question": "다음 철도사고등의 즉시보고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -889,7 +889,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_report_085",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도사고 보고지침",
     "question": "고장보고는 보고자가 관련사실을 인지한 후 며칠 이내로 하여야 하는가?",
     "options": [
@@ -904,7 +904,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_report_087",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도사고 보고지침",
     "question": "다음 중 자율보고 등의 접수에 대한 설명으로 틀린 것은?",
     "options": [
@@ -919,7 +919,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "law_report_088",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "철도사고 보고지침",
     "question": "다음 중 철도안전 자율보고에 대한 설명으로 틀린 것은?",
     "options": [
@@ -934,7 +934,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_001",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "운전면허 취득을 위한 교육훈련 과정별 교육시간으로 틀린 것은?",
     "options": [
@@ -949,7 +949,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_006",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "도시철도운전규칙에서 운전보안장치로 틀린 것은?",
     "options": [
@@ -964,7 +964,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_007",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "도시철도운전규칙에서 대용폐색방식을 시행할 때 적절하지 않은 방법은?",
     "options": [
@@ -979,7 +979,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_008",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "다음 중 운전면허의 결격사유에 해당하지 않은 사람은?",
     "options": [
@@ -994,7 +994,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_009",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "철도차량운전규칙에서 임시신호기에 대한 설명 중 틀린 것은?",
     "options": [
@@ -1009,7 +1009,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_015",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "다음 중 신체검사를 받아야 하는 철도종사자로 맞는 것은?",
     "options": [
@@ -1024,7 +1024,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_016",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "다음 중 철도차량 운전면허증으로 맞는 것은?",
     "options": [
@@ -1039,7 +1039,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_017",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "철도종사자 직무교육 중 현장소속에서 교육교재, 실습장비, 안전교육 자료 등을 활용하여 실시하는 교육은 무엇인가?",
     "options": [
@@ -1054,7 +1054,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_018",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "도시철도운전규칙에서 수신호를 시행할 때 서행신호로 맞는 것은?",
     "options": [
@@ -1069,7 +1069,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_019",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "다음 중 고압가스에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1084,7 +1084,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_1_020",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 1회",
     "question": "운전면허를 갱신할 때 대통령령으로 정하는 기간(갱신 신청 기한)으로 맞는 것은?",
     "options": [
@@ -1099,7 +1099,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_001",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "다음 중 운전교육훈련기관 세부 지정기준에 대한 설명으로 틀린 것은?",
     "options": [
@@ -1114,7 +1114,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_002",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "철도차량운전규칙에서 신호현시방식에 대한 설명 중 틀린 것은?",
     "options": [
@@ -1129,7 +1129,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_003",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "도시철도운전규칙에서 전력설비에 대한 설명 중 틀린 것은?",
     "options": [
@@ -1144,7 +1144,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_009",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "도시철도운전규칙에서 직원교육에 대한 설명 중 틀린 것은?",
     "options": [
@@ -1159,7 +1159,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_016",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "철도차량운전규칙에서 운전방향 맨 앞 차량의 운전실 외에서도 운전할 수 있는 경우로 틀린 것은?",
     "options": [
@@ -1174,7 +1174,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_017",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "2020년 5월 3일 운전업무종사자 강철도씨가 열차운행 중 휴대폰을 사용하다가 적발되어 과태료를 부과하였고, 2021년 3월 28에 같은 행위가 적발되었을 경우 부과되는 과태료는?",
     "options": [
@@ -1189,7 +1189,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_018",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "다음 설명 중 틀린 것은?",
     "options": [
@@ -1204,7 +1204,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_019",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "철도보호 및 질서유지를 위한 금지행위로서, 궤도의 중심으로부터 양측으로 폭 몇 미터 이내의 장소에 철도차량의 안전 운행에 지장을 주는 물건을 방치하는 행위가 금지되는가?",
     "options": [
@@ -1219,7 +1219,7 @@ var QUESTIONS_LAW_CH1 = [
   },
   {
     "id": "mock_2_020",
-    "subject": "railway_related_law",
+    "subject": "law",
     "chapter": "실전 모의고사 2회",
     "question": "다음 철도관계기관등에 대하여 필요한 사항을 보고하게 하거나 자료의 제출을 명할 수 있는 경우로 틀린 것은?",
     "options": [
