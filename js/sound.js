@@ -130,32 +130,28 @@ const Sound = {
         const platform = this.isIOS ? 'iOS' : this.isAndroid ? 'Android' : 'Desktop';
         console.log(`🔓 Unlocking audio for ${platform}...`);
         
-        // SFX만 unlock (BGM 제외!) - BGM은 사용자가 켤 때만 재생
+        // 무음 오디오로 AudioContext만 활성화 (실제 SFX 재생 안 함)
+        // 빈 오디오 데이터로 unlock
+        const silentAudio = new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRwmHAAAAAAD/+9DEAAAIAANIAAAAgAAA0gAAABBsyZ0/4IAAAMJ7////+7u7u7v//xiYn/+sG7//8QnE4n/+7u4hMTif/6wNDP//wiETif/7u7iExOJ//rANDP/8RCIn/+7u7//////u7u5MTCY=');
+        silentAudio.volume = 0;
+        silentAudio.play().then(() => {
+            silentAudio.pause();
+            console.log(`✅ ${platform} AudioContext unlocked with silent audio`);
+        }).catch(e => {
+            console.warn(`${platform} silent unlock failed:`, e.message);
+        });
+        
+        // SFX 파일들은 preload만 (소리 재생 없이)
         const sfxKeys = ['correct', 'wrong', 'levelup', 'badge', 'combo', 'select'];
-        
-        // iOS Safari: 모든 SFX 파일을 개별적으로 unlock 필요
-        // Android: 하나만 unlock해도 대부분 OK
-        const keysToUnlock = this.isIOS 
-            ? sfxKeys 
-            : ['correct', 'select']; // Android는 최소한만
-        
-        keysToUnlock.forEach(key => {
+        sfxKeys.forEach(key => {
             try {
-                const audio = new Audio(this.audioFiles[key]);
-                audio.volume = 0; // 완전 무음
-                audio.muted = true; // 추가 보장
-                audio.play().then(() => {
-                    audio.pause();
-                    audio.currentTime = 0;
-                    audio.muted = false; // unlock 후 mute 해제
-                    audio.volume = this.volume; // 정상 볼륨으로 복원
-                    this.audioObjects[key] = audio; // unlock된 객체 저장
-                    console.log(`✅ ${platform} unlocked: ${key}`);
-                }).catch(e => {
-                    console.warn(`${platform} unlock failed for ${key}:`, e.message);
-                });
+                const audio = new Audio();
+                audio.preload = 'auto';
+                audio.src = this.audioFiles[key];
+                audio.volume = this.volume;
+                this.audioObjects[key] = audio;
             } catch (e) {
-                console.warn(`${platform} unlock error for ${key}:`, e);
+                console.warn(`${platform} preload error for ${key}:`, e);
             }
         });
         
