@@ -363,16 +363,26 @@ const Sound = {
                 });
                 
                 this.bgmAudio.addEventListener('error', (e) => {
+                    const errorCode = this.bgmAudio.error?.code;
+                    const errorMessages = {
+                        1: 'ABORTED - 로딩 중단',
+                        2: 'NETWORK - 네트워크 오류',
+                        3: 'DECODE - 디코딩 오류',
+                        4: 'NOT_SUPPORTED - 지원하지 않는 형식'
+                    };
+                    const errorMsg = errorMessages[errorCode] || '알 수 없는 오류';
+                    
                     console.error('❌ BGM 로드 에러:', {
                         error: e,
-                        code: this.bgmAudio.error?.code,
-                        message: this.bgmAudio.error?.message,
+                        code: errorCode,
+                        message: errorMsg,
                         networkState: this.bgmAudio.networkState,
                         readyState: this.bgmAudio.readyState,
-                        src: this.bgmAudio.src
+                        src: this.bgmAudio.src,
+                        currentSrc: this.bgmAudio.currentSrc
                     });
                     if (typeof showToast === 'function') {
-                        showToast('배경음악 파일을 불러올 수 없습니다', 'error');
+                        showToast(`배경음악 오류: ${errorMsg} (code: ${errorCode})`, 'error');
                     }
                 });
                 
