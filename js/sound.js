@@ -198,9 +198,9 @@ const Sound = {
     // 햅틱 피드백 토글
     toggleHaptic() {
         this.hapticEnabled = !this.hapticEnabled;
-        const settings = Storage.get(Storage.KEYS.SETTINGS) || {};
+        const settings = Storage.load(Storage.KEYS.SETTINGS) || {};
         settings.hapticEnabled = this.hapticEnabled;
-        Storage.set(Storage.KEYS.SETTINGS, settings);
+        Storage.save(Storage.KEYS.SETTINGS, settings);
         return this.hapticEnabled;
     },
 
