@@ -2,8 +2,8 @@
  * Service Worker - PWA 오프라인 지원 및 캐싱
  */
 
-const CACHE_NAME = 'railway-study-v4.6';
-const APP_VERSION = 'v4.6'; // 앱 버전
+const CACHE_NAME = 'railway-study-v4.8';
+const APP_VERSION = 'v4.8'; // 앱 버전
 
 // 필수 리소스 (실패 시 설치 중단)
 const CORE_ASSETS = [
@@ -20,7 +20,7 @@ const CORE_ASSETS = [
     '/js/sound.js'
 ];
 
-// 오디오 파일 (실패해도 설치 계속)
+// 오디오 파일 (실패해도 설치 계속) - 절대 경로와 상대 경로 둘 다 캐시
 const AUDIO_ASSETS = [
     '/audio/sfx/correct.mp3',
     '/audio/sfx/wrong.mp3',
@@ -28,7 +28,15 @@ const AUDIO_ASSETS = [
     '/audio/sfx/badge.mp3',
     '/audio/sfx/combo.mp3',
     '/audio/sfx/select.mp3',
-    '/audio/bgm/lofi-study.mp3'
+    '/audio/bgm/lofi-study.mp3',
+    // 상대 경로 버전도 캐시
+    './audio/sfx/correct.mp3',
+    './audio/sfx/wrong.mp3',
+    './audio/sfx/levelup.mp3',
+    './audio/sfx/badge.mp3',
+    './audio/sfx/combo.mp3',
+    './audio/sfx/select.mp3',
+    './audio/bgm/lofi-study.mp3'
 ];
 
 // 메시지 이벤트 - SKIP_WAITING 처리

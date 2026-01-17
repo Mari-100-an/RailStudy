@@ -10,20 +10,15 @@ const Sound = {
     bgmEnabled: false, // BGM 기본 꺼짐
     hapticEnabled: true, // 햅틱 피드백 기본 켜짐
     
-    // 오디오 파일 경로
+    // 오디오 파일 경로 (상대 경로로 변경 - PWA 호환성)
     audioFiles: {
-        correct: '/audio/sfx/correct.mp3',
-        wrong: '/audio/sfx/wrong.mp3',
-        levelup: '/audio/sfx/levelup.mp3',
-        badge: '/audio/sfx/badge.mp3',
-        badgeBronze: '/audio/sfx/badge-bronze.mp3',
-        badgeSilver: '/audio/sfx/badge-silver.mp3',
-        badgeGold: '/audio/sfx/badge-gold.mp3',
-        badgePlatinum: '/audio/sfx/badge-platinum.mp3',
-        badgeDiamond: '/audio/sfx/badge-diamond.mp3',
-        combo: '/audio/sfx/combo.mp3',
-        select: '/audio/sfx/select.mp3',
-        bgmLofi: '/audio/bgm/lofi-study.mp3'
+        correct: './audio/sfx/correct.mp3',
+        wrong: './audio/sfx/wrong.mp3',
+        levelup: './audio/sfx/levelup.mp3',
+        badge: './audio/sfx/badge.mp3',
+        combo: './audio/sfx/combo.mp3',
+        select: './audio/sfx/select.mp3',
+        bgmLofi: './audio/bgm/lofi-study.mp3'
     },
     
     // 로드된 오디오 객체들
@@ -90,6 +85,8 @@ const Sound = {
                             console.warn('AudioContext resume failed:', e);
                         });
                     }
+                    // iOS Safari: HTML5 Audio도 unlock
+                    this.unlockAudioForIOS();
                 };
                 document.addEventListener('click', activateAudio, { once: true });
                 document.addEventListener('touchstart', activateAudio, { once: true });
@@ -98,6 +95,34 @@ const Sound = {
             console.error('❌ Sound module initialization failed (non-critical):', e);
             this.enabled = false;
         }
+    },
+
+    // iOS Safari 오디오 unlock (첫 터치 시 호출)
+    iosAudioUnlocked: false,
+    unlockAudioForIOS() {
+        if (this.iosAudioUnlocked) return;
+        
+        console.log('🔓 Unlocking audio for iOS...');
+        
+        // 각 오디오 파일을 짧게 재생했다가 멈춤 (iOS unlock 트릭)
+        Object.keys(this.audioFiles).forEach(key => {
+            try {
+                const audio = new Audio(this.audioFiles[key]);
+                audio.volume = 0.01; // 거의 들리지 않게
+                audio.play().then(() => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                    this.audioObjects[key] = audio; // unlock된 객체 저장
+                    console.log(`✅ iOS unlocked: ${key}`);
+                }).catch(e => {
+                    console.warn(`iOS unlock failed for ${key}:`, e.message);
+                });
+            } catch (e) {
+                console.warn(`iOS unlock error for ${key}:`, e);
+            }
+        });
+        
+        this.iosAudioUnlocked = true;
     },
 
     // 오디오 파일 미리 로드 (선택적 - 더 빠른 재생을 위해)
