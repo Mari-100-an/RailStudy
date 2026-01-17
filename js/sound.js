@@ -322,7 +322,11 @@ const Sound = {
             return;
         }
         
-        this.stopBGM(); // 기존 BGM 정지
+        // 기존 BGM 완전히 정지
+        this.stopBGM();
+        
+        // 약간의 지연을 두고 새 BGM 시작 (이전 정리 완료 대기)
+        await new Promise(resolve => setTimeout(resolve, 100));
 
         // AudioContext resume (자동재생 정책 우회)
         if (this.audioContext && this.audioContext.state === 'suspended') {
@@ -462,17 +466,30 @@ const Sound = {
 
     // BGM 정지
     stopBGM() {
-        console.log('Stopping BGM');
-        // 오디오 파일 정지
+        console.log('🔇 BGM 정지 중...');
+        
+        // HTML5 Audio 정지 및 이벤트 리스너 제거
         if (this.bgmAudio) {
-            this.bgmAudio.pause();
-            this.bgmAudio.currentTime = 0;
-            this.bgmAudio = null;
+            try {
+                this.bgmAudio.pause();
+                this.bgmAudio.currentTime = 0;
+                this.bgmAudio.src = ''; // src 제거하여 완전 해제
+                this.bgmAudio.load(); // 리소스 해제
+                this.bgmAudio.removeEventListener('loadstart', null);
+                this.bgmAudio.removeEventListener('loadedmetadata', null);
+                this.bgmAudio.removeEventListener('canplay', null);
+                this.bgmAudio.removeEventListener('error', null);
+                this.bgmAudio = null;
+                console.log('✅ HTML5 Audio 정지됨');
+            } catch (e) {
+                console.warn('HTML5 Audio 정지 실패:', e);
+            }
         }
 
         // Web Audio API 정지
-        this.bgmOscillators.forEach(osc => {
-            try {
+        if (this.bgmOscillators && this.bgmOscillators.length > 0) {
+            this.bgmOscillators.forEach(osc => {
+                try {
                 osc.stop();
             } catch (e) {}
         });
