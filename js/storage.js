@@ -247,13 +247,21 @@ const Storage = {
             timestamp: new Date().toISOString()
         });
         
-        // 최근 1000개만 유지
-        if (log.length > 1000) {
-            log.splice(0, log.length - 1000);
-        }
+        // 30일 이내 데이터만 유지 + 최대 1000개 제한
+        const thirtyDaysAgo = new Date();
+        thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+        const cutoffDate = thirtyDaysAgo.toISOString().split('T')[0];
         
-        this.save(this.KEYS.STUDY_LOG, log);
-        return log;
+        // 30일 이내 데이터만 필터링
+        const filteredLog = log.filter(item => item.date >= cutoffDate);
+        
+        // 그래도 1000개 초과하면 최신 1000개만
+        const finalLog = filteredLog.length > 1000 
+            ? filteredLog.slice(-1000) 
+            : filteredLog;
+        
+        this.save(this.KEYS.STUDY_LOG, finalLog);
+        return finalLog;
     },
 
     getWeeklyStats() {

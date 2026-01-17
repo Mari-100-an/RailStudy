@@ -180,7 +180,8 @@ const Sound = {
             // 기존 로드된 객체 사용 또는 새로 생성
             let audio = this.audioObjects[key];
             
-            if (!audio || audio.ended) {
+            // 오디오 객체가 없거나 에러 상태일 때만 새로 생성
+            if (!audio || audio.error) {
                 audio = new Audio(path);
                 this.audioObjects[key] = audio;
                 
