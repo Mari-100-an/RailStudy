@@ -500,9 +500,10 @@ const Sound = {
         if (this.bgmOscillators && this.bgmOscillators.length > 0) {
             this.bgmOscillators.forEach(osc => {
                 try {
-                osc.stop();
-            } catch (e) {}
-        });
+                    osc.stop();
+                } catch (e) {}
+            });
+        }
         this.bgmOscillators = [];
         if (this.bgmGainNode) {
             this.bgmGainNode.disconnect();
