@@ -280,7 +280,10 @@ const Quiz = {
             startIndex: 0
         };
         
-        return this.startWithQuestions([...questions], subjectId, chapterNum);
+        // 문제 순서 섞기
+        const shuffled = [...questions].sort(() => Math.random() - 0.5);
+        
+        return this.startWithQuestions(shuffled, subjectId, chapterNum);
     },
 
     // 퀴즈 시작 (레거시 - 호환성 유지)
