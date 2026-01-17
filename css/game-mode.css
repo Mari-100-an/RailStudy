@@ -602,6 +602,17 @@ h3.text-lg.font-bold, h3.text-xl.font-bold {
     transform: translateY(-4px) scale(1.02);
 }
 
+/* 진행 중인 과목 */
+.subject-card.has-progress {
+    border-left-width: 4px;
+    background: linear-gradient(90deg, rgba(124, 58, 237, 0.1) 0%, transparent 30%);
+}
+
+/* 완료된 과목 */
+.subject-card.all-completed {
+    background: linear-gradient(90deg, rgba(16, 185, 129, 0.1) 0%, transparent 30%);
+}
+
 .subject-card h4 {
     color: var(--game-text);
 }
@@ -612,6 +623,15 @@ h3.text-lg.font-bold, h3.text-xl.font-bold {
 
 .subject-card .progress-text {
     color: var(--game-xp);
+}
+
+/* 모달 진행 상태 */
+.modal-option.has-progress {
+    border-left: 3px solid var(--game-primary);
+}
+
+.modal-option.all-completed {
+    border-left: 3px solid var(--game-success);
 }
 
 /* 통계 미리보기 */
@@ -690,18 +710,18 @@ body.game-mode #page-quiz .quiz-start-option p {
     font-weight: 500;
 }
 
-.option-btn:hover:not(:disabled) {
-    background-color: var(--game-primary-light);
-    border-color: var(--game-primary);
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
-    color: #ffffff;
+@media (hover: hover) {
+    .option-btn:hover:not(:disabled) {
+        background-color: var(--game-primary-light);
+        border-color: var(--game-primary);
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+        color: #ffffff;
+    }
 }
 
-.option-btn:hover:not(:disabled) {
+.option-btn:active:not(:disabled) {
     background-color: var(--game-primary-light);
     border-color: var(--game-primary);
-    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
-    /* transform: translateX(8px); */ /* 우측 이동 제거 */
 }
 
 .option-btn.selected {
@@ -1692,9 +1712,11 @@ body.game-mode .quiz-start-option {
     color: var(--game-text) !important;
 }
 
-body.game-mode .quiz-start-option:hover {
-    border-color: var(--game-primary) !important;
-    box-shadow: var(--game-glow) !important;
+@media (hover: hover) {
+    body.game-mode .quiz-start-option:hover {
+        border-color: var(--game-primary) !important;
+        box-shadow: var(--game-glow) !important;
+    }
 }
 
 body.game-mode .quiz-start-option h3 {
@@ -1711,9 +1733,11 @@ body.game-mode .subject-quiz-btn {
     color: var(--game-text) !important;
 }
 
-body.game-mode .subject-quiz-btn:hover {
-    border-color: var(--game-primary) !important;
-    box-shadow: var(--game-glow) !important;
+@media (hover: hover) {
+    body.game-mode .subject-quiz-btn:hover {
+        border-color: var(--game-primary) !important;
+        box-shadow: var(--game-glow) !important;
+    }
 }
 
 body.game-mode .subject-quiz-btn .font-bold {

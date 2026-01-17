@@ -248,7 +248,12 @@ const App = {
             const card = document.createElement('button');
             const isDisabled = subject.disabled;
             
-            card.className = `subject-card p-5 rounded-xl text-left transition-transform ${isDisabled ? 'opacity-50 cursor-not-allowed' : 'hover:scale-[1.02]'}`;
+            // 진행 상태 확인
+            const progressSummary = Storage.getSubjectProgressSummary(subject.id);
+            const hasProgress = progressSummary.hasProgress;
+            const isAllCompleted = progressSummary.isAllCompleted;
+            
+            card.className = `subject-card p-5 rounded-xl text-left transition-transform ${isDisabled ? 'opacity-50 cursor-not-allowed' : 'hover:scale-[1.02]'}${hasProgress ? ' has-progress' : ''}${isAllCompleted ? ' all-completed' : ''}`;
             card.innerHTML = `
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-3">
@@ -258,7 +263,10 @@ const App = {
                             ${isDisabled ? `<p class="text-xs opacity-70 mt-1">${subject.disabledMessage || '준비 중'}</p>` : ''}
                         </div>
                     </div>
-                    <span class="text-2xl opacity-50"><i class="fas fa-chevron-right"></i></span>
+                    <div class="flex items-center gap-2">
+                        ${isAllCompleted ? '<span class="text-green-500 text-sm"><i class="fas fa-check-circle"></i></span>' : hasProgress ? '<span class="text-blue-400 text-xs"><i class="fas fa-play-circle"></i></span>' : ''}
+                        <span class="text-2xl opacity-50"><i class="fas fa-chevron-right"></i></span>
+                    </div>
                 </div>
             `;
             card.style.borderLeft = `4px solid ${subject.color}`;
@@ -310,11 +318,19 @@ const App = {
             const isDisabled = subject.disabled;
             const questionCount = getQuestionsBySubject(subject.id).length;
             
-            btn.className = `modal-option p-4 rounded-xl text-center ${isDisabled ? 'opacity-50 cursor-not-allowed' : ''}`;
+            // 진행 상태 확인
+            const progressSummary = Storage.getSubjectProgressSummary(subject.id);
+            const hasProgress = progressSummary.hasProgress;
+            const isAllCompleted = progressSummary.isAllCompleted;
+            
+            btn.className = `modal-option p-4 rounded-xl text-center ${isDisabled ? 'opacity-50 cursor-not-allowed' : ''}${hasProgress ? ' has-progress' : ''}${isAllCompleted ? ' all-completed' : ''}`;
             btn.innerHTML = `
                 <div class="text-4xl mb-2">${subject.icon}</div>
                 <div class="font-bold text-sm">${subject.name}</div>
-                <div class="text-xs opacity-70 mt-1">${isDisabled ? subject.disabledMessage : questionCount + '문제'}</div>
+                <div class="text-xs opacity-70 mt-1">
+                    ${isDisabled ? subject.disabledMessage : questionCount + '문제'}
+                    ${isAllCompleted ? ' ✓' : hasProgress ? ' •' : ''}
+                </div>
             `;
             
             if (!isDisabled) {

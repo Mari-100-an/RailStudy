@@ -378,16 +378,50 @@ const Storage = {
         }
     },
 
-    // 레벨에 따른 등급 계산
+    // 레벨에 따른 등급 계산 (5레벨 단위)
     getLevelTier(level) {
-        if (level <= 10) return { tier: 'trainee', name: '견습생', icon: '🌱', color: '#10B981' };
-        if (level <= 20) return { tier: 'junior', name: '초급 기관사', icon: '🔧', color: '#3B82F6' };
-        if (level <= 35) return { tier: 'intermediate', name: '중급 기관사', icon: '⚙️', color: '#8B5CF6' };
-        if (level <= 50) return { tier: 'senior', name: '상급 기관사', icon: '🚃', color: '#F59E0B' };
-        if (level <= 70) return { tier: 'expert', name: '전문 기관사', icon: '🚄', color: '#EF4444' };
-        if (level <= 85) return { tier: 'master', name: '마스터 기관사', icon: '🌟', color: '#EC4899' };
-        if (level <= 99) return { tier: 'grandmaster', name: '그랜드 마스터', icon: '👑', color: '#F97316' };
-        return { tier: 'legend', name: '레전드 기관사', icon: '💎', color: '#A855F7' };
+        // 1~4: 신입
+        if (level <= 4) return { tier: 'rookie', name: '신입', icon: '🌱', color: '#86EFAC' };
+        // 5~9: 견습생
+        if (level <= 9) return { tier: 'trainee', name: '견습생', icon: '📗', color: '#10B981' };
+        // 10~14: 수습 기관사
+        if (level <= 14) return { tier: 'apprentice', name: '수습 기관사', icon: '🔧', color: '#34D399' };
+        // 15~19: 초급 기관사
+        if (level <= 19) return { tier: 'junior', name: '초급 기관사', icon: '⚙️', color: '#3B82F6' };
+        // 20~24: 중급 기관사
+        if (level <= 24) return { tier: 'intermediate', name: '중급 기관사', icon: '🚃', color: '#60A5FA' };
+        // 25~29: 상급 기관사
+        if (level <= 29) return { tier: 'senior', name: '상급 기관사', icon: '🚋', color: '#818CF8' };
+        // 30~34: 고급 기관사
+        if (level <= 34) return { tier: 'advanced', name: '고급 기관사', icon: '🚆', color: '#8B5CF6' };
+        // 35~39: 숙련 기관사
+        if (level <= 39) return { tier: 'skilled', name: '숙련 기관사', icon: '🚄', color: '#A78BFA' };
+        // 40~44: 베테랑 기관사
+        if (level <= 44) return { tier: 'veteran', name: '베테랑 기관사', icon: '🚅', color: '#F59E0B' };
+        // 45~49: 전문 기관사
+        if (level <= 49) return { tier: 'expert', name: '전문 기관사', icon: '⭐', color: '#FBBF24' };
+        // 50~54: 시니어 기관사
+        if (level <= 54) return { tier: 'seniorpro', name: '시니어 기관사', icon: '🌟', color: '#F97316' };
+        // 55~59: 엘리트 기관사
+        if (level <= 59) return { tier: 'elite', name: '엘리트 기관사', icon: '💫', color: '#EF4444' };
+        // 60~64: 마스터 기관사
+        if (level <= 64) return { tier: 'master', name: '마스터 기관사', icon: '🏅', color: '#DC2626' };
+        // 65~69: 그랜드마스터 기관사
+        if (level <= 69) return { tier: 'grandmaster', name: '그랜드마스터 기관사', icon: '🎖️', color: '#EC4899' };
+        // 70~74: 챔피언 기관사
+        if (level <= 74) return { tier: 'champion', name: '챔피언 기관사', icon: '🏆', color: '#DB2777' };
+        // 75~79: 영웅이 된 기관사
+        if (level <= 79) return { tier: 'hero', name: '영웅이 된 기관사', icon: '🦸', color: '#BE185D' };
+        // 80~84: 전설로 남은 기관사
+        if (level <= 84) return { tier: 'legendary', name: '전설로 남은 기관사', icon: '🌠', color: '#9333EA' };
+        // 85~89: 신화 속의 기관사
+        if (level <= 89) return { tier: 'mythic', name: '신화 속의 기관사', icon: '🔱', color: '#7C3AED' };
+        // 90~94: 초월한 기관사
+        if (level <= 94) return { tier: 'transcendent', name: '초월한 기관사', icon: '✨', color: '#6D28D9' };
+        // 95~99: 불멸의 기관사
+        if (level <= 99) return { tier: 'immortal', name: '불멸의 기관사', icon: '🔥', color: '#5B21B6' };
+        // 100: 모든 기관사의 신
+        return { tier: 'god', name: '모든 기관사의 신', icon: '💎', color: '#A855F7' };
     },
 
     updateMaxCombo(combo) {
@@ -503,6 +537,48 @@ const Storage = {
             }
         });
         this.save(this.KEYS.QUIZ_SESSIONS, sessions);
+    },
+
+    // 과목별 진행 상태 요약 (카드/모달용)
+    getSubjectProgressSummary(subjectId) {
+        const progress = this.getChapterProgress(subjectId);
+        const sessions = this.getAllQuizSessions();
+        
+        let totalCompleted = 0;
+        let totalChapters = 0;
+        let hasAnyProgress = false;
+        
+        // 해당 과목의 챕터 수 계산 (App.getSubjectChapters 대신 직접 계산)
+        const subjectQuestions = typeof getQuestionsBySubject !== 'undefined' ? getQuestionsBySubject(subjectId) : [];
+        const chapterSet = new Set();
+        subjectQuestions.forEach(q => {
+            if (q.chapter) chapterSet.add(q.chapter);
+        });
+        totalChapters = Math.max(chapterSet.size, Object.keys(progress).length);
+        
+        // 완료된 챕터 수 계산
+        Object.keys(progress).forEach(chapterNum => {
+            const chapterData = progress[chapterNum];
+            if (chapterData.current > 0) hasAnyProgress = true;
+            if (chapterData.current >= chapterData.total && chapterData.total > 0) {
+                totalCompleted++;
+            }
+        });
+        
+        // 세션에서도 확인
+        Object.keys(sessions).forEach(key => {
+            if (key.startsWith(subjectId + '_')) {
+                const session = sessions[key];
+                if (session.answeredCount > 0) hasAnyProgress = true;
+            }
+        });
+        
+        return {
+            hasProgress: hasAnyProgress,
+            completedChapters: totalCompleted,
+            totalChapters: totalChapters,
+            isAllCompleted: totalChapters > 0 && totalCompleted >= totalChapters
+        };
     },
 
     // ==========================================

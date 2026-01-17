@@ -31,17 +31,17 @@ const Gamification = {
         { id: 'combo_3', name: '연속 시작', icon: '🔗', description: '3연속 정답', condition: (data) => data.bestStreak >= 3, tier: 'bronze' },
         { id: 'combo_5', name: '연속 킬러', icon: '⚡', description: '5연속 정답', condition: (data) => data.bestStreak >= 5, tier: 'bronze' },
         { id: 'combo_10', name: '콤보 마스터', icon: '💥', description: '10연속 정답', condition: (data) => data.bestStreak >= 10, tier: 'silver' },
-        { id: 'combo_15', name: '완벽한 집중', icon: '🎯', description: '15연속 정답', condition: (data) => data.bestStreak >= 15, tier: 'silver' },
+        { id: 'combo_15', name: '완벽한 집중', icon: '🎯', description: '15연속 정답', condition: (data) => data.bestStreak >= 15, tier: 'gold' },
         { id: 'combo_20', name: '무적 기관사', icon: '🚀', description: '20연속 정답', condition: (data) => data.bestStreak >= 20, tier: 'gold' },
-        { id: 'combo_30', name: '완벽한 흐름', icon: '🌊', description: '30연속 정답', condition: (data) => data.bestStreak >= 30, tier: 'gold' },
+        { id: 'combo_30', name: '완벽한 흐름', icon: '🌊', description: '30연속 정답', condition: (data) => data.bestStreak >= 30, tier: 'platinum' },
         { id: 'combo_50', name: '초월자', icon: '✨', description: '50연속 정답', condition: (data) => data.bestStreak >= 50, tier: 'platinum' },
         { id: 'combo_100', name: '신의 경지', icon: '🎆', description: '100연속 정답', condition: (data) => data.bestStreak >= 100, tier: 'diamond' },
         
-        // ===== 과목별 배지 - 철도관련법 =====
+        // ===== 과목별 배지 - 철도관련법 (82문제) =====
         { id: 'law_novice', name: '법규 입문자', icon: '📝', description: '법규 20문제 정답', condition: (data) => data.subjectStats.law?.correct >= 20, tier: 'bronze' },
-        { id: 'law_adept', name: '법규 숙련자', icon: '📜', description: '법규 50문제 정답', condition: (data) => data.subjectStats.law?.correct >= 50, tier: 'silver' },
-        { id: 'law_master', name: '법규 전문가', icon: '📋', description: '법규 100문제 정답', condition: (data) => data.subjectStats.law?.correct >= 100, tier: 'gold' },
-        { id: 'law_grandmaster', name: '법규 그랜드 마스터', icon: '⚖️', description: '법규 200문제 정답', condition: (data) => data.subjectStats.law?.correct >= 200, tier: 'platinum' },
+        { id: 'law_adept', name: '법규 숙련자', icon: '📜', description: '법규 40문제 정답', condition: (data) => data.subjectStats.law?.correct >= 40, tier: 'silver' },
+        { id: 'law_master', name: '법규 전문가', icon: '📋', description: '법규 60문제 정답', condition: (data) => data.subjectStats.law?.correct >= 60, tier: 'gold' },
+        { id: 'law_grandmaster', name: '법규 그랜드 마스터', icon: '⚖️', description: '법규 80문제 정답', condition: (data) => data.subjectStats.law?.correct >= 80, tier: 'platinum' },
         
         // ===== 과목별 배지 - 도시철도시스템 =====
         { id: 'urban_novice', name: '도시철도 입문자', icon: '🚇', description: '도시철도 20문제 정답', condition: (data) => data.subjectStats.urban?.correct >= 20, tier: 'bronze' },
@@ -61,17 +61,17 @@ const Gamification = {
         { id: 'theory_master', name: '이론 전문가', icon: '📊', description: '운전이론 100문제 정답', condition: (data) => data.subjectStats.theory?.correct >= 100, tier: 'gold' },
         { id: 'theory_grandmaster', name: '이론 그랜드 마스터', icon: '📈', description: '운전이론 200문제 정답', condition: (data) => data.subjectStats.theory?.correct >= 200, tier: 'platinum' },
         
-        // ===== 과목별 배지 - 비상시 조치 =====
+        // ===== 과목별 배지 - 비상시 조치 (216문제) =====
         { id: 'emergency_novice', name: '비상조치 입문자', icon: '🚨', description: '비상시조치 20문제 정답', condition: (data) => data.subjectStats.emergency?.correct >= 20, tier: 'bronze' },
         { id: 'emergency_adept', name: '비상조치 숙련자', icon: '🆘', description: '비상시조치 50문제 정답', condition: (data) => data.subjectStats.emergency?.correct >= 50, tier: 'silver' },
         { id: 'emergency_master', name: '비상조치 전문가', icon: '🚑', description: '비상시조치 100문제 정답', condition: (data) => data.subjectStats.emergency?.correct >= 100, tier: 'gold' },
+        { id: 'emergency_grandmaster', name: '비상조치 그랜드 마스터', icon: '🛡️', description: '비상시조치 200문제 정답', condition: (data) => data.subjectStats.emergency?.correct >= 200, tier: 'platinum' },
         
         // ===== 정확도 배지 =====
         { id: 'accuracy_80', name: '정확한 학습', icon: '✔️', description: '정답률 80% 이상 (50문제 이상)', condition: (data) => data.totalSolved >= 50 && (data.totalCorrect / data.totalSolved) >= 0.8, tier: 'bronze' },
         { id: 'accuracy_90', name: '정밀 사수', icon: '🏹', description: '정답률 90% 이상 (100문제 이상)', condition: (data) => data.totalSolved >= 100 && (data.totalCorrect / data.totalSolved) >= 0.9, tier: 'silver' },
         { id: 'accuracy_95', name: '명사수', icon: '🥇', description: '정답률 95% 이상 (200문제 이상)', condition: (data) => data.totalSolved >= 200 && (data.totalCorrect / data.totalSolved) >= 0.95, tier: 'gold' },
-        { id: 'accuracy_98', name: '완벽주의자', icon: '🥈', description: '정답률 98% 이상 (500문제 이상)', condition: (data) => data.totalSolved >= 500 && (data.totalCorrect / data.totalSolved) >= 0.98, tier: 'platinum' },
-        { id: 'perfect_10', name: '백발백중', icon: '💯', description: '10문제 연속 100% 정답', condition: (data) => data.bestStreak >= 10, tier: 'gold' },
+        { id: 'accuracy_98', name: '완벽주의자', icon: '💎', description: '정답률 98% 이상 (500문제 이상)', condition: (data) => data.totalSolved >= 500 && (data.totalCorrect / data.totalSolved) >= 0.98, tier: 'platinum' },
         
         // ===== 레벨 배지 ===== (gameData를 위에서 전달받음)
         { id: 'level_5', name: '루키 졸업', icon: '🌱', description: '레벨 5 달성', condition: (data, gameData) => gameData?.level >= 5, tier: 'bronze' },

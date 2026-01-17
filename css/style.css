@@ -180,8 +180,14 @@ body {
     gap: 12px;
 }
 
-.option-btn:hover:not(:disabled) {
-    /* transform: translateX(4px); */ /* 우측 이동 제거 */
+@media (hover: hover) {
+    .option-btn:hover:not(:disabled) {
+        /* transform: translateX(4px); */
+    }
+}
+
+.option-btn:active:not(:disabled) {
+    transform: scale(0.99);
 }
 
 .option-btn:disabled {
@@ -878,9 +884,11 @@ body {
     cursor: pointer;
 }
 
-.quiz-start-option:hover {
-    border-color: #3b82f6;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+@media (hover: hover) {
+    .quiz-start-option:hover {
+        border-color: #3b82f6;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+    }
 }
 
 .quiz-start-option:active {
