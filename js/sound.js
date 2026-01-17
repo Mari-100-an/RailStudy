@@ -267,23 +267,13 @@ const Sound = {
         this.playAudio('levelup');
     },
 
-    // 배지 획득 - 반짝이는 느낌 (티어별 다른 사운드)
+    // 배지 획득 - 단일 사운드로 통일
     badge(tier = 'bronze') {
-        // 티어별 진동 패턴
-        const vibrationPatterns = {
-            bronze: [50, 30, 50],
-            silver: [80, 40, 80],
-            gold: [100, 50, 100, 50, 100],
-            platinum: [120, 40, 120, 40, 120, 40, 120],
-            diamond: [150, 30, 150, 30, 150, 30, 150, 30, 150]
-        };
-        this.vibrate(vibrationPatterns[tier] || vibrationPatterns.bronze);
-
-        // 티어별 오디오 파일 사용 (없으면 기본 badge.mp3)
-        const tierKey = `badge${tier.charAt(0).toUpperCase() + tier.slice(1)}`;
-        const audioKey = this.audioFiles[tierKey] ? tierKey : 'badge';
+        // 기본 진동 패턴
+        this.vibrate([100, 50, 100, 50, 100]);
         
-        this.playAudio(audioKey);
+        // 단일 badge.mp3 사용
+        this.playAudio('badge');
     },
 
     // 콤보 사운드 - 콤보 수에 따라 음계 상승
