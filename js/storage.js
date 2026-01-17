@@ -92,7 +92,48 @@ const Storage = {
     // ==========================================
 
     getUserData() {
-        return this.load(this.KEYS.USER_DATA, { ...this.defaultUserData });
+        const data = this.load(this.KEYS.USER_DATA, { ...this.defaultUserData });
+        
+        // 기존 한글 subject 키를 영문으로 마이그레이션
+        if (data.subjectStats) {
+            const migrations = {
+                '운전이론': 'theory',
+                '전기동차 구조 및 기능': 'emu',
+                'railway_related_law': 'law',
+                'emergency_ch1': 'emergency',
+                'emergency_ch2': 'emergency',
+                'emergency_ch3': 'emergency'
+            };
+            
+            let needsSave = false;
+            for (const [oldKey, newKey] of Object.entries(migrations)) {
+                if (data.subjectStats[oldKey]) {
+                    // 기존 데이터를 새 키로 합산
+                    if (!data.subjectStats[newKey]) {
+                        data.subjectStats[newKey] = { solved: 0, correct: 0 };
+                    }
+                    data.subjectStats[newKey].solved += data.subjectStats[oldKey].solved || 0;
+                    data.subjectStats[newKey].correct += data.subjectStats[oldKey].correct || 0;
+                    delete data.subjectStats[oldKey];
+                    needsSave = true;
+                }
+            }
+            
+            // 기본 키 확보
+            const defaultKeys = ['law', 'urban', 'emu', 'theory', 'emergency'];
+            for (const key of defaultKeys) {
+                if (!data.subjectStats[key]) {
+                    data.subjectStats[key] = { solved: 0, correct: 0 };
+                    needsSave = true;
+                }
+            }
+            
+            if (needsSave) {
+                this.saveUserData(data);
+            }
+        }
+        
+        return data;
     },
 
     saveUserData(data) {

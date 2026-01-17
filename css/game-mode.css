@@ -1302,7 +1302,16 @@ body:not(.focus-mode)::-webkit-scrollbar-thumb:hover {
     border: 1px solid var(--game-border) !important;
 }
 
-.modal-option:hover {
+/* 터치 디바이스에서는 hover 비활성화 */
+@media (hover: hover) {
+    .modal-option:hover {
+        background-color: var(--game-primary-light) !important;
+        border-color: var(--game-primary) !important;
+    }
+}
+
+/* 터치 디바이스용 active 상태 */
+.modal-option:active {
     background-color: var(--game-primary-light) !important;
     border-color: var(--game-primary) !important;
 }

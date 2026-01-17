@@ -505,10 +505,18 @@ input[type="range"]::-moz-range-thumb {
     transition: all var(--transition-fast);
 }
 
-.modal-option:hover {
-    background-color: #f3f4f6;
+/* 터치 디바이스에서는 hover 비활성화 */
+@media (hover: hover) {
+    .modal-option:hover {
+        background-color: #f3f4f6;
+        border-color: #3b82f6;
+    }
+}
+
+/* 터치 디바이스용 active 상태 */
+.modal-option:active {
+    background-color: #e5e7eb;
     border-color: #3b82f6;
-    /* transform: translateX(4px); */ /* 우측 이동 제거 */
 }
 
 /* 오답 카드 */
