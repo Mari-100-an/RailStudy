@@ -16,7 +16,7 @@ const Theme = {
 
     apply() {
         const body = document.body;
-        const xpBar = document.getElementById('xp-bar-container');
+        const xpBar = document.getElementById('new-xp-bar');
         const gameStats = document.getElementById('game-stats');
         const resultRewards = document.getElementById('result-rewards');
 
@@ -50,22 +50,22 @@ const Theme = {
         const tierInfo = Storage.getLevelTier(gameData.level);
         
         // XP 바 업데이트
-        const levelBadge = document.getElementById('level-badge');
-        const levelTierIcon = document.getElementById('level-tier-icon');
-        const xpBarFill = document.getElementById('xp-bar-fill');
-        const xpText = document.getElementById('xp-text');
+        const levelBadge = document.getElementById('new-level-badge');
+        const levelTierIcon = document.getElementById('new-level-icon');
+        const xpBarFill = document.getElementById('new-xp-fill');
+        const xpText = document.getElementById('new-xp-text');
 
         if (levelBadge) {
-            levelBadge.innerHTML = `<span id="level-tier-icon">${tierInfo.icon}</span> Lv.${gameData.level}`;
-            levelBadge.style.borderColor = tierInfo.color;
-            levelBadge.style.boxShadow = `0 0 10px ${tierInfo.color}40`;
+            levelBadge.innerHTML = `<span id="new-level-icon">${tierInfo.icon}</span> Lv.${gameData.level}`;
+            levelBadge.style.background = `linear-gradient(135deg, ${tierInfo.color} 0%, #7C3AED 100%)`;
+            levelBadge.style.boxShadow = `0 0 15px ${tierInfo.color}80`;
         }
 
         if (xpBarFill && xpText) {
             const xpForNext = Storage.getXPForLevel(gameData.level + 1);
             const percentage = (gameData.xp / xpForNext) * 100;
             xpBarFill.style.width = `${percentage}%`;
-            xpText.textContent = `${gameData.xp} / ${xpForNext} XP`;
+            xpText.textContent = `${gameData.xp} / ${xpForNext}`;
         }
 
         // 대시보드 게임 통계
