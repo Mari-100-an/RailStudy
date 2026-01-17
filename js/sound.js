@@ -36,6 +36,9 @@ const Sound = {
     
     // BGM 오디오 객체
     bgmAudio: null,
+    
+    // BGM 재생 상태
+    bgmIsPlaying: false,
 
     // 오디오 컨텍스트 초기화
     init() {
@@ -328,6 +331,11 @@ const Sound = {
     async startBGM() {
         if (!this.bgmEnabled) return;
         
+        // 이미 재생 중이면 무시
+        if (this.bgmIsPlaying && this.bgmAudio && !this.bgmAudio.paused) {
+            return;
+        }
+        
         // 기존 BGM 완전히 정지
         this.stopBGM();
         
@@ -375,16 +383,22 @@ const Sound = {
                 
                 const playPromise = this.bgmAudio.play();
                 if (playPromise !== undefined) {
-                    playPromise.catch(() => {
-                        // autoplay 차단 시
-                        if (typeof showToast === 'function') {
-                            showToast('배경음악을 재생할 수 없습니다. 퀴즈를 시작한 후 다시 시도해주세요.', 'info');
-                        }
-                        // BGM 토글 끄기
-                        this.bgmEnabled = false;
-                        const bgmToggle = document.getElementById('setting-bgm-enabled');
-                        if (bgmToggle) bgmToggle.checked = false;
-                    });
+                    playPromise
+                        .then(() => {
+                            // 재생 성공
+                            this.bgmIsPlaying = true;
+                        })
+                        .catch(() => {
+                            // autoplay 차단 시
+                            this.bgmIsPlaying = false;
+                            if (typeof showToast === 'function') {
+                                showToast('배경음악을 재생할 수 없습니다. 화면을 터치한 후 다시 시도해주세요.', 'info');
+                            }
+                            // BGM 토글 끄기
+                            this.bgmEnabled = false;
+                            const bgmToggle = document.getElementById('setting-bgm-enabled');
+                            if (bgmToggle) bgmToggle.checked = false;
+                        });
                 }
             } else {
                 if (typeof showToast === 'function') {
