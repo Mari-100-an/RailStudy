@@ -230,21 +230,32 @@ const App = {
 
         Object.values(SUBJECTS).forEach(subject => {
             const card = document.createElement('button');
-            card.className = 'subject-card p-5 rounded-xl text-left transition-transform hover:scale-[1.02]';
+            const isDisabled = subject.disabled;
+            
+            card.className = `subject-card p-5 rounded-xl text-left transition-transform ${isDisabled ? 'opacity-50 cursor-not-allowed' : 'hover:scale-[1.02]'}`;
             card.innerHTML = `
                 <div class="flex items-center justify-between">
                     <div class="flex items-center gap-3">
                         <span class="text-4xl">${subject.icon}</span>
-                        <h4 class="font-bold text-lg">${subject.name}</h4>
+                        <div>
+                            <h4 class="font-bold text-lg">${subject.name}</h4>
+                            ${isDisabled ? `<p class="text-xs opacity-70 mt-1">${subject.disabledMessage || '준비 중'}</p>` : ''}
+                        </div>
                     </div>
                     <span class="text-2xl opacity-50"><i class="fas fa-chevron-right"></i></span>
                 </div>
             `;
             card.style.borderLeft = `4px solid ${subject.color}`;
             
-            card.addEventListener('click', () => {
-                this.showChapterModal(subject);
-            });
+            if (!isDisabled) {
+                card.addEventListener('click', () => {
+                    this.showChapterModal(subject);
+                });
+            } else {
+                card.addEventListener('click', () => {
+                    showToast(subject.disabledMessage || '준비 중입니다', 'info');
+                });
+            }
 
             container.appendChild(card);
         });
@@ -271,16 +282,27 @@ const App = {
         const container = list.querySelector('#quiz-subject-buttons');
         Object.values(SUBJECTS).forEach(subject => {
             const btn = document.createElement('button');
-            btn.className = 'modal-option p-4 rounded-xl text-center';
+            const isDisabled = subject.disabled;
+            const questionCount = getQuestionsBySubject(subject.id).length;
+            
+            btn.className = `modal-option p-4 rounded-xl text-center ${isDisabled ? 'opacity-50 cursor-not-allowed' : ''}`;
             btn.innerHTML = `
                 <div class="text-4xl mb-2">${subject.icon}</div>
                 <div class="font-bold text-sm">${subject.name}</div>
-                <div class="text-xs opacity-70 mt-1">${getQuestionsBySubject(subject.id).length}문제</div>
+                <div class="text-xs opacity-70 mt-1">${isDisabled ? subject.disabledMessage : questionCount + '문제'}</div>
             `;
-            btn.onclick = () => {
-                closeModal();
-                this.showChapterModal(subject);
-            };
+            
+            if (!isDisabled) {
+                btn.onclick = () => {
+                    closeModal();
+                    this.showChapterModal(subject);
+                };
+            } else {
+                btn.onclick = () => {
+                    showToast(subject.disabledMessage || '준비 중입니다', 'info');
+                };
+            }
+            
             container.appendChild(btn);
         });
 
