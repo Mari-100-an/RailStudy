@@ -1509,10 +1509,6 @@ a:hover {
 /* 모바일 최적화 */
 @media (max-width: 768px) {
     /* XP 바 */
-    #xp-bar-container {
-        max-width: 240px;
-    }
-    
     #level-badge {
         font-size: 0.875rem;
         padding: 0.375rem 0.625rem;
