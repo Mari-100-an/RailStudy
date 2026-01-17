@@ -1,7 +1,7 @@
 /**
  * 철도관련법 - 전체 문제 통합 (10단원)
  */
-const QUESTIONS_LAW = [
+var QUESTIONS_LAW = [
     ...(typeof QUESTIONS_LAW_CH1 !== 'undefined' ? QUESTIONS_LAW_CH1 : []),
     ...(typeof QUESTIONS_LAW_CH2 !== 'undefined' ? QUESTIONS_LAW_CH2 : []),
     ...(typeof QUESTIONS_LAW_CH3 !== 'undefined' ? QUESTIONS_LAW_CH3 : []),

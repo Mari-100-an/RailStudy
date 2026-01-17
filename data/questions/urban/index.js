@@ -1,7 +1,7 @@
 /**
  * 도시철도시스템 - 전체 문제 통합 (11단원)
  */
-const QUESTIONS_URBAN = [
+var QUESTIONS_URBAN = [
     ...(typeof QUESTIONS_URBAN_CH1 !== 'undefined' ? QUESTIONS_URBAN_CH1 : []),
     ...(typeof QUESTIONS_URBAN_CH2 !== 'undefined' ? QUESTIONS_URBAN_CH2 : []),
     ...(typeof QUESTIONS_URBAN_CH3 !== 'undefined' ? QUESTIONS_URBAN_CH3 : []),

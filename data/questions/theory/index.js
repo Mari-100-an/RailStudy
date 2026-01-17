@@ -1,7 +1,7 @@
 /**
  * 운전이론 - 전체 문제 통합 (9단원)
  */
-const QUESTIONS_THEORY = [
+var QUESTIONS_THEORY = [
     ...(typeof QUESTIONS_THEORY_CH1 !== 'undefined' ? QUESTIONS_THEORY_CH1 : []),
     ...(typeof QUESTIONS_THEORY_CH2 !== 'undefined' ? QUESTIONS_THEORY_CH2 : []),
     ...(typeof QUESTIONS_THEORY_CH3 !== 'undefined' ? QUESTIONS_THEORY_CH3 : []),

@@ -1,7 +1,7 @@
 /**
  * 비상시 조치 - 전체 문제 통합 (3단원)
  */
-const QUESTIONS_EMERGENCY = [
+var QUESTIONS_EMERGENCY = [
     ...(typeof QUESTIONS_EMERGENCY_CH1 !== 'undefined' ? QUESTIONS_EMERGENCY_CH1 : []),
     ...(typeof QUESTIONS_EMERGENCY_CH2 !== 'undefined' ? QUESTIONS_EMERGENCY_CH2 : []),
     ...(typeof QUESTIONS_EMERGENCY_CH3 !== 'undefined' ? QUESTIONS_EMERGENCY_CH3 : [])

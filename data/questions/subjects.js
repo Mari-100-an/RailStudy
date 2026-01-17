@@ -3,7 +3,7 @@
  * 모든 과목의 메타데이터
  */
 
-const SUBJECTS = {
+var SUBJECTS = {
     law: {
         id: 'law',
         name: '철도관련법',
@@ -42,7 +42,7 @@ const SUBJECTS = {
 };
 
 // 과목 ID 목록
-const SUBJECT_IDS = Object.keys(SUBJECTS);
+var SUBJECT_IDS = Object.keys(SUBJECTS);
 
 // 과목 정보 조회
 function getSubject(subjectId) {

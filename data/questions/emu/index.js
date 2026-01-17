@@ -1,7 +1,7 @@
 /**
  * 전기동차 구조 및 기능 - 전체 문제 통합 (7단원)
  */
-const QUESTIONS_EMU = [
+var QUESTIONS_EMU = [
     ...(typeof QUESTIONS_EMU_CH1 !== 'undefined' ? QUESTIONS_EMU_CH1 : []),
     ...(typeof QUESTIONS_EMU_CH2 !== 'undefined' ? QUESTIONS_EMU_CH2 : []),
     ...(typeof QUESTIONS_EMU_CH3 !== 'undefined' ? QUESTIONS_EMU_CH3 : []),
