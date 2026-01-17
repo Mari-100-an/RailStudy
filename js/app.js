@@ -9,8 +9,6 @@ const App = {
     // 앱 초기화
     init() {
         try {
-            console.log('🚀 App initialization started');
-            
             // 로딩 화면 표시 중 초기화 수행
             this.setupNavigation();
             this.setupSubjectCards();
@@ -33,8 +31,6 @@ const App = {
             // 이어서 풀기 카드 업데이트
             this.updateContinueSessionCard();
 
-            console.log('✅ App initialized successfully');
-            
             // 로딩 완료
             setTimeout(() => {
                 this.hideLoadingScreen();
@@ -629,11 +625,9 @@ const App = {
                 Storage.save(Storage.KEYS.SETTINGS, settings);
                 
                 if (e.target.checked) {
-                    console.log('🎵 User toggled BGM ON');
                     await Sound.startBGM();
                     showToast('배경음악이 켜졌습니다 🎵', 'success');
                 } else {
-                    console.log('🔇 User toggled BGM OFF');
                     Sound.stopBGM();
                     showToast('배경음악이 꺼졌습니다', 'info');
                 }

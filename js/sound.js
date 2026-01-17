@@ -40,19 +40,14 @@ const Sound = {
     // 오디오 컨텍스트 초기화
     init() {
         try {
-            console.log('🔊 Sound module initializing...');
-            
             // Safari 호환성: AudioContext 생성 (선택적)
             try {
                 const AudioContextClass = window.AudioContext || window.webkitAudioContext;
                 if (AudioContextClass) {
                     this.audioContext = new AudioContextClass();
-                    console.log('AudioContext created:', this.audioContext.state);
-                } else {
-                    console.warn('AudioContext not supported');
                 }
             } catch (e) {
-                console.warn('AudioContext creation failed, continuing without it:', e);
+                // AudioContext 생성 실패 - 무시하고 계속
             }
             
             // 기본적으로 사운드 활성화
@@ -64,15 +59,7 @@ const Sound = {
                     this.volume = 0.3;
                     this.bgmVolume = 0.2;
                     this.bgmEnabled = settings?.bgmEnabled ?? false;
-                    
-                    console.log('🔊 Sound settings loaded:', {
-                        enabled: this.enabled,
-                        volume: this.volume,
-                        bgmVolume: this.bgmVolume,
-                        bgmEnabled: this.bgmEnabled
-                    });
                 } catch (e) {
-                    console.warn('Storage not ready, using default sound settings');
                     this.enabled = true;
                 }
             }
@@ -81,28 +68,15 @@ const Sound = {
             try {
                 this.preloadAudio();
             } catch (e) {
-                console.warn('Audio preload failed:', e);
+                // preload 실패 - 무시
             }
-            
-            console.log('✅ Sound module initialized', {
-                enabled: this.enabled,
-                contextState: this.audioContext?.state,
-                volume: this.volume,
-                audioFilesMode: true,
-                platform: this.isIOS ? 'iOS' : this.isAndroid ? 'Android' : 'Desktop',
-                isSafari: this.isSafari
-            });
             
             // AudioContext는 사용자 제스처 후에 resume 필요 (브라우저 자동재생 정책)
             if (this.audioContext && this.audioContext.state === 'suspended') {
                 // 첫 클릭 시 활성화
                 const activateAudio = () => {
                     if (this.audioContext && this.audioContext.state === 'suspended') {
-                        this.audioContext.resume().then(() => {
-                            console.log('🔊 AudioContext resumed');
-                        }).catch(e => {
-                            console.warn('AudioContext resume failed:', e);
-                        });
+                        this.audioContext.resume().catch(() => {});
                     }
                     // 모바일: HTML5 Audio unlock (iOS/Android 모두)
                     if (this.isIOS || this.isAndroid) {
@@ -113,7 +87,7 @@ const Sound = {
                 document.addEventListener('touchstart', activateAudio, { once: true, passive: true });
             }
         } catch (e) {
-            console.error('❌ Sound module initialization failed (non-critical):', e);
+            console.error('Sound module initialization failed:', e);
             this.enabled = false;
         }
     },
@@ -128,19 +102,10 @@ const Sound = {
     unlockAudioForMobile() {
         if (this.mobileAudioUnlocked) return;
         
-        const platform = this.isIOS ? 'iOS' : this.isAndroid ? 'Android' : 'Desktop';
-        console.log(`🔓 Unlocking audio for ${platform}...`);
-        
         // 무음 오디오로 AudioContext만 활성화 (실제 SFX 재생 안 함)
-        // 빈 오디오 데이터로 unlock
         const silentAudio = new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABhgC7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7//////////////////////////////////////////////////////////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAAYYoRwmHAAAAAAD/+9DEAAAIAANIAAAAgAAA0gAAABBsyZ0/4IAAAMJ7////+7u7u7v//xiYn/+sG7//8QnE4n/+7u4hMTif/6wNDP//wiETif/7u7iExOJ//rANDP/8RCIn/+7u7//////u7u5MTCY=');
         silentAudio.volume = 0;
-        silentAudio.play().then(() => {
-            silentAudio.pause();
-            console.log(`✅ ${platform} AudioContext unlocked with silent audio`);
-        }).catch(e => {
-            console.warn(`${platform} silent unlock failed:`, e.message);
-        });
+        silentAudio.play().then(() => silentAudio.pause()).catch(() => {});
         
         // SFX 파일들은 preload만 (소리 재생 없이)
         const sfxKeys = ['correct', 'wrong', 'levelup', 'badge', 'combo', 'select'];
@@ -152,7 +117,7 @@ const Sound = {
                 audio.volume = this.volume;
                 this.audioObjects[key] = audio;
             } catch (e) {
-                console.warn(`${platform} preload error for ${key}:`, e);
+                // preload 실패 - 무시
             }
         });
         
@@ -174,16 +139,10 @@ const Sound = {
 
     // 오디오 파일 재생 (파일 없으면 Web Audio API fallback)
     playAudio(key, volumeMultiplier = 1) {
-        console.log(`🔊 playAudio called: ${key}, enabled: ${this.enabled}, volume: ${this.volume}`);
-        
-        if (!this.enabled) {
-            console.log('🔇 Sound disabled, skipping');
-            return;
-        }
+        if (!this.enabled) return;
 
         const path = this.audioFiles[key];
         if (!path) {
-            console.warn(`Audio file not found for ${key}, using fallback`);
             this.playBeepFallback(key);
             return;
         }
