@@ -307,14 +307,28 @@ const Sound = {
     bgmGainNode: null,
 
     // BGM 재생 (실제 오디오 파일 사용)
-    startBGM() {
-        if (!this.bgmEnabled) return;
+    async startBGM() {
+        if (!this.bgmEnabled) {
+            console.log('BGM disabled, skipping');
+            return;
+        }
         
         this.stopBGM(); // 기존 BGM 정지
+
+        // AudioContext resume (자동재생 정책 우회)
+        if (this.audioContext && this.audioContext.state === 'suspended') {
+            try {
+                await this.audioContext.resume();
+                console.log('AudioContext resumed');
+            } catch (e) {
+                console.warn('AudioContext resume failed:', e);
+            }
+        }
 
         try {
             // 오디오 파일 사용
             if (this.audioFiles.bgmLofi) {
+                console.log('Loading BGM file:', this.audioFiles.bgmLofi);
                 this.bgmAudio = new Audio(this.audioFiles.bgmLofi);
                 this.bgmAudio.volume = this.bgmVolume;
                 this.bgmAudio.loop = true; // 무한 반복
@@ -323,15 +337,17 @@ const Sound = {
                 if (playPromise !== undefined) {
                     playPromise
                         .then(() => {
-                            console.log('🎵 BGM started');
+                            console.log('🎵 BGM started successfully');
                         })
                         .catch(e => {
-                            console.warn('BGM autoplay blocked:', e);
+                            console.warn('⚠️ BGM autoplay blocked:', e.message);
+                            console.log('Trying synthesized BGM fallback...');
                             // 폴백: Web Audio API로 생성
                             this.startBGMSynthesized();
                         });
                 }
             } else {
+                console.log('No BGM file found, using synthesized');
                 // 오디오 파일 없으면 Web Audio API로 생성
                 this.startBGMSynthesized();
             }
@@ -399,6 +415,7 @@ const Sound = {
 
     // BGM 정지
     stopBGM() {
+        console.log('Stopping BGM');
         // 오디오 파일 정지
         if (this.bgmAudio) {
             this.bgmAudio.pause();

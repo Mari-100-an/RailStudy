@@ -699,7 +699,7 @@ body.game-mode #page-quiz .quiz-start-option p {
     background-color: var(--game-primary-light);
     border-color: var(--game-primary);
     box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
-    transform: translateX(8px);
+    /* transform: translateX(8px); */ /* 우측 이동 제거 */
 }
 
 .option-btn.selected {

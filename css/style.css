@@ -181,7 +181,7 @@ body {
 }
 
 .option-btn:hover:not(:disabled) {
-    transform: translateX(4px);
+    /* transform: translateX(4px); */ /* 우측 이동 제거 */
 }
 
 .option-btn:disabled {
