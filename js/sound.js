@@ -345,6 +345,25 @@ const Sound = {
                 console.log('🎵 현재 위치:', window.location.href);
                 console.log('🎵 베이스 경로:', window.location.origin);
                 
+                // 파일 존재 확인 (fetch로 먼저 체크)
+                try {
+                    const response = await fetch(this.audioFiles.bgmLofi, { method: 'HEAD' });
+                    if (!response.ok) {
+                        console.error('❌ BGM 파일 접근 불가:', response.status, response.statusText);
+                        if (typeof showToast === 'function') {
+                            showToast(`배경음악 파일을 찾을 수 없습니다 (${response.status})`, 'error');
+                        }
+                        return;
+                    }
+                    console.log('✅ BGM 파일 접근 가능');
+                } catch (fetchError) {
+                    console.error('❌ BGM 파일 체크 실패:', fetchError);
+                    if (typeof showToast === 'function') {
+                        showToast('배경음악 파일에 접근할 수 없습니다', 'error');
+                    }
+                    return;
+                }
+                
                 this.bgmAudio = new Audio(this.audioFiles.bgmLofi);
                 this.bgmAudio.volume = this.bgmVolume;
                 this.bgmAudio.loop = true; // 무한 반복
