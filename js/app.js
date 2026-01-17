@@ -800,35 +800,37 @@ const App = {
         listEl.classList.remove('hidden');
         actionsEl.classList.remove('hidden');
 
-        listEl.innerHTML = wrongQuestions.map(q => {
-            const subject = SUBJECTS[q.subject];
-            const wrongCount = q.wrongData?.count || 1;
-            
-            return `
-                <div class="review-card p-4 rounded-xl">
-                    <div class="flex justify-between items-start mb-3">
-                        <span class="subject-badge" style="background-color: ${subject.color}20; color: ${subject.color}">
-                            ${subject.icon} ${subject.name}
-                        </span>
-                        <span class="wrong-count text-sm text-red-500">
-                            <i class="fas fa-times mr-1"></i>${wrongCount}회 오답
-                        </span>
+        listEl.innerHTML = wrongQuestions
+            .filter(q => SUBJECTS[q.subject]) // subject가 존재하는 문제만 필터링
+            .map(q => {
+                const subject = SUBJECTS[q.subject];
+                const wrongCount = q.wrongData?.count || 1;
+                
+                return `
+                    <div class="review-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="subject-badge" style="background-color: ${subject.color}20; color: ${subject.color}">
+                                ${subject.icon} ${subject.name}
+                            </span>
+                            <span class="wrong-count text-sm text-red-500">
+                                <i class="fas fa-times mr-1"></i>${wrongCount}회 오답
+                            </span>
+                        </div>
+                        <h4 class="font-bold mb-2">${q.question}</h4>
+                        <div class="text-sm opacity-70 mb-3">
+                            <span class="text-green-600">정답: ${String.fromCharCode(65 + q.answer)}. ${q.options[q.answer]}</span>
+                        </div>
+                        <div class="flex justify-end gap-2">
+                            <button class="btn-sm btn-secondary" onclick="App.showQuestionDetail('${q.id}')">
+                                <i class="fas fa-eye mr-1"></i>상세 보기
+                            </button>
+                            <button class="btn-sm btn-danger" onclick="App.removeWrongQuestion('${q.id}')">
+                                <i class="fas fa-trash mr-1"></i>삭제
+                            </button>
+                        </div>
                     </div>
-                    <h4 class="font-bold mb-2">${q.question}</h4>
-                    <div class="text-sm opacity-70 mb-3">
-                        <span class="text-green-600">정답: ${String.fromCharCode(65 + q.answer)}. ${q.options[q.answer]}</span>
-                    </div>
-                    <div class="flex justify-end gap-2">
-                        <button class="btn-sm btn-secondary" onclick="App.showQuestionDetail('${q.id}')">
-                            <i class="fas fa-eye mr-1"></i>상세 보기
-                        </button>
-                        <button class="btn-sm btn-danger" onclick="App.removeWrongQuestion('${q.id}')">
-                            <i class="fas fa-trash mr-1"></i>삭제
-                        </button>
-                    </div>
-                </div>
-            `;
-        }).join('');
+                `;
+            }).join('');
     },
 
     // 오답 문제 상세 보기
