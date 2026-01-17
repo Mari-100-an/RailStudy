@@ -243,9 +243,14 @@ const Quiz = {
 
     // 단원별 문제 풀이 시작
     startChapterQuiz(subjectId, chapterNum, forceRestart = false) {
+        console.log(`🎯 startChapterQuiz called: ${subjectId}, ch${chapterNum}`);
+        
         // 해당 단원의 문제 가져오기
         const varName = `QUESTIONS_${subjectId.toUpperCase()}_CH${chapterNum}`;
+        console.log(`🔍 Looking for: ${varName}, exists:`, typeof window[varName] !== 'undefined');
+        
         const questions = typeof window[varName] !== 'undefined' ? window[varName] : [];
+        console.log(`📋 Questions found: ${questions.length}`);
         
         if (questions.length === 0) {
             showToast('해당 단원에 문제가 없습니다.', 'error');

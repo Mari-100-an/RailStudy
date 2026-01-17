@@ -272,7 +272,10 @@ const App = {
                     if (typeof Sound !== 'undefined') Sound.select();
                     // 단원이 1개만 있는 과목은 바로 ch1 퀴즈 시작
                     if (subject.singleChapter) {
-                        Quiz.startChapterQuiz(subject.id, 1, true);
+                        this.navigateTo('quiz');  // 먼저 퀴즈 페이지로 이동
+                        setTimeout(() => {
+                            Quiz.startChapterQuiz(subject.id, 1, true);
+                        }, 100);
                     } else {
                         this.showChapterModal(subject);
                     }
