@@ -146,8 +146,8 @@ body {
 
 #question-text {
     color: var(--focus-text);
-    font-size: 1.25rem;
-    line-height: 1.8;
+    font-size: 1.125rem;
+    line-height: 1.75;
 }
 
 /* 선택지 버튼 - Focus 모드는 더 단순한 디자인 */

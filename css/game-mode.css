@@ -676,6 +676,8 @@ body.game-mode #page-quiz .quiz-start-option p {
 
 #question-text {
     color: var(--game-text) !important;
+    font-size: 1.125rem;
+    line-height: 1.75;
     font-weight: 500;
 }
 
