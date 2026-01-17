@@ -352,14 +352,6 @@ const App = {
                 <p class="text-sm opacity-70">단원을 선택하세요</p>
             </div>
             <div class="space-y-2" id="chapter-list">
-                <!-- 전체 문제 풀기 옵션 -->
-                <button class="modal-option w-full p-4 rounded-lg text-left flex items-center justify-between" data-chapter="all">
-                    <div>
-                        <i class="fas fa-layer-group mr-2 text-blue-500"></i>
-                        <span class="font-bold">전체 문제</span>
-                    </div>
-                    <span class="text-sm opacity-70">${getQuestionsBySubject(subject.id).length}문제</span>
-                </button>
             </div>
         `;
 
