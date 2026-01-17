@@ -290,6 +290,25 @@ input:checked + .toggle-slider:before {
     animation: modalFadeIn var(--transition-normal) ease-out;
 }
 
+/* 모달 내부 스크롤바 숨김 */
+.modal-content {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.modal-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+#chapter-list {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#chapter-list::-webkit-scrollbar {
+    display: none;
+}
+
 @keyframes modalFadeIn {
     from {
         opacity: 0;

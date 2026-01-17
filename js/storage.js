@@ -10,7 +10,10 @@ const Storage = {
         SETTINGS: 'railway_settings',
         WRONG_ANSWERS: 'railway_wrong_answers',
         STUDY_LOG: 'railway_study_log',
-        GAME_DATA: 'railway_game_data'
+        GAME_DATA: 'railway_game_data',
+        CHAPTER_PROGRESS: 'railway_chapter_progress',
+        QUIZ_SESSIONS: 'railway_quiz_sessions',
+        LAST_SESSION: 'railway_last_session'
     },
 
     // 기본 사용자 데이터
@@ -349,6 +352,170 @@ const Storage = {
         this.save(this.KEYS.WRONG_ANSWERS, []);
         this.save(this.KEYS.STUDY_LOG, []);
         this.save(this.KEYS.GAME_DATA, { ...this.defaultGameData });
+        this.save(this.KEYS.CHAPTER_PROGRESS, {});
+        this.save(this.KEYS.QUIZ_SESSIONS, {});
+        this.remove(this.KEYS.LAST_SESSION);
+    },
+
+    // ==========================================
+    // 단원별 진행상태 관리
+    // ==========================================
+
+    // 전체 단원 진행상태 가져오기
+    getAllChapterProgress() {
+        return this.load(this.KEYS.CHAPTER_PROGRESS, {});
+    },
+
+    // 특정 과목의 단원 진행상태 가져오기
+    getChapterProgress(subjectId) {
+        const all = this.getAllChapterProgress();
+        return all[subjectId] || {};
+    },
+
+    // 단원 진행상태 저장
+    saveChapterProgress(subjectId, chapterNum, currentIndex, totalQuestions) {
+        const all = this.getAllChapterProgress();
+        
+        if (!all[subjectId]) {
+            all[subjectId] = {};
+        }
+        
+        all[subjectId][chapterNum] = {
+            current: currentIndex,
+            total: totalQuestions,
+            lastUpdated: new Date().toISOString()
+        };
+        
+        this.save(this.KEYS.CHAPTER_PROGRESS, all);
+        return all[subjectId][chapterNum];
+    },
+
+    // 단원 완료 처리
+    completeChapter(subjectId, chapterNum, totalQuestions) {
+        return this.saveChapterProgress(subjectId, chapterNum, totalQuestions, totalQuestions);
+    },
+
+    // 단원 진행상태 초기화
+    resetChapterProgress(subjectId, chapterNum) {
+        const all = this.getAllChapterProgress();
+        
+        if (all[subjectId] && all[subjectId][chapterNum]) {
+            delete all[subjectId][chapterNum];
+            this.save(this.KEYS.CHAPTER_PROGRESS, all);
+        }
+        
+        // 해당 세션도 삭제
+        this.deleteQuizSession(`${subjectId}_${chapterNum}`);
+    },
+
+    // 과목 전체 진행상태 초기화
+    resetSubjectProgress(subjectId) {
+        const all = this.getAllChapterProgress();
+        
+        if (all[subjectId]) {
+            delete all[subjectId];
+            this.save(this.KEYS.CHAPTER_PROGRESS, all);
+        }
+        
+        // 해당 과목의 모든 세션 삭제
+        const sessions = this.getAllQuizSessions();
+        Object.keys(sessions).forEach(key => {
+            if (key.startsWith(subjectId + '_') || key === subjectId) {
+                delete sessions[key];
+            }
+        });
+        this.save(this.KEYS.QUIZ_SESSIONS, sessions);
+    },
+
+    // ==========================================
+    // 퀴즈 세션 관리
+    // ==========================================
+
+    // 모든 세션 가져오기
+    getAllQuizSessions() {
+        return this.load(this.KEYS.QUIZ_SESSIONS, {});
+    },
+
+    // 특정 세션 가져오기
+    getQuizSession(sessionKey) {
+        const sessions = this.getAllQuizSessions();
+        return sessions[sessionKey] || null;
+    },
+
+    // 세션 저장
+    saveQuizSession(sessionKey, sessionData) {
+        const sessions = this.getAllQuizSessions();
+        sessions[sessionKey] = {
+            ...sessionData,
+            updatedAt: Date.now()
+        };
+        this.save(this.KEYS.QUIZ_SESSIONS, sessions);
+        
+        // 마지막 세션으로 기록
+        this.save(this.KEYS.LAST_SESSION, sessionKey);
+        
+        return sessions[sessionKey];
+    },
+
+    // 세션 삭제
+    deleteQuizSession(sessionKey) {
+        const sessions = this.getAllQuizSessions();
+        if (sessions[sessionKey]) {
+            delete sessions[sessionKey];
+            this.save(this.KEYS.QUIZ_SESSIONS, sessions);
+        }
+        
+        // 마지막 세션이었다면 다른 세션으로 교체
+        const lastSession = this.load(this.KEYS.LAST_SESSION, null);
+        if (lastSession === sessionKey) {
+            const remainingKeys = Object.keys(sessions);
+            if (remainingKeys.length > 0) {
+                // 가장 최근 세션으로 변경
+                const mostRecent = remainingKeys.reduce((a, b) => 
+                    (sessions[a].updatedAt > sessions[b].updatedAt) ? a : b
+                );
+                this.save(this.KEYS.LAST_SESSION, mostRecent);
+            } else {
+                this.remove(this.KEYS.LAST_SESSION);
+            }
+        }
+    },
+
+    // 마지막 세션 가져오기
+    getLastSession() {
+        const lastKey = this.load(this.KEYS.LAST_SESSION, null);
+        if (!lastKey) return null;
+        
+        const session = this.getQuizSession(lastKey);
+        if (!session) return null;
+        
+        return {
+            key: lastKey,
+            ...session
+        };
+    },
+
+    // 세션 키 생성
+    createSessionKey(type, subjectId = null, chapterNum = null) {
+        if (type === 'chapter' && subjectId && chapterNum) {
+            return `${subjectId}_${chapterNum}`;
+        } else if (type === 'subject' && subjectId) {
+            return subjectId;
+        } else if (type === 'random') {
+            return 'random';
+        } else if (type === 'wrong') {
+            return 'wrong';
+        }
+        return 'unknown';
+    },
+
+    // 진행 중인 세션 목록 (이어서 풀기용)
+    getActiveSessions() {
+        const sessions = this.getAllQuizSessions();
+        return Object.entries(sessions)
+            .filter(([key, data]) => data.currentIndex < data.totalQuestions)
+            .map(([key, data]) => ({ key, ...data }))
+            .sort((a, b) => b.updatedAt - a.updatedAt);
     },
 
     // ==========================================

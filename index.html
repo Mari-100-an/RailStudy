@@ -63,9 +63,6 @@
                     <button id="nav-home" class="nav-btn active" title="홈">
                         <i class="fas fa-home"></i>
                     </button>
-                    <button id="nav-study" class="nav-btn" title="학습하기">
-                        <i class="fas fa-book-open"></i>
-                    </button>
                     <button id="nav-quiz" class="nav-btn" title="문제 풀이">
                         <i class="fas fa-question-circle"></i>
                     </button>
@@ -107,31 +104,37 @@
                         <p class="text-base sm:text-lg opacity-80">제2종 전기차량 운전면허 준비를 도와드릴게요.</p>
                     </div>
 
-                    <!-- 이론 학습 (메인 기능) -->
-                    <div class="mb-6 sm:mb-8 p-4 sm:p-6 rounded-xl bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20">
-                        <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 flex items-center gap-2">
-                            <i class="fas fa-book-open text-blue-500"></i>
-                            이론 학습하기
-                        </h3>
-                        <p class="text-sm opacity-70 mb-3 sm:mb-4">기본 개념부터 차근차근 학습하며 실력을 쌓아보세요!</p>
-                        <button onclick="App.navigateTo('study')" class="px-5 py-2.5 sm:px-6 sm:py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition font-medium text-sm sm:text-base">
-                            <i class="fas fa-arrow-right mr-1 sm:mr-2"></i>학습 시작하기
-                        </button>
+                    <!-- 이어서 풀기 (마지막 세션이 있을 때만 표시) -->
+                    <div id="continue-session-card" class="hidden mb-6 sm:mb-8 p-4 sm:p-6 rounded-xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30">
+                        <div class="flex items-center justify-between flex-wrap gap-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center">
+                                    <i class="fas fa-play text-green-500 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg">이어서 풀기</h3>
+                                    <p id="continue-session-info" class="text-sm opacity-70">도시철도시스템 > 7단원 (5/20)</p>
+                                </div>
+                            </div>
+                            <button onclick="App.continueLastSession()" class="px-5 py-2.5 bg-green-500 text-white rounded-lg hover:bg-green-600 transition font-medium">
+                                <i class="fas fa-arrow-right mr-2"></i>계속하기
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- 문제 연습 (보조 기능) -->
-                    <div class="mb-6 sm:mb-8 p-4 sm:p-6 rounded-xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border border-green-500/20">
+                    <!-- 빠른 문제 풀이 (메인 기능) -->
+                    <div class="mb-6 sm:mb-8 p-4 sm:p-6 rounded-xl bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20">
                         <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 flex items-center gap-2">
-                            <i class="fas fa-brain text-green-500"></i>
-                            문제 연습하기
+                            <i class="fas fa-play-circle text-blue-500"></i>
+                            빠른 문제 풀이
                         </h3>
-                        <p class="text-sm opacity-70 mb-3 sm:mb-4">다양한 문제로 실전 감각을 익히고 약점을 보완하세요!</p>
-                        <div class="flex gap-2 sm:gap-3">
-                            <button onclick="Quiz.startRandomQuiz(); App.navigateTo('quiz');" class="px-3 py-2 sm:px-4 sm:py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition text-sm">
-                                <i class="fas fa-play mr-1"></i>랜덤 문제
+                        <p class="text-sm opacity-70 mb-3 sm:mb-4">바로 문제를 풀어보세요!</p>
+                        <div class="flex flex-wrap gap-2 sm:gap-3">
+                            <button onclick="Quiz.startRandomQuiz(); App.navigateTo('quiz');" class="px-4 py-2.5 sm:px-5 sm:py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition font-medium text-sm sm:text-base">
+                                <i class="fas fa-random mr-1 sm:mr-2"></i>랜덤 문제
                             </button>
-                            <button onclick="if(Quiz.startWrongQuiz()) App.navigateTo('quiz');" class="px-3 py-2 sm:px-4 sm:py-2 border border-green-500 text-green-600 rounded-lg hover:bg-green-50 transition text-sm">
-                                <i class="fas fa-book mr-1"></i>오답 복습
+                            <button onclick="if(Quiz.startWrongQuiz()) App.navigateTo('quiz'); else showToast('오답이 없습니다', 'info');" class="px-4 py-2.5 sm:px-5 sm:py-3 border-2 border-blue-500 text-blue-600 rounded-lg hover:bg-blue-50 transition font-medium text-sm sm:text-base">
+                                <i class="fas fa-redo mr-1 sm:mr-2"></i>오답 복습
                             </button>
                         </div>
                     </div>
@@ -167,40 +170,37 @@
                 </div>
             </section>
 
-            <!-- 학습하기 페이지 -->
-            <section id="page-study" class="page hidden">
-                <div class="max-w-4xl mx-auto">
-                    <!-- 헤더 -->
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="flex items-center gap-3">
-                            <button id="study-back-btn" class="p-2 hover:bg-gray-100 rounded-lg transition">
-                                <i class="fas fa-arrow-left"></i>
-                            </button>
-                            <h2 class="text-2xl font-bold">📖 학습하기</h2>
-                        </div>
-                        <button id="study-practice-btn" class="hidden px-4 py-2 bg-primary text-white rounded-lg hover:bg-opacity-90 transition">
-                            <i class="fas fa-pencil-alt mr-2"></i>문제풀기
-                        </button>
-                    </div>
-
-                    <!-- 브레드크럼 -->
-                    <div id="study-breadcrumb" class="mb-6 text-sm">
-                        <span class="text-gray-500">과목을 선택하세요</span>
-                    </div>
-
-                    <!-- 컨텐츠 영역 -->
-                    <div id="study-content" class="study-container">
-                        <!-- 동적으로 생성 -->
-                    </div>
-                </div>
-            </section>
-
             <!-- 퀴즈 페이지 -->
             <section id="page-quiz" class="page hidden">
                 <div class="max-w-3xl mx-auto">
                     <!-- 퀴즈 시작 선택 화면 -->
                     <div id="quiz-start-selection" class="max-w-2xl mx-auto">
                         <h2 class="text-2xl font-bold mb-6">📝 문제 풀이</h2>
+
+                        <!-- 이어서 풀기 (진행 중인 세션이 있을 때) -->
+                        <div id="quiz-continue-card" class="hidden mb-6 p-5 rounded-2xl bg-gradient-to-r from-green-500/10 to-emerald-500/10 border-2 border-green-500/30">
+                            <div class="flex items-start gap-4">
+                                <div class="text-3xl">▶️</div>
+                                <div class="flex-1">
+                                    <h3 class="text-xl font-bold mb-1">이어서 풀기</h3>
+                                    <p id="quiz-continue-info" class="text-sm opacity-70 mb-3">도시철도시스템 > 7단원</p>
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                            <div id="quiz-continue-progress" class="h-full bg-green-500 rounded-full" style="width: 25%"></div>
+                                        </div>
+                                        <span id="quiz-continue-count" class="text-sm font-medium">5/20</span>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <button onclick="App.continueLastSession()" class="flex-1 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition font-medium text-sm">
+                                            <i class="fas fa-play mr-1"></i>이어서 풀기
+                                        </button>
+                                        <button onclick="App.restartLastSession()" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-sm">
+                                            <i class="fas fa-redo mr-1"></i>처음부터
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="grid gap-4 mb-6">
                             <!-- 랜덤 문제 풀이 -->
@@ -233,8 +233,8 @@
                                 <div class="flex items-center gap-4">
                                     <div class="text-4xl">📚</div>
                                     <div class="flex-1">
-                                        <h3 class="text-xl font-bold mb-1">과목별 문제 풀이</h3>
-                                        <p class="text-sm opacity-70">원하는 과목을 선택하여 학습합니다</p>
+                                        <h3 class="text-xl font-bold mb-1">과목/단원별 문제 풀이</h3>
+                                        <p class="text-sm opacity-70">과목과 단원을 선택하여 학습합니다</p>
                                     </div>
                                     <i class="fas fa-arrow-right text-2xl"></i>
                                 </div>
@@ -281,13 +281,20 @@
                         </div>
                     </div>
 
-                    <!-- 버튼 영역 (우측 하단 고정) -->
-                    <div class="flex justify-end items-center gap-3">
+                    <!-- 정답 확인 버튼 -->
+                    <div id="submit-container" class="flex justify-center mb-6">
                         <button id="btn-submit" class="btn-primary px-8 py-3 rounded-lg font-bold">
-                            정답 확인
+                            <i class="fas fa-check mr-2"></i>정답 확인
                         </button>
-                        <button id="btn-next" class="hidden btn-primary px-8 py-3 rounded-lg font-bold">
-                            다음 문제 <i class="fas fa-arrow-right ml-2"></i>
+                    </div>
+
+                    <!-- 이전/다음 네비게이션 (하단) -->
+                    <div id="nav-buttons" class="hidden flex justify-between items-center gap-3">
+                        <button id="btn-prev" class="flex-1 btn-primary px-8 py-3 rounded-lg font-bold disabled:opacity-40 disabled:cursor-not-allowed">
+                            <i class="fas fa-chevron-left mr-2"></i>이전 문제
+                        </button>
+                        <button id="btn-next-nav" class="flex-1 btn-primary px-8 py-3 rounded-lg font-bold disabled:opacity-40 disabled:cursor-not-allowed">
+                            다음 문제<i class="fas fa-chevron-right ml-2"></i>
                         </button>
                     </div>
 
@@ -409,19 +416,29 @@
                         </div>
                     </div>
 
-                    <!-- 차트 영역 -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-                        <div class="chart-card p-6 rounded-xl">
-                            <h3 class="font-bold mb-4">과목별 성취도</h3>
-                            <div style="height: 300px;">
-                                <canvas id="subject-chart"></canvas>
+                    <!-- 과목별 성취도 (심플 바) -->
+                    <div class="chart-card p-6 rounded-xl mb-6">
+                        <h3 class="font-bold mb-4">📊 과목별 성취도</h3>
+                        <div id="subject-progress-bars" class="space-y-3">
+                            <!-- JS에서 동적 생성 -->
+                        </div>
+                    </div>
+
+                    <!-- 주간 학습량 (심플) -->
+                    <div class="chart-card p-6 rounded-xl mb-8">
+                        <h3 class="font-bold mb-4">📅 학습 현황</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 rounded-lg bg-blue-500/10">
+                                <div id="dash-today-solved" class="text-3xl font-bold text-blue-500">0</div>
+                                <div class="text-sm opacity-70">오늘 푼 문제</div>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-green-500/10">
+                                <div id="dash-week-solved" class="text-3xl font-bold text-green-500">0</div>
+                                <div class="text-sm opacity-70">이번 주</div>
                             </div>
                         </div>
-                        <div class="chart-card p-6 rounded-xl">
-                            <h3 class="font-bold mb-4">주간 학습량</h3>
-                            <div style="height: 300px;">
-                                <canvas id="weekly-chart"></canvas>
-                            </div>
+                        <div id="weekly-summary" class="mt-4 text-sm opacity-70 text-center">
+                            <!-- JS에서 동적 생성 -->
                         </div>
                     </div>
 
@@ -557,9 +574,9 @@
         </main>
 
         <!-- 과목 선택 모달 -->
-        <div id="modal-subject" class="modal hidden fixed inset-0 z-50 flex items-center justify-center">
+        <div id="modal-subject" class="modal hidden fixed inset-0 z-50 flex items-center justify-center overflow-hidden">
             <div class="modal-backdrop absolute inset-0 bg-black/50" onclick="closeModal()"></div>
-            <div class="modal-content relative bg-white rounded-2xl p-6 max-w-md w-full mx-4 max-h-[80vh] overflow-y-auto">
+            <div class="modal-content relative bg-white rounded-2xl p-6 max-w-md w-full mx-4 max-h-[80vh] overflow-y-auto overflow-x-hidden">
                 <h3 class="text-xl font-bold mb-4">과목 선택</h3>
                 <div id="modal-subject-list" class="space-y-2">
                     <!-- JavaScript에서 동적 생성 -->
@@ -590,40 +607,66 @@
     </div>
 
     <!-- JavaScript 파일 로드 -->
-    <!-- Questions -->
+    <!-- Questions - Subjects -->
     <script src="data/questions/subjects.js"></script>
-    <script src="data/questions/law.js"></script>
-    <script src="data/questions/urban.js"></script>
-    <script src="data/questions/emu.js"></script>
-    <script src="data/questions/theory.js"></script>
-    <script src="data/questions/emergency.js"></script>
-    <script src="data/questions/index.js"></script>
     
-    <!-- Concepts -->
-    <script src="data/concepts/law/law_ch1.js"></script>
-    <script src="data/concepts/law/index.js"></script>
-    <script src="data/concepts/urban/urban_ch1.js"></script>
-    <script src="data/concepts/urban/urban_ch2.js"></script>
-    <script src="data/concepts/urban/urban_ch3.js"></script>
-    <script src="data/concepts/urban/urban_ch4.js"></script>
-    <script src="data/concepts/urban/urban_ch5.js"></script>
-    <script src="data/concepts/urban/urban_ch6.js"></script>
-    <script src="data/concepts/urban/urban_ch7.js"></script>
-    <script src="data/concepts/urban/urban_ch8.js"></script>
-    <script src="data/concepts/urban/urban_ch9.js"></script>
-    <script src="data/concepts/urban/urban_ch10.js"></script>
-    <script src="data/concepts/urban/urban_ch11.js"></script>
-    <script src="data/concepts/urban/index.js"></script>
-    <script src="data/concepts/emu/emu_ch2.js"></script>
-    <script src="data/concepts/emu/emu_ch3.js"></script>
-    <script src="data/concepts/emu/emu_ch4.js"></script>
-    <script src="data/concepts/emu/emu_ch5.js"></script>
-    <script src="data/concepts/emu/emu_ch6.js"></script>
-    <script src="data/concepts/emu/emu_ch7.js"></script>
-    <script src="data/concepts/emu/index.js"></script>
-    <script src="data/concepts/theory/index.js"></script>
-    <script src="data/concepts/emergency/index.js"></script>
-    <script src="data/concepts/index.js"></script>
+    <!-- Questions - Law (10단원) -->
+    <script src="data/questions/law/ch1.js"></script>
+    <script src="data/questions/law/ch2.js"></script>
+    <script src="data/questions/law/ch3.js"></script>
+    <script src="data/questions/law/ch4.js"></script>
+    <script src="data/questions/law/ch5.js"></script>
+    <script src="data/questions/law/ch6.js"></script>
+    <script src="data/questions/law/ch7.js"></script>
+    <script src="data/questions/law/ch8.js"></script>
+    <script src="data/questions/law/ch9.js"></script>
+    <script src="data/questions/law/ch10.js"></script>
+    <script src="data/questions/law/index.js"></script>
+    
+    <!-- Questions - Urban (11단원) -->
+    <script src="data/questions/urban/ch1.js"></script>
+    <script src="data/questions/urban/ch2.js"></script>
+    <script src="data/questions/urban/ch3.js"></script>
+    <script src="data/questions/urban/ch4.js"></script>
+    <script src="data/questions/urban/ch5.js"></script>
+    <script src="data/questions/urban/ch6.js"></script>
+    <script src="data/questions/urban/ch7.js"></script>
+    <script src="data/questions/urban/ch8.js"></script>
+    <script src="data/questions/urban/ch9.js"></script>
+    <script src="data/questions/urban/ch10.js"></script>
+    <script src="data/questions/urban/ch11.js"></script>
+    <script src="data/questions/urban/index.js"></script>
+    
+    <!-- Questions - EMU (7단원) -->
+    <script src="data/questions/emu/ch1.js"></script>
+    <script src="data/questions/emu/ch2.js"></script>
+    <script src="data/questions/emu/ch3.js"></script>
+    <script src="data/questions/emu/ch4.js"></script>
+    <script src="data/questions/emu/ch5.js"></script>
+    <script src="data/questions/emu/ch6.js"></script>
+    <script src="data/questions/emu/ch7.js"></script>
+    <script src="data/questions/emu/index.js"></script>
+    
+    <!-- Questions - Theory (9단원) -->
+    <script src="data/questions/theory/ch1.js"></script>
+    <script src="data/questions/theory/ch2.js"></script>
+    <script src="data/questions/theory/ch3.js"></script>
+    <script src="data/questions/theory/ch4.js"></script>
+    <script src="data/questions/theory/ch5.js"></script>
+    <script src="data/questions/theory/ch6.js"></script>
+    <script src="data/questions/theory/ch7.js"></script>
+    <script src="data/questions/theory/ch8.js"></script>
+    <script src="data/questions/theory/ch9.js"></script>
+    <script src="data/questions/theory/index.js"></script>
+    
+    <!-- Questions - Emergency (3단원) -->
+    <script src="data/questions/emergency/ch1.js"></script>
+    <script src="data/questions/emergency/ch2.js"></script>
+    <script src="data/questions/emergency/ch3.js"></script>
+    <script src="data/questions/emergency/index.js"></script>
+    
+    <!-- Questions - Main Index -->
+    <script src="data/questions/index.js"></script>
     
     <!-- App Scripts -->
     <script src="js/storage.js"></script>
@@ -631,7 +674,6 @@
     <script src="js/sound.js"></script>
     <script src="js/gamification.js"></script>
     <script src="js/quiz.js"></script>
-    <script src="js/study.js"></script>
     <script src="js/dashboard.js"></script>
     <script src="js/app.js"></script>
     
@@ -644,30 +686,6 @@
                 modal.classList.remove('flex');
             }
         }
-    </script>
-    
-    <!-- 키보드 단축키 (학습 페이지 네비게이션) -->
-    <script>
-        document.addEventListener('keydown', (e) => {
-            // Study 페이지에서만 작동
-            if (App.currentPage !== 'study' || !Study.currentSection) return;
-            
-            if (e.key === 'ArrowLeft') {
-                // 왼쪽 화살표: 이전 섹션
-                const prevSection = Study.getPrevSection(Study.currentSubject, Study.currentChapter, Study.currentSection);
-                if (prevSection) {
-                    e.preventDefault();
-                    Study.showContent(Study.currentSubject, Study.currentChapter, prevSection.id);
-                }
-            } else if (e.key === 'ArrowRight') {
-                // 오른쪽 화살표: 다음 섹션
-                const nextSection = Study.getNextSection(Study.currentSubject, Study.currentChapter, Study.currentSection);
-                if (nextSection) {
-                    e.preventDefault();
-                    Study.showContent(Study.currentSubject, Study.currentChapter, nextSection.id);
-                }
-            }
-        });
     </script>
     
     <!-- Service Worker 등록 (PWA) -->
@@ -705,7 +723,6 @@
         console.log('=== Checking Global Variables ===');
         console.log('SUBJECTS:', typeof SUBJECTS !== 'undefined' ? SUBJECTS : 'NOT DEFINED');
         console.log('QUESTIONS:', typeof QUESTIONS !== 'undefined' ? QUESTIONS.length : 'NOT DEFINED');
-        console.log('CONCEPTS:', typeof CONCEPTS !== 'undefined' ? CONCEPTS : 'NOT DEFINED');
         console.log('App:', typeof App !== 'undefined' ? 'DEFINED' : 'NOT DEFINED');
         console.log('=================================');
     </script>

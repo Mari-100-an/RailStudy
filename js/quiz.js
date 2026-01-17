@@ -32,14 +32,8 @@ const Quiz = {
             });
         }
 
-        // 다음 문제 버튼
-        const nextBtn = document.getElementById('btn-next');
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                if (typeof Sound !== 'undefined') Sound.select();
-                this.nextQuestion();
-            });
-        }
+        // 이전 문제 버튼 (onclick은 updateNavigationButtons에서 관리)
+        // 다음 문제 버튼 (onclick은 updateNavigationButtons에서 관리)
 
         // 결과 화면 버튼들
         const retryBtn = document.getElementById('btn-retry');
@@ -65,6 +59,17 @@ const Quiz = {
                 App.navigateTo('home');
             });
         }
+
+        // 키보드 단축키 (좌우 화살표)
+        document.addEventListener('keydown', (e) => {
+            if (!document.getElementById('page-quiz')?.classList.contains('hidden')) {
+                if (e.key === 'ArrowLeft' && this.state.currentIndex > 0) {
+                    this.goToQuestion(this.state.currentIndex - 1);
+                } else if (e.key === 'ArrowRight' && this.state.currentIndex < this.state.questions.length - 1) {
+                    this.goToQuestion(this.state.currentIndex + 1);
+                }
+            }
+        });
     },
 
     // 퀴즈 시작 선택 화면 표시
@@ -97,6 +102,12 @@ const Quiz = {
             return false;
         }
         
+        // 세션 정보 설정
+        this.state.sessionInfo = {
+            type: 'random',
+            sessionKey: 'random'
+        };
+        
         return this.startWithQuestions(questions, null);
     },
 
@@ -113,23 +124,159 @@ const Quiz = {
         const count = Math.min(settings.questionCount || 10, wrongAnswers.length);
         const questions = this.getWrongFirstQuestions(count, null);
         
+        // 세션 정보 설정
+        this.state.sessionInfo = {
+            type: 'wrong',
+            sessionKey: 'wrong'
+        };
+        
         return this.startWithQuestions(questions, null);
+    },
+
+    // 세션에서 이어서 풀기
+    continueSession(sessionKey) {
+        const session = Storage.getQuizSession(sessionKey);
+        if (!session) {
+            showToast('저장된 세션을 찾을 수 없습니다.', 'error');
+            return false;
+        }
+        
+        // 세션 타입에 따라 문제 복원
+        let questions = [];
+        if (session.questionIds && session.questionIds.length > 0) {
+            // 저장된 문제 ID로 복원
+            questions = session.questionIds.map(id => getQuestionById(id)).filter(q => q);
+        } else if (session.type === 'chapter') {
+            const varName = `QUESTIONS_${session.subjectId.toUpperCase()}_CH${session.chapterNum}`;
+            questions = typeof window[varName] !== 'undefined' ? [...window[varName]] : [];
+        } else if (session.type === 'subject') {
+            questions = getQuestionsBySubject(session.subjectId);
+        }
+        
+        if (questions.length === 0) {
+            showToast('문제를 불러올 수 없습니다.', 'error');
+            return false;
+        }
+        
+        // 선택 화면 숨기기
+        document.getElementById('quiz-start-selection').classList.add('hidden');
+        
+        // 상태 복원
+        this.state = {
+            questions,
+            currentIndex: session.currentIndex || 0,
+            answers: session.answers || new Array(questions.length).fill(null),
+            selectedOption: null,
+            isSubmitted: false,
+            startTime: Date.now(),
+            questionStartTime: Date.now(),
+            subject: session.subjectId,
+            chapter: session.chapterNum,
+            sessionInfo: {
+                type: session.type,
+                sessionKey: sessionKey,
+                subjectId: session.subjectId,
+                subjectName: session.subjectName,
+                chapterNum: session.chapterNum,
+                chapterName: session.chapterName
+            }
+        };
+        
+        // 게이미피케이션 세션 초기화
+        Gamification.resetSession();
+        
+        // UI 초기화
+        this.showQuizUI();
+        this.renderQuestion();
+        
+        return true;
+    },
+
+    // 세션 처음부터 다시 시작
+    restartSession(sessionKey) {
+        const session = Storage.getQuizSession(sessionKey);
+        if (!session) return false;
+        
+        // 세션 삭제 후 새로 시작
+        Storage.deleteQuizSession(sessionKey);
+        
+        if (session.type === 'chapter') {
+            return this.startChapterQuiz(session.subjectId, session.chapterNum, true);
+        } else if (session.type === 'subject') {
+            return this.startSubjectQuiz(session.subjectId);
+        } else if (session.type === 'random') {
+            return this.startRandomQuiz();
+        } else if (session.type === 'wrong') {
+            return this.startWrongQuiz();
+        }
+        return false;
     },
 
 
 
     // 과목별 문제 풀이 시작
     startSubjectQuiz(subjectId) {
-        const settings = Storage.getSettings();
-        const count = settings.questionCount || 10;
-        const questions = getRandomQuestions(count, subjectId);
+        const questions = getQuestionsBySubject(subjectId);
         
         if (questions.length === 0) {
             showToast('선택한 과목에 문제가 없습니다.', 'error');
-            return;
+            return false;
         }
         
-        this.startWithQuestions(questions, subjectId);
+        const subject = SUBJECTS[subjectId];
+        
+        // 세션 정보 설정
+        this.state.sessionInfo = {
+            type: 'subject',
+            sessionKey: subjectId,
+            subjectId: subjectId,
+            subjectName: subject?.name || subjectId
+        };
+        
+        // 순서대로 풀기 (랜덤 아님)
+        return this.startWithQuestions([...questions], subjectId);
+    },
+
+    // 단원별 문제 풀이 시작
+    startChapterQuiz(subjectId, chapterNum, forceRestart = false) {
+        // 해당 단원의 문제 가져오기
+        const varName = `QUESTIONS_${subjectId.toUpperCase()}_CH${chapterNum}`;
+        const questions = typeof window[varName] !== 'undefined' ? window[varName] : [];
+        
+        if (questions.length === 0) {
+            showToast('해당 단원에 문제가 없습니다.', 'error');
+            return false;
+        }
+        
+        const subject = SUBJECTS[subjectId];
+        const sessionKey = `${subjectId}_${chapterNum}`;
+        
+        // 세션 정보 설정
+        this.state.sessionInfo = {
+            type: 'chapter',
+            sessionKey: sessionKey,
+            subjectId: subjectId,
+            subjectName: subject?.name || subjectId,
+            chapterNum: chapterNum,
+            chapterName: `${chapterNum}단원`
+        };
+        
+        // 기존 세션 확인 (forceRestart가 아닐 때만)
+        if (!forceRestart) {
+            const existingSession = Storage.getQuizSession(sessionKey);
+            if (existingSession && existingSession.currentIndex > 0 && existingSession.currentIndex < questions.length) {
+                // 이어서 풀기 확인은 모달에서 처리하므로 여기서는 새로 시작
+            }
+        }
+        
+        // 상태에 단원 정보 저장 (레거시 호환)
+        this.state.chapterInfo = {
+            subjectId,
+            chapterNum,
+            startIndex: 0
+        };
+        
+        return this.startWithQuestions([...questions], subjectId, chapterNum);
     },
 
     // 퀴즈 시작 (레거시 - 호환성 유지)
@@ -153,8 +300,8 @@ const Quiz = {
         return this.startWithQuestions(questions, subjectId);
     },
 
-    // 특정 문제들로 퀴즈 시작 (학습 모듈에서 사용)
-    startWithQuestions(questions, subjectId = null) {
+    // 특정 문제들로 퀴즈 시작
+    startWithQuestions(questions, subjectId = null, chapterNum = null) {
         if (!questions || questions.length === 0) {
             showToast('문제가 없습니다.', 'error');
             return false;
@@ -162,6 +309,9 @@ const Quiz = {
 
         // 선택 화면 숨기기
         document.getElementById('quiz-start-selection').classList.add('hidden');
+
+        // 세션 정보 유지
+        const sessionInfo = this.state.sessionInfo || null;
 
         // 상태 초기화
         this.state = {
@@ -172,7 +322,10 @@ const Quiz = {
             isSubmitted: false,
             startTime: Date.now(),
             questionStartTime: Date.now(),
-            subject: subjectId
+            subject: subjectId,
+            chapter: chapterNum,
+            chapterInfo: this.state.chapterInfo || null,  // 단원 정보 유지
+            sessionInfo: sessionInfo  // 세션 정보 유지
         };
 
         // 게이미피케이션 세션 초기화
@@ -216,26 +369,70 @@ const Quiz = {
         const quizProgress = document.getElementById('quiz-progress');
         const quizResult = document.getElementById('quiz-result');
         const explanation = document.getElementById('answer-explanation');
-        const btnContainer = document.querySelector('#page-quiz .flex.justify-between');
+        const submitContainer = document.getElementById('submit-container');
+        const navButtons = document.getElementById('nav-buttons');
 
         if (quizCard) quizCard.classList.remove('hidden');
         if (quizProgress) quizProgress.classList.remove('hidden');
         if (quizResult) quizResult.classList.add('hidden');
         if (explanation) explanation.classList.add('hidden');
-        if (btnContainer) btnContainer.classList.remove('hidden');
+        if (submitContainer) submitContainer.classList.remove('hidden');
+        if (navButtons) navButtons.classList.add('hidden');
 
         // 버튼 상태 초기화
         const submitBtn = document.getElementById('btn-submit');
-        const nextBtn = document.getElementById('btn-next');
         
         if (submitBtn) {
             submitBtn.classList.remove('hidden');
             submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i>정답 확인';
-            submitBtn.disabled = false;
-            submitBtn.style.opacity = '0';
-            submitBtn.style.pointerEvents = 'none';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.5';
         }
-        if (nextBtn) nextBtn.classList.add('hidden');
+        
+        // 네비게이션 버튼 업데이트
+        this.updateNavigationButtons();
+    },
+
+    // 네비게이션 버튼 상태 업데이트
+    updateNavigationButtons() {
+        const prevBtn = document.getElementById('btn-prev');
+        const nextNavBtn = document.getElementById('btn-next-nav');
+        
+        const { currentIndex, questions, answers } = this.state;
+        const isLastQuestion = currentIndex === questions.length - 1;
+        const allAnswered = answers.filter(a => a !== null).length === questions.length;
+        
+        // 이전 버튼 활성화 상태
+        if (prevBtn) {
+            prevBtn.disabled = currentIndex === 0;
+            prevBtn.onclick = () => {
+                if (typeof Sound !== 'undefined') Sound.select();
+                this.goToQuestion(this.state.currentIndex - 1);
+            };
+        }
+        
+        // 다음 버튼: 마지막 문제이고 모두 답변했으면 "결과 보기"로 변경
+        if (nextNavBtn) {
+            if (isLastQuestion && allAnswered) {
+                nextNavBtn.disabled = false;
+                nextNavBtn.innerHTML = '결과 보기<i class="fas fa-flag-checkered ml-2"></i>';
+                nextNavBtn.onclick = () => {
+                    if (typeof Sound !== 'undefined') Sound.select();
+                    this.showResults();
+                };
+            } else if (isLastQuestion) {
+                nextNavBtn.disabled = true;
+                nextNavBtn.innerHTML = '다음 문제<i class="fas fa-chevron-right ml-2"></i>';
+                nextNavBtn.onclick = null;
+            } else {
+                nextNavBtn.disabled = false;
+                nextNavBtn.innerHTML = '다음 문제<i class="fas fa-chevron-right ml-2"></i>';
+                nextNavBtn.onclick = () => {
+                    if (typeof Sound !== 'undefined') Sound.select();
+                    this.goToQuestion(this.state.currentIndex + 1);
+                };
+            }
+        }
     },
 
     // 문제 렌더링
@@ -243,7 +440,8 @@ const Quiz = {
         const question = this.state.questions[this.state.currentIndex];
         if (!question) return;
 
-        const { currentIndex, questions } = this.state;
+        const { currentIndex, questions, answers } = this.state;
+        const existingAnswer = answers[currentIndex];
 
         // 진행 상황 업데이트
         document.getElementById('quiz-progress-text').textContent = 
@@ -256,8 +454,8 @@ const Quiz = {
         const badge = document.getElementById('quiz-subject-badge');
         if (badge && subject) {
             badge.textContent = subject.name;
-            badge.style.backgroundColor = subject.color + '20';
-            badge.style.color = subject.color;
+            badge.style.backgroundColor = subject.color;
+            badge.style.color = '#ffffff';
         }
 
         // 문제 번호와 텍스트
@@ -265,27 +463,70 @@ const Quiz = {
             `Q.${currentIndex + 1} - ${question.chapter || ''}`;
         document.getElementById('question-text').textContent = question.question;
 
-        // 선택지 렌더링
-        this.renderOptions(question);
+        // 이미 풀었던 문제인지 확인
+        if (existingAnswer) {
+            // 이미 푼 문제 - 결과 표시
+            this.renderAnsweredQuestion(question, existingAnswer);
+        } else {
+            // 아직 안 푼 문제
+            this.renderOptions(question);
+            
+            // 상태 초기화
+            this.state.selectedOption = null;
+            this.state.isSubmitted = false;
+            this.state.questionStartTime = Date.now();
 
-        // 상태 초기화
-        this.state.selectedOption = null;
-        this.state.isSubmitted = false;
-        this.state.questionStartTime = Date.now();
-
-        // 해설 숨기기
-        document.getElementById('answer-explanation').classList.add('hidden');
-
-        // 버튼 상태
-        const submitBtn = document.getElementById('btn-submit');
-        const nextBtn = document.getElementById('btn-next');
-        
-        if (submitBtn) {
-            submitBtn.classList.remove('hidden');
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '선택하세요';
+            // 해설 숨기기, 네비게이션 숨기기, 정답확인 버튼도 숨기기
+            document.getElementById('answer-explanation').classList.add('hidden');
+            document.getElementById('nav-buttons')?.classList.add('hidden');
+            document.getElementById('submit-container')?.classList.add('hidden');
         }
-        if (nextBtn) nextBtn.classList.add('hidden');
+        
+        // 네비게이션 버튼 업데이트
+        this.updateNavigationButtons();
+    },
+
+    // 이미 풀었던 문제 렌더링
+    renderAnsweredQuestion(question, answer) {
+        const container = document.getElementById('options-container');
+        container.innerHTML = '';
+
+        question.options.forEach((option, index) => {
+            const button = document.createElement('button');
+            button.className = 'option-btn w-full p-4 rounded-xl text-left transition-all';
+            button.innerHTML = `
+                <span class="option-label inline-block w-8 h-8 rounded-full text-center leading-8 mr-3">${String.fromCharCode(65 + index)}</span>
+                <span class="option-text">${option}</span>
+            `;
+            
+            // 정답/오답 표시
+            if (index === question.answer) {
+                button.classList.add('correct');
+            } else if (index === answer.selected && !answer.isCorrect) {
+                button.classList.add('wrong');
+            }
+            button.style.pointerEvents = 'none';
+            
+            container.appendChild(button);
+        });
+
+        // 해설 표시
+        this.showAnswerResult(answer.isCorrect, question);
+        
+        // 정답확인 버튼 숨기기, 네비게이션 표시
+        document.getElementById('submit-container')?.classList.add('hidden');
+        document.getElementById('nav-buttons')?.classList.remove('hidden');
+    },
+
+    // 특정 문제로 이동
+    goToQuestion(index) {
+        if (index < 0 || index >= this.state.questions.length) return;
+        
+        this.state.currentIndex = index;
+        this.renderQuestion();
+        
+        // 화면 상단으로 스크롤
+        document.getElementById('quiz-card')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     },
 
     // 선택지 렌더링
@@ -325,13 +566,12 @@ const Quiz = {
             Sound.select();
         }
 
-        // 버튼 표시 및 활성화
+        // 정답 확인 버튼 표시
+        document.getElementById('submit-container')?.classList.remove('hidden');
         const submitBtn = document.getElementById('btn-submit');
         if (submitBtn) {
             submitBtn.disabled = false;
             submitBtn.style.opacity = '1';
-            submitBtn.style.pointerEvents = 'auto';
-            submitBtn.style.transition = 'opacity 0.3s ease';
             submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i>정답 확인';
         }
 
@@ -371,6 +611,9 @@ const Quiz = {
             isCorrect,
             timeSpent: Date.now() - this.state.questionStartTime
         };
+
+        // 세션 저장
+        this.saveCurrentSession();
 
         // 통계 업데이트
         Storage.updateUserStats(isCorrect, question.subject);
@@ -445,51 +688,38 @@ const Quiz = {
             sourceRef.innerHTML = `<i class="fas fa-book-open mr-2"></i><span>출처: ${question.source}</span>`;
         }
 
-        // 버튼 상태 변경
-        document.getElementById('btn-submit').classList.add('hidden');
-        document.getElementById('btn-next').classList.remove('hidden');
+        // 버튼 상태 변경: 정답확인 숨기고 네비게이션 표시
+        document.getElementById('submit-container')?.classList.add('hidden');
+        document.getElementById('nav-buttons')?.classList.remove('hidden');
+        
+        // 해설로 부드럽게 스크롤
+        setTimeout(() => {
+            explanation.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+        
+        // 네비게이션 버튼 업데이트
+        this.updateNavigationButtons();
     },
 
-    // 다음 문제
+    // 다음 문제 (자동으로 다음으로 이동하지 않음 - 네비게이션 사용)
     nextQuestion() {
-        if (this.state.currentIndex < this.state.questions.length - 1) {
-            this.state.currentIndex++;
-            this.renderQuestion();
-
-            // 선택지 상태 초기화
-            const options = document.querySelectorAll('.option-btn');
-            options.forEach(btn => {
-                btn.classList.remove('correct', 'wrong', 'selected');
-                btn.style.pointerEvents = '';
-            });
-
-            // 버튼 상태
-            const submitBtn = document.getElementById('btn-submit');
-            const nextBtn = document.getElementById('btn-next');
-            
-            if (submitBtn) {
-                submitBtn.classList.remove('hidden');
-                submitBtn.disabled = true;
-                submitBtn.style.opacity = '0';
-                submitBtn.style.pointerEvents = 'none';
-            }
-            if (nextBtn) nextBtn.classList.add('hidden');
-        } else {
-            this.showResults();
+        // 단원별 퀴즈인 경우 진행상태 저장
+        if (this.state.chapterInfo) {
+            const { subjectId, chapterNum, startIndex } = this.state.chapterInfo;
+            const totalCompleted = startIndex + this.state.currentIndex + 1;
+            const varName = `QUESTIONS_${subjectId.toUpperCase()}_CH${chapterNum}`;
+            const totalQuestions = typeof window[varName] !== 'undefined' ? window[varName].length : 0;
+            Storage.saveChapterProgress(subjectId, chapterNum, totalCompleted, totalQuestions);
         }
+        
+        // 네비게이션 버튼만 업데이트
+        this.updateNavigationButtons();
     },
 
-    // 문제 건너뛰기
+    // 문제 건너뛰기 (레거시 - 호환성)
     skipQuestion() {
-        // 답안을 null로 기록
-        this.state.answers[this.state.currentIndex] = {
-            selected: null,
-            correct: this.state.questions[this.state.currentIndex].answer,
-            isCorrect: false,
-            skipped: true
-        };
-
-        this.nextQuestion();
+        // 다음 문제로 이동
+        this.goToQuestion(this.state.currentIndex + 1);
     },
 
     // 결과 화면 표시
@@ -501,12 +731,18 @@ const Quiz = {
         const accuracy = Math.round((correct / total) * 100);
         const totalTime = Math.round((Date.now() - startTime) / 1000);
 
+        // 세션 완료 처리 (모든 문제를 풀었으면 삭제)
+        const allAnswered = answers.every(a => a !== null);
+        if (allAnswered) {
+            this.completeSession();
+        }
+
         // 퀴즈 카드 숨기기
         document.getElementById('quiz-card').classList.add('hidden');
         document.getElementById('quiz-progress').classList.add('hidden');
         document.getElementById('answer-explanation').classList.add('hidden');
-        document.getElementById('btn-submit').classList.add('hidden');
-        document.getElementById('btn-next').classList.add('hidden');
+        document.getElementById('submit-container')?.classList.add('hidden');
+        document.getElementById('nav-buttons')?.classList.add('hidden');
 
         // 결과 화면 표시
         const resultEl = document.getElementById('quiz-result');
@@ -611,6 +847,37 @@ const Quiz = {
         this.renderQuestion();
 
         return true;
+    },
+
+    // 현재 세션 저장
+    saveCurrentSession() {
+        if (!this.state.sessionInfo) return;
+        
+        const { sessionKey, type, subjectId, subjectName, chapterNum, chapterName } = this.state.sessionInfo;
+        
+        // 푼 문제 수 계산
+        const answeredCount = this.state.answers.filter(a => a !== null).length;
+        
+        Storage.saveQuizSession(sessionKey, {
+            type,
+            subjectId,
+            subjectName,
+            chapterNum,
+            chapterName,
+            currentIndex: this.state.currentIndex,
+            totalQuestions: this.state.questions.length,
+            answeredCount,
+            answers: this.state.answers,
+            questionIds: this.state.questions.map(q => q.id)
+        });
+    },
+
+    // 세션 완료 (삭제)
+    completeSession() {
+        if (!this.state.sessionInfo) return;
+        
+        // 세션 삭제
+        Storage.deleteQuizSession(this.state.sessionInfo.sessionKey);
     }
 };
 

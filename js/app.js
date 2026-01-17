@@ -21,14 +21,14 @@ const App = {
         // 퀴즈 모듈 초기화
         Quiz.init();
 
-        // 학습 모듈 초기화
-        Study.init();
-
         // 대시보드 초기화
         Dashboard.init();
 
         // 홈 화면 통계 업데이트
         this.updateHomeStats();
+        
+        // 이어서 풀기 카드 업데이트
+        this.updateContinueSessionCard();
 
         // 로딩 완료
         setTimeout(() => {
@@ -59,7 +59,6 @@ const App = {
     setupNavigation() {
         const navButtons = {
             'nav-home': 'home',
-            'nav-study': 'study',
             'nav-quiz': 'quiz',
             'nav-review': 'review',
             'nav-dashboard': 'dashboard',
@@ -104,14 +103,13 @@ const App = {
         switch (pageId) {
             case 'home':
                 this.updateHomeStats();
-                break;
-            case 'study':
-                Study.showSubjectList();
+                this.updateContinueSessionCard();
                 break;
             case 'quiz':
                 // 퀴즈가 이미 시작되지 않았으면 선택 화면 표시
                 if (!Quiz.state.questions || Quiz.state.questions.length === 0) {
                     Quiz.showStartSelection();
+                    this.updateQuizContinueCard();
                 }
                 break;
             case 'review':
@@ -123,6 +121,98 @@ const App = {
             case 'settings':
                 this.updateSettingsUI();
                 break;
+        }
+    },
+
+    // 홈화면 이어서 풀기 카드 업데이트
+    updateContinueSessionCard() {
+        const card = document.getElementById('continue-session-card');
+        const info = document.getElementById('continue-session-info');
+        if (!card || !info) return;
+        
+        const lastSession = Storage.getLastSession();
+        
+        if (lastSession && lastSession.currentIndex < lastSession.totalQuestions) {
+            // 진행 중인 세션이 있음
+            let sessionText = '';
+            if (lastSession.type === 'chapter') {
+                sessionText = `${lastSession.subjectName} > ${lastSession.chapterName}`;
+            } else if (lastSession.type === 'subject') {
+                sessionText = lastSession.subjectName;
+            } else if (lastSession.type === 'random') {
+                sessionText = '랜덤 문제';
+            } else if (lastSession.type === 'wrong') {
+                sessionText = '오답 복습';
+            }
+            
+            const progress = lastSession.answeredCount || lastSession.currentIndex;
+            info.textContent = `${sessionText} (${progress}/${lastSession.totalQuestions})`;
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    },
+
+    // 문제탭 이어서 풀기 카드 업데이트
+    updateQuizContinueCard() {
+        const card = document.getElementById('quiz-continue-card');
+        const info = document.getElementById('quiz-continue-info');
+        const progress = document.getElementById('quiz-continue-progress');
+        const count = document.getElementById('quiz-continue-count');
+        if (!card) return;
+        
+        const lastSession = Storage.getLastSession();
+        
+        if (lastSession && lastSession.currentIndex < lastSession.totalQuestions) {
+            // 진행 중인 세션이 있음
+            let sessionText = '';
+            if (lastSession.type === 'chapter') {
+                sessionText = `${lastSession.subjectName} > ${lastSession.chapterName}`;
+            } else if (lastSession.type === 'subject') {
+                sessionText = lastSession.subjectName;
+            } else if (lastSession.type === 'random') {
+                sessionText = '랜덤 문제';
+            } else if (lastSession.type === 'wrong') {
+                sessionText = '오답 복습';
+            }
+            
+            const answered = lastSession.answeredCount || lastSession.currentIndex;
+            const total = lastSession.totalQuestions;
+            const percent = Math.round((answered / total) * 100);
+            
+            if (info) info.textContent = sessionText;
+            if (progress) progress.style.width = `${percent}%`;
+            if (count) count.textContent = `${answered}/${total}`;
+            
+            card.classList.remove('hidden');
+        } else {
+            card.classList.add('hidden');
+        }
+    },
+
+    // 마지막 세션 이어서 풀기
+    continueLastSession() {
+        const lastSession = Storage.getLastSession();
+        if (!lastSession) {
+            showToast('이어서 풀 세션이 없습니다.', 'info');
+            return;
+        }
+        
+        if (Quiz.continueSession(lastSession.key)) {
+            this.navigateTo('quiz');
+        }
+    },
+
+    // 마지막 세션 처음부터 다시
+    restartLastSession() {
+        const lastSession = Storage.getLastSession();
+        if (!lastSession) {
+            showToast('다시 시작할 세션이 없습니다.', 'info');
+            return;
+        }
+        
+        if (Quiz.restartSession(lastSession.key)) {
+            this.navigateTo('quiz');
         }
     },
 
@@ -150,53 +240,17 @@ const App = {
             card.style.borderLeft = `4px solid ${subject.color}`;
             
             card.addEventListener('click', () => {
-                this.showSubjectModal(subject);
+                this.showChapterModal(subject);
             });
 
             container.appendChild(card);
         });
     },
 
-    // 과목 선택 모달 표시 (확장 버전)
-    showSubjectModal(subjectOrMode) {
-        // 모드만 전달된 경우 (quiz 모드)
-        if (typeof subjectOrMode === 'string' && subjectOrMode === 'quiz') {
-            const modal = document.getElementById('modal-subject');
-            const list = document.getElementById('modal-subject-list');
-            
-            if (!modal || !list) return;
-
-            list.innerHTML = `
-                <div class="text-center mb-4">
-                    <h3 class="text-xl font-bold">📚 과목 선택</h3>
-                    <p class="text-sm opacity-70 mt-2">문제를 풀 과목을 선택하세요</p>
-                </div>
-                <div class="grid grid-cols-2 gap-3" id="quiz-subject-buttons">
-                </div>
-            `;
-
-            const container = list.querySelector('#quiz-subject-buttons');
-            Object.values(SUBJECTS).forEach(subject => {
-                const btn = document.createElement('button');
-                btn.className = 'modal-option p-4 rounded-xl text-center';
-                btn.innerHTML = `
-                    <div class="text-4xl mb-2">${subject.icon}</div>
-                    <div class="font-bold text-sm">${subject.name}</div>
-                    <div class="text-xs opacity-70 mt-1">${getQuestionsBySubject(subject.id).length}문제</div>
-                `;
-                btn.onclick = () => {
-                    closeModal();
-                    Quiz.startSubjectQuiz(subject.id);
-                };
-                container.appendChild(btn);
-            });
-
-            modal.classList.remove('hidden');
-            return;
-        }
-
-        // 기존 과목 선택 모달 (학습 모드)
-        const subject = subjectOrMode;
+    // 과목 선택 모달 표시 (퀴즈 페이지에서 사용)
+    showSubjectModal(mode) {
+        if (mode !== 'quiz') return;
+        
         const modal = document.getElementById('modal-subject');
         const list = document.getElementById('modal-subject-list');
         
@@ -204,42 +258,239 @@ const App = {
 
         list.innerHTML = `
             <div class="text-center mb-4">
-                <span class="text-5xl">${subject.icon}</span>
-                <h3 class="text-xl font-bold mt-2">${subject.name}</h3>
-                <p class="text-sm opacity-70">${subject.description}</p>
+                <h3 class="text-xl font-bold">📚 과목 선택</h3>
+                <p class="text-sm opacity-70 mt-2">문제를 풀 과목을 선택하세요</p>
             </div>
-            <div class="space-y-2">
-                <button class="modal-option w-full p-4 rounded-lg text-left" data-count="5">
-                    <i class="fas fa-bolt mr-2"></i>빠른 학습 (5문제)
-                </button>
-                <button class="modal-option w-full p-4 rounded-lg text-left" data-count="10">
-                    <i class="fas fa-book mr-2"></i>일반 학습 (10문제)
-                </button>
-                <button class="modal-option w-full p-4 rounded-lg text-left" data-count="20">
-                    <i class="fas fa-graduation-cap mr-2"></i>심화 학습 (20문제)
-                </button>
-                <button class="modal-option w-full p-4 rounded-lg text-left" data-count="all">
-                    <i class="fas fa-infinity mr-2"></i>전체 문제 (${getQuestionsBySubject(subject.id).length}문제)
+            <div class="grid grid-cols-2 gap-3" id="quiz-subject-buttons">
+            </div>
+        `;
+
+        const container = list.querySelector('#quiz-subject-buttons');
+        Object.values(SUBJECTS).forEach(subject => {
+            const btn = document.createElement('button');
+            btn.className = 'modal-option p-4 rounded-xl text-center';
+            btn.innerHTML = `
+                <div class="text-4xl mb-2">${subject.icon}</div>
+                <div class="font-bold text-sm">${subject.name}</div>
+                <div class="text-xs opacity-70 mt-1">${getQuestionsBySubject(subject.id).length}문제</div>
+            `;
+            btn.onclick = () => {
+                closeModal();
+                this.showChapterModal(subject);
+            };
+            container.appendChild(btn);
+        });
+
+        modal.classList.remove('hidden');
+    },
+
+    // 단원 선택 모달 표시 (과목별 단원 선택)
+    showChapterModal(subject) {
+        const modal = document.getElementById('modal-subject');
+        const list = document.getElementById('modal-subject-list');
+        
+        if (!modal || !list) return;
+
+        // 해당 과목의 단원 목록 가져오기
+        const chapters = this.getSubjectChapters(subject.id);
+        const progress = Storage.getChapterProgress(subject.id);
+        
+        list.innerHTML = `
+            <div class="text-center mb-4">
+                <span class="text-4xl">${subject.icon}</span>
+                <h3 class="text-xl font-bold mt-2">${subject.name}</h3>
+                <p class="text-sm opacity-70">단원을 선택하세요</p>
+            </div>
+            <div class="space-y-2" id="chapter-list">
+                <!-- 전체 문제 풀기 옵션 -->
+                <button class="modal-option w-full p-4 rounded-lg text-left flex items-center justify-between" data-chapter="all">
+                    <div>
+                        <i class="fas fa-layer-group mr-2 text-blue-500"></i>
+                        <span class="font-bold">전체 문제</span>
+                    </div>
+                    <span class="text-sm opacity-70">${getQuestionsBySubject(subject.id).length}문제</span>
                 </button>
             </div>
         `;
 
-        // 옵션 클릭 이벤트
+        const chapterList = list.querySelector('#chapter-list');
+        
+        // 단원별 버튼 생성
+        chapters.forEach((chapter, index) => {
+            const chapterNum = index + 1;
+            
+            // 세션에서 진행률 확인
+            const sessionKey = `${subject.id}_${chapterNum}`;
+            const session = Storage.getQuizSession(sessionKey);
+            
+            // 세션이 있으면 세션 기준, 없으면 기존 progress 기준
+            let currentProgress = 0;
+            let totalQuestions = chapter.count;
+            
+            if (session) {
+                currentProgress = session.answeredCount || 0;
+                totalQuestions = session.totalQuestions || chapter.count;
+            } else {
+                const chapterProgress = progress[chapterNum];
+                if (chapterProgress) {
+                    currentProgress = chapterProgress.current || 0;
+                }
+            }
+            
+            const isCompleted = currentProgress >= totalQuestions && totalQuestions > 0;
+            const hasProgress = currentProgress > 0;
+            
+            const btn = document.createElement('button');
+            btn.className = 'modal-option w-full p-4 rounded-lg text-left';
+            btn.dataset.chapter = chapterNum;
+            btn.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${isCompleted ? 'bg-green-500 text-white' : hasProgress ? 'bg-blue-500 text-white' : 'bg-gray-200'}">${chapterNum}</span>
+                        <div>
+                            <div class="font-medium">${chapter.name || chapterNum + '단원'}</div>
+                            <div class="text-xs opacity-70">${chapter.count}문제 ${hasProgress ? `(${currentProgress}/${totalQuestions} 완료)` : ''}</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        ${hasProgress && !isCompleted ? '<span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">이어서</span>' : ''}
+                        ${isCompleted ? '<i class="fas fa-check-circle text-green-500"></i>' : '<i class="fas fa-chevron-right opacity-50"></i>'}
+                    </div>
+                </div>
+            `;
+            
+            chapterList.appendChild(btn);
+        });
+
+        // 클릭 이벤트
         list.querySelectorAll('.modal-option').forEach(btn => {
             btn.addEventListener('click', () => {
-                const count = btn.dataset.count;
-                const questionCount = count === 'all' 
-                    ? getQuestionsBySubject(subject.id).length 
-                    : parseInt(count);
+                const chapter = btn.dataset.chapter;
                 
-                closeModal();
-                if (Quiz.start(subject.id, questionCount)) {
+                if (chapter === 'all') {
+                    closeModal();
+                    Quiz.startSubjectQuiz(subject.id);
                     this.navigateTo('quiz');
+                } else {
+                    const chapterNum = parseInt(chapter);
+                    const sessionKey = `${subject.id}_${chapterNum}`;
+                    const existingSession = Storage.getQuizSession(sessionKey);
+                    
+                    // 진행 중인 세션이 있는지 확인
+                    if (existingSession && existingSession.answeredCount > 0 && existingSession.answeredCount < existingSession.totalQuestions) {
+                        // 이어서 풀기 옵션 모달 표시
+                        this.showChapterContinueModal(subject, chapterNum, existingSession);
+                    } else {
+                        closeModal();
+                        Quiz.startChapterQuiz(subject.id, chapterNum, true);
+                        this.navigateTo('quiz');
+                    }
                 }
             });
         });
 
         modal.classList.remove('hidden');
+    },
+
+    // 단원 이어서 풀기 선택 모달
+    showChapterContinueModal(subject, chapterNum, session) {
+        const modal = document.getElementById('modal-subject');
+        const list = document.getElementById('modal-subject-list');
+        
+        const percent = Math.round((session.answeredCount / session.totalQuestions) * 100);
+        
+        list.innerHTML = `
+            <div class="text-center mb-4">
+                <span class="text-4xl">${subject.icon}</span>
+                <h3 class="text-xl font-bold mt-2">${subject.name}</h3>
+                <p class="text-lg font-medium">${chapterNum}단원</p>
+            </div>
+            
+            <div class="mb-4 p-4 rounded-lg bg-blue-50 border border-blue-200">
+                <p class="text-sm text-center mb-2">이전 학습 진행률</p>
+                <div class="flex items-center gap-3">
+                    <div class="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
+                        <div class="h-full bg-blue-500 rounded-full" style="width: ${percent}%"></div>
+                    </div>
+                    <span class="font-bold text-blue-600">${session.answeredCount}/${session.totalQuestions}</span>
+                </div>
+            </div>
+            
+            <div class="space-y-3">
+                <button id="btn-continue-chapter" class="modal-option w-full p-4 rounded-lg text-left bg-green-50 border-2 border-green-500">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-play text-green-500 text-xl"></i>
+                        <div>
+                            <div class="font-bold text-green-700">이어서 풀기</div>
+                            <div class="text-xs text-green-600">${session.answeredCount + 1}번 문제부터 시작</div>
+                        </div>
+                    </div>
+                </button>
+                
+                <button id="btn-restart-chapter" class="modal-option w-full p-4 rounded-lg text-left">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-redo text-gray-500 text-xl"></i>
+                        <div>
+                            <div class="font-medium">처음부터 다시 풀기</div>
+                            <div class="text-xs opacity-70">진행 상황이 초기화됩니다</div>
+                        </div>
+                    </div>
+                </button>
+                
+                <button id="btn-back-chapters" class="w-full p-3 text-center text-sm text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-arrow-left mr-1"></i>단원 목록으로
+                </button>
+            </div>
+        `;
+        
+        // 이벤트 바인딩
+        document.getElementById('btn-continue-chapter').addEventListener('click', () => {
+            closeModal();
+            Quiz.continueSession(`${subject.id}_${chapterNum}`);
+            this.navigateTo('quiz');
+        });
+        
+        document.getElementById('btn-restart-chapter').addEventListener('click', () => {
+            closeModal();
+            Storage.deleteQuizSession(`${subject.id}_${chapterNum}`);
+            Quiz.startChapterQuiz(subject.id, chapterNum, true);
+            this.navigateTo('quiz');
+        });
+        
+        document.getElementById('btn-back-chapters').addEventListener('click', () => {
+            this.showChapterModal(subject);
+        });
+    },
+
+    // 과목별 단원 정보 가져오기
+    getSubjectChapters(subjectId) {
+        // 각 과목별 단원 수와 문제 수 계산
+        const chapterCounts = {
+            law: 10,
+            urban: 11,
+            emu: 7,
+            theory: 9,
+            emergency: 3
+        };
+        
+        const chapters = [];
+        const numChapters = chapterCounts[subjectId] || 1;
+        
+        for (let i = 1; i <= numChapters; i++) {
+            // 해당 단원의 문제 수 계산
+            const varName = `QUESTIONS_${subjectId.toUpperCase()}_CH${i}`;
+            const chapterQuestions = typeof window[varName] !== 'undefined' 
+                ? window[varName] 
+                : [];
+            
+            chapters.push({
+                number: i,
+                name: `${i}단원`,
+                count: chapterQuestions.length
+            });
+        }
+        
+        return chapters;
     },
 
     // 빠른 액션 설정
