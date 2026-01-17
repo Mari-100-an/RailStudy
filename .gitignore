@@ -24,3 +24,8 @@ desktop.ini
 # 환경 변수
 .env
 .env.local
+# 오디오 파일 (대용량, 각자 다운로드)
+# audio/sfx/*.mp3
+# audio/bgm/*.mp3
+# README.md는 유지하여 다운로드 가이드 제공
+!audio/README.md

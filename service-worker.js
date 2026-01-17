@@ -2,7 +2,7 @@
  * Service Worker - PWA 오프라인 지원 및 캐싱
  */
 
-const CACHE_NAME = 'railway-study-v2.1';
+const CACHE_NAME = 'railway-study-v2.4';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
@@ -15,7 +15,15 @@ const ASSETS_TO_CACHE = [
     '/js/storage.js',
     '/js/theme.js',
     '/js/sound.js',
-    '/js/heatmap.js'
+    '/js/heatmap.js',
+    // 오디오 파일 (존재하는 경우만 캐시)
+    '/audio/sfx/correct.mp3',
+    '/audio/sfx/wrong.mp3',
+    '/audio/sfx/levelup.mp3',
+    '/audio/sfx/badge.mp3',
+    '/audio/sfx/combo.mp3',
+    '/audio/sfx/select.mp3',
+    '/audio/bgm/lofi-study.mp3'  // BGM 추가
 ];
 
 // 메시지 이벤트 - SKIP_WAITING 처리

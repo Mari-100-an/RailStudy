@@ -67,14 +67,20 @@ const App = {
         Object.entries(navButtons).forEach(([btnId, pageId]) => {
             const btn = document.getElementById(btnId);
             if (btn) {
-                btn.addEventListener('click', () => this.navigateTo(pageId));
+                btn.addEventListener('click', () => {
+                    if (typeof Sound !== 'undefined') Sound.select();
+                    this.navigateTo(pageId);
+                });
             }
         });
         
         // 로고 버튼 - 홈으로 이동
         const logoBtn = document.getElementById('logo-btn');
         if (logoBtn) {
-            logoBtn.addEventListener('click', () => this.navigateTo('home'));
+            logoBtn.addEventListener('click', () => {
+                if (typeof Sound !== 'undefined') Sound.select();
+                this.navigateTo('home');
+            });
         }
     },
 
@@ -249,6 +255,7 @@ const App = {
             
             if (!isDisabled) {
                 card.addEventListener('click', () => {
+                    if (typeof Sound !== 'undefined') Sound.select();
                     this.showChapterModal(subject);
                 });
             } else {
@@ -523,6 +530,7 @@ const App = {
         const quickQuizBtn = document.getElementById('quick-quiz-btn');
         if (quickQuizBtn) {
             quickQuizBtn.addEventListener('click', () => {
+                if (typeof Sound !== 'undefined') Sound.select();
                 if (Quiz.start()) {
                     this.navigateTo('quiz');
                 }
@@ -532,6 +540,7 @@ const App = {
         const continueBtn = document.getElementById('continue-btn');
         if (continueBtn) {
             continueBtn.addEventListener('click', () => {
+                if (typeof Sound !== 'undefined') Sound.select();
                 // 오답 우선 학습
                 const settings = Storage.getSettings();
                 const originalOrder = settings.questionOrder;
@@ -573,6 +582,67 @@ const App = {
             instantFeedback.addEventListener('change', (e) => {
                 Storage.updateSetting('instantFeedback', e.target.checked);
                 showToast('설정이 저장되었습니다.', 'success');
+            });
+        }
+
+        // 효과음 볼륨
+        const sfxVolumeSlider = document.getElementById('setting-sfx-volume');
+        const sfxVolumeValue = document.getElementById('sfx-volume-value');
+        if (sfxVolumeSlider && sfxVolumeValue) {
+            sfxVolumeSlider.addEventListener('input', (e) => {
+                const volume = parseInt(e.target.value) / 100;
+                Sound.setVolume(volume);
+                sfxVolumeValue.textContent = `${e.target.value}%`;
+            });
+        }
+
+        // BGM 볼륨
+        const bgmVolumeSlider = document.getElementById('setting-bgm-volume');
+        const bgmVolumeValue = document.getElementById('bgm-volume-value');
+        if (bgmVolumeSlider && bgmVolumeValue) {
+            bgmVolumeSlider.addEventListener('input', (e) => {
+                const volume = parseInt(e.target.value) / 100;
+                Sound.setBgmVolume(volume);
+                bgmVolumeValue.textContent = `${e.target.value}%`;
+            });
+        }
+
+        // BGM 켜기/끄기
+        const bgmToggle = document.getElementById('setting-bgm-enabled');
+        if (bgmToggle) {
+            bgmToggle.addEventListener('change', (e) => {
+                Sound.bgmEnabled = e.target.checked;
+                const settings = Storage.get(Storage.KEYS.SETTINGS) || {};
+                settings.bgmEnabled = e.target.checked;
+                Storage.set(Storage.KEYS.SETTINGS, settings);
+                
+                if (e.target.checked) {
+                    Sound.startBGM();
+                    showToast('배경음악이 켜졌습니다', 'info');
+                } else {
+                    Sound.stopBGM();
+                    showToast('배경음악이 꺼졌습니다', 'info');
+                }
+            });
+        }
+
+        // 햅틱 피드백 켜기/끄기
+        const hapticToggle = document.getElementById('setting-haptic');
+        if (hapticToggle) {
+            hapticToggle.addEventListener('change', (e) => {
+                Sound.toggleHaptic();
+                showToast(Sound.hapticEnabled ? '햅틱 피드백이 켜졌습니다' : '햅틱 피드백이 꺼졌습니다', 'info');
+            });
+        }
+
+        // 사운드 테스트
+        const testSoundBtn = document.getElementById('btn-test-sound');
+        if (testSoundBtn) {
+            testSoundBtn.addEventListener('click', () => {
+                Sound.select();
+                setTimeout(() => Sound.correct(), 300);
+                setTimeout(() => Sound.combo(5), 600);
+                setTimeout(() => Sound.badge('gold'), 900);
             });
         }
 
@@ -625,6 +695,33 @@ const App = {
         const instantFeedback = document.getElementById('setting-instant-feedback');
         if (instantFeedback) {
             instantFeedback.checked = settings.instantFeedback;
+        }
+
+        // 사운드 설정 UI 업데이트
+        const sfxVolumeSlider = document.getElementById('setting-sfx-volume');
+        const sfxVolumeValue = document.getElementById('sfx-volume-value');
+        if (sfxVolumeSlider && sfxVolumeValue) {
+            const sfxVolume = Math.round((settings.soundVolume ?? 0.3) * 100);
+            sfxVolumeSlider.value = sfxVolume;
+            sfxVolumeValue.textContent = `${sfxVolume}%`;
+        }
+
+        const bgmVolumeSlider = document.getElementById('setting-bgm-volume');
+        const bgmVolumeValue = document.getElementById('bgm-volume-value');
+        if (bgmVolumeSlider && bgmVolumeValue) {
+            const bgmVolume = Math.round((settings.bgmVolume ?? 0.2) * 100);
+            bgmVolumeSlider.value = bgmVolume;
+            bgmVolumeValue.textContent = `${bgmVolume}%`;
+        }
+
+        const bgmToggle = document.getElementById('setting-bgm-enabled');
+        if (bgmToggle) {
+            bgmToggle.checked = settings.bgmEnabled ?? false;
+        }
+
+        const hapticToggle = document.getElementById('setting-haptic');
+        if (hapticToggle) {
+            hapticToggle.checked = settings.hapticEnabled !== false;
         }
     },
 

@@ -731,9 +731,10 @@ body.game-mode #page-quiz .quiz-start-option p {
     background-color: var(--game-error-light);
     border-color: var(--game-error);
     box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
-    animation: wrongShake 0.5s ease;
+    /* 흔들림 애니메이션 제거 */
 }
 
+/* wrongShake 애니메이션 제거
 @keyframes wrongShake {
     0%, 100% {
         transform: translateX(0);
@@ -745,6 +746,7 @@ body.game-mode #page-quiz .quiz-start-option p {
         transform: translateX(10px);
     }
 }
+*/
 
 .option-number {
     background-color: var(--game-border);

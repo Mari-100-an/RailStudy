@@ -561,10 +561,10 @@ const Quiz = {
             }
         });
 
-        // 사운드 재생
-        if (typeof Sound !== 'undefined') {
-            Sound.select();
-        }
+        // 선택지 클릭 시 사운드는 제거 (정답/오답 사운드와 겹치지 않도록)
+        // if (typeof Sound !== 'undefined') {
+        //     Sound.select();
+        // }
 
         // 정답 확인 버튼 표시
         document.getElementById('submit-container')?.classList.remove('hidden');

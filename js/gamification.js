@@ -128,6 +128,11 @@ const Gamification = {
         const gameData = Storage.addXP(xp);
         Storage.updateMaxCombo(this.currentCombo);
 
+        // 콤보 사운드 (콤보 수에 따라 음계 상승)
+        if (this.currentCombo >= 3) {
+            Sound.combo(this.currentCombo);
+        }
+
         // UI 업데이트
         Theme.updateGameDisplay();
 
@@ -277,6 +282,9 @@ const Gamification = {
             showToast(`🎖️ 새 배지 획득: ${badge.name}`, 'success');
             return;
         }
+
+        // 티어별 사운드 재생
+        Sound.badge(badge.tier);
 
         // 티어 색상 가져오기
         const tierColors = {
