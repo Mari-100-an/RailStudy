@@ -363,6 +363,7 @@ const Sound = {
                 });
                 
                 this.bgmAudio.addEventListener('error', (e) => {
+                    if (!this.bgmAudio) return; // null 체크
                     const errorCode = this.bgmAudio.error?.code;
                     const errorMessages = {
                         1: 'ABORTED - 로딩 중단',
@@ -376,10 +377,10 @@ const Sound = {
                         error: e,
                         code: errorCode,
                         message: errorMsg,
-                        networkState: this.bgmAudio.networkState,
-                        readyState: this.bgmAudio.readyState,
-                        src: this.bgmAudio.src,
-                        currentSrc: this.bgmAudio.currentSrc
+                        networkState: this.bgmAudio?.networkState,
+                        readyState: this.bgmAudio?.readyState,
+                        src: this.bgmAudio?.src,
+                        currentSrc: this.bgmAudio?.currentSrc
                     });
                     if (typeof showToast === 'function') {
                         showToast(`배경음악 오류: ${errorMsg} (code: ${errorCode})`, 'error');

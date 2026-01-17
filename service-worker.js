@@ -2,7 +2,7 @@
  * Service Worker - PWA 오프라인 지원 및 캐싱
  */
 
-const CACHE_NAME = 'railway-study-v3.8';
+const CACHE_NAME = 'railway-study-v3.9';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
