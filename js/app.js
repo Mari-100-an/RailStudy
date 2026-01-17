@@ -70,6 +70,12 @@ const App = {
                 btn.addEventListener('click', () => this.navigateTo(pageId));
             }
         });
+        
+        // 로고 버튼 - 홈으로 이동
+        const logoBtn = document.getElementById('logo-btn');
+        if (logoBtn) {
+            logoBtn.addEventListener('click', () => this.navigateTo('home'));
+        }
     },
 
     // 페이지 이동

@@ -52,7 +52,6 @@ const Theme = {
         // XP 바 업데이트
         const levelBadge = document.getElementById('level-badge');
         const levelTierIcon = document.getElementById('level-tier-icon');
-        const levelTierName = document.getElementById('level-tier-name');
         const xpBarFill = document.getElementById('xp-bar-fill');
         const xpText = document.getElementById('xp-text');
 
@@ -60,11 +59,6 @@ const Theme = {
             levelBadge.innerHTML = `<span id="level-tier-icon">${tierInfo.icon}</span> Lv.${gameData.level}`;
             levelBadge.style.borderColor = tierInfo.color;
             levelBadge.style.boxShadow = `0 0 10px ${tierInfo.color}40`;
-        }
-
-        if (levelTierName) {
-            levelTierName.textContent = tierInfo.name;
-            levelTierName.style.color = tierInfo.color;
         }
 
         if (xpBarFill && xpText) {

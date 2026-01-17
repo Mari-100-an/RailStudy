@@ -336,7 +336,10 @@ const Gamification = {
     // 배지 그리드 렌더링 (티어별 정렬)
     renderBadgeGrid() {
         const container = document.getElementById('badge-grid');
-        if (!container) return;
+        if (!container) {
+            console.warn('badge-grid container not found');
+            return;
+        }
 
         const gameData = Storage.getGameData();
         const tierOrder = ['diamond', 'platinum', 'gold', 'silver', 'bronze'];
@@ -348,7 +351,7 @@ const Gamification = {
             bronze: '🥉 브론즈'
         };
 
-        container.innerHTML = '';
+        let html = '';
 
         // 티어별로 그룹화
         const badgesByTier = {};
@@ -367,54 +370,50 @@ const Gamification = {
             const unlockedCount = badges.filter(b => gameData.unlockedBadges.includes(b.id)).length;
 
             // 티어 헤더
-            const tierHeader = document.createElement('div');
-            tierHeader.className = 'col-span-full mt-4 mb-2';
-            tierHeader.innerHTML = `
-                <div class="text-sm font-semibold opacity-70">
-                    ${tierNames[tier]} (${unlockedCount}/${badges.length})
+            html += `
+                <div class="col-span-full mt-4 mb-2">
+                    <div class="text-sm font-semibold opacity-70">
+                        ${tierNames[tier]} (${unlockedCount}/${badges.length})
+                    </div>
                 </div>
             `;
-            container.appendChild(tierHeader);
 
             // 배지 표시
             for (const badge of badges) {
                 const isUnlocked = gameData.unlockedBadges.includes(badge.id);
-                const badgeEl = document.createElement('div');
-                badgeEl.className = `badge-item ${isUnlocked ? '' : 'locked'} cursor-pointer tier-${tier}`;
-                badgeEl.innerHTML = `
-                    <div class="text-3xl">${badge.icon}</div>
-                `;
-                badgeEl.title = isUnlocked 
+                const title = isUnlocked 
                     ? `${badge.name}: ${badge.description}` 
                     : `???: ${badge.description}`;
                 
-                // 클릭 이벤트
-                if (isUnlocked) {
-                    badgeEl.onclick = () => this.showBadgeDetail(badge);
-                }
-                
-                container.appendChild(badgeEl);
+                html += `
+                    <div class="badge-item ${isUnlocked ? '' : 'locked'} cursor-pointer tier-${tier}" 
+                         title="${title}" 
+                         ${isUnlocked ? `onclick="Gamification.showBadgeDetail(${JSON.stringify(badge).replace(/"/g, '&quot;')})"` : ''}>
+                        <div class="text-3xl">${badge.icon}</div>
+                    </div>
+                `;
             }
         }
 
         // 통계 표시
         const totalUnlocked = gameData.unlockedBadges.length;
         const totalBadges = this.BADGES.length;
-        const statsEl = document.createElement('div');
-        statsEl.className = 'col-span-full mt-6 p-4 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-lg';
-        statsEl.innerHTML = `
-            <div class="text-center">
-                <div class="text-2xl font-bold mb-1">${totalUnlocked} / ${totalBadges}</div>
-                <div class="text-sm opacity-70">배지 수집 진행도</div>
-                <div class="mt-2">
-                    <div class="w-full bg-gray-700 rounded-full h-2">
-                        <div class="bg-gradient-to-r from-yellow-400 to-amber-500 h-2 rounded-full" 
-                             style="width: ${(totalUnlocked / totalBadges * 100).toFixed(1)}%"></div>
+        html += `
+            <div class="col-span-full mt-6 p-4 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-lg">
+                <div class="text-center">
+                    <div class="text-2xl font-bold mb-1">${totalUnlocked} / ${totalBadges}</div>
+                    <div class="text-sm opacity-70">배지 수집 진행도</div>
+                    <div class="mt-2">
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-gradient-to-r from-yellow-400 to-amber-500 h-2 rounded-full" 
+                                 style="width: ${(totalUnlocked / totalBadges * 100).toFixed(1)}%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         `;
-        container.appendChild(statsEl);
+
+        container.innerHTML = html;
     },
 
     // 배지 상세 팝업 표시

@@ -6,23 +6,24 @@ const CACHE_NAME = 'railway-study-v2.0';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
-    '/favicon.ico',
-    '/icon-192.png',
-    '/icon-512.png',
     '/css/style.css',
-    '/css/focus-mode.css',
     '/css/game-mode.css',
     '/js/app.js',
     '/js/quiz.js',
-    '/js/study.js',
     '/js/dashboard.js',
     '/js/gamification.js',
     '/js/storage.js',
     '/js/theme.js',
     '/js/sound.js',
-    '/data/questions.js',
-    '/data/concepts/index.js'
+    '/js/heatmap.js'
 ];
+
+// 메시지 이벤트 - SKIP_WAITING 처리
+self.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        self.skipWaiting();
+    }
+});
 
 // 설치 이벤트 - 캐시에 리소스 저장
 self.addEventListener('install', (event) => {
@@ -33,7 +34,6 @@ self.addEventListener('install', (event) => {
                 console.log('[SW] Caching app shell');
                 return cache.addAll(ASSETS_TO_CACHE);
             })
-            .then(() => self.skipWaiting())
     );
 });
 

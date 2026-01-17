@@ -493,10 +493,10 @@ const Quiz = {
 
         question.options.forEach((option, index) => {
             const button = document.createElement('button');
-            button.className = 'option-btn w-full p-4 rounded-xl text-left transition-all';
+            button.className = 'option-btn w-full p-4 rounded-xl text-left transition-all flex items-start gap-3';
             button.innerHTML = `
-                <span class="option-label inline-block w-8 h-8 rounded-full text-center leading-8 mr-3">${String.fromCharCode(65 + index)}</span>
-                <span class="option-text">${option}</span>
+                <span class="option-label flex-shrink-0 w-8 h-8 rounded-full text-center leading-8 font-bold">${String.fromCharCode(65 + index)}</span>
+                <span class="option-text flex-1">${option}</span>
             `;
             
             // 정답/오답 표시
@@ -536,10 +536,10 @@ const Quiz = {
 
         question.options.forEach((option, index) => {
             const button = document.createElement('button');
-            button.className = 'option-btn w-full p-4 rounded-xl text-left transition-all';
+            button.className = 'option-btn w-full p-4 rounded-xl text-left transition-all flex items-start gap-3';
             button.innerHTML = `
-                <span class="option-label inline-block w-8 h-8 rounded-full text-center leading-8 mr-3">${String.fromCharCode(65 + index)}</span>
-                <span class="option-text">${option}</span>
+                <span class="option-label flex-shrink-0 w-8 h-8 rounded-full text-center leading-8 font-bold">${String.fromCharCode(65 + index)}</span>
+                <span class="option-text flex-1">${option}</span>
             `;
             button.addEventListener('click', () => this.selectOption(index));
             container.appendChild(button);

@@ -47,7 +47,7 @@ const Storage = {
     defaultGameData: {
         level: 1,
         xp: 0,
-        totalXp: 0,
+        totalXP: 0,
         maxCombo: 0,
         badges: [],
         unlockedBadges: []
@@ -295,7 +295,7 @@ const Storage = {
     addXP(amount) {
         const data = this.getGameData();
         data.xp += amount;
-        data.totalXp += amount;
+        data.totalXP += amount;
         
         // 레벨업 체크
         const xpForNextLevel = this.getXPForLevel(data.level + 1);

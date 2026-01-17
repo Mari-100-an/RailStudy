@@ -25,6 +25,13 @@
     --game-combo: #F97316;
     --game-border: #475569;
     --game-glow: 0 0 20px rgba(59, 130, 246, 0.3);
+    
+    /* 히트맵 색상 */
+    --heatmap-level-0: #1E293B;
+    --heatmap-level-1: #3B82F6;
+    --heatmap-level-2: #2563EB;
+    --heatmap-level-3: #1D4ED8;
+    --heatmap-level-4: #1E40AF;
 }
 
 /* 기본 배경 - 게임 모드 활성화시에만 적용 */
@@ -1734,6 +1741,73 @@ body.game-mode .bg-primary {
 body.game-mode .text-white {
     color: var(--game-text) !important;
 }
+
+/* ========================================
+   학습 히트맵 스타일
+   ======================================== */
+
+.heatmap-wrapper {
+    background: var(--game-bg-card);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--game-border);
+}
+
+.heatmap-grid {
+    display: flex;
+    gap: 3px;
+    overflow-x: auto;
+    padding: 4px 0;
+}
+
+.heatmap-week {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex-shrink: 0;
+}
+
+.heatmap-cell {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.heatmap-cell:hover {
+    transform: scale(1.3);
+}
+
+body.game-mode .heatmap-cell.level-0 {
+    background: var(--heatmap-level-0);
+}
+
+body.game-mode .heatmap-cell.level-1 {
+    background: var(--heatmap-level-1);
+}
+
+body.game-mode .heatmap-cell.level-2 {
+    background: var(--heatmap-level-2);
+}
+
+body.game-mode .heatmap-cell.level-3 {
+    background: var(--heatmap-level-3);
+}
+
+body.game-mode .heatmap-cell.level-4 {
+    background: var(--heatmap-level-4);
+}
+
+.heatmap-legend {
+    justify-content: center;
+}
+
+.heatmap-legend .heatmap-cell {
+    width: 14px;
+    height: 14px;
+}
+
 
 body.game-mode .hover\:bg-primary\/80:hover {
     background-color: rgba(59, 130, 246, 0.8) !important;
