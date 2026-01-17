@@ -490,5 +490,3 @@ const Gamification = {
         }
     }
 };
-
-console.log('Gamification module loaded');

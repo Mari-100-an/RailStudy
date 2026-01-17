@@ -581,5 +581,3 @@ const Storage = {
         Storage.saveGameData(Storage.defaultGameData);
     }
 })();
-
-console.log('Storage module loaded');

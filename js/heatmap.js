@@ -97,5 +97,3 @@ const Heatmap = {
         `).join('');
     }
 };
-
-console.log('Heatmap module loaded');

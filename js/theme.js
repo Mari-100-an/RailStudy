@@ -150,5 +150,3 @@ const Theme = {
         return false;
     }
 };
-
-console.log('Theme module loaded (Game Mode Only)');

@@ -53,5 +53,3 @@ const Dashboard = {
         }
     }
 };
-
-console.log('Dashboard module loaded');

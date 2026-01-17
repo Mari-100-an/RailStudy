@@ -876,5 +876,3 @@ function showToast(message, type = 'info') {
 document.addEventListener('DOMContentLoaded', () => {
     App.init();
 });
-
-console.log('App module loaded');
