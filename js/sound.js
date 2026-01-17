@@ -619,6 +619,37 @@ Sound.test = function() {
     setTimeout(() => this.wrong(), 1000);
 };
 
+// 백그라운드 전환 시 BGM 자동 정지/재개
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        // 앱이 백그라운드로 가면 BGM 일시정지
+        if (Sound.bgmAudio && !Sound.bgmAudio.paused) {
+            Sound.bgmWasPlaying = true;
+            Sound.bgmAudio.pause();
+            console.log('🔇 BGM paused (app in background)');
+        }
+    } else {
+        // 앱이 다시 포그라운드로 오면 BGM 재개
+        if (Sound.bgmWasPlaying && Sound.bgmAudio && Sound.bgmEnabled) {
+            Sound.bgmAudio.play().catch(e => {
+                console.warn('BGM resume failed:', e.message);
+            });
+            Sound.bgmWasPlaying = false;
+            console.log('🎵 BGM resumed (app in foreground)');
+        }
+    }
+});
+
+// 페이지 종료 시 완전 정지
+window.addEventListener('beforeunload', () => {
+    Sound.stopBGM();
+});
+
+// iOS Safari: pagehide 이벤트도 처리
+window.addEventListener('pagehide', () => {
+    Sound.stopBGM();
+});
+
 // 초기화
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => Sound.init());
