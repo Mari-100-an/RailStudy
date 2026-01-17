@@ -157,8 +157,7 @@ const Sound = {
                 this.audioObjects[key] = audio;
                 
                 // 에러 핸들러 추가
-                audio.addEventListener('error', (e) => {
-                    console.warn(`Audio file load failed for ${key}, using fallback:`, e);
+                audio.addEventListener('error', () => {
                     this.playBeepFallback(key);
                 }, { once: true });
             }
@@ -170,14 +169,12 @@ const Sound = {
             
             const playPromise = audio.play();
             if (playPromise !== undefined) {
-                playPromise.catch(e => {
-                    console.warn(`Audio play failed for ${key}:`, e.name, e.message);
+                playPromise.catch(() => {
                     // 재생 실패 시 Web Audio API fallback
                     this.playBeepFallback(key);
                 });
             }
         } catch (e) {
-            console.warn(`Audio playback error for ${key}:`, e);
             // 오디오 파일이 없으면 기존 비프음 사용
             this.playBeepFallback(key);
         }
@@ -219,8 +216,6 @@ const Sound = {
                 audio.volume = this.volume;
             }
         });
-        
-        console.log(`🔊 SFX Volume: ${Math.round(this.volume * 100)}%`);
     },
 
     // BGM 볼륨 설정
@@ -232,8 +227,6 @@ const Sound = {
         
         // 실시간 볼륨 업데이트
         this.updateBGMVolume();
-        
-        console.log(`🎵 BGM Volume: ${Math.round(this.bgmVolume * 100)}%`);
     },
 
 
@@ -335,10 +328,7 @@ const Sound = {
 
     // BGM 재생 (실제 오디오 파일 사용)
     async startBGM() {
-        if (!this.bgmEnabled) {
-            console.log('BGM disabled, skipping');
-            return;
-        }
+        if (!this.bgmEnabled) return;
         
         // 기존 BGM 완전히 정지
         this.stopBGM();
@@ -350,32 +340,24 @@ const Sound = {
         if (this.audioContext && this.audioContext.state === 'suspended') {
             try {
                 await this.audioContext.resume();
-                console.log('✅ AudioContext resumed');
             } catch (e) {
-                console.warn('AudioContext resume failed:', e);
+                // resume 실패 - 무시
             }
         }
 
         try {
             // 오디오 파일 사용
             if (this.audioFiles.bgmLofi) {
-                console.log('🎵 BGM 파일 경로:', this.audioFiles.bgmLofi);
-                console.log('🎵 현재 위치:', window.location.href);
-                console.log('🎵 베이스 경로:', window.location.origin);
-                
                 // 파일 존재 확인 (fetch로 먼저 체크)
                 try {
                     const response = await fetch(this.audioFiles.bgmLofi, { method: 'HEAD' });
                     if (!response.ok) {
-                        console.error('❌ BGM 파일 접근 불가:', response.status, response.statusText);
                         if (typeof showToast === 'function') {
-                            showToast(`배경음악 파일을 찾을 수 없습니다 (${response.status})`, 'error');
+                            showToast('배경음악 파일을 찾을 수 없습니다', 'error');
                         }
                         return;
                     }
-                    console.log('✅ BGM 파일 접근 가능');
                 } catch (fetchError) {
-                    console.error('❌ BGM 파일 체크 실패:', fetchError);
                     if (typeof showToast === 'function') {
                         showToast('배경음악 파일에 접근할 수 없습니다', 'error');
                     }
@@ -386,88 +368,32 @@ const Sound = {
                 this.bgmAudio.volume = this.bgmVolume;
                 this.bgmAudio.loop = true; // 무한 반복
                 
-                // 로딩 이벤트 리스너
-                this.bgmAudio.addEventListener('loadstart', () => {
-                    console.log('🎵 BGM 로딩 시작...');
-                });
-                
-                this.bgmAudio.addEventListener('loadedmetadata', () => {
-                    console.log('✅ BGM 메타데이터 로드됨, 길이:', this.bgmAudio.duration);
-                });
-                
-                this.bgmAudio.addEventListener('canplay', () => {
-                    console.log('✅ BGM 재생 준비 완료');
-                });
-                
-                this.bgmAudio.addEventListener('error', (e) => {
-                    if (!this.bgmAudio) return; // null 체크
-                    const errorCode = this.bgmAudio.error?.code;
-                    const errorMessages = {
-                        1: 'ABORTED - 로딩 중단',
-                        2: 'NETWORK - 네트워크 오류',
-                        3: 'DECODE - 디코딩 오류',
-                        4: 'NOT_SUPPORTED - 지원하지 않는 형식'
-                    };
-                    const errorMsg = errorMessages[errorCode] || '알 수 없는 오류';
-                    
-                    console.error('❌ BGM 로드 에러:', {
-                        error: e,
-                        code: errorCode,
-                        message: errorMsg,
-                        networkState: this.bgmAudio?.networkState,
-                        readyState: this.bgmAudio?.readyState,
-                        src: this.bgmAudio?.src,
-                        currentSrc: this.bgmAudio?.currentSrc
-                    });
+                this.bgmAudio.addEventListener('error', () => {
+                    if (!this.bgmAudio) return;
                     if (typeof showToast === 'function') {
-                        showToast(`배경음악 오류: ${errorMsg} (code: ${errorCode})`, 'error');
+                        showToast('배경음악 로드 오류', 'error');
                     }
                 });
                 
                 const playPromise = this.bgmAudio.play();
                 if (playPromise !== undefined) {
-                    playPromise
-                        .then(() => {
-                            console.log('✅ BGM play() 호출 성공');
-                            console.log('🎵 BGM 상태:', {
-                                paused: this.bgmAudio.paused,
-                                volume: this.bgmAudio.volume,
-                                currentTime: this.bgmAudio.currentTime,
-                                duration: this.bgmAudio.duration,
-                                readyState: this.bgmAudio.readyState,
-                                muted: this.bgmAudio.muted
-                            });
-                            
-                            // 실제 재생 중인지 확인
-                            if (this.bgmAudio.paused) {
-                                console.warn('⚠️ play() 성공했지만 paused 상태입니다');
-                                if (typeof showToast === 'function') {
-                                    showToast('배경음악이 일시정지 상태입니다', 'warning');
-                                }
-                            } else {
-                                console.log('✅ BGM 재생 중');
-                            }
-                        })
-                        .catch(e => {
-                            console.warn('⚠️ BGM autoplay blocked:', e.message);
-                            // autoplay 차단 시 재시도 안내 (fallback 제거)
-                            if (typeof showToast === 'function') {
-                                showToast('배경음악을 재생할 수 없습니다. 퀴즈를 시작한 후 다시 시도해주세요.', 'info');
-                            }
-                            // BGM 토글 끄기
-                            this.bgmEnabled = false;
-                            const bgmToggle = document.getElementById('setting-bgm-enabled');
-                            if (bgmToggle) bgmToggle.checked = false;
-                        });
+                    playPromise.catch(() => {
+                        // autoplay 차단 시
+                        if (typeof showToast === 'function') {
+                            showToast('배경음악을 재생할 수 없습니다. 퀴즈를 시작한 후 다시 시도해주세요.', 'info');
+                        }
+                        // BGM 토글 끄기
+                        this.bgmEnabled = false;
+                        const bgmToggle = document.getElementById('setting-bgm-enabled');
+                        if (bgmToggle) bgmToggle.checked = false;
+                    });
                 }
             } else {
-                console.log('❌ No BGM file found');
                 if (typeof showToast === 'function') {
                     showToast('배경음악 파일이 없습니다', 'error');
                 }
             }
         } catch (e) {
-            console.warn('BGM start failed:', e);
             if (typeof showToast === 'function') {
                 showToast('배경음악 재생 중 오류가 발생했습니다', 'error');
             }
