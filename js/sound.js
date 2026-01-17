@@ -170,26 +170,26 @@ const Sound = {
     // 사운드 켜기/끄기
     toggle() {
         this.enabled = !this.enabled;
-        const settings = Storage.get(Storage.KEYS.SETTINGS) || {};
+        const settings = Storage.load(Storage.KEYS.SETTINGS) || {};
         settings.soundEnabled = this.enabled;
-        Storage.set(Storage.KEYS.SETTINGS, settings);
+        Storage.save(Storage.KEYS.SETTINGS, settings);
         return this.enabled;
     },
 
     // 볼륨 설정 (0.0 ~ 1.0)
     setVolume(volume) {
         this.volume = Math.max(0, Math.min(1, volume));
-        const settings = Storage.get(Storage.KEYS.SETTINGS) || {};
+        const settings = Storage.load(Storage.KEYS.SETTINGS) || {};
         settings.soundVolume = this.volume;
-        Storage.set(Storage.KEYS.SETTINGS, settings);
+        Storage.save(Storage.KEYS.SETTINGS, settings);
     },
 
     // BGM 볼륨 설정
     setBgmVolume(volume) {
         this.bgmVolume = Math.max(0, Math.min(1, volume));
-        const settings = Storage.get(Storage.KEYS.SETTINGS) || {};
+        const settings = Storage.load(Storage.KEYS.SETTINGS) || {};
         settings.bgmVolume = this.bgmVolume;
-        Storage.set(Storage.KEYS.SETTINGS, settings);
+        Storage.save(Storage.KEYS.SETTINGS, settings);
         
         // 실시간 볼륨 업데이트
         this.updateBGMVolume();
