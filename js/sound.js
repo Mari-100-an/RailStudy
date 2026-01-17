@@ -35,7 +35,20 @@ const Sound = {
     // 오디오 컨텍스트 초기화
     init() {
         try {
-            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            console.log('🔊 Sound module initializing...');
+            
+            // Safari 호환성: AudioContext 생성 (선택적)
+            try {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                if (AudioContextClass) {
+                    this.audioContext = new AudioContextClass();
+                    console.log('AudioContext created:', this.audioContext.state);
+                } else {
+                    console.warn('AudioContext not supported');
+                }
+            } catch (e) {
+                console.warn('AudioContext creation failed, continuing without it:', e);
+            }
             
             // 기본적으로 사운드 활성화
             if (typeof Storage !== 'undefined' && Storage.get && typeof Storage.get === 'function') {
@@ -53,9 +66,13 @@ const Sound = {
             }
             
             // 오디오 파일 미리 로드 (선택적)
-            this.preloadAudio();
+            try {
+                this.preloadAudio();
+            } catch (e) {
+                console.warn('Audio preload failed:', e);
+            }
             
-            console.log('🔊 Sound module initialized', {
+            console.log('✅ Sound module initialized', {
                 enabled: this.enabled,
                 contextState: this.audioContext?.state,
                 volume: this.volume,
@@ -63,12 +80,14 @@ const Sound = {
             });
             
             // AudioContext는 사용자 제스처 후에 resume 필요 (브라우저 자동재생 정책)
-            if (this.audioContext.state === 'suspended') {
+            if (this.audioContext && this.audioContext.state === 'suspended') {
                 // 첫 클릭 시 활성화
                 const activateAudio = () => {
-                    if (this.audioContext.state === 'suspended') {
+                    if (this.audioContext && this.audioContext.state === 'suspended') {
                         this.audioContext.resume().then(() => {
                             console.log('🔊 AudioContext resumed');
+                        }).catch(e => {
+                            console.warn('AudioContext resume failed:', e);
                         });
                     }
                 };
@@ -76,7 +95,7 @@ const Sound = {
                 document.addEventListener('touchstart', activateAudio, { once: true });
             }
         } catch (e) {
-            console.error('❌ Web Audio API initialization failed', e);
+            console.error('❌ Sound module initialization failed (non-critical):', e);
             this.enabled = false;
         }
     },

@@ -8,34 +8,43 @@ const App = {
 
     // 앱 초기화
     init() {
-        // 로딩 화면 표시 중 초기화 수행
-        this.setupNavigation();
-        this.setupSubjectCards();
-        this.setupQuickActions();
-        this.setupSettings();
-        this.setupReviewPage();
+        try {
+            console.log('🚀 App initialization started');
+            
+            // 로딩 화면 표시 중 초기화 수행
+            this.setupNavigation();
+            this.setupSubjectCards();
+            this.setupQuickActions();
+            this.setupSettings();
+            this.setupReviewPage();
 
-        // 테마 초기화
-        Theme.init();
+            // 테마 초기화
+            Theme.init();
 
-        // 퀴즈 모듈 초기화
-        Quiz.init();
+            // 퀴즈 모듈 초기화
+            Quiz.init();
 
-        // 대시보드 초기화
-        Dashboard.init();
+            // 대시보드 초기화
+            Dashboard.init();
 
-        // 홈 화면 통계 업데이트
-        this.updateHomeStats();
-        
-        // 이어서 풀기 카드 업데이트
-        this.updateContinueSessionCard();
+            // 홈 화면 통계 업데이트
+            this.updateHomeStats();
+            
+            // 이어서 풀기 카드 업데이트
+            this.updateContinueSessionCard();
 
-        // 로딩 완료
-        setTimeout(() => {
+            console.log('✅ App initialized successfully');
+            
+            // 로딩 완료
+            setTimeout(() => {
+                this.hideLoadingScreen();
+            }, 500);
+        } catch (error) {
+            console.error('❌ App initialization failed:', error);
+            // 에러 발생해도 로딩 화면은 숨김
             this.hideLoadingScreen();
-        }, 500);
-
-        console.log('App initialized');
+            alert('앱 초기화 중 오류가 발생했습니다. 페이지를 새로고침해주세요.');
+        }
     },
 
     // 로딩 화면 숨기기
