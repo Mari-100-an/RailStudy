@@ -415,7 +415,7 @@ input:checked + .toggle-slider:before {
 }
 
 .review-item:hover {
-    transform: translateX(4px);
+    /* transform: translateX(4px); */ /* 우측 이동 제거 */
 }
 
 /* 뱃지 그리드 */
@@ -475,7 +475,7 @@ input:checked + .toggle-slider:before {
 .modal-option:hover {
     background-color: #f3f4f6;
     border-color: #3b82f6;
-    transform: translateX(4px);
+    /* transform: translateX(4px); */ /* 우측 이동 제거 */
 }
 
 /* 오답 카드 */

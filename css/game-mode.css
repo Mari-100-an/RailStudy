@@ -530,12 +530,12 @@ h3.text-lg.font-bold, h3.text-xl.font-bold {
 }
 
 .quiz-card button:hover {
-    transform: translateX(4px);
+    /* transform: translateX(4px); */ /* 우측 이동 제거 */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quiz-card button.selected {
-    transform: translateX(4px);
+    /* transform: translateX(4px); */ /* 우측 이동 제거 */
     box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 

@@ -337,42 +337,70 @@ const Sound = {
         try {
             // 오디오 파일 사용
             if (this.audioFiles.bgmLofi) {
-                console.log('🎵 Loading BGM file:', this.audioFiles.bgmLofi);
+                console.log('🎵 BGM 파일 경로:', this.audioFiles.bgmLofi);
+                console.log('🎵 현재 위치:', window.location.href);
+                console.log('🎵 베이스 경로:', window.location.origin);
+                
                 this.bgmAudio = new Audio(this.audioFiles.bgmLofi);
                 this.bgmAudio.volume = this.bgmVolume;
                 this.bgmAudio.loop = true; // 무한 반복
                 
                 // 로딩 이벤트 리스너
+                this.bgmAudio.addEventListener('loadstart', () => {
+                    console.log('🎵 BGM 로딩 시작...');
+                });
+                
+                this.bgmAudio.addEventListener('loadedmetadata', () => {
+                    console.log('✅ BGM 메타데이터 로드됨, 길이:', this.bgmAudio.duration);
+                });
+                
                 this.bgmAudio.addEventListener('canplay', () => {
-                    console.log('✅ BGM file loaded and ready');
+                    console.log('✅ BGM 재생 준비 완료');
                 });
                 
                 this.bgmAudio.addEventListener('error', (e) => {
-                    console.error('❌ BGM file load error:', e);
-                    this.startBGMSynthesized();
+                    console.error('❌ BGM 로드 에러:', {
+                        error: e,
+                        code: this.bgmAudio.error?.code,
+                        message: this.bgmAudio.error?.message,
+                        networkState: this.bgmAudio.networkState,
+                        readyState: this.bgmAudio.readyState,
+                        src: this.bgmAudio.src
+                    });
+                    if (typeof showToast === 'function') {
+                        showToast('배경음악 파일을 불러올 수 없습니다', 'error');
+                    }
                 });
                 
                 const playPromise = this.bgmAudio.play();
                 if (playPromise !== undefined) {
                     playPromise
                         .then(() => {
-                            console.log('✅ BGM playing successfully');
+                            console.log('✅ BGM 재생 성공');
                         })
                         .catch(e => {
                             console.warn('⚠️ BGM autoplay blocked:', e.message);
-                            console.log('User gesture required for BGM. Trying synthesized fallback...');
-                            // 폴백: Web Audio API로 생성
-                            this.startBGMSynthesized();
+                            // autoplay 차단 시 재시도 안내 (fallback 제거)
+                            if (typeof showToast === 'function') {
+                                showToast('배경음악을 재생할 수 없습니다. 퀴즈를 시작한 후 다시 시도해주세요.', 'info');
+                            }
+                            // BGM 토글 끄기
+                            this.bgmEnabled = false;
+                            const bgmToggle = document.getElementById('setting-bgm-enabled');
+                            if (bgmToggle) bgmToggle.checked = false;
                         });
                 }
             } else {
-                console.log('No BGM file found, using synthesized');
-                // 오디오 파일 없으면 Web Audio API로 생성
-                this.startBGMSynthesized();
+                console.log('❌ No BGM file found');
+                if (typeof showToast === 'function') {
+                    showToast('배경음악 파일이 없습니다', 'error');
+                }
             }
         } catch (e) {
             console.warn('BGM start failed:', e);
-            this.startBGMSynthesized();
+            if (typeof showToast === 'function') {
+                showToast('배경음악 재생 중 오류가 발생했습니다', 'error');
+            }
         }
     },
 
