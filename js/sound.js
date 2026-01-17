@@ -75,20 +75,24 @@ const Sound = {
             }
             
             // AudioContext는 사용자 제스처 후에 resume 필요 (브라우저 자동재생 정책)
-            if (this.audioContext && this.audioContext.state === 'suspended') {
-                // 첫 클릭 시 활성화
-                const activateAudio = () => {
-                    if (this.audioContext && this.audioContext.state === 'suspended') {
-                        this.audioContext.resume().catch(() => {});
-                    }
-                    // 모바일: HTML5 Audio unlock (iOS/Android 모두)
-                    if (this.isIOS || this.isAndroid) {
-                        this.unlockAudioForMobile();
-                    }
-                };
-                document.addEventListener('click', activateAudio, { once: true });
-                document.addEventListener('touchstart', activateAudio, { once: true, passive: true });
-            }
+            // 첫 클릭/터치 시 활성화 및 BGM 자동 재생
+            const activateAudio = async () => {
+                if (this.audioContext && this.audioContext.state === 'suspended') {
+                    try {
+                        await this.audioContext.resume();
+                    } catch (e) {}
+                }
+                // 모바일: HTML5 Audio unlock (iOS/Android 모두)
+                if (this.isIOS || this.isAndroid) {
+                    this.unlockAudioForMobile();
+                }
+                // BGM 설정이 ON이고 아직 재생 중이 아니면 자동 시작
+                if (this.bgmEnabled && !this.bgmIsPlaying) {
+                    setTimeout(() => this.startBGM(), 300);
+                }
+            };
+            document.addEventListener('click', activateAudio, { once: true });
+            document.addEventListener('touchstart', activateAudio, { once: true, passive: true });
         } catch (e) {
             console.error('Sound module initialization failed:', e);
             this.enabled = false;
@@ -465,6 +469,9 @@ const Sound = {
 
     // BGM 정지
     stopBGM() {
+        // 재생 상태 해제
+        this.bgmIsPlaying = false;
+        
         // HTML5 Audio 정지 및 이벤트 리스너 제거
         if (this.bgmAudio) {
             try {
