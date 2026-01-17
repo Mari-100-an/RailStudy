@@ -2,8 +2,8 @@
  * Service Worker - PWA 오프라인 지원 및 캐싱
  */
 
-const CACHE_NAME = 'railway-study-v5.7';
-const APP_VERSION = 'v5.7'; // 앱 버전
+const CACHE_NAME = 'railway-study-v1.5';
+const APP_VERSION = 'v1.5'; // 앱 버전
 
 // 필수 리소스 (실패 시 설치 중단)
 const CORE_ASSETS = [

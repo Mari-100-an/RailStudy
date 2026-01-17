@@ -680,6 +680,29 @@ const App = {
                 }
             });
         }
+
+        // 앱 버전 동적 로드 (service-worker.js에서 가져옴)
+        this.loadAppVersion();
+    },
+
+    // Service Worker에서 버전 정보 가져오기
+    loadAppVersion() {
+        const versionEl = document.getElementById('app-version');
+        if (!versionEl) return;
+
+        fetch('/service-worker.js')
+            .then(res => res.text())
+            .then(text => {
+                const match = text.match(/APP_VERSION\s*=\s*['"]([^'"]+)['"]/);
+                if (match) {
+                    versionEl.textContent = `버전 ${match[1]}`;
+                } else {
+                    versionEl.textContent = '버전 정보 없음';
+                }
+            })
+            .catch(() => {
+                versionEl.textContent = '버전 확인 실패';
+            });
     },
 
     // 설정 UI 업데이트
