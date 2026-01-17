@@ -297,11 +297,12 @@ const Storage = {
         data.xp += amount;
         data.totalXP += amount;
         
-        // 레벨업 체크
-        const xpForNextLevel = this.getXPForLevel(data.level + 1);
+        // 레벨업 체크 (루프 내에서 xpForNextLevel 재계산)
+        let xpForNextLevel = this.getXPForLevel(data.level + 1);
         while (data.xp >= xpForNextLevel) {
             data.xp -= xpForNextLevel;
             data.level++;
+            xpForNextLevel = this.getXPForLevel(data.level + 1); // 다음 레벨 XP 재계산
         }
         
         this.saveGameData(data);

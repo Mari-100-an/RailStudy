@@ -8,7 +8,7 @@ const Sound = {
     volume: 0.3, // 적당한 볼륨으로 설정
     bgmVolume: 0.2, // BGM 볼륨
     bgmEnabled: false, // BGM 기본 꺼짐
-    hapticEnabled: true, // 햅틱 피드백 기본 켜짐
+
     
     // 오디오 파일 경로 (상대 경로로 변경 - PWA 호환성)
     audioFiles: {
@@ -46,14 +46,20 @@ const Sound = {
             }
             
             // 기본적으로 사운드 활성화
-            if (typeof Storage !== 'undefined' && Storage.get && typeof Storage.get === 'function') {
+            if (typeof Storage !== 'undefined' && Storage.load && typeof Storage.load === 'function') {
                 try {
-                    const settings = Storage.get(Storage.KEYS.SETTINGS);
+                    const settings = Storage.load(Storage.KEYS.SETTINGS);
                     this.enabled = settings?.soundEnabled !== false;
                     this.volume = settings?.soundVolume ?? 0.3;
                     this.bgmVolume = settings?.bgmVolume ?? 0.2;
                     this.bgmEnabled = settings?.bgmEnabled ?? false;
-                    this.hapticEnabled = settings?.hapticEnabled !== false;
+                    
+                    console.log('🔊 Sound settings loaded:', {
+                        enabled: this.enabled,
+                        volume: this.volume,
+                        bgmVolume: this.bgmVolume,
+                        bgmEnabled: this.bgmEnabled
+                    });
                 } catch (e) {
                     console.warn('Storage not ready, using default sound settings');
                     this.enabled = true;
@@ -126,10 +132,13 @@ const Sound = {
         keysToUnlock.forEach(key => {
             try {
                 const audio = new Audio(this.audioFiles[key]);
-                audio.volume = 0.01; // 거의 들리지 않게
+                audio.volume = 0; // 완전 무음
+                audio.muted = true; // 추가 보장
                 audio.play().then(() => {
                     audio.pause();
                     audio.currentTime = 0;
+                    audio.muted = false; // unlock 후 mute 해제
+                    audio.volume = this.volume; // 정상 볼륨으로 복원
                     this.audioObjects[key] = audio; // unlock된 객체 저장
                     console.log(`✅ ${platform} unlocked: ${key}`);
                 }).catch(e => {
@@ -255,22 +264,7 @@ const Sound = {
         console.log(`🎵 BGM Volume: ${Math.round(this.bgmVolume * 100)}%`);
     },
 
-    // 햅틱 피드백 토글
-    toggleHaptic() {
-        this.hapticEnabled = !this.hapticEnabled;
-        const settings = Storage.load(Storage.KEYS.SETTINGS) || {};
-        settings.hapticEnabled = this.hapticEnabled;
-        Storage.save(Storage.KEYS.SETTINGS, settings);
-        return this.hapticEnabled;
-    },
 
-    // 햅틱 진동 실행
-    vibrate(pattern) {
-        if (!this.hapticEnabled) return;
-        if (navigator.vibrate) {
-            navigator.vibrate(pattern);
-        }
-    },
 
     // 기본 비프음 생성
     playBeep(frequency, duration, type = 'sine') {
@@ -306,13 +300,11 @@ const Sound = {
 
     // 정답 사운드 - 부드러운 상승음
     correct() {
-        this.vibrate([50, 30, 50]); // 정답 진동 패턴
         this.playAudio('correct');
     },
 
     // 오답 사운드 - 낮은 단음
     wrong() {
-        this.vibrate(100); // 오답 진동 (조금 길게)
         this.playAudio('wrong');
     },
 
@@ -323,22 +315,16 @@ const Sound = {
 
     // 레벨업 사운드 - 상승하는 아르페지오
     levelUp() {
-        this.vibrate([100, 50, 100, 50, 200]); // 축하 진동 패턴
         this.playAudio('levelup');
     },
 
     // 배지 획득 - 단일 사운드로 통일
     badge(tier = 'bronze') {
-        // 기본 진동 패턴
-        this.vibrate([100, 50, 100, 50, 100]);
-        
-        // 단일 badge.mp3 사용
         this.playAudio('badge');
     },
 
     // 콤보 사운드 - 콤보 수에 따라 음계 상승
     combo(comboCount = 1) {
-        this.vibrate(30); // 짧은 틱 진동
         this.playAudio('combo', 0.7 + (comboCount * 0.03)); // 콤보 증가 시 살짝 볼륨 증가
     },
 
@@ -583,10 +569,6 @@ const Sound = {
                 this.bgmAudio.currentTime = 0;
                 this.bgmAudio.src = ''; // src 제거하여 완전 해제
                 this.bgmAudio.load(); // 리소스 해제
-                this.bgmAudio.removeEventListener('loadstart', null);
-                this.bgmAudio.removeEventListener('loadedmetadata', null);
-                this.bgmAudio.removeEventListener('canplay', null);
-                this.bgmAudio.removeEventListener('error', null);
                 this.bgmAudio = null;
                 console.log('✅ HTML5 Audio 정지됨');
             } catch (e) {
