@@ -2,8 +2,8 @@
  * Service Worker - PWA 오프라인 지원 및 캐싱
  */
 
-const CACHE_NAME = 'railway-study-v5.6';
-const APP_VERSION = 'v5.6'; // 앱 버전
+const CACHE_NAME = 'railway-study-v5.7';
+const APP_VERSION = 'v5.7'; // 앱 버전
 
 // 필수 리소스 (실패 시 설치 중단)
 const CORE_ASSETS = [
@@ -41,6 +41,10 @@ self.addEventListener('message', (event) => {
 // 설치 이벤트 - 캐시에 리소스 저장
 self.addEventListener('install', (event) => {
     console.log('[SW] Installing service worker v' + APP_VERSION);
+    
+    // 즉시 활성화 (대기 상태 건너뛰기)
+    self.skipWaiting();
+    
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(async (cache) => {
